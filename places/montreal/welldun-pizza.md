@@ -6,8 +6,8 @@ area: Verdun
 address: 4434 Rue Wellington, Montréal, QC H4G 1W5
 phone: +1 514-762-8888
 website:
-lat:
-lng:
+lat: 45.459676
+lng: -73.567158
 checked: 2026-10
 ---
 

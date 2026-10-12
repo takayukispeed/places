@@ -6,8 +6,8 @@ area: Little Italy
 address: 277 Rue Dante, Montréal, QC H2S 1K3
 phone: +1 514-271-3013
 website:
-lat:
-lng:
+lat: 45.535162
+lng: -73.611671
 checked: 2026-10
 ---
 
