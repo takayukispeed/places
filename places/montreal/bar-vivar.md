@@ -6,8 +6,8 @@ area: Plateau
 address: 533 Avenue Duluth Est, Montréal, QC H2L 1B1
 phone: +1 514-527-9888
 website:
-lat:
-lng:
+lat: 45.522269
+lng: -73.574714
 checked: 2026-10
 ---
 
