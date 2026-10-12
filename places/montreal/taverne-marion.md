@@ -7,8 +7,8 @@ address: 1151 Rue Ontario Est, Montréal, QC H2L 1R3
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.520809
+lng: -73.562722
 checked: 2026-10-12
 ---
 
