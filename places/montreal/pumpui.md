@@ -6,6 +6,7 @@ area: Little Italy
 address: 83 Rue Saint-Zotique Est, Montréal, QC H2S 1K7
 phone: +1 514-379-3024
 website: https://pumpui.ca
+reserve:
 lat: 45.532915
 lng: -73.611246
 checked: 2026-10

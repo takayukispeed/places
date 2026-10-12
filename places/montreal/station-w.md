@@ -6,6 +6,7 @@ area: Verdun
 address: 3852 Rue Wellington, Montréal, QC H4G 1V2
 phone: +1 514-508-9768
 website:
+reserve:
 lat: 45.467262
 lng: -73.566571
 checked: 2026-10

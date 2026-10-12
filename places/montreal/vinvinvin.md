@@ -6,6 +6,7 @@ area: Petite-Patrie
 address: 1290 Rue Beaubien Est, Montréal, QC
 phone: +1 514-379-6969
 website: https://vinvinvin.ca
+reserve:
 lat: 45.539749
 lng: -73.599615
 checked: 2026-10

@@ -6,6 +6,7 @@ area: Plateau
 address: 980 Rue Rachel Est, Montréal, QC H2J 2J3
 phone: +1 514-688-0282
 website:
+reserve:
 lat: 45.525227
 lng: -73.574854
 checked: 2026-10

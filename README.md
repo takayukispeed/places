@@ -38,6 +38,7 @@ area: Plateau
 address: 4175 Boulevard Saint-Laurent, Montréal, QC
 phone:
 website:
+reserve:
 lat:
 lng:
 checked: 2026-10
@@ -58,6 +59,7 @@ Anything worth remembering: what to order, who it suits, links to sources.
 
 - **Hours:** one line per day or range: `Mon–Fri: 11:30–14:00, 17:00–22:00`, `Sat, Sun: 10:00–15:00`, `Daily: 8:00–15:00`, `Daily: Open 24 hours`, `Tue: Closed`. A closing time earlier than the opening time runs past midnight. Leave the section empty when unsure; the app then points to Google Maps.
 - **`checked:`** is the date (or, for older entries, the month) the hours and address were last checked. The app sets it when you change either, and the weekly refresh sets it for each place it checks (see [REFRESH.md](REFRESH.md)).
+- **`reserve:`** is a link to the place's online booking page (Resy, OpenTable, Libro, Tock, SevenRooms, or its own site). When it's set, the place page shows a **Reserve** button. Leave it blank for places that don't take bookings online.
 - **Address:** write street names in full (`Boulevard Saint-Laurent`, `Rue Rachel Est`). The free map lookup handles those better than abbreviations.
 - **`lat` / `lng`:** leave blank. After each push, a GitHub Action looks the address up on OpenStreetMap and fills them in.
 

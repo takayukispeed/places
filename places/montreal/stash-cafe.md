@@ -6,6 +6,7 @@ area: Old Montreal
 address: 200 Rue Saint-Paul Ouest, Montréal, QC H2Y 1Z9
 phone: +1 514-845-6611
 website: https://restaurantstashcafe.ca
+reserve:
 lat: 45.502639
 lng: -73.555217
 checked: 2026-10

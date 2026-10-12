@@ -6,6 +6,7 @@ area: Mile End
 address: 5170 Boulevard Saint-Laurent, Montréal, QC
 phone: +1 514-507-3199
 website:
+reserve:
 lat: 45.523519
 lng: -73.594273
 checked: 2026-10

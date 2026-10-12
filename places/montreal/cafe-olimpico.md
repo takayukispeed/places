@@ -6,6 +6,7 @@ area: Mile End
 address: 124 Rue Saint-Viateur Ouest, Montréal, QC H2T 2L1
 phone: +1 514-495-0746
 website:
+reserve:
 lat: 45.524134
 lng: -73.600227
 checked: 2026-10

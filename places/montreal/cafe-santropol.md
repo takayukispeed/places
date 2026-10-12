@@ -6,6 +6,7 @@ area: Plateau
 address: 3990 Rue Saint-Urbain, Montréal, QC
 phone: +1 514-842-3110
 website: https://www.santropol.com
+reserve:
 lat: 45.51561
 lng: -73.580508
 checked: 2026-10

@@ -6,6 +6,7 @@ area: Mile End
 address: 5765 Rue Clark, Montréal, QC H2T 2V5
 phone:
 website:
+reserve:
 lat: 45.526835
 lng: -73.602424
 checked: 2026-10

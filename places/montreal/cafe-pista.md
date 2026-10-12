@@ -6,6 +6,7 @@ area: Petite-Patrie
 address: 500 Rue Beaubien Est, Montréal, QC H2S 1S5
 phone: +1 514-903-8257
 website:
+reserve:
 lat: 45.5348
 lng: -73.604119
 checked: 2026-10

@@ -6,6 +6,7 @@ area: Plateau
 address: 430 Avenue Laurier Est, Montréal, QC H2J 1E6
 phone: +1 514-656-7630
 website:
+reserve:
 lat: 45.527301
 lng: -73.588981
 checked: 2026-10

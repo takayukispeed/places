@@ -6,6 +6,7 @@ area: Centre-Sud
 address: 1690 Rue Ontario Est, Montréal, QC H2L 1S7
 phone: +1 514-527-5552
 website:
+reserve:
 lat: 45.525524
 lng: -73.559474
 checked: 2026-10

@@ -6,6 +6,7 @@ area: Pointe-Saint-Charles
 address: 2233 Rue Pitt, Montréal, QC H4E 1A2
 phone: +1 438-375-3776
 website: https://www.messorem.co
+reserve:
 lat: 45.469712
 lng: -73.580927
 checked: 2026-10

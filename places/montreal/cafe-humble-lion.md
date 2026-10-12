@@ -6,6 +6,7 @@ area: Downtown
 address: 904 Rue Sherbrooke Ouest, Montréal, QC
 phone: +1 514-844-5466
 website: https://shop.humblelion.com
+reserve:
 lat: 45.503341
 lng: -73.574846
 checked: 2026-10

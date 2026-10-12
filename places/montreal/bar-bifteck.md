@@ -6,6 +6,7 @@ area: Plateau
 address: 3702 Boulevard Saint-Laurent, Montréal, QC H2X 2V4
 phone:
 website:
+reserve:
 lat: 45.514571
 lng: -73.574378
 checked: 2026-10

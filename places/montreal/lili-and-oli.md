@@ -6,6 +6,7 @@ area: Little Burgundy
 address: 2713 Rue Notre-Dame Ouest, Montréal, QC H3J 1N9
 phone: +1 514-932-8961
 website:
+reserve:
 lat: 45.48186
 lng: -73.577166
 checked: 2026-10

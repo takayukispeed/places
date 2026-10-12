@@ -6,6 +6,7 @@ area: Plateau
 address: 781 Avenue du Mont-Royal Est, Montréal, QC H2J 1W8
 phone:
 website:
+reserve:
 lat: 45.525941
 lng: -73.581463
 checked: 2026-10

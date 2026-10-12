@@ -6,6 +6,7 @@ area: Chinatown
 address: 1002 Rue Saint-Urbain, Montréal, QC H2Z 1K6
 phone: +1 514-866-4411
 website:
+reserve:
 lat: 45.506561
 lng: -73.560513
 checked: 2026-10

@@ -6,6 +6,7 @@ area: Centre-Sud
 address: 1271 Rue Ontario Est, Montréal, QC H2L 1R7
 phone: +1 514-439-9257
 website: https://painatartine.com
+reserve:
 lat: 45.521915
 lng: -73.562138
 checked: 2026-10

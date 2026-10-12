@@ -6,6 +6,7 @@ area: Plateau
 address: 1019 Avenue du Mont-Royal Est, Montréal, QC H2J 1X7
 phone: +1 514-507-3133
 website: https://warehousegroup.ca/location/lentrepot-mont-royal/
+reserve:
 lat: 45.527631
 lng: -73.579734
 checked: 2026-10

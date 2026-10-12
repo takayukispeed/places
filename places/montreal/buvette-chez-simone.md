@@ -6,6 +6,7 @@ area: Mile End
 address: 4869 Avenue du Parc, Montréal, QC H2V 4E7
 phone: +1 514-750-6577
 website:
+reserve:
 lat: 45.518823
 lng: -73.593448
 checked: 2026-10

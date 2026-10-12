@@ -6,6 +6,7 @@ area: Milton-Parc
 address: 51 Rue Sherbrooke Ouest, Montréal, QC H2X 1X2
 phone: +1 514-657-2835
 website:
+reserve:
 lat: 45.511897
 lng: -73.570082
 checked: 2026-10

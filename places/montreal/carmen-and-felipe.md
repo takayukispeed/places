@@ -6,6 +6,7 @@ area: Plateau
 address: 807 Avenue Laurier Est, Montréal, QC
 phone: +1 514-798-0807
 website: https://carmenfelipe.com
+reserve:
 lat: 45.529255
 lng: -73.587842
 checked: 2026-10

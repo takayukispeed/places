@@ -6,6 +6,7 @@ area: Quartier des spectacles
 address: 1579 Boulevard Saint-Laurent, Montréal, QC
 phone: +1 514-543-1579
 website: https://www.barpamplemousse.com
+reserve:
 lat: 45.510888
 lng: -73.56565
 checked: 2026-10

@@ -6,6 +6,7 @@ area: Chinatown
 address: 1071 Boulevard Saint-Laurent (2nd floor), Montréal, QC H2Z 1J6
 phone:
 website:
+reserve:
 lat: 45.508409
 lng: -73.560399
 checked: 2026-10

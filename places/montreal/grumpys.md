@@ -6,6 +6,7 @@ area: Downtown
 address: 1242 Rue Bishop, Montréal, QC H3G 2E3
 phone: +1 514-866-9010
 website:
+reserve:
 lat: 45.496088
 lng: -73.575657
 checked: 2026-10

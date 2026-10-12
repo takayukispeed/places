@@ -6,6 +6,7 @@ area: Centre-Sud
 address: 2543 Rue Ontario Est, Montréal, QC H2K 1W5
 phone: +1 514-524-3348
 website: https://wawelpatisseries.com
+reserve:
 lat: 45.532923
 lng: -73.552887
 checked: 2026-10

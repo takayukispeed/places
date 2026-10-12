@@ -6,6 +6,7 @@ area: Downtown
 address: 1426 Rue Bishop, Montréal, QC H3G 2E6
 phone: +1 514-288-1580
 website: https://www.mckibbinsirishpub.com
+reserve:
 lat: 45.496836
 lng: -73.577121
 checked: 2026-10

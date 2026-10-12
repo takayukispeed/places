@@ -6,6 +6,7 @@ area: Mile End
 address: 4556B Boulevard Saint-Laurent, Montréal, QC H2T 1R3
 phone: +1 514-379-4666
 website:
+reserve:
 lat: 45.520688
 lng: -73.587983
 checked: 2026-10

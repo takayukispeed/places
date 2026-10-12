@@ -6,6 +6,7 @@ area: Mile End
 address: 180 Rue Saint-Viateur Ouest, Montréal, QC
 phone: +1 514-495-0114
 website:
+reserve:
 lat: 45.523551
 lng: -73.600725
 checked: 2026-10

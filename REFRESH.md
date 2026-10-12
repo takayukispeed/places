@@ -12,6 +12,7 @@ A scheduled Claude session runs this once a week. It checks the 25 places checke
 3. Edit the file only where a source supports the change:
    - **Hours:** rewrite `## Hours` in the format in the README. When sources disagree, keep the official one and note the conflict.
    - **Address:** if the place has moved, write the new address in full and **clear `lat:` and `lng:`**. The Action then puts a new pin on the map.
+   - **Reservations:** if the place takes online bookings, set `reserve:` to the booking page. Take the link from the place's own site where possible, or else from the booking platform's page for that exact location. Clear `reserve:` if the link is dead or the place has stopped taking bookings.
    - **Phone / website:** fill in or correct these only from the official site, or from two listings that agree.
    - **Notes:** keep what is there. Add or update one source line, such as `- Hours: [Site](https://…), October 2026.` Never add claims about food, prices or atmosphere that no source supports.
    - **Closed for good:** move the file with `git mv places/<city>/<slug>.md closed/<city>/<slug>.md` and add a source line saying when and how it closed. Files in `closed/` stay out of the app and can be moved back. A temporary closure (renovation, holidays) is a note, not a move.

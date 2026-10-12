@@ -6,6 +6,7 @@ area: Saint-Henri
 address: 3041 Rue Notre-Dame Ouest, Montréal, QC H4C 1N9
 phone:
 website:
+reserve:
 lat: 45.480912
 lng: -73.578802
 checked: 2026-10

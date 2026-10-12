@@ -6,6 +6,7 @@ area: Villeray
 address: 244 Rue de Castelnau Est, Montréal, QC H2R 1P6
 phone: +1 514-272-8087
 website:
+reserve:
 lat: 45.537716
 lng: -73.617932
 checked: 2026-10

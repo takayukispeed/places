@@ -6,6 +6,7 @@ area: Quartier Latin
 address: 2040 Rue Saint-Denis, Montréal, QC H2X 3K7
 phone: +1 514-379-6363
 website: https://turbohaus.ca
+reserve:
 lat: 45.516053
 lng: -73.56592
 checked: 2026-10

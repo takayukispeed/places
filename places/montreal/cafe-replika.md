@@ -6,6 +6,7 @@ area: Plateau
 address: 252 Rue Rachel Est, Montréal, QC H2W 1E5
 phone: +1 514-903-4384
 website:
+reserve:
 lat: 45.520331
 lng: -73.579309
 checked: 2026-10

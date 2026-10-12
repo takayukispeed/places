@@ -6,6 +6,7 @@ area: Plateau
 address: 1499 Avenue Laurier Est, Montréal, QC H2J 1H8
 phone: +1 514-523-9396
 website:
+reserve:
 lat: 45.534576
 lng: -73.58291
 checked: 2026-10

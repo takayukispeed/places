@@ -124,6 +124,7 @@ const KAZU = [{
   assert.equal(await page.locator(".hours li.today").count(), 1);
   assert.match(await page.locator(".actions").innerText(), /Directions[\s\S]*Google Maps/);
   assert.equal(await page.locator("text=Edit").count(), 0, "no Edit when signed out");
+  assert.equal(await page.locator(".actions a", { hasText: "Reserve" }).count(), 0, "no reservation link saved");
   assert.match(await page.locator(".actions a").nth(1).getAttribute("href"), /^https:\/\/www\.google\.com\/maps\/search\/\?api=1&query=Big%20in%20Japan%2C%204175/);
   assert.match(await page.locator(".actions a").nth(0).getAttribute("href"), /^https:\/\/www\.google\.com\/maps\/dir\/\?api=1&destination=Big%20in%20Japan%2C%204175/);
   await shot("2-place");
@@ -172,11 +173,13 @@ const KAZU = [{
   assert.equal(await page.inputValue("#hours"), "Mon, Thu–Sun: 12:00–21:00\nTue, Wed: Closed");
   assert.equal(await page.inputValue("#lat"), "45.493200");
   await page.fill("#notes", "Get the **pork bowl**.");
+  await page.fill("#reserve", "https://example.com/book");
   await shot("4-editor");
   await page.click("#save");
   await page.waitForURL(/#\/view\/places\/montreal\/kazu\.md$/);
-  assert.match(repo["places/montreal/kazu.md"], /^---\nname: Kazu\ncity: Montréal\ncategory: cheap\narea: Ville-Marie\naddress: 1862 Rue Sainte-Catherine Ouest, Montréal, H3H 1M1\nphone: \+1 514-937-2333\nwebsite:\nlat: 45\.4932\nlng: -73\.5791\nchecked: \d{4}-\d{2}-\d{2}\n---\n\n# Kazu\n\n## Hours\n\n- Mon, Thu–Sun: 12:00–21:00\n- Tue, Wed: Closed\n\n## Notes\n\nGet the \*\*pork bowl\*\*\.\n$/);
+  assert.match(repo["places/montreal/kazu.md"], /^---\nname: Kazu\ncity: Montréal\ncategory: cheap\narea: Ville-Marie\naddress: 1862 Rue Sainte-Catherine Ouest, Montréal, H3H 1M1\nphone: \+1 514-937-2333\nwebsite:\nreserve: https:\/\/example\.com\/book\nlat: 45\.4932\nlng: -73\.5791\nchecked: \d{4}-\d{2}-\d{2}\n---\n\n# Kazu\n\n## Hours\n\n- Mon, Thu–Sun: 12:00–21:00\n- Tue, Wed: Closed\n\n## Notes\n\nGet the \*\*pork bowl\*\*\.\n$/);
   assert.equal(await page.locator(".notes strong").innerText(), "pork bowl");
+  assert.equal(await page.locator(".actions a", { hasText: "Reserve" }).getAttribute("href"), "https://example.com/book");
 
   // Edit: a new address clears the old coordinates so the pin gets looked up again
   await page.click("text=Edit");

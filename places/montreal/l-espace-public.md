@@ -6,6 +6,7 @@ area: Hochelaga
 address: 3632 Rue Ontario Est, Montréal, QC H1W 1R7
 phone: +1 438-700-6260
 website: https://www.lespacepublic.ca
+reserve:
 lat: 45.545397
 lng: -73.544393
 checked: 2026-10

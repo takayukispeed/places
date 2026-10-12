@@ -6,6 +6,7 @@ area: Little Italy
 address: 322 Rue Beaubien Est, Montréal, QC
 phone: +1 514-398-0111
 website: https://www.mamiemamiemamie.com
+reserve:
 lat: 45.533006
 lng: -73.605679
 checked: 2026-10

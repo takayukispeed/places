@@ -6,6 +6,7 @@ area: Plateau
 address: 4627 Rue Saint-Denis, Montréal, QC
 phone: +1 514-940-0444
 website: https://cafemyriade.com
+reserve:
 lat: 45.52487
 lng: -73.584517
 checked: 2026-10

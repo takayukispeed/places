@@ -6,6 +6,7 @@ area: Petite-Patrie
 address: 7119 Rue Saint-Hubert, Montréal, QC H2S 2N1
 phone: +1 514-447-9992
 website:
+reserve:
 lat: 45.540518
 lng: -73.612501
 checked: 2026-10

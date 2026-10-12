@@ -6,6 +6,7 @@ area: Parc-Extension
 address: 413 Avenue Beaumont, Montréal, QC H3N 1T6
 phone: +1 438-380-4040
 website: https://segreta.ca
+reserve:
 lat: 45.528306
 lng: -73.618914
 checked: 2026-10

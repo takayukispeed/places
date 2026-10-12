@@ -6,6 +6,7 @@ area: Villeray
 address: 301 Rue Guizot Est, Montréal, QC H2P 1M5
 phone: +1 514-384-5053
 website:
+reserve:
 lat: 45.542348
 lng: -73.633153
 checked: 2026-10

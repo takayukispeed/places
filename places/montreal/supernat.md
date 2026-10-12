@@ -6,6 +6,7 @@ area: Hochelaga
 address: 4316 Rue Sainte-Catherine Est, Montréal, QC H1V 1X9
 phone: +1 438-804-5474
 website:
+reserve:
 lat: 45.550957
 lng: -73.533823
 checked: 2026-10

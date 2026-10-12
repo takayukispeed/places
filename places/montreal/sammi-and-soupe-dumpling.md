@@ -6,6 +6,7 @@ area: Chinatown
 address: 68 Rue de la Gauchetière Ouest, Montréal, QC H2Z 1C1
 phone: +1 514-393-1888
 website: https://www.sammisoupedumpling.ca
+reserve:
 lat: 45.507348
 lng: -73.560257
 checked: 2026-10

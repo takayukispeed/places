@@ -6,6 +6,7 @@ area: Plateau
 address: 93 Avenue du Mont-Royal Ouest, Montréal, QC H2T 2S5
 phone: +1 514-849-8883
 website:
+reserve:
 lat: 45.5191
 lng: -73.587488
 checked: 2026-10

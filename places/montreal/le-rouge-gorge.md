@@ -6,6 +6,7 @@ area: Plateau
 address: 1234 Avenue du Mont-Royal Est, Montréal, QC H2J 1Y1
 phone: +1 514-303-3822
 website:
+reserve:
 lat: 45.529129
 lng: -73.577955
 checked: 2026-10

@@ -6,6 +6,7 @@ area: Centre-Sud
 address: 2531 Rue Ontario Est, Montréal, QC H2K 1W5
 phone: +1 514-767-0477
 website:
+reserve:
 lat: 45.532827
 lng: -73.552969
 checked: 2026-10

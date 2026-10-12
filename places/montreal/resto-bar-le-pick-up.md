@@ -6,6 +6,7 @@ area: Hochelaga
 address: 3739 Rue Ontario Est, Montréal, QC H1W 1S3
 phone: +1 514-526-3739
 website: https://www.restobarlepickup.com
+reserve:
 lat: 45.546653
 lng: -73.54404
 checked: 2026-10

@@ -6,6 +6,7 @@ area: Village
 address: 1112 Boulevard de Maisonneuve Est, Montréal, QC
 phone: +1 514-525-3443
 website: https://othym.com
+reserve:
 lat: 45.518384
 lng: -73.558077
 checked: 2026-10-12

@@ -6,6 +6,7 @@ area: Plateau
 address: 77 Rue Rachel Ouest, Montréal, QC H2W 1G2
 phone: +1 514-397-1141
 website:
+reserve:
 lat: 45.517196
 lng: -73.582652
 checked: 2026-10

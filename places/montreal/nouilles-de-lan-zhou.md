@@ -6,6 +6,7 @@ area: Chinatown
 address: 1006 Boulevard Saint-Laurent, Montréal, QC
 phone: +1 514-800-2959
 website: https://lanzhou.ca/montreal/
+reserve:
 lat: 45.507775
 lng: -73.559629
 checked: 2026-10

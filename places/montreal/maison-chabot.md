@@ -6,6 +6,7 @@ area: Plateau-Est
 address: 5477 Rue Chabot, Montréal, QC H2H 1Z1
 phone: +1 514-379-6033
 website: https://cafemaisonchabot.com
+reserve:
 lat: 45.53924
 lng: -73.584303
 checked: 2026-10

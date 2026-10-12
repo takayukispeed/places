@@ -17,6 +17,7 @@ if (!fs.existsSync(LF)) {
 }
 const T = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".png": "image/png" };
 const srv = http.createServer((q, r) => { let p = decodeURIComponent(new URL(q.url, "http://x").pathname); if (p.endsWith("/")) p += "index.html";
+  if (p === "/places.json") { r.writeHead(404); return r.end(); } // a local build may be stale; read the mocked API instead
   const f = path.join(ROOT, p); if (!fs.existsSync(f)) { r.writeHead(404); return r.end(); } r.writeHead(200, { "Content-Type": T[path.extname(f)] || "text/plain" }); fs.createReadStream(f).pipe(r); });
 const repo = {}; for (const f of fs.readdirSync(ROOT + "/places/montreal")) repo["places/montreal/" + f] = fs.readFileSync(ROOT + "/places/montreal/" + f, "utf8");
 const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");

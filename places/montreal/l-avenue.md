@@ -6,6 +6,7 @@ area: Plateau
 address: 922 Avenue du Mont-Royal Est, Montréal, QC H2J 1X1
 phone: +1 514-523-8780
 website: https://restolavenue.ca
+reserve:
 lat: 45.526664
 lng: -73.580223
 checked: 2026-10

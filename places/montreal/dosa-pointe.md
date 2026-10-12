@@ -6,6 +6,7 @@ area: Parc-Extension
 address: 895 Rue Jean-Talon Ouest, Montréal, QC H3N 1S7
 phone: +1 514-303-7755
 website: https://www.dosapointe.ca
+reserve:
 lat: 45.525639
 lng: -73.625387
 checked: 2026-10

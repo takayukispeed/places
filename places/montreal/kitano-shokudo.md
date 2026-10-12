@@ -6,6 +6,7 @@ area: Plateau
 address: 143 Avenue du Mont-Royal Est, Montréal, QC H2T 1N9
 phone: +1 438-383-4700
 website: https://kitanoshokudo.com
+reserve:
 lat: 45.521122
 lng: -73.585454
 checked: 2026-10

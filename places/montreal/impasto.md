@@ -6,6 +6,7 @@ area: Little Italy
 address: 48 Rue Dante, Montréal, QC H2S 1J5
 phone: +1 514-508-6508
 website: https://impastomtl.ca
+reserve:
 lat: 45.533159
 lng: -73.613247
 checked: 2026-10

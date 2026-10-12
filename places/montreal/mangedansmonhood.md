@@ -6,6 +6,7 @@ area: Villeray
 address: 1380 Rue Jean-Talon Est, Montréal, QC H2E 1S2
 phone: +1 514-448-8988
 website: https://mangedansmonhood.ca
+reserve:
 lat: 45.54572
 lng: -73.608755
 checked: 2026-10

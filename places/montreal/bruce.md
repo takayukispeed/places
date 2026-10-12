@@ -6,6 +6,7 @@ area: Little Burgundy
 address: 1964 Rue Notre-Dame Ouest, Montréal, QC
 phone: +1 438-375-9373
 website: https://restaurantbruce.ca
+reserve:
 lat: 45.486622
 lng: -73.569519
 checked: 2026-10

@@ -6,6 +6,7 @@ area: NDG
 address: 5916 Rue Sherbrooke Ouest, Montréal, QC H4A 1X7
 phone: +1 514-484-2999
 website:
+reserve:
 lat: 45.468728
 lng: -73.61892
 checked: 2026-10

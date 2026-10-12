@@ -192,6 +192,7 @@ const ICON = {
   plus: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
   pin: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
   locate: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>',
+  calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>',
   back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
 };
 
@@ -617,6 +618,7 @@ function placesView() {
 function placeView(p) {
   const today = todayLine(p.hours);
   const site = p.website && /^https?:\/\//.test(p.website) ? p.website : "";
+  const reserve = p.reserve && /^https?:\/\//.test(p.reserve) ? p.reserve : "";
   app.innerHTML = `
     ${backBar("#/", "Places", token() ? `<a class="text-btn" href="#/edit/${esc(p.path)}">Edit</a>` : "")}
     <article class="place">
@@ -626,6 +628,7 @@ function placeView(p) {
       <div class="actions">
         <a href="${esc(directions(p))}" target="_blank" rel="noopener">${ICON.pin}<span>Directions</span></a>
         <a href="${esc(googleMaps(p))}" target="_blank" rel="noopener"><span class="g">G</span><span>Google Maps</span></a>
+        ${reserve ? `<a href="${esc(reserve)}" target="_blank" rel="noopener">${ICON.calendar}<span>Reserve</span></a>` : ""}
         ${p.phone ? `<a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}"><span class="g">☎</span><span>Call</span></a>` : ""}
         ${site ? `<a href="${esc(site)}" target="_blank" rel="noopener"><span class="g">↗</span><span>Website</span></a>` : ""}
       </div>
@@ -649,7 +652,7 @@ const HOURS_HINT = "one line per day or range · e.g. Mon–Fri: 11:30–22:00 �
 function placeEditor(p) {
   const isNew = !p;
   const city = currentCity();
-  p ||= { name: "", city, category: state.placeCat || "nice", area: "", address: "", phone: "", website: "", lat: null, lng: null, checked: "", hours: [], notes: "" };
+  p ||= { name: "", city, category: state.placeCat || "nice", area: "", address: "", phone: "", website: "", reserve: "", lat: null, lng: null, checked: "", hours: [], notes: "" };
   const cats = CATEGORIES.some(([k]) => k === p.category) ? CATEGORIES : [...CATEGORIES, [p.category, p.category]];
   app.innerHTML = `
     ${backBar(isNew ? "#/" : `#/view/${esc(p.path)}`, "Cancel", `<button class="text-btn strong" id="save" ${token() ? "" : "disabled"}>Save</button>`)}
@@ -671,6 +674,7 @@ function placeEditor(p) {
       <div class="row">
         ${field("phone", "Phone", p.phone, 'type="tel"')}
         ${field("website", "Website", p.website, 'type="url" autocapitalize="none"')}
+        ${field("reserve", "Reservation link", p.reserve, 'type="url" autocapitalize="none"')}
       </div>
       ${area("hours", "Hours", p.hours.join("\n"), HOURS_HINT, 7)}
       ${area("notes", "Notes", p.notes, "what to order, who it's good for…", 4)}
@@ -720,6 +724,7 @@ function placeEditor(p) {
       address: $("#address").value.trim(),
       phone: $("#phone").value.trim(),
       website: $("#website").value.trim(),
+      reserve: $("#reserve").value.trim(),
       lat: num("#lat"),
       lng: num("#lng"),
       hours: lines($("#hours").value),

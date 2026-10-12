@@ -6,6 +6,7 @@ area: Villeray
 address: 151 Rue Villeray, Montréal, QC H2R 1G4
 phone: +1 514-564-3131
 website: https://cafevito.ca
+reserve:
 lat: 45.538409
 lng: -73.624536
 checked: 2026-10

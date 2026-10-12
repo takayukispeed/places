@@ -6,6 +6,7 @@ area: Little Italy
 address: 12 Rue Dante, Montréal, QC H2S 1J5
 phone: +1 514-278-6502
 website: https://restaurantlucca.ca
+reserve:
 lat: 45.532865
 lng: -73.613507
 checked: 2026-10

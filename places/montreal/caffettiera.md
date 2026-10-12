@@ -6,6 +6,7 @@ area: Downtown
 address: 2055 Rue Stanley, Montréal, QC H3A 1R7
 phone: +1 514-507-2055
 website: https://www.caffettiera.ca
+reserve:
 lat: 45.500823
 lng: -73.576181
 checked: 2026-10
