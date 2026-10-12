@@ -87,13 +87,15 @@ const KAZU = [{
   const page = await ctx.newPage();
   const errors = [];
   page.on("pageerror", (e) => { errors.push(e.message); if (process.env.DEBUG) console.log(e.stack); });
+  const toList = async () => { await page.click("[data-mode=list]"); await page.waitForSelector(".card"); };
   const shot = (name) => SHOTS && page.screenshot({ path: path.join(SHOTS, `${name}.png`), fullPage: false });
   const placeCount = Object.keys(repo).filter((p) => p.startsWith("places/")).length;
   const count = (cat) => Object.values(repo).filter((t) => new RegExp(`^category: ${cat}$`, "m").test(t)).length;
 
   // List: every place, grouped by category in a fixed order
   await page.goto(base);
-  await page.waitForSelector(".card");
+  await page.waitForSelector("text=The map needs a connection"); // opens on the map
+  await toList();
   assert.equal(await page.locator(".card").count(), placeCount);
   // Signed out (a friend's phone): everything comes from places.json, not the rate-limited API,
   // and there's no way to add or edit.
@@ -122,6 +124,15 @@ const KAZU = [{
   assert.ok(open < placeCount);
   assert.equal(await page.locator(".card .status-dot.shut").count(), 0, "only open places");
   await page.click("#open-now");
+
+  // Sorted A–Z until location is on; then nearest first, with distances
+  assert.match(await page.locator(".sort-note").innerText(), /A–Z/);
+  await ctx.grantPermissions(["geolocation"], { origin: base });
+  await ctx.setGeolocation({ latitude: 45.4989, longitude: -73.5778 }); // at Cloakroom Bar, downtown
+  await page.click("#sort-near");
+  await page.waitForSelector("text=Nearest first");
+  assert.equal(await page.locator(".list-heading").nth(6).innerText(), "FANCY BARS");
+  assert.match(await page.locator(".cards").nth(6).locator(".card-title").first().innerText(), /^Cloakroom Bar\s*\d+ m$/);
 
   // Place page
   await page.click("text=Big in Japan");
@@ -168,7 +179,7 @@ const KAZU = [{
 
   // Add a place with an OpenStreetMap lookup
   await page.goto(base);
-  await page.waitForSelector(".card");
+  await toList();
   await page.click(".fab");
   await page.fill("#name", "Kazu");
   await page.selectOption("#category", "cheap");
@@ -201,6 +212,7 @@ const KAZU = [{
   await page.waitForURL(/#\/view\/places\/toronto\/kazu\.md$/);
   assert.ok(repo["places/toronto/kazu.md"] && !repo["places/montreal/kazu.md"]);
   await page.goto(base);
+  await toList();
   await page.waitForSelector("#city");
   assert.equal(await page.inputValue("#city"), "Toronto", "remembers the last city");
   assert.equal(await page.locator(".card").count(), 1);
@@ -225,6 +237,7 @@ const KAZU = [{
   await ctx.route("https://api.github.com/**", (r) => r.abort());
   await page.goto(base);
   await page.reload();
+  await page.click("[data-mode=list]");
   await page.waitForSelector(".card");
 
   assert.deepEqual(commits.map((c) => c.message), [

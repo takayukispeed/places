@@ -37,7 +37,7 @@ const state = {
   placeQuery: "",
   placeCat: null,
   placeOpenNow: false,
-  placesMode: "list", // or "map"
+  placesMode: "map", // or "list"
   syncing: false,
   syncError: null,
   lastSync: null,
@@ -485,6 +485,31 @@ function startLocating(onFix, onError) {
 }
 
 
+// One-off fix for sorting the list; the map keeps its own watch running while it's open.
+function locateOnce(onFix, onError) {
+  if (!("geolocation" in navigator)) { onError({ code: 0 }); return; }
+  navigator.geolocation.getCurrentPosition(
+    (pos) => { myPos = { lat: pos.coords.latitude, lng: pos.coords.longitude, accuracy: pos.coords.accuracy }; onFix(myPos); },
+    onError,
+    { enableHighAccuracy: false, maximumAge: 60000, timeout: 15000 },
+  );
+}
+
+// Straight-line distance in km.
+function distanceKm([lat1, lng1], [lat2, lng2]) {
+  const rad = Math.PI / 180;
+  const a = Math.sin((lat2 - lat1) * rad / 2) ** 2
+    + Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin((lng2 - lng1) * rad / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(a));
+}
+const fmtDistance = (km) => (km < 1 ? `${Math.max(10, Math.round(km * 100) * 10)} m` : `${km < 10 ? km.toFixed(1) : Math.round(km)} km`);
+
+function locationDenied() {
+  store.del(KEY_LOCATE);
+  toast(isIOS() ? "Location is off for this app. Turn it on in Settings → Privacy & Security → Location Services → Safari Websites."
+    : "Location permission was denied. Allow it in your browser's site settings.");
+}
+
 function filteredPlaces() {
   const city = currentCity();
   const q = state.placeQuery.trim().toLowerCase();
@@ -533,9 +558,10 @@ function placesView() {
     ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>` : ""}
   `;
 
+  const away = (p) => { const c = myPos && coords(p); return c ? distanceKm([myPos.lat, myPos.lng], c) : null; };
   const card = (p) => `
     <li><a class="card" href="#/view/${esc(p.path)}">
-      <span class="card-title">${esc(p.name)}</span>
+      <span class="card-title">${esc(p.name)}${away(p) !== null ? `<span class="card-dist">${fmtDistance(away(p))}</span>` : ""}</span>
       <span class="card-meta">${catBadge(p.category)}${p.area ? `<span>${esc(p.area)}</span>` : ""}${!city && p.city ? `<span>${esc(p.city)}</span>` : ""}</span>
       ${statusHtml(p, "card-status")}
     </a></li>`;
@@ -560,16 +586,30 @@ function placesView() {
         : loading ? "Loading…" : "No places yet. Tap + to add one."}</p>`;
       return;
     }
-    // Group by category in a fixed order.
+    // Group by category in a fixed order; within each, nearest first when we know where you are,
+    // otherwise A–Z (state.places is already sorted by name, and sort() is stable).
+    const near = (p) => away(p) ?? Infinity;
     const groups = new Map();
-    for (const p of [...matches].sort((a, b) => categoryOrder(a.category) - categoryOrder(b.category))) {
+    for (const p of [...matches].sort((a, b) => categoryOrder(a.category) - categoryOrder(b.category) || near(a) - near(b))) {
       if (!groups.has(p.category)) groups.set(p.category, []);
       groups.get(p.category).push(p);
     }
-    $("#results").innerHTML = [...groups].map(([k, ps]) => `
+    const sortNote = myPos ? `<p class="sort-note">Nearest first</p>`
+      : `<p class="sort-note">A–Z · <button id="sort-near" class="text-btn">Sort by distance</button></p>`;
+    $("#results").innerHTML = sortNote + [...groups].map(([k, ps]) => `
       ${state.placeCat ? "" : `<h2 class="list-heading">${esc(categoryLabel(k))}</h2>`}
       <ul class="cards">${ps.map(card).join("")}</ul>`).join("");
+    $("#sort-near")?.addEventListener("click", (e) => {
+      e.target.disabled = true;
+      e.target.textContent = "Finding you…";
+      store.set(KEY_LOCATE, "1");
+      locateOnce(() => results.isConnected && show(), (err) => {
+        if (err.code === 1) locationDenied(); else toast("Couldn't find your location. Try again outside or with Wi-Fi on.");
+        if (results.isConnected) show();
+      });
+    });
   };
+  const results = $("#results");
 
   if (map) {
     $("#results").innerHTML = `<div class="map-wrap"><div id="map" class="map"></div>
@@ -591,11 +631,8 @@ function placesView() {
       const onError = (err) => {
         setOn(false);
         btn.classList.remove("busy");
-        if (err.code === 1) {
-          store.del(KEY_LOCATE);
-          toast(isIOS() ? "Location is off for this app. Turn it on in Settings → Privacy & Security → Location Services → Safari Websites."
-            : "Location permission was denied. Allow it in your browser's site settings.");
-        } else toast("Couldn't find your location. Try again outside or with Wi-Fi on.");
+        if (err.code === 1) locationDenied();
+        else toast("Couldn't find your location. Try again outside or with Wi-Fi on.");
       };
       const locate = () => {
         setOn(true);
@@ -614,7 +651,11 @@ function placesView() {
       geocodeMissing(() => { if (document.getElementById("map")) show({ refit: false }); })
         .then(() => { if (document.getElementById("map")) show({ refit: !hadPins }); });
     }).catch((err) => { $("#results").innerHTML = `<p class="empty">${esc(err.message)}</p>`; });
-  } else show();
+  } else {
+    show();
+    // Location was turned on before (here or on the map): refresh it and re-sort, quietly.
+    if (store.get(KEY_LOCATE)) locateOnce(() => results.isConnected && show(), () => {});
+  }
 
   $("#sync").onclick = () => sync();
   $("#copy-link").onclick = copyAppLink;

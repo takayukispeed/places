@@ -33,8 +33,7 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   await ctx.route("https://tile.openstreetmap.org/**", (r) => r.abort());
   const page = await ctx.newPage(); const errs = []; page.on("pageerror", (e) => errs.push(e.message));
   const base = `http://localhost:${srv.address().port}/`;
-  await page.goto(base); await page.waitForSelector(".card");
-  await page.click("[data-mode=map]"); await page.waitForSelector(".leaflet-container");
+  await page.goto(base); await page.waitForSelector("path.leaflet-interactive"); // opens on the map, pins drawn
   assert.equal(await page.getAttribute("#locate", "aria-pressed"), "false");
   const before = await page.locator("path.leaflet-interactive").count();
   // Names: hidden on the whole-city view, shown from neighbourhood zoom, never overlapping.

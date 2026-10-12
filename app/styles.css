@@ -111,6 +111,9 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); ou
 }
 .card:active { transform: scale(.99); }
 .card-title { font-weight: 600; font-size: 18px; }
+.card-dist { float: right; margin-left: 8px; font-size: 14px; font-weight: 500; color: var(--muted); }
+.sort-note { margin: 8px 0 -4px; color: var(--muted); font-size: 14px; display: flex; align-items: center; gap: 2px; }
+.sort-note .text-btn { min-height: 32px; font-size: 14px; }
 .card-meta { display: flex; gap: 10px; align-items: center; color: var(--muted); font-size: 14px; }
 .card-tags { color: var(--muted); font-size: 14px; }
 
