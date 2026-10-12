@@ -7,8 +7,8 @@ address: 1533 Marine Dr, West Vancouver, BC V7V 1H9
 phone: +1 604-926-4021
 website: https://savaryislandpiecompany.ca
 reserve:
-lat:
-lng:
+lat: 49.328597
+lng: -123.157583
 checked: 2026-10-12
 ---
 
