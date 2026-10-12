@@ -101,6 +101,10 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); ou
   background: var(--surface); font-size: 13px; cursor: pointer;
 }
 .chip.on { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+/* Open now is a filter on top of the category, not a category: green, with a status dot, set apart. */
+.chip.open-chip { display: inline-flex; align-items: center; gap: 6px; margin-right: 8px; border-color: var(--open); color: var(--open); font-weight: 600; background: transparent; }
+.chip.open-chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.chip.open-chip.on { background: var(--open); border-color: var(--open); color: var(--bg); }
 
 .cards { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 10px; }
 .card {

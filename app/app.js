@@ -553,7 +553,7 @@ function placesView() {
     <input id="search" type="search" placeholder="Search names, neighbourhoods, notes"
       value="${esc(state.placeQuery)}" autocomplete="off" autocorrect="off">
     <div class="chips">
-      <button class="chip ${state.placeOpenNow ? "on" : ""}" id="open-now">Open now</button>
+      <button class="chip open-chip ${state.placeOpenNow ? "on" : ""}" id="open-now" aria-pressed="${state.placeOpenNow}">Open now</button>
       <button class="chip" data-cat="">All</button>
       ${cats.map((k) => `<button class="chip" data-cat="${esc(k)}">${esc(categoryLabel(k))}</button>`).join("")}
     </div>
@@ -683,7 +683,12 @@ function placesView() {
     b.onclick = () => { state.placesMode = b.dataset.mode; render(); };
   });
   $("#search").oninput = (e) => { state.placeQuery = e.target.value; show(); };
-  $("#open-now").onclick = (e) => { state.placeOpenNow = !state.placeOpenNow; e.target.classList.toggle("on"); show(); };
+  $("#open-now").onclick = (e) => {
+    state.placeOpenNow = !state.placeOpenNow;
+    e.currentTarget.classList.toggle("on", state.placeOpenNow);
+    e.currentTarget.setAttribute("aria-pressed", String(state.placeOpenNow));
+    show();
+  };
   app.querySelectorAll("[data-cat]").forEach((c) => {
     c.onclick = () => { state.placeCat = c.dataset.cat || null; show(); };
   });
