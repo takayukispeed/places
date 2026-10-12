@@ -7,8 +7,8 @@ address: 61 Kensington Ave, Toronto, ON M5T 2K2
 phone: +1 647-501-4505
 website:
 reserve:
-lat:
-lng:
+lat: 43.654193
+lng: -79.400345
 checked: 2026-10-12
 ---
 

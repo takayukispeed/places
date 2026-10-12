@@ -7,8 +7,8 @@ address: 774 Danforth Ave, Toronto, ON M4J 1L6
 phone: +1 416-465-8388
 website:
 reserve:
-lat:
-lng:
+lat: 43.679642
+lng: -79.342136
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 21 Davisville Ave, Toronto, ON M4S 1G3
 phone: +1 416-644-5051
 website: https://flamingstove.com
 reserve:
-lat:
-lng:
+lat: 43.698177
+lng: -79.395721
 checked: 2026-10-12
 ---
 

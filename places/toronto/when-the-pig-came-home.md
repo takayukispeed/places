@@ -7,8 +7,8 @@ address: 384 Keele St, Toronto, ON M6P 2K8
 phone: +1 647-345-9001
 website: https://www.whenthepigcamehome.ca
 reserve:
-lat:
-lng:
+lat: 43.665794
+lng: -79.46489
 checked: 2026-10-12
 ---
 

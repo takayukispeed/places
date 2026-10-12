@@ -7,8 +7,8 @@ address: 3072 Dundas St W, Toronto, ON M6P 1Z7
 phone: +1 416-604-1222
 website: https://bevi-birra.com
 reserve:
-lat:
-lng:
+lat: 43.665618
+lng: -79.471959
 checked: 2026-10-12
 ---
 

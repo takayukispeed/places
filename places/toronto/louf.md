@@ -7,8 +7,8 @@ address: 501 Davenport Rd, Toronto, ON M4V 1B8
 phone: +1 416-323-0596
 website: https://www.louftoronto.com
 reserve: https://www.opentable.ca/r/louf-toronto
-lat:
-lng:
+lat: 43.677528
+lng: -79.407032
 checked: 2026-10-12
 ---
 

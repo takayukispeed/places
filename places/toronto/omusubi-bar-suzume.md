@@ -7,8 +7,8 @@ address: 707 Dundas St W, Toronto, ON M5T 2W6
 phone:
 website: https://omusubibarsuzume.com
 reserve:
-lat:
-lng:
+lat: 43.651604
+lng: -79.404064
 checked: 2026-10-12
 ---
 

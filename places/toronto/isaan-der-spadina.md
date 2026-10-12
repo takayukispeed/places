@@ -7,8 +7,8 @@ address: 327 Spadina Ave, Toronto, ON M5T 2E9
 phone: +1 416-596-7642
 website: https://isaander.com/locations/spadina/
 reserve:
-lat:
-lng:
+lat: 43.654574
+lng: -79.398203
 checked: 2026-10-12
 ---
 

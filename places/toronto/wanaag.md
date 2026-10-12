@@ -7,8 +7,8 @@ address: 224 Parliament St, Toronto, ON M5A 3A4
 phone: +1 416-777-1511
 website: https://wanaag.ca
 reserve:
-lat:
-lng:
+lat: 43.657153
+lng: -79.36524
 checked: 2026-10-12
 ---
 

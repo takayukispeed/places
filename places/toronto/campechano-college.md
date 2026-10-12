@@ -7,8 +7,8 @@ address: 460 College St, Toronto, ON M6G 1A1
 phone: +1 416-792-9399
 website: https://campechano.ca
 reserve:
-lat:
-lng:
+lat: 43.65653
+lng: -79.408457
 checked: 2026-10-12
 ---
 

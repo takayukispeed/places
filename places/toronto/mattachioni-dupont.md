@@ -7,8 +7,8 @@ address: 1617 Dupont St, Toronto, ON M6P 3S8
 phone: +1 416-519-1010
 website:
 reserve:
-lat:
-lng:
+lat: 43.664863
+lng: -79.454898
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 794 St Clair Ave W, Toronto, ON M6C 1B6
 phone: +1 647-748-1559
 website: https://www.nodorestaurant.ca
 reserve:
-lat:
-lng:
+lat: 43.681001
+lng: -79.429872
 checked: 2026-10-12
 ---
 

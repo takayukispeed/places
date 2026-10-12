@@ -7,8 +7,8 @@ address: 3040 Dundas St W, Toronto, ON M6P 1Z3
 phone: +1 416-760-9995
 website: https://www.delightchocolate.ca
 reserve:
-lat:
-lng:
+lat: 43.66565
+lng: -79.4707
 checked: 2026-10-12
 ---
 

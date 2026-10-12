@@ -7,8 +7,8 @@ address: 230 Queen St W, Toronto, ON M5V 1Z7
 phone:
 website: https://alphasshawarma.ca
 reserve:
-lat:
-lng:
+lat: 43.650198
+lng: -79.390093
 checked: 2026-10-12
 ---
 

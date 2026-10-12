@@ -7,8 +7,8 @@ address: 4664 Yonge St, Toronto, ON M2N 5M1
 phone: +1 416-992-1203
 website:
 reserve:
-lat:
-lng:
+lat: 43.75798
+lng: -79.410392
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 17 Hayden St, Toronto, ON M4Y 2P2
 phone: +1 416-792-4243
 website:
 reserve:
-lat:
-lng:
+lat: 43.669438
+lng: -79.385755
 checked: 2026-10-12
 ---
 

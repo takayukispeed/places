@@ -7,8 +7,8 @@ address: 2867A Dundas St W, Toronto, ON M6P 1Y9
 phone:
 website: https://theholeinthewallto.ca
 reserve:
-lat:
-lng:
+lat: 43.665294
+lng: -79.465149
 checked: 2026-10-12
 ---
 

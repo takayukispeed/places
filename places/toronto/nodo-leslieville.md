@@ -7,8 +7,8 @@ address: 1192 Queen St E, Toronto, ON M4M 1L4
 phone: +1 416-792-4196
 website: https://www.nodorestaurant.ca
 reserve: https://www.opentable.ca/r/nodo-leslieville-toronto
-lat:
-lng:
+lat: 43.663079
+lng: -79.331642
 checked: 2026-10-12
 ---
 

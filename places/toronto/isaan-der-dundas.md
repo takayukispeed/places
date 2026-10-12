@@ -7,8 +7,8 @@ address: 2961 Dundas St W, Toronto, ON M6P 1Z2
 phone: +1 416-604-0062
 website: https://isaander.com/locations/dundas/
 reserve:
-lat:
-lng:
+lat: 43.665341
+lng: -79.467984
 checked: 2026-10-12
 ---
 

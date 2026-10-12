@@ -7,8 +7,8 @@ address: 2869 Dundas St W, Toronto, ON M6P 1Y9
 phone: +1 647-883-7781
 website: https://bothams.ca
 reserve:
-lat:
-lng:
+lat: 43.665352
+lng: -79.465204
 checked: 2026-10-12
 ---
 

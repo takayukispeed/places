@@ -7,8 +7,8 @@ address: 565 King St W, Toronto, ON M5V 1M1
 phone:
 website: https://alphasshawarma.ca
 reserve:
-lat:
-lng:
+lat: 43.64437
+lng: -79.39935
 checked: 2026-10-12
 ---
 

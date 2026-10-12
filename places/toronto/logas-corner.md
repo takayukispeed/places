@@ -7,8 +7,8 @@ address: 1407 Queen St W, Toronto, ON M6K 1M3
 phone: +1 647-761-0965
 website: https://www.logascorner.com
 reserve:
-lat:
-lng:
+lat: 43.640367
+lng: -79.436818
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1229 Bloor St W, Toronto, ON M6H 1N7
 phone: +1 416-603-3311
 website: https://www.latinworldon.com/
 reserve:
-lat:
-lng:
+lat: 43.65861
+lng: -79.440822
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 504 Adelaide St W, Toronto, ON M5V 1T4
 phone: +1 416-777-2800
 website: https://campechano.ca
 reserve:
-lat:
-lng:
+lat: 43.645773
+lng: -79.400835
 checked: 2026-10-12
 ---
 

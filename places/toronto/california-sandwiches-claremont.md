@@ -7,8 +7,8 @@ address: 244 Claremont St, Toronto, ON M6J 2N2
 phone: +1 416-603-3317
 website: https://eatcalifornia.ca
 reserve:
-lat:
-lng:
+lat: 43.652559
+lng: -79.412269
 checked: 2026-10-12
 ---
 

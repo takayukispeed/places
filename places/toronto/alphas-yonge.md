@@ -7,8 +7,8 @@ address: 245 Yonge St, Toronto, ON M5B 1N8
 phone:
 website: https://alphasshawarma.ca
 reserve:
-lat:
-lng:
+lat: 43.65488
+lng: -79.37993
 checked: 2026-10-12
 ---
 

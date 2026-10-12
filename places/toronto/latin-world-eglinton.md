@@ -7,8 +7,8 @@ address: 1820 Eglinton Ave W, Toronto, ON M6E 2H7
 phone: +1 647-887-3311
 website: https://www.latinworldon.com/
 reserve:
-lat:
-lng:
+lat: 43.69597
+lng: -79.45014
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2474 Dufferin St, Toronto, ON M6B 3P8
 phone: +1 416-787-5205
 website: https://eatcalifornia.ca
 reserve:
-lat:
-lng:
+lat: 43.700534
+lng: -79.45194
 checked: 2026-10-12
 ---
 

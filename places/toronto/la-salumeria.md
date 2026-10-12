@@ -7,8 +7,8 @@ address: 2021 Yonge St, Toronto, ON M4S 2A2
 phone: +1 416-486-8327
 website:
 reserve:
-lat:
-lng:
+lat: 43.701325
+lng: -79.397018
 checked: 2026-10-12
 ---
 

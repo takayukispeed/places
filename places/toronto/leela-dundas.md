@@ -7,8 +7,8 @@ address: 3108 Dundas St W, Toronto, ON M6P 2A1
 phone: +1 416-769-7777
 website: https://www.leelaindianfoodbar.ca/dundas
 reserve: https://www.leelaindianfoodbar.ca/dundas
-lat:
-lng:
+lat: 43.665633
+lng: -79.47351
 checked: 2026-10-12
 ---
 

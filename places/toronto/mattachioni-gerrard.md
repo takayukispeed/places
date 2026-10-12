@@ -7,8 +7,8 @@ address: 1501 Gerrard St E, Toronto, ON M4L 2A4
 phone: +1 416-466-1111
 website:
 reserve:
-lat:
-lng:
+lat: 43.67264
+lng: -79.31973
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 120 Lynn Williams St, Toronto, ON M6K 3N6
 phone: +1 647-368-8110
 website: https://www.nodorestaurant.ca
 reserve: https://www.opentable.ca/r/nodo-liberty-toronto
-lat:
-lng:
+lat: 43.639086
+lng: -79.417576
 checked: 2026-10-12
 ---
 
