@@ -7,8 +7,8 @@ address: 4260 Hastings St, Burnaby, BC
 phone: +1 604-299-6636
 website:
 reserve:
-lat:
-lng:
+lat: 49.280907
+lng: -123.009823
 checked: 2026-10-12
 ---
 
