@@ -6,8 +6,8 @@ area: Quartier Latin
 address: 2021 Rue Saint-Denis, Montréal, QC H2X 3K8
 phone: +1 438-396-8947
 website: https://le4emur.com
-lat:
-lng:
+lat: 45.516232
+lng: -73.565719
 checked: 2026-10
 ---
 

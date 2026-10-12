@@ -6,8 +6,8 @@ area: Little Burgundy
 address: 2496 Rue Notre-Dame Ouest, Montréal, QC
 phone: +1 514-934-0888
 website: https://www.burgundylion.com
-lat:
-lng:
+lat: 45.482773
+lng: -73.575198
 checked: 2026-10
 ---
 

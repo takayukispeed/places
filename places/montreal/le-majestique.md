@@ -6,8 +6,8 @@ area: Plateau
 address: 4105 Boulevard Saint-Laurent, Montréal, QC
 phone: +1 514-439-1850
 website:
-lat:
-lng:
+lat: 45.517561
+lng: -73.580275
 checked: 2026-10
 ---
 

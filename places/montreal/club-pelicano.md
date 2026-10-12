@@ -6,8 +6,8 @@ area: Downtown
 address: 1076 Rue de Bleury, Montréal, QC
 phone: +1 514-861-1515
 website: https://www.clubpelicano.com
-lat:
-lng:
+lat: 45.504447
+lng: -73.563346
 checked: 2026-10
 ---
 

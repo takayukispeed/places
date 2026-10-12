@@ -6,8 +6,8 @@ area: Village
 address: 1272 Rue Sainte-Catherine Est, Montréal, QC H2L 2H2
 phone: +1 514-903-0648
 website:
-lat:
-lng:
+lat: 45.519041
+lng: -73.555467
 checked: 2026-10
 ---
 
