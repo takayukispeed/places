@@ -6,8 +6,8 @@ area: Downtown
 address: 1626 Boulevard De Maisonneuve Ouest, Montréal, QC H3H 1J5
 phone: +1 514-903-7979
 website:
-lat:
-lng:
+lat: 45.495251
+lng: -73.57957
 checked: 2026-10
 ---
 

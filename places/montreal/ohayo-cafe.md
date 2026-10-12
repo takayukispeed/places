@@ -6,8 +6,8 @@ area: Plateau
 address: 145 Avenue du Mont-Royal Est, Montréal, QC H2T 1N9
 phone:
 website:
-lat:
-lng:
+lat: 45.521627
+lng: -73.585155
 checked: 2026-10
 ---
 

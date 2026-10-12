@@ -6,8 +6,8 @@ area: Downtown
 address: 2110 Rue Crescent, Montréal, QC H3G 2B8
 phone: +1 438-380-5151
 website:
-lat:
-lng:
+lat: 45.498273
+lng: -73.578289
 checked: 2026-10
 ---
 
