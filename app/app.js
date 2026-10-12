@@ -722,7 +722,7 @@ function placeEditor(p) {
     // lets the map look the address up again.
     if (!isNew && next.address !== p.address && next.lat === p.lat && next.lng === p.lng) next.lat = next.lng = null;
     const changedHours = isNew || next.hours.join("\n") !== p.hours.join("\n") || next.address !== p.address;
-    next.checked = changedHours ? new Date().toISOString().slice(0, 7) : p.checked;
+    next.checked = changedHours ? new Date().toISOString().slice(0, 10) : p.checked;
     const folder = placePath(next);
     const path = isNew || !p.path.startsWith(`${folder}/`) ? uniquePath(folder, name) : p.path;
     await saveFile(path, serializePlace(next), `${isNew ? "Add" : "Update"} place: ${name}`);
