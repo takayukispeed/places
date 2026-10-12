@@ -3,7 +3,7 @@ name: Brewhaha
 city: Toronto
 category: bar
 area: The Annex
-address: 39 Prince Arthur Ave, Lower Level, Toronto, ON M5R 1B2
+address: 39 Prince Arthur Ave, Toronto, ON M5R 1B2
 phone: +1 416-964-2441
 website:
 reserve:
@@ -22,6 +22,6 @@ checked: 2026-10-12
 
 ## Notes
 
-Possibly temporarily closed: [Sirved](https://www.sirved.com/restaurant/toronto-ontario-canada/brewhaha/16429/menus) marks it "Temporarily closed". Unconfirmed.
+Lower level. Possibly temporarily closed: [Sirved](https://www.sirved.com/restaurant/toronto-ontario-canada/brewhaha/16429/menus) marks it "Temporarily closed". Unconfirmed.
 
 - Hours: [Mindtrip](https://mindtrip.ai/restaurant/toronto-ontario/brewhaha/re-4fr8EfXm), October 2026; one listing shows Sunday open.

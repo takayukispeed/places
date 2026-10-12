@@ -57,11 +57,13 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   await page.reload(); await page.waitForSelector("path.leaflet-interactive");
   assert.equal(await page.getAttribute("#locate", "aria-pressed"), "false");
   const before = await page.locator("path.leaflet-interactive").count();
-  // Names: hidden on the whole-city view, shown from neighbourhood zoom, never overlapping.
+  // Names: some even on the whole-city view, more closer in, never overlapping each other or a pin.
   const shownLabels = () => page.evaluate(() => [...document.querySelectorAll(".pin-label")]
     .filter((l) => getComputedStyle(l).display !== "none" && l.style.visibility !== "hidden")
     .map((l) => { const r = l.getBoundingClientRect(); return { t: l.textContent, l: r.left, r: r.right, top: r.top, b: r.bottom }; }));
-  assert.equal((await shownLabels()).length, 0, "no names on the city view");
+  const cityLabs = await shownLabels();
+  assert.ok(cityLabs.length > 3, `some names on the city view (${cityLabs.length})`);
+  assert.ok(cityLabs.length < 40, "but not every name");
   // New places get coordinates from a GitHub Action after they're pushed, so count those that have them.
   assert.equal(before, Object.values(repo).filter((t) => /^lat: -?\d/m.test(t)).length, "a pin for every place with coordinates");
   const pane = await page.locator("svg.leaflet-zoom-animated").boundingBox();

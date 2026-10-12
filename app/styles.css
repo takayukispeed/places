@@ -266,4 +266,3 @@ body.map-mode .map-note:empty { display: none; }
 }
 .leaflet-tooltip.pin-label::before { display: none; }
 .leaflet-tooltip.pin-label.leaflet-interactive { cursor: pointer; } /* tapping a name opens its popup, like the pin */
-.labels-off .pin-label { display: none; }

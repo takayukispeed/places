@@ -360,7 +360,6 @@ async function geocodeMissing(onFound) {
 // ---- Map: OpenStreetMap through Leaflet --------------------------------------------------
 // draw([[place, [lat, lng]], …]) puts the pins on; fit([[lat, lng], …]) zooms to them.
 const MAP_START = [45.52, -73.58];
-const LABEL_ZOOM = 14; // names show from this zoom in (14 ≈ a neighbourhood across a phone)
 const popupHtml = (p) => {
   const s = hoursStatus(p.hours);
   return `<a class="pop" href="#/view/${esc(p.path)}"><strong>${esc(p.name)}</strong></a><br>
@@ -429,54 +428,81 @@ async function osmMap(el) {
   };
   el.addEventListener("pointerup", lift, true);
   el.addEventListener("pointercancel", lift, true);
-  let labels = []; // [tooltip, its pin's element], most important first
+  let markers = []; // most important first: open now get first pick
 
-  // Names beside the pins, only from neighbourhood zoom up, never on top of each other or of
-  // another pin. Going down the list, each name goes to the right of its pin if that space is
-  // free, else to the left, else it waits for a closer zoom.
-  const SIDES = [["right", [9, 0]], ["left", [-9, 0]]];
+  // Names beside the pins, at any zoom, never on top of each other or of another pin. Only pins
+  // on screen are considered, and each name's size is worked out from its text, so this stays
+  // quick with hundreds of places. Going down the list, each name goes to the right of its pin
+  // if that space is free, else to the left, else it is left off until a closer zoom.
+  // [Leaflet direction, offset, the label's box from the pin centre and the name's width]. The
+  // sums include Leaflet's 6px tooltip margin; side ones are tried first, then above and below.
+  const PIN = 11, GAP = 3, LINE = 15; // pin radius + border; space between; label line height
+  const SIDES = [
+    ["right", [9, 0], (x, y, w) => ({ l: x + 15, t: y - LINE / 2 })],
+    ["left", [-9, 0], (x, y, w) => ({ l: x - 15 - w, t: y - LINE / 2 })],
+    ["top", [0, -5], (x, y, w) => ({ l: x - w / 2, t: y - 11 - LINE })],
+    ["bottom", [0, 5], (x, y, w) => ({ l: x - w / 2, t: y + 11 })],
+  ];
+  const ctx = document.createElement("canvas").getContext("2d");
+  ctx.font = '700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  const widths = new Map();
+  const textWidth = (s) => { if (!widths.has(s)) widths.set(s, Math.ceil(ctx.measureText(s).width) + 1); return widths.get(s); };
+  const overlaps = (a, b) => a.l < b.r + GAP && a.r > b.l - GAP && a.t < b.b + GAP && a.b > b.t - GAP;
   const declutter = () => {
-    const on = map.getZoom() >= LABEL_ZOOM;
-    el.classList.toggle("labels-off", !on);
-    if (!on) return;
-    const gap = 3;
-    const overlaps = (r, k) => r.left < k.right + gap && r.right > k.left - gap && r.top < k.bottom + gap && r.bottom > k.top - gap;
-    // Off-screen pins are left as empty shapes at the corner; only real ones count.
-    const pins = labels.map(([, pin]) => [pin, pin.getBoundingClientRect()]).filter(([, r]) => r.width > 0);
-    const kept = [];
-    for (const [tip, own] of labels) {
-      const lab = tip.getElement();
-      lab.style.visibility = "";
-      let placed = false;
-      for (const [direction, offset] of SIDES) {
-        if (tip.options.direction !== direction) {
-          tip.options.direction = direction;
-          tip.options.offset = offset;
-          tip.update();
-        }
-        const r = lab.getBoundingClientRect();
-        if (!kept.some((k) => overlaps(r, k)) && !pins.some(([pin, k]) => pin !== own && overlaps(r, k))) {
-          kept.push(r);
-          placed = true;
-          break;
-        }
+    const size = map.getSize();
+    const seen = [];
+    for (const m of markers) {
+      const { x, y } = map.latLngToContainerPoint(m.getLatLng());
+      if (x > -PIN && y > -PIN && x < size.x + PIN && y < size.y + PIN) seen.push([m, x, y]);
+    }
+    const pins = seen.map(([m, x, y]) => ({ m, l: x - PIN, r: x + PIN, t: y - PIN, b: y + PIN }));
+    // Names also keep clear of the buttons and the credit on top of the map.
+    const box = el.getBoundingClientRect();
+    const kept = [...el.parentElement.querySelectorAll(".locate-btn, .leaflet-control-attribution")].map((c) => c.getBoundingClientRect())
+      .filter((c) => c.width).map((c) => ({ l: c.left - box.left, r: c.right - box.left, t: c.top - box.top, b: c.bottom - box.top }));
+    const show = new Map();
+    for (const [m, x, y] of seen) {
+      const w = textWidth(m.placeName);
+      for (const side of SIDES) {
+        const { l, t } = side[2](x, y, w);
+        const r = { l, r: l + w, t, b: t + LINE };
+        if (r.l < 0 || r.r > size.x || r.t < 0 || r.b > size.y) continue;
+        if (kept.some((k) => overlaps(r, k)) || pins.some((k) => k.m !== m && overlaps(r, k))) continue;
+        kept.push(r);
+        show.set(m, side);
+        break;
       }
-      if (!placed) lab.style.visibility = "hidden";
+    }
+    for (const m of markers) {
+      const side = show.get(m), tip = m.getTooltip();
+      if (!side) { if (tip && m.isTooltipOpen()) m.closeTooltip(); continue; }
+      if (!tip) { // first time: binding a permanent name opens it
+        m.bindTooltip(esc(m.placeName), { permanent: true, direction: side[0], offset: side[1], className: "pin-label", interactive: true });
+        continue;
+      }
+      const moved = tip.options.direction !== side[0];
+      tip.options.direction = side[0];
+      tip.options.offset = side[1];
+      if (!m.isTooltipOpen()) m.openTooltip();
+      else if (moved) tip.update();
     }
   };
-  // After Leaflet has redrawn the pins for the new view, so their positions are current.
-  map.on("zoomend moveend", () => requestAnimationFrame(declutter));
+  // After Leaflet has redrawn the pins for the new view, once per frame.
+  let queued = false;
+  const later = () => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; declutter(); }); } };
+  map.on("zoomend moveend resize", later);
 
   return {
     draw(items) {
       layer.clearLayers();
       const open = (p) => (hoursStatus(p.hours)?.open ? 0 : 1);
-      const markers = [...items].sort(([a], [b]) => open(a) - open(b)).map(([p, c]) =>
-        L.circleMarker(c, { radius: 9, color: "#fff", weight: 2, fillColor: categoryColour(p.category), fillOpacity: 1 })
+      markers = [...items].sort(([a], [b]) => open(a) - open(b)).map(([p, c]) => {
+        const m = L.circleMarker(c, { radius: 9, color: "#fff", weight: 2, fillColor: categoryColour(p.category), fillOpacity: 1 })
           .bindPopup(popupHtml(p))
-          .bindTooltip(esc(p.name), { permanent: true, direction: "right", offset: [9, 0], className: "pin-label", interactive: true })
-          .addTo(layer));
-      labels = markers.map((m) => [m.getTooltip(), m.getElement()]).filter(([t, pin]) => t.getElement() && pin); // open now get first pick
+          .addTo(layer);
+        m.placeName = p.name; // its name is added once declutter finds room for it
+        return m;
+      });
       declutter();
     },
     fit(pts) {
