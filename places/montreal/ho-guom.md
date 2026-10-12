@@ -6,8 +6,8 @@ area: Villeray
 address: 2605 Rue Jean-Talon Est, Montréal, QC
 phone: +1 514-507-8598
 website: https://hoguom.ca
-lat:
-lng:
+lat: 45.555252
+lng: -73.600838
 checked: 2026-10
 ---
 

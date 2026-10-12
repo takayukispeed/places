@@ -6,8 +6,8 @@ area: Saint-Michel
 address: 2517 Rue Jean-Talon Est, Montréal, QC H2A 1T6
 phone: +1 514-903-2517
 website: https://sissipaul.com
-lat:
-lng:
+lat: 45.553897
+lng: -73.602062
 checked: 2026-10
 ---
 

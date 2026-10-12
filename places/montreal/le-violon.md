@@ -6,8 +6,8 @@ area: Plateau
 address: 4720 Rue Marquette, Montréal, QC H2J 3Y6
 phone: +1 514-209-1181
 website: https://le-violon.ca
-lat:
-lng:
+lat: 45.533596
+lng: -73.578723
 checked: 2026-10
 ---
 

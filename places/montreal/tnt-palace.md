@@ -6,8 +6,8 @@ area: Côte-des-Neiges
 address: 6346 Avenue Victoria, Montréal, QC H3W 2S4
 phone: +1 514-587-8423
 website:
-lat:
-lng:
+lat: 45.495031
+lng: -73.639514
 checked: 2026-10
 ---
 

@@ -6,8 +6,8 @@ area: Pointe-Saint-Charles
 address: 760 Rue Charlevoix, Montréal, QC
 phone: +1 514-937-2751
 website:
-lat:
-lng:
+lat: 45.478703
+lng: -73.569798
 checked: 2026-10
 ---
 

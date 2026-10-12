@@ -6,8 +6,8 @@ area: Little Italy
 address: 150 Rue Saint-Zotique Est, Montréal, QC H2S 1L8
 phone: +1 514-379-4550
 website: https://vinmonlapin.com
-lat:
-lng:
+lat: 45.533022
+lng: -73.610659
 checked: 2026-10
 ---
 

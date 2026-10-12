@@ -6,8 +6,8 @@ area: Petite-Patrie
 address: 6500 Avenue Christophe-Colomb, Montréal, QC H2S 2G8
 phone: +1 514-274-8111
 website:
-lat:
-lng:
+lat: 45.537714
+lng: -73.601805
 checked: 2026-10
 ---
 

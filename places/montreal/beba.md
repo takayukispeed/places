@@ -6,8 +6,8 @@ area: Verdun
 address: 3900 Rue Éthel, Montréal, QC
 phone: +1 514-750-7087
 website: https://restaurantbeba.ca
-lat:
-lng:
+lat: 45.464864
+lng: -73.567749
 checked: 2026-10
 ---
 

@@ -6,8 +6,8 @@ area: Villeray
 address: 350 Rue de Castelnau Est, Montréal, QC H2R 1P9
 phone: +1 438-380-0970
 website: https://www.casavantmontreal.com
-lat:
-lng:
+lat: 45.538526
+lng: -73.617577
 checked: 2026-10
 ---
 

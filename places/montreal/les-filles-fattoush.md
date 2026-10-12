@@ -6,8 +6,8 @@ area: Little Italy
 address: 7070 Avenue Henri-Julien, Montréal, QC H2S 3S3
 phone: +1 514-834-9277
 website: https://lesfillesfattoush.com
-lat:
-lng:
+lat: 45.535914
+lng: -73.615062
 checked: 2026-10
 ---
 

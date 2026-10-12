@@ -6,8 +6,8 @@ area: Griffintown
 address: 1346 Rue Notre-Dame Ouest, Montréal, QC
 phone: +1 514-504-1111
 website:
-lat:
-lng:
+lat: 45.49222
+lng: -73.565217
 checked: 2026-10
 ---
 
