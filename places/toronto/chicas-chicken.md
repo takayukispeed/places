@@ -1,7 +1,7 @@
 ---
 name: Chica's Chicken
 city: Toronto
-category: cheap
+category: nice
 area: Junction
 address: 2853 Dundas St W, Toronto, ON M6P 1Y6
 phone: +1 647-343-6562
@@ -22,4 +22,5 @@ checked: 2026-10-12
 
 Nashville hot chicken; listed in the [Michelin Guide](https://guide.michelin.com/ie/en/ontario/toronto/restaurant/chica-s-chicken).
 
+- Michelin Bib Gourmand, 2026 ([MICHELIN Guide](https://guide.michelin.com/ca/en/ontario/toronto/restaurant/chica-s-chicken)).
 - Hours: [Torontoer](https://www.torontoer.com/restaurants/chica-s-chicken) and Apple Maps, October 2026. Michelin has Tuesday to Sunday 12:00–20:00.

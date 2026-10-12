@@ -26,4 +26,5 @@ checked: 2026-10-12
 
 AAA says reservations are required.
 
+- Michelin Bib Gourmand, 2026 ([MICHELIN Guide](https://guide.michelin.com/ca/en/ontario/toronto/restaurant/sunnys-chinese)).
 - Hours: [OpenTable](https://www.opentable.com/r/sunny-chinese-toronto), October 2026. Tuesday is not listed there, so I assumed it is closed.

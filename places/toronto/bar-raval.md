@@ -22,4 +22,5 @@ checked: 2026-10-12
 
 Walk-in only; [Michelin](https://guide.michelin.com/br/pt_BR/ontario/toronto/restaurant/bar-raval) lists it. One guide suggests arriving before 17:30 for an easy seat.
 
+- Michelin Bib Gourmand, 2026 ([MICHELIN Guide](https://guide.michelin.com/ca/en/ontario/toronto/restaurant/bar-raval)).
 - Hours: [Table Journey](https://tablejourney.com/canada/toronto/bars/late/), October 2026; [blogTO](https://patios.blogto.com/patio/bar-raval-toronto/) gives 8:00–02:00.

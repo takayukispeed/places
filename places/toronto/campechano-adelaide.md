@@ -1,7 +1,7 @@
 ---
 name: Campechano (Adelaide)
 city: Toronto
-category: sitdown
+category: nice
 area: King West
 address: 504 Adelaide St W, Toronto, ON M5V 1T4
 phone: +1 416-777-2800
@@ -25,4 +25,5 @@ checked: 2026-10-12
 
 Taquería, open since 2015.
 
+- Michelin Bib Gourmand, 2026 ([MICHELIN Guide](https://guide.michelin.com/ca/en/ontario/toronto/restaurant/campechano)).
 - Hours: [Official site](https://campechano.ca/), October 2026; Yelp's mid-2026 listing shows a lunch/dinner split, Sunday closed.
