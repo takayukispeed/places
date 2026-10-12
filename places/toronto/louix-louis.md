@@ -7,8 +7,8 @@ address: 325 Bay St, Toronto, ON M5H 4G3
 phone: +1 416-637-5550
 website: https://www.louixlouis.com
 reserve: https://www.opentable.com/r/louix-louis-toronto
-lat:
-lng:
+lat: 43.649771
+lng: -79.380306
 checked: 2026-10-12
 ---
 

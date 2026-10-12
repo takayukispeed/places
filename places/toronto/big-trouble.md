@@ -7,8 +7,8 @@ address: 460 Dundas St W, Toronto, ON M5T 1G9
 phone: +1 647-347-8880
 website: https://bigtrouble.ca
 reserve:
-lat:
-lng:
+lat: 43.653383
+lng: -79.396523
 checked: 2026-10-12
 ---
 
