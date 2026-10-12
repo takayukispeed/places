@@ -7,8 +7,8 @@ address: 44 Rue Beaubien Ouest, Montréal, QC H2S 1V3
 phone: +1 514-279-1514
 website: https://leparapluie.ca
 reserve:
-lat:
-lng:
+lat: 45.530121
+lng: -73.609643
 checked: 2026-10-12
 ---
 

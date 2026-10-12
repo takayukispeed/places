@@ -7,8 +7,8 @@ address: 4051 Rue Molson, Montréal, QC H1Y 3L1
 phone: +1 514-521-4051
 website:
 reserve: https://www.opentable.ca/r/annette-bar-a-vin-montreal
-lat:
-lng:
+lat: 45.541767
+lng: -73.563204
 checked: 2026-10-12
 ---
 

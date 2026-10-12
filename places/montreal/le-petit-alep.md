@@ -7,8 +7,8 @@ address: 191 Rue Jean-Talon Est, Montréal, QC H2R 1S8
 phone: +1 514-270-9361
 website:
 reserve: https://www.opentable.ca/r/le-petit-alep-montreal
-lat:
-lng:
+lat: 45.536518
+lng: -73.616361
 checked: 2026-10-12
 ---
 

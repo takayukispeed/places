@@ -7,8 +7,8 @@ address: 391 Rue Saint-Zotique Est, Montréal, QC H2S 1L8
 phone: +1 514-948-9999
 website:
 reserve: https://www.opentable.ca/r/rotisserie-la-lune-montreal
-lat:
-lng:
+lat: 45.53415
+lng: -73.609791
 checked: 2026-10-12
 ---
 

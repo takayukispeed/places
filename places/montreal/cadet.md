@@ -7,8 +7,8 @@ address: 1431 Boulevard Saint-Laurent, Montréal, QC H2X 2S8
 phone: +1 514-903-1631
 website: https://restaurantcadet.com
 reserve:
-lat:
-lng:
+lat: 45.510302
+lng: -73.564438
 checked: 2026-10-12
 ---
 

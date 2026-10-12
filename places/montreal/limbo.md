@@ -7,8 +7,8 @@ address: 45 Avenue Mozart Ouest, Montréal, QC H2S 1C1
 phone: +1 514-273-7772
 website:
 reserve: https://www.opentable.ca/r/limbo-montreal
-lat:
-lng:
+lat: 45.532929
+lng: -73.61602
 checked: 2026-10-12
 ---
 
