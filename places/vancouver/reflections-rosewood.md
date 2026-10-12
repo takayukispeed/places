@@ -1,7 +1,7 @@
 ---
 name: Reflections The Garden Terrace
 city: Vancouver
-category: nice
+category: cocktail
 area: Downtown
 address: 801 W Georgia St, Vancouver, BC V6C 1P7
 phone: +1 604-673-7043

@@ -1,7 +1,7 @@
 ---
 name: Pepino's Spaghetti House
 city: Vancouver
-category: sitdown
+category: nice
 area: Commercial Drive
 address: 631 Commercial Dr, Vancouver, BC V5L 3W3
 phone: +1 604-254-5633

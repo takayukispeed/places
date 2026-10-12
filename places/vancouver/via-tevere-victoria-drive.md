@@ -1,7 +1,7 @@
 ---
 name: Via Tevere (Victoria Drive)
 city: Vancouver
-category: sitdown
+category: nice
 area: Grandview-Woodland
 address: 1190 Victoria Dr, Vancouver, BC V5L 4G5
 phone: +1 604-336-1803

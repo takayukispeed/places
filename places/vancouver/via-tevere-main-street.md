@@ -1,7 +1,7 @@
 ---
 name: Via Tevere (Main Street)
 city: Vancouver
-category: sitdown
+category: nice
 area: Riley Park
 address: 3240 Main St, Vancouver, BC V5V 3M5
 phone: +1 604-876-5408
