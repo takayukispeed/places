@@ -1,7 +1,7 @@
 ---
 name: The Narrow Lounge
 city: Vancouver
-category: cocktail
+category: bar
 area: Mount Pleasant
 address: 1898 Main St, Vancouver, BC
 phone: +1 778-737-5206

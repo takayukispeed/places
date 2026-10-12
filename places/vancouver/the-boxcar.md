@@ -1,7 +1,7 @@
 ---
 name: The Boxcar
 city: Vancouver
-category: cocktail
+category: bar
 area: Strathcona
 address: 917 Main St, Vancouver, BC V6A 2V8
 phone: +1 604-398-4010
