@@ -1,5 +1,5 @@
 ---
-name: Café Névé
+name: Café Névé (Mont-Royal)
 city: Montréal
 category: cafe
 area: Plateau
@@ -12,7 +12,7 @@ lng: -73.581463
 checked: 2026-10
 ---
 
-# Café Névé
+# Café Névé (Mont-Royal)
 
 ## Hours
 

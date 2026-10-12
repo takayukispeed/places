@@ -1,5 +1,5 @@
 ---
-name: Café Paquebot
+name: Café Paquebot (Mont-Royal)
 city: Montréal
 category: cafe
 area: Plateau
@@ -12,7 +12,7 @@ lng: -73.587908
 checked: 2026-10
 ---
 
-# Café Paquebot
+# Café Paquebot (Mont-Royal)
 
 ## Hours
 

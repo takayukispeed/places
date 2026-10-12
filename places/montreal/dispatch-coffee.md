@@ -1,5 +1,5 @@
 ---
-name: Dispatch Coffee
+name: Dispatch Coffee (Saint-Laurent)
 city: Montréal
 category: cafe
 area: Plateau
@@ -12,7 +12,7 @@ lng: -73.579052
 checked: 2026-10
 ---
 
-# Dispatch Coffee
+# Dispatch Coffee (Saint-Laurent)
 
 ## Hours
 

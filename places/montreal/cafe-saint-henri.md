@@ -1,5 +1,5 @@
 ---
-name: Café Saint-Henri
+name: Café Saint-Henri (Saint-Henri)
 city: Montréal
 category: cafe
 area: Saint-Henri
@@ -12,7 +12,7 @@ lng: -73.580987
 checked: 2026-10
 ---
 
-# Café Saint-Henri
+# Café Saint-Henri (Saint-Henri)
 
 ## Hours
 

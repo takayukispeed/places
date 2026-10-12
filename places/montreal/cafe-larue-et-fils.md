@@ -1,5 +1,5 @@
 ---
-name: Café Larue & Fils
+name: Café Larue & Fils (Castelnau)
 city: Montréal
 category: cafe
 area: Villeray
@@ -12,7 +12,7 @@ lng: -73.617932
 checked: 2026-10
 ---
 
-# Café Larue & Fils
+# Café Larue & Fils (Castelnau)
 
 ## Hours
 

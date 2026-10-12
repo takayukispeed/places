@@ -1,5 +1,5 @@
 ---
-name: Café Myriade
+name: Café Myriade (Plateau)
 city: Montréal
 category: cafe
 area: Plateau
@@ -12,7 +12,7 @@ lng: -73.584517
 checked: 2026-10
 ---
 
-# Café Myriade
+# Café Myriade (Plateau)
 
 ## Hours
 

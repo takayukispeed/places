@@ -1,5 +1,5 @@
 ---
-name: Café Olimpico
+name: Café Olimpico (Mile End)
 city: Montréal
 category: cafe
 area: Mile End
@@ -12,7 +12,7 @@ lng: -73.600227
 checked: 2026-10
 ---
 
-# Café Olimpico
+# Café Olimpico (Mile End)
 
 ## Hours
 

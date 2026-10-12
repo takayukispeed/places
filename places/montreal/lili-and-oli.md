@@ -1,5 +1,5 @@
 ---
-name: Lili & Oli
+name: Lili & Oli (Little Burgundy)
 city: Montréal
 category: cafe
 area: Little Burgundy
@@ -12,7 +12,7 @@ lng: -73.577166
 checked: 2026-10
 ---
 
-# Lili & Oli
+# Lili & Oli (Little Burgundy)
 
 ## Hours
 
