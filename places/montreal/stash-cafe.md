@@ -23,6 +23,6 @@ checked: 2026-10
 
 ## Notes
 
-Polish comfort food (pierogi, bigos) in convent furnishings, with a pianist in the evenings. Book for weekend nights.
+Polish restaurant furnished from an old convent, with a pianist in the evenings ([Frommer's](https://www.frommers.com/destinations/montreal/restaurants/stash-caf/)). Book for weekend nights.
 
 - Hours: [RestoMontréal](https://www.restomontreal.ca/resto/stash-cafe-montreal/1567/en/) and Sirved. Older guides list weekday lunch too.

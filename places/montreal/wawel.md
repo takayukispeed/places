@@ -21,7 +21,7 @@ checked: 2026-10
 
 ## Notes
 
-Polish bakery and pâtisserie: pączki, babka, rye breads. Two doors from Café La Ligne Verte.
+Polish bakery and pâtisserie, two doors from Café La Ligne Verte.
 
 - Other locations: 4301 Wellington (Verdun), 5499 Sherbrooke Ouest (NDG) and 7070 Henri-Julien.
 - Hours: [wawelpatisseries.com](https://wawelpatisseries.com/). Yelp has slightly earlier weekend closing.
