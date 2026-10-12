@@ -6,8 +6,8 @@ area: Mile End
 address: 5322 Boulevard Saint-Laurent, Montréal, QC H2T 1S1
 phone: +1 514-507-1642
 website: http://lesparrowbar.com
-lat:
-lng:
+lat: 45.524561
+lng: -73.596597
 checked: 2026-10
 ---
 

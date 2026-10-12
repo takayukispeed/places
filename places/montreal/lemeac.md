@@ -6,8 +6,8 @@ area: Outremont
 address: 1045 Avenue Laurier Ouest, Montréal, QC
 phone: +1 514-270-0999
 website: https://www.restaurantlemeac.com
-lat:
-lng:
+lat: 45.518284
+lng: -73.597247
 checked: 2026-10
 ---
 

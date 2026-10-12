@@ -6,8 +6,8 @@ area: Plateau
 address: 536 Avenue Duluth Est, Montréal, QC
 phone: +1 514-281-1114
 website: https://www.aupieddecochon.ca
-lat:
-lng:
+lat: 45.522214
+lng: -73.574381
 checked: 2026-10
 ---
 

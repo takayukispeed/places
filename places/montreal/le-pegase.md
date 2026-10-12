@@ -6,8 +6,8 @@ area: Plateau
 address: 1831 Rue Gilford, Montréal, QC H2H 1G6
 phone: +1 514-522-0487
 website:
-lat:
-lng:
+lat: 45.535002
+lng: -73.577787
 checked: 2026-10
 ---
 

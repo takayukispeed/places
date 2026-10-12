@@ -6,8 +6,8 @@ area: Quartier Latin
 address: 87 Rue Sainte-Catherine Est, Montréal, QC H2X 1K5
 phone: +1 514-844-5539
 website: https://www.foufouneselectriques.com
-lat:
-lng:
+lat: 45.510993
+lng: -73.563069
 checked: 2026-10
 ---
 

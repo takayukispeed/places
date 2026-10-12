@@ -6,8 +6,8 @@ area: Verdun
 address: 4354 Rue Wellington, Montréal, QC
 phone: +1 438-387-1211
 website:
-lat:
-lng:
+lat: 45.460377
+lng: -73.56709
 checked: 2026-10
 ---
 

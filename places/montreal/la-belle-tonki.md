@@ -6,8 +6,8 @@ area: Petite-Patrie
 address: 1335 Rue Beaubien Est, Montréal, QC
 phone: +1 514-419-0660
 website: https://www.labelletonki.ca
-lat:
-lng:
+lat: 45.540552
+lng: -73.599322
 checked: 2026-10
 ---
 
