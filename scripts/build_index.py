@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 # Same keys and labels as app/places.js.
-CATEGORIES = {"cheap": "Cheap eats", "sitdown": "Sit-down", "nice": "Nice meal", "brunch": "Brunch", "cafe": "Cafés", "bakery": "Bakeries",
+CATEGORIES = {"cheap": "Cheap eats", "sitdown": "Sit-down", "nice": "Nice meal", "cafe": "Cafés", "bakery": "Bakeries",
               "icecream": "Ice cream", "bar": "Bars", "cocktail": "Fancy bars"}
 
 

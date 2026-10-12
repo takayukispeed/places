@@ -1,7 +1,7 @@
 ---
 name: L'Avenue
 city: Montréal
-category: brunch
+category: sitdown
 area: Plateau
 address: 922 Avenue du Mont-Royal Est, Montréal, QC H2J 1X1
 phone: +1 514-523-8780

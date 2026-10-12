@@ -1,7 +1,7 @@
 ---
 name: L'Entre-Pots
 city: Montréal
-category: brunch
+category: sitdown
 area: Rosemont
 address: 1995 Rue Masson, Montréal, QC
 phone: +1 514-507-2212

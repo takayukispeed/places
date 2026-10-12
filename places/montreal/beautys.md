@@ -1,7 +1,7 @@
 ---
 name: Beauty's Luncheonette
 city: Montréal
-category: brunch
+category: sitdown
 area: Plateau
 address: 93 Avenue du Mont-Royal Ouest, Montréal, QC H2T 2S5
 phone: +1 514-849-8883

@@ -7,7 +7,6 @@ export const CATEGORIES = [
   ["cheap", "Cheap eats", "#4f7a34"],
   ["sitdown", "Sit-down", "#8a7a1e"],
   ["nice", "Nice meal", "#b5452b"],
-  ["brunch", "Brunch", "#c2185b"],
   ["cafe", "Cafés", "#8a5a2b"],
   ["bakery", "Bakeries", "#c0841a"],
   ["icecream", "Ice cream", "#3d9ed6"],
