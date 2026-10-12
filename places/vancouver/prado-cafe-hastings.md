@@ -7,8 +7,8 @@ address: 100 W Hastings St, Vancouver, BC
 phone: +1 778-379-4315
 website: https://pradocoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.281902
+lng: -123.107423
 checked: 2026-10-12
 ---
 

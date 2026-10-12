@@ -7,8 +7,8 @@ address: 4498 Dunbar St, Vancouver, BC V6S 2G5
 phone: +1 604-603-1424
 website: https://pradocoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.246322
+lng: -123.185018
 checked: 2026-10-12
 ---
 

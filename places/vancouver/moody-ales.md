@@ -7,8 +7,8 @@ address: 2601 Murray St, Port Moody, BC V3H 1X1
 phone: +1 604-492-3911
 website: https://www.moodyales.com
 reserve:
-lat:
-lng:
+lat: 49.278622
+lng: -122.854362
 checked: 2026-10-12
 ---
 

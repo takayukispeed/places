@@ -7,8 +7,8 @@ address: 980 Howe St, Vancouver, BC V6Z 1N9
 phone: +1 604-336-9612
 website: https://palletcoffeeroasters.com/
 reserve:
-lat:
-lng:
+lat: 49.279977
+lng: -123.123377
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2980 Main St, Vancouver, BC V5T 3G3
 phone: +1 604-559-6160
 website: https://forecastcoffee.ca
 reserve:
-lat:
-lng:
+lat: 49.258502
+lng: -123.100882
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1100 Burrard St, Vancouver, BC V6Z 1Y7
 phone:
 website: https://elysiancoffee.com/pages/locations
 reserve:
-lat:
-lng:
+lat: 49.279758
+lng: -123.127732
 checked: 2026-10-12
 ---
 

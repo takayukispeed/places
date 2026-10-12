@@ -7,8 +7,8 @@ address: 1414 W Broadway, Vancouver, BC
 phone: +1 604-732-0112
 website:
 reserve:
-lat:
-lng:
+lat: 49.263233
+lng: -123.136461
 checked: 2026-10-12
 ---
 

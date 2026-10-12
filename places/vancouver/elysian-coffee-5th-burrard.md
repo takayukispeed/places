@@ -7,8 +7,8 @@ address: 1778 W 5th Ave, Vancouver, BC
 phone:
 website: https://elysiancoffee.com/pages/locations
 reserve:
-lat:
-lng:
+lat: 49.267022
+lng: -123.14512
 checked: 2026-10-12
 ---
 

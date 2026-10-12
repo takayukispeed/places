@@ -7,8 +7,8 @@ address: 2718 Main St, Vancouver, BC V5T 3E8
 phone: +1 604-336-9556
 website: http://singsingyvr.com
 reserve:
-lat:
-lng:
+lat: 49.26069
+lng: -123.100699
 checked: 2026-10-12
 ---
 

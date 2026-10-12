@@ -7,8 +7,8 @@ address: 2201 W 1st Ave, Vancouver, BC V6K 1E9
 phone: +1 604-558-4448
 website: http://www.chewies.ca
 reserve: https://www.opentable.ca/r/chewies-steam-and-oyster-bar-kitsilano-vancouver
-lat:
-lng:
+lat: 49.270955
+lng: -123.155242
 checked: 2026-10-12
 ---
 

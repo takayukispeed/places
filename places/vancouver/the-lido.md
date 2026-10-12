@@ -7,8 +7,8 @@ address: 518 E Broadway, Vancouver, BC V5T 1X4
 phone: +1 604-879-5436
 website: http://thelido.net/
 reserve:
-lat:
-lng:
+lat: 49.262337
+lng: -123.092502
 checked: 2026-10-12
 ---
 

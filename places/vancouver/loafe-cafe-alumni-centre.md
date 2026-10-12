@@ -7,8 +7,8 @@ address: 6163 University Blvd, Vancouver, BC V6T 1Z1
 phone:
 website: https://loafe.ca
 reserve:
-lat:
-lng:
+lat: 49.265784
+lng: -123.250133
 checked: 2026-10-12
 ---
 

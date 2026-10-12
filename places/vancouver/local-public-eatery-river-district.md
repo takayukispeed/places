@@ -7,8 +7,8 @@ address: 8558 River District Crossing, Vancouver, BC V5S 0E3
 phone: +1 236-317-6910
 website: https://localpubliceatery.com/neighbourhoods/river-district/
 reserve:
-lat:
-lng:
+lat: 49.206027
+lng: -123.03051
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1074 Davie St, Vancouver, BC V6E 1M3
 phone: +1 604-566-0513
 website: https://gringorestaurants.com/davie-st/
 reserve:
-lat:
-lng:
+lat: 49.280069
+lng: -123.130964
 checked: 2026-10-12
 ---
 

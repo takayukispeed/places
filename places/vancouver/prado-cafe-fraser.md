@@ -7,8 +7,8 @@ address: 4208 Fraser St, Vancouver, BC V5V 4G3
 phone: +1 604-620-7977
 website: https://pradocoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.247405
+lng: -123.089955
 checked: 2026-10-12
 ---
 

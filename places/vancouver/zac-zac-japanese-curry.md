@@ -7,8 +7,8 @@ address: 590 Robson St, Vancouver, BC V6B 2B7
 phone: +1 604-608-2887
 website:
 reserve:
-lat:
-lng:
+lat: 49.28043
+lng: -123.118767
 checked: 2026-10-12
 ---
 

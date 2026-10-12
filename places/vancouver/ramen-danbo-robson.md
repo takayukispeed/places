@@ -7,8 +7,8 @@ address: 1333 Robson St, Vancouver, BC V6E 1C6
 phone: +1 604-559-8112
 website: https://ramendanbo.com
 reserve:
-lat:
-lng:
+lat: 49.287455
+lng: -123.128933
 checked: 2026-10-12
 ---
 

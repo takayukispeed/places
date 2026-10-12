@@ -7,8 +7,8 @@ address: 216 Carrall St, Vancouver, BC V6B 2J1
 phone: +1 604-687-4322
 website: https://blarneystone.ca/
 reserve: https://www.opentable.com/r/blarney-stone-vancouver
-lat:
-lng:
+lat: 49.282795
+lng: -123.104148
 checked: 2026-10-12
 ---
 

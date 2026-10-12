@@ -7,8 +7,8 @@ address: 371 E Broadway, Vancouver, BC
 phone: +1 604-872-0053
 website:
 reserve:
-lat:
-lng:
+lat: 49.262961
+lng: -123.097219
 checked: 2026-10-12
 ---
 

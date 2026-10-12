@@ -7,8 +7,8 @@ address: 223 E Georgia St, Vancouver, BC
 phone: +1 604-806-4646
 website:
 reserve:
-lat:
-lng:
+lat: 49.278685
+lng: -123.098736
 checked: 2026-10-12
 ---
 

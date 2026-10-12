@@ -7,8 +7,8 @@ address: 558 W Broadway, Vancouver, BC V5Z 1E9
 phone: +1 604-565-1770
 website: https://santouka-canada.com/locations/w-broadway/
 reserve:
-lat:
-lng:
+lat: 49.263097
+lng: -123.116837
 checked: 2026-10-12
 ---
 

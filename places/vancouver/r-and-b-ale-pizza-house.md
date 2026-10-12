@@ -7,8 +7,8 @@ address: 54 E 4th Ave, Vancouver, BC V5T 1E8
 phone: +1 604-336-0275
 website: https://www.randbbrewing.com
 reserve:
-lat:
-lng:
+lat: 49.267146
+lng: -123.103411
 checked: 2026-10-12
 ---
 

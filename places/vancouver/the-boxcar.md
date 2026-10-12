@@ -7,8 +7,8 @@ address: 917 Main St, Vancouver, BC V6A 2V8
 phone: +1 604-398-4010
 website:
 reserve:
-lat:
-lng:
+lat: 49.276522
+lng: -123.100247
 checked: 2026-10-12
 ---
 

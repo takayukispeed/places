@@ -7,8 +7,8 @@ address: 595 Burrard St, Vancouver, BC
 phone:
 website: https://pradocoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.286191
+lng: -123.119901
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 388 W Broadway, Vancouver, BC V5Y 4A8
 phone: +1 604-873-8284
 website:
 reserve:
-lat:
-lng:
+lat: 49.262991
+lng: -123.112501
 checked: 2026-10-12
 ---
 

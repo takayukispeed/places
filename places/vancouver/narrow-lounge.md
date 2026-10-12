@@ -7,8 +7,8 @@ address: 1898 Main St, Vancouver, BC
 phone: +1 778-737-5206
 website:
 reserve:
-lat:
-lng:
+lat: 49.268338
+lng: -123.100489
 checked: 2026-10-12
 ---
 

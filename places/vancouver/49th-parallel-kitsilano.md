@@ -7,8 +7,8 @@ address: 2198 W 4th Ave, Vancouver, BC V6K 1N6
 phone:
 website: https://49thcoffee.com/pages/west-4th
 reserve:
-lat:
-lng:
+lat: 49.268034
+lng: -123.154818
 checked: 2026-10-12
 ---
 

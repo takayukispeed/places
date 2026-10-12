@@ -7,8 +7,8 @@ address: 2283 W Broadway, Vancouver, BC V6K 2E4
 phone: +1 604-739-0677
 website: https://thebeagle.ca
 reserve:
-lat:
-lng:
+lat: 49.264045
+lng: -123.156771
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 3357 W Broadway, Vancouver, BC V6R 2B1
 phone: +1 604-736-4301
 website: https://elwoods.ca
 reserve:
-lat:
-lng:
+lat: 49.264414
+lng: -123.179118
 checked: 2026-10-12
 ---
 

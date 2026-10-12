@@ -7,8 +7,8 @@ address: 3207 W Broadway, Vancouver, BC V6K 2H5
 phone: +1 604-423-4117
 website:
 reserve:
-lat:
-lng:
+lat: 49.264354
+lng: -123.17625
 checked: 2026-10-12
 ---
 

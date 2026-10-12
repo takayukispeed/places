@@ -7,8 +7,8 @@ address: 4124 Main St, Vancouver, BC V5V 3P7
 phone: +1 604-620-8056
 website: https://www.aperturecoffeebar.com
 reserve:
-lat:
-lng:
+lat: 49.248427
+lng: -123.100804
 checked: 2026-10-12
 ---
 

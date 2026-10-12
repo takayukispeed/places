@@ -7,8 +7,8 @@ address: 2331 E Hastings St, Vancouver, BC V5L 1V6
 phone: +1 604-428-1455
 website: https://platform7coffee.com/
 reserve:
-lat:
-lng:
+lat: 49.281295
+lng: -123.057437
 checked: 2026-10-12
 ---
 

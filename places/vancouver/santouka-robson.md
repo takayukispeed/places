@@ -7,8 +7,8 @@ address: 1690 Robson St, Vancouver, BC V6G 1C7
 phone: +1 604-681-8121
 website: https://santouka-canada.com/locations/robson-st/
 reserve:
-lat:
-lng:
+lat: 49.290206
+lng: -123.133742
 checked: 2026-10-12
 ---
 

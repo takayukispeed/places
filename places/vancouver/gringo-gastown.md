@@ -7,8 +7,8 @@ address: 27 Blood Alley Square, Vancouver, BC V6B 0C4
 phone: +1 604-673-0513
 website: https://gringorestaurants.com
 reserve:
-lat:
-lng:
+lat: 49.283122
+lng: -123.105343
 checked: 2026-10-12
 ---
 

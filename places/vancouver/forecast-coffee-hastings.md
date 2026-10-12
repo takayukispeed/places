@@ -7,8 +7,8 @@ address: 2703 E Hastings St, Vancouver, BC V5K 1Z8
 phone:
 website: https://forecastcoffee.ca
 reserve:
-lat:
-lng:
+lat: 49.281283
+lng: -123.049139
 checked: 2026-10-12
 ---
 

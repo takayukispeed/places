@@ -7,8 +7,8 @@ address: 300 Cambie St, Vancouver, BC V6B 2N3
 phone: +1 604-688-9158
 website: https://cambiepubs.com/
 reserve:
-lat:
-lng:
+lat: 49.283192
+lng: -123.109049
 checked: 2026-10-12
 ---
 

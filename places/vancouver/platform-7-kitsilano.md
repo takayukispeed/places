@@ -7,8 +7,8 @@ address: 2300 W Broadway, Vancouver, BC V6K 2E5
 phone: +1 604-620-2717
 website: https://platform7coffee.com/
 reserve:
-lat:
-lng:
+lat: 49.263741
+lng: -123.157853
 checked: 2026-10-12
 ---
 

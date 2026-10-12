@@ -7,8 +7,8 @@ address: 590 W Broadway, Vancouver, BC V5Z 1E9
 phone: +1 604-874-5909
 website: https://elysiancoffee.com/pages/locations
 reserve:
-lat:
-lng:
+lat: 49.263101
+lng: -123.117295
 checked: 2026-10-12
 ---
 

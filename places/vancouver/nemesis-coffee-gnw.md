@@ -7,8 +7,8 @@ address: 555 Great Northern Way, Vancouver, BC V5T 1E1
 phone: +1 604-773-3823
 website: https://nemesis.coffee
 reserve:
-lat:
-lng:
+lat: 49.267044
+lng: -123.092609
 checked: 2026-10-12
 ---
 

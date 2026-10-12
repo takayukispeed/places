@@ -7,8 +7,8 @@ address: 689 Thurlow St, Vancouver, BC V6E 4M3
 phone: +1 604-620-4905
 website: https://49thcoffee.com/pages/thurlow
 reserve:
-lat:
-lng:
+lat: 49.286036
+lng: -123.12303
 checked: 2026-10-12
 ---
 

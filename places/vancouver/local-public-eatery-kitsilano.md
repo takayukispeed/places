@@ -7,8 +7,8 @@ address: 2210 Cornwall Ave, Vancouver, BC V6K 1B5
 phone: +1 604-734-3589
 website: https://localpubliceatery.com/neighbourhoods/kitsilano/
 reserve: https://www.opentable.com/r/local-public-eatery-kitsilano-vancouver
-lat:
-lng:
+lat: 49.272407
+lng: -123.155454
 checked: 2026-10-12
 ---
 

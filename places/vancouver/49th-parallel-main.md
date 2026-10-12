@@ -7,8 +7,8 @@ address: 2902 Main St, Vancouver, BC V5T 3G3
 phone: +1 604-872-4901
 website: https://49thcoffee.com/pages/main-st
 reserve:
-lat:
-lng:
+lat: 49.259144
+lng: -123.100799
 checked: 2026-10-12
 ---
 

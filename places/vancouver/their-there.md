@@ -7,8 +7,8 @@ address: 2042 W 4th Ave, Vancouver, BC V6J 1M9
 phone: +1 604-736-8828
 website: https://www.instagram.com/theirthereyvr/
 reserve:
-lat:
-lng:
+lat: 49.26797
+lng: -123.151428
 checked: 2026-10-12
 ---
 

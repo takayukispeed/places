@@ -7,8 +7,8 @@ address: 1938 Commercial Dr, Vancouver, BC V5N 4A7
 phone: +1 604-255-5537
 website: https://pradocoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.267195
+lng: -123.069427
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2010 W 4th Ave, Vancouver, BC V6J 1M9
 phone: +1 604-739-0222
 website: https://biminis1975.ca/
 reserve: https://www.opentable.com/r/biminis-vancouver
-lat:
-lng:
+lat: 49.267887
+lng: -123.150852
 checked: 2026-10-12
 ---
 

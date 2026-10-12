@@ -7,8 +7,8 @@ address: 302 W Hastings St, Vancouver, BC V6B 2N4
 phone:
 website: https://nemesis.coffee
 reserve:
-lat:
-lng:
+lat: 49.282764
+lng: -123.110283
 checked: 2026-10-12
 ---
 

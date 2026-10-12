@@ -7,8 +7,8 @@ address: 323 Semlin Dr, Vancouver, BC V5L 4H9
 phone: +1 604-255-2014
 website: https://palletcoffeeroasters.com/
 reserve:
-lat:
-lng:
+lat: 49.281733
+lng: -123.063857
 checked: 2026-10-12
 ---
 

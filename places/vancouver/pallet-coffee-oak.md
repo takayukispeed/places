@@ -7,8 +7,8 @@ address: 3820 Oak St, Vancouver, BC
 phone: +1 604-730-1849
 website: https://palletcoffeeroasters.com/
 reserve:
-lat:
-lng:
+lat: 49.25159
+lng: -123.127275
 checked: 2026-10-12
 ---
 

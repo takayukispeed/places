@@ -7,8 +7,8 @@ address: 1833 W 4th Ave, Vancouver, BC V6J 1M4
 phone: +1 778-379-8977
 website: https://ramendanbo.com
 reserve:
-lat:
-lng:
+lat: 49.268229
+lng: -123.146399
 checked: 2026-10-12
 ---
 

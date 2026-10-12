@@ -7,8 +7,8 @@ address: 2301 Ontario St, Vancouver, BC
 phone:
 website: https://elysiancoffee.com/pages/locations
 reserve:
-lat:
-lng:
+lat: 49.264482
+lng: -123.105105
 checked: 2026-10-12
 ---
 

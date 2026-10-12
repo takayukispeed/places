@@ -7,8 +7,8 @@ address: 905 Commercial Dr, Vancouver, BC V5L 3W8
 phone: +1 778-866-5662
 website: https://www.dlchickenshack.ca
 reserve:
-lat:
-lng:
+lat: 49.276313
+lng: -123.06971
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 608 W Pender St, Vancouver, BC V6B 1V8
 phone: +1 604-684-9977
 website: https://malones.bc.ca/
 reserve: https://www.exploretock.com/malonessocialloungeandtaphouse/
-lat:
-lng:
+lat: 49.284022
+lng: -123.114107
 checked: 2026-10-12
 ---
 

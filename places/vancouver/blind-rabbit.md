@@ -7,8 +7,8 @@ address: 2531 E Hastings St, Vancouver, BC V5K 1Z2
 phone: +1 604-423-9463
 website: https://blindrabbit.ca
 reserve:
-lat:
-lng:
+lat: 49.281145
+lng: -123.051006
 checked: 2026-10-12
 ---
 

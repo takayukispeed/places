@@ -7,8 +7,8 @@ address: 2002 W Broadway, Vancouver, BC V6J 1Z4
 phone: +1 604-736-2687
 website: https://palletcoffeeroasters.com/
 reserve:
-lat:
-lng:
+lat: 49.263603
+lng: -123.150833
 checked: 2026-10-12
 ---
 

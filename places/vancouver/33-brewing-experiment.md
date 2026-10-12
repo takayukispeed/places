@@ -7,8 +7,8 @@ address: 25 W 8th Ave, Vancouver, BC V5Y 1M8
 phone: +1 604-620-4589
 website: https://33acresbrewing.com/
 reserve:
-lat:
-lng:
+lat: 49.264015
+lng: -123.105511
 checked: 2026-10-12
 ---
 

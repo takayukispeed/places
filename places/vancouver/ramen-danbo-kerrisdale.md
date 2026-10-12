@@ -7,8 +7,8 @@ address: 2277 W 41st Ave, Vancouver, BC
 phone:
 website: https://ramendanbo.com
 reserve:
-lat:
-lng:
+lat: 49.234859
+lng: -123.159236
 checked: 2026-10-12
 ---
 

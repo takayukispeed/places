@@ -7,8 +7,8 @@ address: 3982 Main St, Vancouver, BC V5V 3P2
 phone:
 website: https://ramendanbo.com
 reserve:
-lat:
-lng:
+lat: 49.249683
+lng: -123.100805
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 6011 Walter Gage Rd, Vancouver, BC V6T 0B4
 phone: +1 604-558-2190
 website: http://www.greatdanecoffee.com/home
 reserve:
-lat:
-lng:
+lat: 49.270075
+lng: -123.250771
 checked: 2026-10-12
 ---
 

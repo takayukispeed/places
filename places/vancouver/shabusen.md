@@ -7,8 +7,8 @@ address: 755 Burrard St, Vancouver, BC V6Z 1X6
 phone: +1 604-669-3883
 website: http://www.shabusen.com
 reserve:
-lat:
-lng:
+lat: 49.284033
+lng: -123.122343
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2035 Yukon St, Vancouver, BC
 phone: +1 604-336-0575
 website: https://palletcoffeeroasters.com/
 reserve:
-lat:
-lng:
+lat: 49.267318
+lng: -123.112961
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2053 Main Mall, Vancouver, BC
 phone:
 website: https://loafe.ca
 reserve:
-lat:
-lng:
+lat: 49.265038
+lng: -123.253865
 checked: 2026-10-12
 ---
 

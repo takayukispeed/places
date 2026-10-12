@@ -7,8 +7,8 @@ address: 1391 Kingsway, Vancouver, BC
 phone: +1 604-875-1283
 website: https://kingsway.houseofdosas.ca/
 reserve:
-lat:
-lng:
+lat: 49.250448
+lng: -123.076331
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 10 Water St, Vancouver, BC V6B 1A4
 phone: +1 604-915-6744
 website: https://burocoffee.com/pages/cafe
 reserve:
-lat:
-lng:
+lat: 49.283483
+lng: -123.104772
 checked: 2026-10-12
 ---
 

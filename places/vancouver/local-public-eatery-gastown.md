@@ -7,8 +7,8 @@ address: 3 Alexander St, Vancouver, BC V6A 1B2
 phone: +1 778-737-4277
 website: https://localpubliceatery.com/neighbourhoods/gastown/
 reserve:
-lat:
-lng:
+lat: 49.283582
+lng: -123.104067
 checked: 2026-10-12
 ---
 

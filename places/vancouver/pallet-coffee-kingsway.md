@@ -7,8 +7,8 @@ address: 1398 Kingsway, Vancouver, BC V5V 3E4
 phone: +1 604-428-8830
 website: https://palletcoffeeroasters.com/
 reserve:
-lat:
-lng:
+lat: 49.25002
+lng: -123.076324
 checked: 2026-10-12
 ---
 

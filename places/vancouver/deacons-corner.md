@@ -7,8 +7,8 @@ address: 101 Main St, Vancouver, BC V6A 1B8
 phone: +1 604-684-1555
 website: https://www.deaconscorner.ca
 reserve: https://www.opentable.ca/r/deacons-corner-vancouver
-lat:
-lng:
+lat: 49.283942
+lng: -123.099836
 checked: 2026-10-12
 ---
 

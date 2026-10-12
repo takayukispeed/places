@@ -7,8 +7,8 @@ address: 3032 Main St, Vancouver, BC V5T 3G5
 phone: +1 778-788-6120
 website: https://uncleabes.ca
 reserve:
-lat:
-lng:
+lat: 49.258127
+lng: -123.100889
 checked: 2026-10-12
 ---
 

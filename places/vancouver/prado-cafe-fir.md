@@ -7,8 +7,8 @@ address: 1807 Fir St, Vancouver, BC
 phone: +1 604-559-6638
 website: https://pradocoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.268239
+lng: -123.14085
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 295 E 1st Ave, Vancouver, BC V5T 1A7
 phone: +1 604-682-4733
 website: https://redtruckbeer.com/vancouver-truck-stop/
 reserve:
-lat:
-lng:
+lat: 49.26876
+lng: -123.096647
 checked: 2026-10-12
 ---
 

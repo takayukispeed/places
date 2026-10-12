@@ -7,8 +7,8 @@ address: 1191 Commercial Dr, Vancouver, BC
 phone: +1 604-265-6865
 website: https://www.freehouse.co/locations/sing-sing-commercial
 reserve: https://www.opentable.com/r/sing-sing-commercial-drive-vancouver
-lat:
-lng:
+lat: 49.274088
+lng: -123.069852
 checked: 2026-10-12
 ---
 

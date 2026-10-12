@@ -7,8 +7,8 @@ address: 1541 W 6th Ave, Vancouver, BC V6J 1R1
 phone: +1 604-336-2456
 website: https://grapesandsoda.ca/
 reserve: https://www.opentable.com/r/grapes-and-soda-vancouver
-lat:
-lng:
+lat: 49.266347
+lng: -123.139679
 checked: 2026-10-12
 ---
 

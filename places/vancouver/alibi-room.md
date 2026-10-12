@@ -7,8 +7,8 @@ address: 157 Alexander St, Vancouver, BC V6A 1B8
 phone: +1 778-551-2113
 website: https://alibi.ca
 reserve: https://www.opentable.ca/r/alibi-room-vancouver
-lat:
-lng:
+lat: 49.284239
+lng: -123.100258
 checked: 2026-10-12
 ---
 

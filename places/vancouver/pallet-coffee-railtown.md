@@ -7,8 +7,8 @@ address: 395 Alexander St, Vancouver, BC V6A 1C4
 phone: +1 604-558-3777
 website: https://palletcoffeeroasters.com/
 reserve:
-lat:
-lng:
+lat: 49.284185
+lng: -123.095911
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2148 Main St, Vancouver, BC V5T 3C5
 phone: +1 236-485-1398
 website: https://brassneck.ca
 reserve:
-lat:
-lng:
+lat: 49.265802
+lng: -123.100362
 checked: 2026-10-12
 ---
 

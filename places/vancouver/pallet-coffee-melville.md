@@ -7,8 +7,8 @@ address: 1115 Melville St, Vancouver, BC V6E 0B7
 phone: +1 604-336-2891
 website: https://palletcoffeeroasters.com/
 reserve:
-lat:
-lng:
+lat: 49.286852
+lng: -123.122304
 checked: 2026-10-12
 ---
 
