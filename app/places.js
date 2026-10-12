@@ -6,6 +6,7 @@ import { parseFrontMatter, listItems, slugify } from "./format.js";
 export const CATEGORIES = [
   ["cheap", "Cheap eats", "#4f7a34"],
   ["nice", "Nice meal", "#b5452b"],
+  ["brunch", "Brunch", "#c2185b"],
   ["cafe", "Cafés", "#8a5a2b"],
   ["bakery", "Bakeries", "#c0841a"],
   ["bar", "Bars", "#2f6f8f"],

@@ -36,7 +36,8 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   await page.click("[data-mode=map]"); await page.waitForSelector(".leaflet-container");
   assert.equal(await page.getAttribute("#locate", "aria-pressed"), "false");
   const before = await page.locator("path.leaflet-interactive").count();
-  assert.equal(before, Object.keys(repo).length, "a pin for every place");
+  // New places get coordinates from a GitHub Action after they're pushed, so count those that have them.
+  assert.equal(before, Object.values(repo).filter((t) => /^lat: -?\d/m.test(t)).length, "a pin for every place with coordinates");
   const pane = await page.locator("svg.leaflet-zoom-animated").boundingBox();
   assert.ok(pane.width > 100 && pane.height > 100, "pins are drawn in a full-size layer, not a 22px icon box");
   await page.click("#locate");
@@ -46,7 +47,7 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   assert.equal(paths, before + 2);
   // centred on the fix
   const centre = await page.evaluate(() => { const r = document.querySelector("#map").getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; });
-  const dot = await page.evaluate(() => { const ps = [...document.querySelectorAll(".leaflet-overlay-pane path")]; const d = ps[ps.length - 1].getBoundingClientRect(); return [d.left + d.width / 2, d.top + d.height / 2]; });
+  const dot = await page.evaluate(() => { const d = document.querySelector('.leaflet-overlay-pane path[fill="#1a73e8"][stroke="#fff"]').getBoundingClientRect(); return [d.left + d.width / 2, d.top + d.height / 2]; });
   assert.ok(Math.abs(centre[0] - dot[0]) < 3 && Math.abs(centre[1] - dot[1]) < 3, "map centred on me");
   if (OUT) await page.screenshot({ path: OUT });
   // moving updates the dot, not adds another

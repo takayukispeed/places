@@ -89,7 +89,7 @@ const KAZU = [{
   await page.waitForSelector(".card");
   assert.equal(await page.locator(".card").count(), placeCount);
   assert.deepEqual(await page.locator(".list-heading").allInnerTexts(),
-    ["CHEAP EATS", "NICE MEAL", "CAFÉS", "BAKERIES", "BARS", "FANCY BARS"]);
+    ["CHEAP EATS", "NICE MEAL", "BRUNCH", "CAFÉS", "BAKERIES", "BARS", "FANCY BARS"]);
   await shot("1-list");
 
   // Filters: category chip, search (keeps focus), open now
