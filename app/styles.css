@@ -95,8 +95,7 @@ input[type="search"], .field input, .field select, .field textarea {
 }
 input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
 
-.chips { display: flex; gap: 6px; overflow-x: auto; padding: 10px 0 4px; margin: 0 calc(-1 * var(--gutter)); padding-inline: var(--gutter); scrollbar-width: none; }
-.chips::-webkit-scrollbar { display: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 0 4px; }
 .chip {
   flex: none; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--line);
   background: var(--surface); font-size: 13px; cursor: pointer;
