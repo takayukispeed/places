@@ -23,6 +23,7 @@ const KEY_HINT = "pl.installHintDismissed";
 const KEY_CITY = "pl.city";
 const KEY_GEO = "pl.geo.v1";
 const KEY_LOCATE = "pl.showMyLocation";
+const KEY_SORT = "pl.listSort"; // "az" once chosen; nearest first otherwise
 
 // ---- Storage (wrapped: private mode can make localStorage throw) ----------
 const store = {
@@ -470,6 +471,8 @@ async function osmMap(el) {
 // ---- My location: watched only while the map is on screen ----------------------------------
 let watchId = null;
 let myPos = null;
+// The list asks for a fix itself: "pending" while waiting, "failed" if none came (falls back to A–Z).
+let listFix = null;
 function stopLocating() {
   if (watchId !== null) navigator.geolocation.clearWatch(watchId);
   watchId = null;
@@ -586,30 +589,49 @@ function placesView() {
         : loading ? "Loading…" : "No places yet. Tap + to add one."}</p>`;
       return;
     }
-    // Group by category in a fixed order; within each, nearest first when we know where you are,
-    // otherwise A–Z (state.places is already sorted by name, and sort() is stable).
-    const near = (p) => away(p) ?? Infinity;
+    // Group by category in a fixed order; within each, nearest first (the default, once we know
+    // where you are) or A–Z (state.places is already sorted by name, and sort() is stable).
+    const sortAz = store.get(KEY_SORT) === "az";
+    const near = (p) => (sortAz || !myPos ? 0 : away(p) ?? Infinity);
     const groups = new Map();
     for (const p of [...matches].sort((a, b) => categoryOrder(a.category) - categoryOrder(b.category) || near(a) - near(b))) {
       if (!groups.has(p.category)) groups.set(p.category, []);
       groups.get(p.category).push(p);
     }
-    const sortNote = myPos ? `<p class="sort-note">Nearest first</p>`
-      : `<p class="sort-note">A–Z · <button id="sort-near" class="text-btn">Sort by distance</button></p>`;
-    $("#results").innerHTML = sortNote + [...groups].map(([k, ps]) => `
+    const status = sortAz || myPos ? "" : listFix === "pending" ? "Finding you…" : "Location off, so A–Z";
+    const sortRow = `<div class="sort-row">
+      <div class="segmented small" role="group" aria-label="Sort">
+        <button data-sort="near" class="${sortAz ? "" : "on"}" aria-pressed="${!sortAz}">Nearest</button>
+        <button data-sort="az" class="${sortAz ? "on" : ""}" aria-pressed="${sortAz}">A–Z</button>
+      </div>${status ? `<span class="sort-status">${status}</span>` : ""}</div>`;
+    $("#results").innerHTML = sortRow + [...groups].map(([k, ps]) => `
       ${state.placeCat ? "" : `<h2 class="list-heading">${esc(categoryLabel(k))}</h2>`}
       <ul class="cards">${ps.map(card).join("")}</ul>`).join("");
-    $("#sort-near")?.addEventListener("click", (e) => {
-      e.target.disabled = true;
-      e.target.textContent = "Finding you…";
-      store.set(KEY_LOCATE, "1");
-      locateOnce(() => results.isConnected && show(), (err) => {
-        if (err.code === 1) locationDenied(); else toast("Couldn't find your location. Try again outside or with Wi-Fi on.");
-        if (results.isConnected) show();
-      });
+    app.querySelectorAll("[data-sort]").forEach((b) => {
+      b.onclick = () => {
+        if (b.dataset.sort === "az") { store.set(KEY_SORT, "az"); show(); return; }
+        store.del(KEY_SORT);
+        if (myPos) show(); else findMe(true);
+      };
     });
   };
   const results = $("#results");
+  // A fix for nearest-first. Asked for automatically, it fails quietly to A–Z; after a tap on
+  // Nearest, a failure says why.
+  const findMe = (tapped) => {
+    listFix = "pending";
+    show();
+    locateOnce(() => {
+      listFix = null;
+      store.set(KEY_LOCATE, "1"); // the map shows the dot too from now on
+      if (results.isConnected) show();
+    }, (err) => {
+      listFix = "failed";
+      if (err.code === 1) { if (tapped) locationDenied(); else store.del(KEY_LOCATE); }
+      else if (tapped) toast("Couldn't find your location. Try again outside or with Wi-Fi on.");
+      if (results.isConnected) show();
+    });
+  };
 
   if (map) {
     $("#results").innerHTML = `<div class="map-wrap"><div id="map" class="map"></div>
@@ -653,8 +675,8 @@ function placesView() {
     }).catch((err) => { $("#results").innerHTML = `<p class="empty">${esc(err.message)}</p>`; });
   } else {
     show();
-    // Location was turned on before (here or on the map): refresh it and re-sort, quietly.
-    if (store.get(KEY_LOCATE)) locateOnce(() => results.isConnected && show(), () => {});
+    // Nearest first by default: refresh the fix if location is on, or ask once per visit.
+    if (store.get(KEY_SORT) !== "az" && (store.get(KEY_LOCATE) || listFix === null)) findMe(false);
   }
 
   $("#sync").onclick = () => sync();

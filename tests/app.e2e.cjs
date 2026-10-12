@@ -125,14 +125,24 @@ const KAZU = [{
   assert.equal(await page.locator(".card .status-dot.shut").count(), 0, "only open places");
   await page.click("#open-now");
 
-  // Sorted A–Z until location is on; then nearest first, with distances
-  assert.match(await page.locator(".sort-note").innerText(), /A–Z/);
+  // Sort: nearest first by default. With no location it falls back to A–Z and says so.
+  await page.waitForSelector("text=Location off, so A–Z");
+  assert.equal(await page.getAttribute("[data-sort=near]", "aria-pressed"), "true");
   await ctx.grantPermissions(["geolocation"], { origin: base });
   await ctx.setGeolocation({ latitude: 45.4989, longitude: -73.5778 }); // at Cloakroom Bar, downtown
-  await page.click("#sort-near");
-  await page.waitForSelector("text=Nearest first");
+  await page.click("[data-sort=near]");
+  await page.waitForSelector(".card-dist");
+  const firstFancy = () => page.locator(".cards").nth(6).locator(".card-title").first().innerText();
   assert.equal(await page.locator(".list-heading").nth(6).innerText(), "FANCY BARS");
-  assert.match(await page.locator(".cards").nth(6).locator(".card-title").first().innerText(), /^Cloakroom Bar\s*\d+ m$/);
+  assert.match(await firstFancy(), /^Cloakroom Bar\s*\d+ m$/);
+  // A–Z toggle: alphabetical, distances still shown, and remembered
+  await page.click("[data-sort=az]");
+  assert.match(await firstFancy(), /^Atwater Cocktail Club\s*[\d.]+ k?m$/);
+  await page.reload();
+  await toList();
+  assert.equal(await page.getAttribute("[data-sort=az]", "aria-pressed"), "true");
+  await page.click("[data-sort=near]");
+  await page.waitForFunction(() => /^Cloakroom/.test(document.querySelectorAll(".cards")[6]?.querySelector(".card-title")?.textContent || ""));
 
   // Place page
   await page.click("text=Big in Japan");
