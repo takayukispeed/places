@@ -7,8 +7,8 @@ address: 20 Avenue Cartier, Pointe-Claire, QC H9S 5L5
 phone: +1 514-695-5022
 website:
 reserve:
-lat:
-lng:
+lat: 45.430156
+lng: -73.823719
 checked: 2026-10-12
 ---
 

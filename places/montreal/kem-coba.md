@@ -7,8 +7,8 @@ address: 60 Avenue Fairmount Ouest, Montréal, QC H2T 2M2
 phone: +1 514-419-1699
 website:
 reserve:
-lat:
-lng:
+lat: 45.523087
+lng: -73.595052
 checked: 2026-10-12
 ---
 

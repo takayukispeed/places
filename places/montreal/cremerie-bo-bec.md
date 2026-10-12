@@ -7,8 +7,8 @@ address: 1300 Avenue Laurier Est, Montréal, QC H2J 1H3
 phone: +1 514-419-2244
 website:
 reserve:
-lat:
-lng:
+lat: 45.532979
+lng: -73.584043
 checked: 2026-10-12
 ---
 

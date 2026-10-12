@@ -7,8 +7,8 @@ address: 6926 Rue Sherbrooke Ouest, Montréal, QC H4B 1P9
 phone: +1 514-500-8155
 website:
 reserve:
-lat:
-lng:
+lat: 45.460133
+lng: -73.635501
 checked: 2026-10-12
 ---
 

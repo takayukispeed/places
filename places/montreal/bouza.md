@@ -7,8 +7,8 @@ address: 1222 Rue de Beauharnois Ouest, Montréal, QC H4N 1J5
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.531026
+lng: -73.651208
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 3873 Rue Saint-Denis, Montréal, QC H2W 2M4
 phone: +1 438-346-4854
 website: https://unicone.ca
 reserve:
-lat:
-lng:
+lat: 45.519882
+lng: -73.573598
 checked: 2026-10-12
 ---
 

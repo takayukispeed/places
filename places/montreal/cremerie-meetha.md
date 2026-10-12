@@ -7,8 +7,8 @@ address: 787A Rue de Liège Ouest, Montréal, QC H3N 1B1
 phone:
 website: https://www.cremeriemeetha.ca
 reserve:
-lat:
-lng:
+lat: 45.534244
+lng: -73.641846
 checked: 2026-10-12
 ---
 

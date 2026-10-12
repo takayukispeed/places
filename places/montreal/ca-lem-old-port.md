@@ -7,8 +7,8 @@ address: 315 Place d'Youville, Montréal, QC H2Y 0A4
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.501294
+lng: -73.555695
 checked: 2026-10-12
 ---
 

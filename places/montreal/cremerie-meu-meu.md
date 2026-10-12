@@ -7,8 +7,8 @@ address: 4458 Rue Saint-Denis, Montréal, QC H2J 2L1
 phone: +1 514-288-5889
 website:
 reserve:
-lat:
-lng:
+lat: 45.523502
+lng: -73.582356
 checked: 2026-10-12
 ---
 

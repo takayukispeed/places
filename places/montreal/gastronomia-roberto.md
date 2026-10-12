@@ -7,8 +7,8 @@ address: 2221 Rue Bélanger, Montréal, QC H2G 1C4
 phone: +1 514-374-5653
 website: http://www.robertogelateria.com
 reserve:
-lat:
-lng:
+lat: 45.549553
+lng: -73.601008
 checked: 2026-10-12
 ---
 

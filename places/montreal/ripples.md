@@ -7,8 +7,8 @@ address: 3880 Boulevard Saint-Laurent, Montréal, QC
 phone: +1 514-842-1697
 website: https://www.ripplesicecream.com
 reserve:
-lat:
-lng:
+lat: 45.51603
+lng: -73.577983
 checked: 2026-10-12
 ---
 

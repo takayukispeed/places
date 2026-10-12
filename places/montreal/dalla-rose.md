@@ -7,8 +7,8 @@ address: 4609 Rue Notre-Dame Ouest, Montréal, QC H4C 1S5
 phone: +1 514-846-1555
 website:
 reserve:
-lat:
-lng:
+lat: 45.473564
+lng: -73.588185
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2225 Avenue Bennett, Montréal, QC H1V 2T4
 phone: +1 514-303-6040
 website: https://hocheglace.com
 reserve:
-lat:
-lng:
+lat: 45.555984
+lng: -73.541098
 checked: 2026-10-12
 ---
 
