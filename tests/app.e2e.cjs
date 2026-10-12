@@ -132,6 +132,11 @@ const KAZU = [{
   assert.ok(open < placeCount);
   assert.equal(await page.locator(".card .status-dot.shut").count(), 0, "only open places");
   await page.click("#open-now");
+  // Reservations: only places with a booking link
+  await page.click("#reservable");
+  assert.equal(await page.locator(".card").count(), Object.values(repo).filter((t) => /^reserve: https?:\/\//m.test(t)).length);
+  await page.click("#reservable");
+  assert.equal(await page.locator(".card").count(), placeCount);
 
   // Sort: nearest first by default. With no location it falls back to A–Z and says so.
   await page.waitForSelector("text=Location off, so A–Z");

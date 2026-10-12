@@ -105,13 +105,15 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
     return [...document.querySelectorAll("path.leaflet-interactive")].map((p) => p.getBoundingClientRect())
       .filter((r) => r.width > 0).map((r) => `${Math.round(r.x - m.x)},${Math.round(r.y - m.y)}`).sort().join(" ");
   });
-  const spotsBefore = await pinSpots();
+  // The popup may pan the map to fit; measure once it has stopped moving.
+  const settled = async () => { let a, b = await pinSpots(); do { a = b; await page.waitForTimeout(300); b = await pinSpots(); } while (a !== b); return b; };
+  const spotsBefore = await settled();
   await page.locator(".leaflet-popup-content a").first().click();
   await page.waitForSelector(".place");
   await page.goBack();
   await page.waitForFunction(() => [...document.querySelectorAll("path.leaflet-interactive")].some((p) => p.getBoundingClientRect().width > 0));
   await page.waitForTimeout(300);
-  assert.equal(await pinSpots(), spotsBefore, "map keeps its position after Back");
+  assert.equal(await settled(), spotsBefore, "map keeps its position after Back");
   if (OUT) await page.screenshot({ path: OUT });
   // moving updates the dot, not adds another
   await ctx.setGeolocation({ latitude: 45.525, longitude: -73.59, accuracy: 20 });

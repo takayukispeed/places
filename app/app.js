@@ -38,6 +38,7 @@ const state = {
   placeQuery: "",
   placeCats: new Set(), // categories shown; empty means all
   placeOpenNow: false,
+  placeReservable: false, // only places with a booking link
   placesMode: "map", // or "list"
   syncing: false,
   syncError: null,
@@ -565,6 +566,7 @@ function filteredPlaces() {
     if (city && p.city !== city) return false;
     if (state.placeCats.size && !state.placeCats.has(p.category)) return false;
     if (state.placeOpenNow && !hoursStatus(p.hours)?.open) return false;
+    if (state.placeReservable && !/^https?:\/\//.test(p.reserve)) return false;
     if (!q) return true;
     const hay = [p.name, p.area, p.address, categoryLabel(p.category), p.notes].join(" ").toLowerCase();
     return q.split(/\s+/).every((w) => hay.includes(w));
@@ -605,6 +607,7 @@ function placesView() {
     </div>
     <div class="sort-row">
       <button class="chip open-chip ${state.placeOpenNow ? "on" : ""}" id="open-now" aria-pressed="${state.placeOpenNow}">Open now</button>
+      <button class="chip res-chip ${state.placeReservable ? "on" : ""}" id="reservable" aria-pressed="${state.placeReservable}">${ICON.calendar}Reserve</button>
       <span id="sort-status" class="sort-status"></span>
       ${map ? "" : `<div class="segmented small" role="group" aria-label="Sort">
         <button data-sort="near">Nearest</button>
@@ -749,12 +752,17 @@ function placesView() {
     b.onclick = () => { state.placesMode = b.dataset.mode; render(); };
   });
   $("#search").oninput = (e) => { state.placeQuery = e.target.value; show(); };
-  $("#open-now").onclick = (e) => {
-    state.placeOpenNow = !state.placeOpenNow;
-    e.currentTarget.classList.toggle("on", state.placeOpenNow);
-    e.currentTarget.setAttribute("aria-pressed", String(state.placeOpenNow));
-    show();
+  // Filters that sit on top of the categories: Open now, and places you can book online.
+  const toggle = (id, key) => {
+    $(id).onclick = (e) => {
+      state[key] = !state[key];
+      e.currentTarget.classList.toggle("on", state[key]);
+      e.currentTarget.setAttribute("aria-pressed", String(state[key]));
+      show();
+    };
   };
+  toggle("#open-now", "placeOpenNow");
+  toggle("#reservable", "placeReservable");
   app.querySelectorAll("[data-cat]").forEach((c) => {
     // Categories toggle, so several can be on at once; All clears them.
     c.onclick = () => {
