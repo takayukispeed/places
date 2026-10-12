@@ -21,6 +21,6 @@ checked: 2026-10
 
 ## Notes
 
-Vietnamese restaurant.
+Restaurant on Jean-Talon Est (also in Saint-Hubert and Ottawa).
 
 - Hours: [RestoMontréal](https://www.restomontreal.ca/resto/ho-guom-montreal/5236/en/) and Restaurantji. Two listings have it closed Wednesdays, so check midweek.
