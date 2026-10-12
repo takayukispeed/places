@@ -36,6 +36,11 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   await page.click("[data-mode=map]"); await page.waitForSelector(".leaflet-container");
   assert.equal(await page.getAttribute("#locate", "aria-pressed"), "false");
   const before = await page.locator("path.leaflet-interactive").count();
+  // Names: hidden on the whole-city view, shown from neighbourhood zoom, never overlapping.
+  const shownLabels = () => page.evaluate(() => [...document.querySelectorAll(".pin-label")]
+    .filter((l) => getComputedStyle(l).display !== "none" && l.style.visibility !== "hidden")
+    .map((l) => { const r = l.getBoundingClientRect(); return { t: l.textContent, l: r.left, r: r.right, top: r.top, b: r.bottom }; }));
+  assert.equal((await shownLabels()).length, 0, "no names on the city view");
   // New places get coordinates from a GitHub Action after they're pushed, so count those that have them.
   assert.equal(before, Object.values(repo).filter((t) => /^lat: -?\d/m.test(t)).length, "a pin for every place with coordinates");
   const pane = await page.locator("svg.leaflet-zoom-animated").boundingBox();
@@ -50,6 +55,11 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   const centre = await page.evaluate(() => { const r = document.querySelector("#map").getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; });
   const dot = await page.evaluate(() => { const d = document.querySelector(".me-dot").getBoundingClientRect(); return [d.left + d.width / 2, d.top + d.height / 2]; });
   assert.ok(Math.abs(centre[0] - dot[0]) < 3 && Math.abs(centre[1] - dot[1]) < 3, "map centred on me");
+  const labs = await shownLabels();
+  assert.ok(labs.length > 5, `names show once zoomed in (got ${labs.length})`);
+  for (const [i, a] of labs.entries()) for (const b2 of labs.slice(i + 1)) {
+    assert.ok(a.r <= b2.l || b2.r <= a.l || a.b <= b2.top || b2.b <= a.top, `"${a.t}" overlaps "${b2.t}"`);
+  }
   if (OUT) await page.screenshot({ path: OUT });
   // moving updates the dot, not adds another
   await ctx.setGeolocation({ latitude: 45.525, longitude: -73.59, accuracy: 20 });

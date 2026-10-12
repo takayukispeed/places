@@ -335,6 +335,7 @@ async function geocodeMissing(onFound) {
 // ---- Map: OpenStreetMap through Leaflet --------------------------------------------------
 // draw([[place, [lat, lng]], …]) puts the pins on; fit([[lat, lng], …]) zooms to them.
 const MAP_START = [45.52, -73.58];
+const LABEL_ZOOM = 15; // names show from this zoom in (15 ≈ a few blocks across a phone)
 const popupHtml = (p) => {
   const s = hoursStatus(p.hours);
   return `<a class="pop" href="#/view/${esc(p.path)}"><strong>${esc(p.name)}</strong></a><br>
@@ -365,13 +366,36 @@ async function osmMap(el) {
   }).addTo(map);
   const layer = L.layerGroup().addTo(map);
   let me = null;
+  let labels = []; // tooltip elements, most important first
+
+  // Names beside the pins, only from neighbourhood zoom up, and never on top of each other:
+  // going down the list, a name is shown only if it doesn't overlap one already shown.
+  const declutter = () => {
+    const on = map.getZoom() >= LABEL_ZOOM;
+    el.classList.toggle("labels-off", !on);
+    if (!on) return;
+    const kept = [];
+    const gap = 3;
+    for (const lab of labels) {
+      lab.style.visibility = "";
+      const r = lab.getBoundingClientRect();
+      const hit = kept.some((k) => r.left < k.right + gap && r.right > k.left - gap && r.top < k.bottom + gap && r.bottom > k.top - gap);
+      if (hit) lab.style.visibility = "hidden"; else kept.push(r);
+    }
+  };
+  map.on("zoomend moveend", declutter);
+
   return {
     draw(items) {
       layer.clearLayers();
-      for (const [p, c] of items) {
+      const open = (p) => (hoursStatus(p.hours)?.open ? 0 : 1);
+      const markers = [...items].sort(([a], [b]) => open(a) - open(b)).map(([p, c]) =>
         L.circleMarker(c, { radius: 9, color: "#fff", weight: 2, fillColor: categoryColour(p.category), fillOpacity: 1 })
-          .bindPopup(popupHtml(p)).addTo(layer);
-      }
+          .bindPopup(popupHtml(p))
+          .bindTooltip(esc(p.name), { permanent: true, direction: "right", offset: [9, 0], className: "pin-label", interactive: false })
+          .addTo(layer));
+      labels = markers.map((m) => m.getTooltip().getElement()).filter(Boolean); // places open now get first pick
+      declutter();
     },
     fit(pts) {
       // Not animated: a zoom animation still running would undo a "centre on me" made meanwhile.

@@ -224,3 +224,11 @@ details summary { cursor: pointer; color: var(--accent); font-size: 15px; paddin
 .me-pulse { background: rgba(26, 115, 232, .45); animation: me-pulse 2s ease-out infinite; }
 @keyframes me-pulse { from { transform: scale(1); opacity: .9; } to { transform: scale(3.2); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .me-pulse { animation: none; transform: scale(1.8); opacity: .35; } }
+/* Place names on the map: plain text with a white halo, no box. */
+.leaflet-tooltip.pin-label {
+  padding: 0; background: none; border: 0; box-shadow: none; white-space: nowrap;
+  font: 600 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #2a2520;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff;
+}
+.leaflet-tooltip.pin-label::before { display: none; }
+.labels-off .pin-label { display: none; }
