@@ -46,8 +46,10 @@ def main():
         try:
             hit = geocode(address)
             time.sleep(1.1)
-            if not hit:  # "(basement)" notes and postal codes can confuse the geocoder
-                hit = geocode(re.sub(r"\s*\([^)]*\)|,?\s*[A-Z]\d[A-Z] ?\d[A-Z]\d", "", address))
+            if not hit:  # "(basement)" notes, unit numbers and postal codes can confuse the geocoder
+                plain = re.sub(r"\s*\([^)]*\)|,?\s*[A-Z]\d[A-Z] ?\d[A-Z]\d", "", address)
+                plain = re.sub(r",\s*(local|suite|unit|unité|bureau|#)\s*[\w-]+", "", plain, flags=re.I)
+                hit = geocode(plain)
                 time.sleep(1.1)
         except Exception as err:  # network trouble: leave it for the next run
             print(f"{path.relative_to(ROOT)}: {err}")
