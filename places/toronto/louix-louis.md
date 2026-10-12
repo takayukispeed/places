@@ -3,7 +3,7 @@ name: Louix Louis
 city: Toronto
 category: nice
 area: Financial District
-address: 325 Bay St, 31st floor, Toronto, ON M5H 4G3
+address: 325 Bay St, Toronto, ON M5H 4G3
 phone: +1 416-637-5550
 website: https://www.louixlouis.com
 reserve: https://www.opentable.com/r/louix-louis-toronto

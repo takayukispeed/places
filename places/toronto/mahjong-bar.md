@@ -23,6 +23,6 @@ checked: 2026-10-12
 
 ## Notes
 
-Hidden bar behind a convenience-store front. Resy bookings are two-hour seatings; it fills up after 21:00.
+Described as a hidden bar on Dundas West ([View the Vibe](https://viewthevibe.com/mahjong-bar-toronto/)). Resy bookings are two-hour seatings; it fills up after 21:00.
 
 - Hours: Apple Maps and [Best Cocktails Guide](https://www.bestcocktailsguide.com/places-to-drink/speakeasy/toronto/mahjong-bar), October 2026. Those give closing times only; the 18:00 opening is from [Top Toronto Clubs](https://toptorontoclubs.com/clubs/mahjong-bar-toronto/), which says it's open seven nights.

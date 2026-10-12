@@ -3,7 +3,7 @@ name: Big Trouble
 city: Toronto
 category: cocktail
 area: Chinatown
-address: 460 Dundas St W, 2nd floor, Toronto, ON M5T 1G9
+address: 460 Dundas St W, Toronto, ON M5T 1G9
 phone: +1 647-347-8880
 website: https://bigtrouble.ca
 reserve:
