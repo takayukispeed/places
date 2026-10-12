@@ -3,7 +3,7 @@ name: Anton's Pasta Bar
 city: Vancouver
 category: sitdown
 area: Burnaby Heights (Burnaby)
-address: 4260 E Hastings St, Burnaby, BC
+address: 4260 Hastings St, Burnaby, BC
 phone: +1 604-299-6636
 website:
 reserve:
