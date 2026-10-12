@@ -553,7 +553,7 @@ function placesView() {
     <input id="search" type="search" placeholder="Search names, neighbourhoods, notes"
       value="${esc(state.placeQuery)}" autocomplete="off" autocorrect="off">
     <div class="chips">
-      <button class="chip" data-cat="">All</button>
+      <button class="chip" data-cat="">ALL</button>
       ${cats.map((k) => `<button class="chip" data-cat="${esc(k)}">${esc(categoryLabel(k))}</button>`).join("")}
     </div>
     <div class="sort-row">
