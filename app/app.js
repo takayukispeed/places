@@ -557,12 +557,12 @@ function placesView() {
       ${cats.map((k) => `<button class="chip" data-cat="${esc(k)}">${esc(categoryLabel(k))}</button>`).join("")}
     </div>
     <div class="sort-row">
+      <button class="chip open-chip ${state.placeOpenNow ? "on" : ""}" id="open-now" aria-pressed="${state.placeOpenNow}">Open now</button>
+      <span id="sort-status" class="sort-status"></span>
       ${map ? "" : `<div class="segmented small" role="group" aria-label="Sort">
         <button data-sort="near">Nearest</button>
         <button data-sort="az">A–Z</button>
       </div>`}
-      <button class="chip open-chip ${state.placeOpenNow ? "on" : ""}" id="open-now" aria-pressed="${state.placeOpenNow}">Open now</button>
-      <span id="sort-status" class="sort-status"></span>
     </div>
     <div id="results"></div>
     ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>` : ""}
