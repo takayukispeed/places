@@ -22,6 +22,8 @@ const KEY_TOKEN = "pl.token";
 const KEY_HINT = "pl.installHintDismissed";
 const KEY_CITY = "pl.city";
 const KEY_GEO = "pl.geo.v1";
+const KEY_GKEY = "pl.googleMapsKey";
+const KEY_GMAPID = "pl.googleMapId";
 
 // ---- Storage (wrapped: private mode can make localStorage throw) ----------
 const store = {
@@ -252,6 +254,27 @@ function settingsView() {
         </details>
       </section>
       <section class="panel">
+        <h2>Map</h2>
+        <p>The map uses OpenStreetMap. To use Google Maps instead, paste a Google Maps API key. Like the token, it is stored only on this device.</p>
+        <label class="field"><span>Google Maps API key <small>optional</small></span>
+          <input id="gkey" type="password" value="${esc(store.get(KEY_GKEY) || "")}" autocomplete="off" autocapitalize="none" placeholder="AIza…"></label>
+        <label class="field"><span>Map ID <small>optional</small></span>
+          <input id="gmapid" value="${esc(store.get(KEY_GMAPID) || "")}" autocomplete="off" autocapitalize="none" placeholder="DEMO_MAP_ID"></label>
+        <div class="buttons">
+          <button id="save-gkey" class="primary">Save</button>
+          ${store.get(KEY_GKEY) ? `<button id="clear-gkey">Use OpenStreetMap</button>` : ""}
+        </div>
+        <details>
+          <summary>How to get a key</summary>
+          <ol>
+            <li>Open <a href="https://console.cloud.google.com/google/maps-apis/start" target="_blank" rel="noopener">Google Maps Platform</a>, create a project and turn on billing. Google's free monthly allowance covers personal use.</li>
+            <li>Under <em>APIs &amp; Services</em>, enable the <strong>Maps JavaScript API</strong>.</li>
+            <li>Under <em>Keys &amp; Credentials</em>, create an API key. Restrict it: <strong>Websites</strong> → <code>${esc(location.origin)}/*</code>, and <strong>API restrictions</strong> → Maps JavaScript API only.</li>
+            <li>Paste the key here. A Map ID is optional; create one under <em>Map management</em> if Google asks for it.</li>
+          </ol>
+        </details>
+      </section>
+      <section class="panel">
         <h2>Data</h2>
         <p>${state.places.length} places cached for offline use.
           ${state.lastSync ? `Last synced ${state.lastSync.toLocaleTimeString()}.` : ""}</p>
@@ -275,6 +298,17 @@ function settingsView() {
     }
   });
   $("#clear-token")?.addEventListener("click", () => { store.del(KEY_TOKEN); render(); toast("Token removed"); });
+  $("#save-gkey").onclick = () => {
+    const key = $("#gkey").value.trim();
+    const mapId = $("#gmapid").value.trim();
+    key ? store.set(KEY_GKEY, key) : store.del(KEY_GKEY);
+    mapId ? store.set(KEY_GMAPID, mapId) : store.del(KEY_GMAPID);
+    // A different key needs a fresh page, since Google's script can only load once.
+    toast(key ? "Saved. The map will use Google Maps." : "Saved. The map will use OpenStreetMap.");
+    if (window.google?.maps || googleBroken) setTimeout(() => location.reload(), 800);
+    else render();
+  };
+  $("#clear-gkey")?.addEventListener("click", () => { $("#gkey").value = ""; $("#save-gkey").click(); });
   $("#resync").onclick = () => { state.files = {}; persist(); rebuild(); sync(); toast("Re-downloading…"); };
 }
 
@@ -333,6 +367,15 @@ async function geocodeMissing(onFound) {
   } finally { geocoding = false; }
 }
 
+// ---- Maps: OpenStreetMap (Leaflet) by default, Google Maps when this device has a key -------
+// Both give the same two calls: draw([[place, [lat, lng]], …]) and fit([[lat, lng], …]).
+const MAP_START = [45.52, -73.58];
+const popupHtml = (p) => {
+  const s = hoursStatus(p.hours);
+  return `<a class="pop" href="#/view/${esc(p.path)}"><strong>${esc(p.name)}</strong></a><br>
+    ${esc(categoryLabel(p.category))}${p.area ? ` · ${esc(p.area)}` : ""}${s ? `<br><span class="${s.open ? "open" : "shut"}">${esc(s.text)}</span>` : ""}`;
+};
+
 let leafletReady;
 function loadLeaflet() {
   leafletReady ||= new Promise((resolve, reject) => {
@@ -347,6 +390,92 @@ function loadLeaflet() {
     document.head.append(js);
   });
   return leafletReady;
+}
+
+async function osmMap(el) {
+  const L = await loadLeaflet();
+  const map = L.map(el, { zoomControl: false }).setView(MAP_START, 12);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map);
+  const layer = L.layerGroup().addTo(map);
+  return {
+    draw(items) {
+      layer.clearLayers();
+      for (const [p, c] of items) {
+        L.circleMarker(c, { radius: 9, color: "#fff", weight: 2, fillColor: categoryColour(p.category), fillOpacity: 1 })
+          .bindPopup(popupHtml(p)).addTo(layer);
+      }
+    },
+    fit(pts) {
+      if (pts.length > 1) map.fitBounds(pts, { padding: [30, 30], maxZoom: 15 });
+      else if (pts.length === 1) map.setView(pts[0], 15);
+    },
+  };
+}
+
+// A rejected key only shows up after the script loads, through this global callback.
+let googleBroken = false;
+window.gm_authFailure = () => {
+  googleBroken = true;
+  toast("Google Maps rejected the API key. Showing OpenStreetMap instead; check the key in Settings.");
+  if (state.placesMode === "map" && (location.hash || "#/") === "#/") render();
+};
+
+let googleReady;
+function loadGoogle(key) {
+  googleReady ||= new Promise((resolve, reject) => {
+    window.__plGoogleReady = () => resolve(window.google.maps);
+    const js = document.createElement("script");
+    js.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&v=weekly&libraries=marker&loading=async&callback=__plGoogleReady`;
+    js.onerror = () => { googleReady = null; js.remove(); reject(new Error("Google Maps couldn't load. Check your connection.")); };
+    document.head.append(js);
+  });
+  return googleReady;
+}
+
+async function googleMap(el, key) {
+  const maps = await loadGoogle(key);
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const map = new maps.Map(el, {
+    center: { lat: MAP_START[0], lng: MAP_START[1] }, zoom: 12,
+    mapId: store.get(KEY_GMAPID) || "DEMO_MAP_ID", // markers need a map ID; Google provides this one
+    colorScheme: dark ? "DARK" : "LIGHT",
+    disableDefaultUI: true, clickableIcons: false, gestureHandling: "greedy",
+  });
+  const info = new maps.InfoWindow();
+  let markers = [];
+  return {
+    draw(items) {
+      for (const m of markers) m.map = null;
+      markers = items.map(([p, c]) => {
+        const pin = new maps.marker.PinElement({
+          background: categoryColour(p.category), borderColor: "#ffffff", glyphColor: "#ffffff", scale: 0.9,
+        });
+        const marker = new maps.marker.AdvancedMarkerElement({
+          map, position: { lat: c[0], lng: c[1] }, content: pin.element || pin, title: p.name,
+        });
+        marker.addListener("click", () => { info.setContent(popupHtml(p)); info.open({ map, anchor: marker }); });
+        return marker;
+      });
+    },
+    fit(pts) {
+      if (pts.length > 1) {
+        const bounds = new maps.LatLngBounds();
+        for (const [lat, lng] of pts) bounds.extend({ lat, lng });
+        map.fitBounds(bounds, 30);
+        maps.event.addListenerOnce(map, "idle", () => { if (map.getZoom() > 15) map.setZoom(15); });
+      } else if (pts.length === 1) {
+        map.setCenter({ lat: pts[0][0], lng: pts[0][1] });
+        map.setZoom(15);
+      }
+    },
+  };
+}
+
+function makeMap(el) {
+  const key = store.get(KEY_GKEY);
+  return key && !googleBroken ? googleMap(el, key) : osmMap(el);
 }
 
 function filteredPlaces() {
@@ -404,38 +533,18 @@ function placesView() {
       ${statusHtml(p, "card-status")}
     </a></li>`;
 
-  let mapObj = null;
-  let markers = null;
-  const drawMarkers = () => {
-    if (!mapObj) return;
-    const L = window.L;
-    markers.clearLayers();
-    const pts = [];
-    for (const p of filteredPlaces()) {
-      const c = coords(p);
-      if (!c) continue;
-      pts.push(c);
-      const s = hoursStatus(p.hours);
-      L.circleMarker(c, { radius: 9, color: "#fff", weight: 2, fillColor: categoryColour(p.category), fillOpacity: 1 })
-        .bindPopup(`<a class="pop" href="#/view/${esc(p.path)}"><strong>${esc(p.name)}</strong></a><br>
-          ${esc(categoryLabel(p.category))}${p.area ? ` · ${esc(p.area)}` : ""}${s ? `<br><span class="${s.open ? "open" : "shut"}">${esc(s.text)}</span>` : ""}`)
-        .addTo(markers);
-    }
-    return pts;
-  };
-  const fit = (pts) => {
-    if (pts?.length > 1) mapObj.fitBounds(pts, { padding: [30, 30], maxZoom: 15 });
-    else if (pts?.length === 1) mapObj.setView(pts[0], 15);
-  };
+  let mapView = null;
 
   const show = ({ refit = true } = {}) => {
     const matches = filteredPlaces();
     app.querySelectorAll("[data-cat]").forEach((c) => c.classList.toggle("on", (c.dataset.cat || null) === state.placeCat));
     if (map) {
+      if (!mapView || !$("#map-note")) return; // still loading, or it couldn't load
       const missing = matches.filter((p) => !coords(p)).length;
       $("#map-note").textContent = missing ? `Finding ${missing} more on the map…` : "";
-      const pts = drawMarkers();
-      if (refit) fit(pts);
+      const items = matches.map((p) => [p, coords(p)]).filter(([, c]) => c);
+      mapView.draw(items);
+      if (refit) mapView.fit(items.map(([, c]) => c));
       return;
     }
     const loading = !state.lastSync && !Object.keys(state.files).length;
@@ -457,13 +566,9 @@ function placesView() {
 
   if (map) {
     $("#results").innerHTML = `<div id="map" class="map"></div><p id="map-note" class="map-note"></p>`;
-    loadLeaflet().then((L) => {
+    makeMap($("#map")).then((view) => {
       if (!document.getElementById("map")) return;
-      mapObj = L.map("map", { zoomControl: false }).setView([45.52, -73.58], 12);
-      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      }).addTo(mapObj);
-      markers = L.layerGroup().addTo(mapObj);
+      mapView = view;
       show();
       // Pins appear as they're found, without moving the map under your finger. If none were
       // known yet (a new city), zoom to them once the lookups finish.

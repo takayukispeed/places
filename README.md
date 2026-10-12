@@ -87,10 +87,11 @@ The app is a home-screen web app. It is free, needs no App Store, and works offl
 
 - **City** picker (once there is more than one city), **category** chips, **search** (names, neighbourhoods and notes), and **Open now**.
 - **List / Map.** Pins are coloured by category; tap one for its name and whether it is open.
+- **Google Maps (optional):** the map uses OpenStreetMap unless you paste a Google Maps API key in ⚙︎ Settings → Map. The key is stored only on that device, so a shared link still shows OpenStreetMap. Settings explains how to get a key and lock it to this site. If Google rejects the key, the app falls back to OpenStreetMap.
 - **A place:** status (*Open until 23:00*, *Closed · opens 17:00*), **Directions** (Apple Maps on iPhone), **Google Maps** (photos, reviews, live hours), Call and Website buttons, the address, hours with today highlighted, and notes.
 - **Adding:** tap +, type the name and city, then **Look up on OpenStreetMap**. It fills in the map location, and the address, phone, website and hours when OpenStreetMap has them. Check the result before saving. Changing the city moves the file to that city's folder.
 
-**Why not pull data from Google?** Google's Places API needs a billed API key, and a key in a public web app can be copied and used by anyone. OpenStreetMap is free and needs no key, and the Google Maps button gives live details when you need them.
+**Why not pull place data from Google?** Google's Places API needs a billed API key, and a key in a public web app can be copied and used by anyone. OpenStreetMap is free and needs no key, and the Google Maps button gives live details when you need them.
 
 ## Tests
 

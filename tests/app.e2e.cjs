@@ -77,7 +77,7 @@ const KAZU = [{
   }));
   const page = await ctx.newPage();
   const errors = [];
-  page.on("pageerror", (e) => errors.push(e.message));
+  page.on("pageerror", (e) => { errors.push(e.message); if (process.env.DEBUG) console.log(e.stack); });
   const shot = (name) => SHOTS && page.screenshot({ path: path.join(SHOTS, `${name}.png`), fullPage: false });
   const placeCount = Object.keys(repo).filter((p) => p.startsWith("places/")).length;
   const count = (cat) => Object.values(repo).filter((t) => new RegExp(`^category: ${cat}$`, "m").test(t)).length;
@@ -131,6 +131,43 @@ const KAZU = [{
     return `${width} ${fill}`;
   }), "300px rgb(0, 0, 0)");
   await page.click("[data-mode=list]");
+
+  // Google Maps, when this device has a key. A stand-in for Google's script records what the app asks for.
+  await ctx.route("https://maps.googleapis.com/**", (r) => {
+    const cb = new URL(r.request().url()).searchParams.get("callback");
+    r.fulfill({ status: 200, contentType: "text/javascript", body: `(() => {
+      const log = window.__gm = { markers: [], options: null, fitted: 0, key: new URL(document.currentScript.src).searchParams.get("key") };
+      class Map { constructor(el, o) { log.options = o; el.textContent = "google map"; } fitBounds() { log.fitted++; } getZoom() { return 13; } setZoom() {} setCenter() {} }
+      class LatLngBounds { extend() {} }
+      class InfoWindow { setContent(h) { log.popup = h; } open() {} }
+      class PinElement { constructor(o) { this.o = o; this.element = document.createElement("div"); } }
+      class AdvancedMarkerElement { constructor(o) { Object.assign(this, o); log.markers.push(this); this.l = {}; }
+        addListener(t, f) { this.l[t] = f; } set map(v) { this._m = v; if (!v) log.markers.splice(log.markers.indexOf(this), 1); } get map() { return this._m; } }
+      window.google = { maps: { Map, LatLngBounds, InfoWindow, event: { addListenerOnce: (m, t, f) => f() }, marker: { PinElement, AdvancedMarkerElement } } };
+      window[${JSON.stringify(cb)}]();
+    })();` });
+  });
+  await page.goto(base + "#/settings");
+  await page.fill("#gkey", "AIza-test");
+  await page.click("#save-gkey");
+  await page.goto(base);
+  await page.waitForSelector(".card");
+  await page.click("[data-mode=map]");
+  await page.waitForFunction(() => window.__gm?.markers.length);
+  let gm = await page.evaluate(() => ({ n: window.__gm.markers.length, key: window.__gm.key, mapId: window.__gm.options.mapId, fitted: window.__gm.fitted }));
+  assert.deepEqual(gm, { n: placeCount, key: "AIza-test", mapId: "DEMO_MAP_ID", fitted: 1 });
+  await page.click(".chip[data-cat=cocktail]");
+  assert.equal(await page.evaluate(() => window.__gm.markers.length), count("cocktail"), "filters apply to the pins");
+  await page.evaluate(() => window.__gm.markers.find((m) => m.title === "Big in Japan").l.click());
+  assert.match(await page.evaluate(() => window.__gm.popup), /href="#\/view\/places\/montreal\/big-in-japan\.md"/);
+  // A rejected key falls back to OpenStreetMap
+  await page.evaluate(() => window.gm_authFailure());
+  await page.waitForSelector("text=The map needs a connection");
+  await page.click(".chip[data-cat='']");
+  await page.click("[data-mode=list]");
+  await page.goto(base + "#/settings");
+  await page.click("#clear-gkey");
+  await page.waitForLoadState("load");
 
   // Editing without a token is blocked
   await page.goto(base + "#/new/place");
