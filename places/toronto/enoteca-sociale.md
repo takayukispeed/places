@@ -7,8 +7,8 @@ address: 1288 Dundas St W, Toronto, ON M6J 1X7
 phone: +1 416-534-1200
 website:
 reserve: https://www.opentable.ca/enoteca-sociale
-lat:
-lng:
+lat: 43.649601
+lng: -79.425639
 checked: 2026-10-12
 ---
 

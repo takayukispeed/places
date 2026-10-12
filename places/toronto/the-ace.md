@@ -7,8 +7,8 @@ address: 231A Roncesvalles Ave, Toronto, ON M6R 2L6
 phone: +1 416-792-7729
 website: https://www.theacetoronto.com
 reserve: https://www.opentable.com/r/the-ace-toronto
-lat:
-lng:
+lat: 43.646135
+lng: -79.4488
 checked: 2026-10-12
 ---
 

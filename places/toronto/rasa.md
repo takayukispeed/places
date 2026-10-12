@@ -7,8 +7,8 @@ address: 196 Robert St, Toronto, ON
 phone: +1 647-350-8221
 website:
 reserve: https://www.opentable.com/rasa-toronto
-lat:
-lng:
+lat: 43.662959
+lng: -79.404153
 checked: 2026-10-12
 ---
 

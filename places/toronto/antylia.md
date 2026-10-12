@@ -7,8 +7,8 @@ address: 1059 Bloor St W, Toronto, ON M6H 1M5
 phone: +1 416-532-4919
 website:
 reserve:
-lat:
-lng:
+lat: 43.66028
+lng: -79.4325
 checked: 2026-10-12
 ---
 

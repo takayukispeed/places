@@ -7,8 +7,8 @@ address: 1701 Bayview Ave, Toronto, ON M4G 3C1
 phone: +1 416-322-3270
 website: https://www.indianstreetfoodco.com
 reserve: https://www.opentable.com/indian-street-food-co
-lat:
-lng:
+lat: 43.70801
+lng: -79.375834
 checked: 2026-10-12
 ---
 

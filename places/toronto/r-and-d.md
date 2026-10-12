@@ -7,8 +7,8 @@ address: 241 Spadina Ave, Toronto, ON M5T 2E2
 phone: +1 416-586-1241
 website: https://www.rdspadina.com
 reserve: https://www.opentable.com/r-and-d-restaurant
-lat:
-lng:
+lat: 43.651531
+lng: -79.396951
 checked: 2026-10-12
 ---
 

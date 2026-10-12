@@ -7,8 +7,8 @@ address: 996 Queen St E, Toronto, ON M4M 1K1
 phone: +1 647-965-6697
 website: https://rickyandolivia.com
 reserve: https://www.exploretock.com/rickyolivia-toronto
-lat:
-lng:
+lat: 43.661327
+lng: -79.339556
 checked: 2026-10-12
 ---
 

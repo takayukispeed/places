@@ -7,8 +7,8 @@ address: 1194 Bloor St W, Toronto, ON M6H 1N2
 phone:
 website: https://www.almatoronto.com
 reserve: https://www.opentable.ca/r/alma-toronto
-lat:
-lng:
+lat: 43.659452
+lng: -79.438007
 checked: 2026-10-12
 ---
 

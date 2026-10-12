@@ -7,8 +7,8 @@ address: 93 Ossington Ave, Toronto, ON M6J 2Z2
 phone: +1 647-748-9550
 website:
 reserve: https://www.opentable.com/restaurant/profile/1410193
-lat:
-lng:
+lat: 43.646299
+lng: -79.41944
 checked: 2026-10-12
 ---
 

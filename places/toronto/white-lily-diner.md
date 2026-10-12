@@ -7,8 +7,8 @@ address: 678 Queen St E, Toronto, ON M4M 1G8
 phone: +1 416-901-7800
 website: https://whitelilydiner.ca
 reserve:
-lat:
-lng:
+lat: 43.658685
+lng: -79.351197
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 199 Augusta Ave, Toronto, ON M5T 2L4
 phone: +1 647-351-1552
 website:
 reserve: https://www.opentable.ca/r/grey-gardens-toronto
-lat:
-lng:
+lat: 43.6538
+lng: -79.40147
 checked: 2026-10-12
 ---
 

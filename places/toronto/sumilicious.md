@@ -7,8 +7,8 @@ address: 5631 Steeles Ave E, Toronto, ON M1V 5P6
 phone: +1 647-347-8899
 website:
 reserve:
-lat:
-lng:
+lat: 43.832564
+lng: -79.267288
 checked: 2026-10-12
 ---
 

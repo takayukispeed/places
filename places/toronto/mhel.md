@@ -7,8 +7,8 @@ address: 276 Havelock St, Toronto, ON M6H 3B9
 phone: +1 647-567-4017
 website: http://linktr.ee/mhelisanchovy
 reserve:
-lat:
-lng:
+lat: 43.66018
+lng: -79.43243
 checked: 2026-10-12
 ---
 

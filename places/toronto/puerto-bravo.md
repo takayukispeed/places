@@ -7,8 +7,8 @@ address: 1425 Gerrard St E, Toronto, ON M4L 1Z7
 phone: +1 647-920-1251
 website:
 reserve:
-lat:
-lng:
+lat: 43.67203
+lng: -79.32232
 checked: 2026-10-12
 ---
 

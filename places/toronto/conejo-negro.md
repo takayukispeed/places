@@ -7,8 +7,8 @@ address: 838 College St, Toronto, ON M6H 1A2
 phone: +1 416-637-3868
 website: https://conejonegrotoronto.com
 reserve: https://www.opentable.ca/r/conejo-negro-toronto
-lat:
-lng:
+lat: 43.654429
+lng: -79.423056
 checked: 2026-10-12
 ---
 

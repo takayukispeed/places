@@ -7,8 +7,8 @@ address: 141 Ossington Ave, Toronto, ON M6J 2Z6
 phone: +1 647-867-3283
 website:
 reserve: https://www.opentable.ca/r/favorites-thai-bbq-toronto
-lat:
-lng:
+lat: 43.647415
+lng: -79.419842
 checked: 2026-10-12
 ---
 

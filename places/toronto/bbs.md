@@ -7,8 +7,8 @@ address: 5 Brock Ave, Toronto, ON M6K 2K6
 phone: +1 416-668-2023
 website:
 reserve: https://www.opentable.com/r/bbs-diner-toronto
-lat:
-lng:
+lat: 43.642004
+lng: -79.432415
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1970 Queen St E, Toronto, ON M4L 1H8
 phone: +1 416-686-7389
 website:
 reserve:
-lat:
-lng:
+lat: 43.669809
+lng: -79.301594
 checked: 2026-10-12
 ---
 

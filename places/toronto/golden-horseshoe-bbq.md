@@ -7,8 +7,8 @@ address: 657 Dupont St, Toronto, ON
 phone: +1 416-532-9292
 website: https://goldenhorseshoebbq.com
 reserve:
-lat:
-lng:
+lat: 43.671489
+lng: -79.421272
 checked: 2026-10-12
 ---
 

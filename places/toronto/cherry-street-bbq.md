@@ -7,8 +7,8 @@ address: 275 Cherry St, Toronto, ON M5A 3L3
 phone: +1 416-461-5111
 website:
 reserve:
-lat:
-lng:
+lat: 43.645609
+lng: -79.352301
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 64 Oxford St, Toronto, ON M5T 1P1
 phone: +1 647-368-8633
 website:
 reserve:
-lat:
-lng:
+lat: 43.656126
+lng: -79.402935
 checked: 2026-10-12
 ---
 
