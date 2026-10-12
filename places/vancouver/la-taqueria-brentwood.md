@@ -7,8 +7,8 @@ address: 4580 Brentwood Blvd, Burnaby, BC V5C 3Z6
 phone: +1 778-770-9055
 website: https://lataqueria.com
 reserve:
-lat:
-lng:
+lat: 49.267495
+lng: -123.001818
 checked: 2026-10-12
 ---
 

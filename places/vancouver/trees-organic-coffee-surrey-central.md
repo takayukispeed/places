@@ -7,8 +7,8 @@ address: 10299 University Dr, Surrey, BC V3T 0N3
 phone: +1 604-496-1714
 website: https://treescoffee.com
 reserve:
-lat:
-lng:
+lat: 49.18994
+lng: -122.850122
 checked: 2026-10-12
 ---
 

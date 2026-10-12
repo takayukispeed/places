@@ -7,8 +7,8 @@ address: 6065 University Blvd, Vancouver, BC
 phone: +1 604-221-2755
 website: https://dl-chicken-ubc.square.site/
 reserve:
-lat:
-lng:
+lat: 49.266224
+lng: -123.247739
 checked: 2026-10-12
 ---
 

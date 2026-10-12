@@ -7,8 +7,8 @@ address: 13380 102A Ave, Surrey, BC
 phone:
 website: https://www.nemesis.coffee
 reserve:
-lat:
-lng:
+lat: 49.188701
+lng: -122.851528
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 13475 Central Ave, Surrey, BC
 phone: +1 604-953-1010
 website: https://pradocafe.com
 reserve:
-lat:
-lng:
+lat: 49.19042
+lng: -122.848328
 checked: 2026-10-12
 ---
 

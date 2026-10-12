@@ -7,8 +7,8 @@ address: 9659 King George Blvd, Surrey, BC
 phone:
 website: https://treescoffee.com
 reserve:
-lat:
-lng:
+lat: 49.097111
+lng: -122.818281
 checked: 2026-10-12
 ---
 

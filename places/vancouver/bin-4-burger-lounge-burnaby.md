@@ -7,8 +7,8 @@ address: 2350 Boundary Rd, Burnaby, BC V5M 3Z3
 phone: +1 604-423-2464
 website: https://bin4burgerlounge.com
 reserve:
-lat:
-lng:
+lat: 49.264097
+lng: -123.022901
 checked: 2026-10-12
 ---
 

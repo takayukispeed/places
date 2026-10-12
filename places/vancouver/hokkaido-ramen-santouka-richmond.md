@@ -7,8 +7,8 @@ address: 8010 Saba Rd, Richmond, BC V6Y 4B2
 phone: +1 604-285-2500
 website: https://santouka-canada.com/locations/richmond/
 reserve:
-lat:
-lng:
+lat: 49.16855
+lng: -123.135754
 checked: 2026-10-12
 ---
 

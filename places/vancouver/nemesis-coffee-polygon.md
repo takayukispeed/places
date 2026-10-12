@@ -7,8 +7,8 @@ address: 101 Carrie Cates Ct, North Vancouver, BC V7M 3J4
 phone: +1 604-773-3823
 website: https://www.nemesis.coffee
 reserve:
-lat:
-lng:
+lat: 49.310321
+lng: -123.0808
 checked: 2026-10-12
 ---
 

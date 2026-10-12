@@ -7,8 +7,8 @@ address: 2929 St Johns St, Port Moody, BC V3H 2C2
 phone: +1 604-469-6005
 website: https://www.straightbkpizza.com
 reserve:
-lat:
-lng:
+lat: 49.276917
+lng: -122.828416
 checked: 2026-10-12
 ---
 

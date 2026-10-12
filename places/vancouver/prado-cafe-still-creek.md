@@ -7,8 +7,8 @@ address: 4321 Still Creek Dr, Burnaby, BC V5C 6S7
 phone: +1 604-603-1424
 website: https://pradocafe.com
 reserve:
-lat:
-lng:
+lat: 49.25984
+lng: -123.009477
 checked: 2026-10-12
 ---
 

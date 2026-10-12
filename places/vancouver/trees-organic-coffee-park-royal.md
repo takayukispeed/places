@@ -7,8 +7,8 @@ address: 2002 Park Royal S, West Vancouver, BC V7T 2W4
 phone:
 website: https://treescoffee.com
 reserve:
-lat:
-lng:
+lat: 49.326563
+lng: -123.137659
 checked: 2026-10-12
 ---
 

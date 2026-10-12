@@ -7,8 +7,8 @@ address: 19705 Fraser Hwy, Langley, BC V3A 7E9
 phone: +1 778-278-8880
 website: https://www.freehouse.co/locations/sing-sing-willowbrook
 reserve: https://www.opentable.ca/r/sing-sing-willowbrook-langley
-lat:
-lng:
+lat: 49.113423
+lng: -122.67508
 checked: 2026-10-12
 ---
 

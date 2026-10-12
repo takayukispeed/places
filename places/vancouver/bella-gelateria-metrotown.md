@@ -7,8 +7,8 @@ address: 4700 Kingsway, Burnaby, BC V5H 4N2
 phone: +1 604-569-1010
 website: https://www.bellagelateria.com
 reserve:
-lat:
-lng:
+lat: 49.227104
+lng: -122.999643
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1445 Lonsdale Ave, North Vancouver, BC V7M 2H9
 phone: +1 236-551-1445
 website: https://ramendanbo.com
 reserve:
-lat:
-lng:
+lat: 49.321724
+lng: -123.072586
 checked: 2026-10-12
 ---
 

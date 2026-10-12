@@ -7,8 +7,8 @@ address: 501 North Rd, Coquitlam, BC V3J 1N7
 phone: +1 604-931-8284
 website:
 reserve:
-lat:
-lng:
+lat: 49.249278
+lng: -122.892153
 checked: 2026-10-12
 ---
 

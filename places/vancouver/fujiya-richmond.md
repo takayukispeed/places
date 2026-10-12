@@ -7,8 +7,8 @@ address: 3086 St. Edwards Dr, Richmond, BC V6X 4C4
 phone: +1 604-270-3715
 website: https://fujiya.ca
 reserve:
-lat:
-lng:
+lat: 49.191747
+lng: -123.110744
 checked: 2026-10-12
 ---
 

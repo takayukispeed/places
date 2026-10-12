@@ -7,8 +7,8 @@ address: 3300 No. 3 Rd, Richmond, BC V6X 2B6
 phone:
 website: https://treescoffee.com
 reserve:
-lat:
-lng:
+lat: 49.110278
+lng: -123.1383
 checked: 2026-10-12
 ---
 

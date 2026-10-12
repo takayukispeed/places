@@ -7,8 +7,8 @@ address: 4112 Lougheed Hwy, Burnaby, BC V5C 6A8
 phone: +1 604-256-0991
 website: https://treescoffee.com
 reserve:
-lat:
-lng:
+lat: 49.265134
+lng: -123.013086
 checked: 2026-10-12
 ---
 
