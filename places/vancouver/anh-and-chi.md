@@ -7,8 +7,8 @@ address: 3388 Main St, Vancouver, BC V5V 3M7
 phone: 604-878-8883
 website: https://anhandchi.com
 reserve:
-lat:
-lng:
+lat: 49.25506
+lng: -123.100886
 checked: 2026-10-12
 ---
 

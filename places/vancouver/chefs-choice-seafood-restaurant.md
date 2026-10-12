@@ -7,8 +7,8 @@ address: 955 W Broadway, Vancouver, BC V5Z 1K3
 phone: 604-558-1198
 website:
 reserve: https://www.opentable.com/r/chefs-choice-chinese-cuisine-vancouver
-lat:
-lng:
+lat: 49.263644
+lng: -123.125488
 checked: 2026-10-12
 ---
 

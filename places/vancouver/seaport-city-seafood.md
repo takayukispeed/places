@@ -7,8 +7,8 @@ address: 2425 Cambie St, Vancouver, BC V5Z 4M5
 phone: 604-222-7288
 website: https://seaportcityrestaurant.com
 reserve:
-lat:
-lng:
+lat: 49.263885
+lng: -123.11515
 checked: 2026-10-12
 ---
 

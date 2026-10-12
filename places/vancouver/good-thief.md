@@ -7,8 +7,8 @@ address: 3336 Main St, Vancouver, BC V5V 3M7
 phone: 604-428-3336
 website: https://www.goodthief.ca
 reserve: https://www.exploretock.com/good-thief-vancouver
-lat:
-lng:
+lat: 49.255288
+lng: -123.101006
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2741 W 4th Ave, Vancouver, BC V6K 1P9
 phone: 604-559-1666
 website: https://karmaindianbistro.ca
 reserve: https://www.exploretock.com/karma-indian-bistro-vancouver
-lat:
-lng:
+lat: 49.268476
+lng: -123.16712
 checked: 2026-10-12
 ---
 

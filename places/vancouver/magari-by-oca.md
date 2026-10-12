@@ -7,8 +7,8 @@ address: 1260 Commercial Dr, Vancouver, BC V5L 2T6
 phone: 672-999-3309
 website:
 reserve:
-lat:
-lng:
+lat: 49.273375
+lng: -123.069379
 checked: 2026-10-12
 ---
 

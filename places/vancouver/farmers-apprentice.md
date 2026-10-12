@@ -7,8 +7,8 @@ address: 1535 W 6th Ave, Vancouver, BC V6J 1R1
 phone: 604-620-2070
 website: https://farmersapprentice.ca
 reserve: https://www.opentable.ca/r/farmers-apprentice-vancouver
-lat:
-lng:
+lat: 49.266346
+lng: -123.139546
 checked: 2026-10-12
 ---
 

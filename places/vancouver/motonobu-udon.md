@@ -7,8 +7,8 @@ address: 3501 E Hastings St, Vancouver, BC V5K 0E5
 phone: 604-293-1889
 website: https://motonobuudon.ca
 reserve:
-lat:
-lng:
+lat: 49.281281
+lng: -123.02808
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1485 W 12th Ave, Vancouver, BC V6H 1M6
 phone: 604-245-3800
 website: https://garysrestaurant.ca
 reserve: https://www.exploretock.com/garys-vancouver
-lat:
-lng:
+lat: 49.260908
+lng: -123.138264
 checked: 2026-10-12
 ---
 

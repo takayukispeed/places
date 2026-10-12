@@ -7,8 +7,8 @@ address: 3330 Main St, Vancouver, BC V5V 3M7
 phone: 236-482-9060
 website: https://www.sushihil.com
 reserve:
-lat:
-lng:
+lat: 49.255364
+lng: -123.101046
 checked: 2026-10-12
 ---
 

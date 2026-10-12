@@ -7,8 +7,8 @@ address: 3106 Cambie St, Vancouver, BC V5Z 2W2
 phone: 604-736-6664
 website: https://www.vijs.ca
 reserve:
-lat:
-lng:
+lat: 49.257562
+lng: -123.114845
 checked: 2026-10-12
 ---
 

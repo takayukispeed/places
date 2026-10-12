@@ -7,8 +7,8 @@ address: 2958 W 4th Ave, Vancouver, BC V6K 1R4
 phone: 604-325-8132
 website: https://www.littlebirddimsum.com
 reserve: https://www.opentable.ca/restaurant/profile/1057615
-lat:
-lng:
+lat: 49.268299
+lng: -123.171538
 checked: 2026-10-12
 ---
 

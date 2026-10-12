@@ -7,8 +7,8 @@ address: 250 W 3rd Ave, Vancouver, BC V5Y 1G1
 phone: 604-200-6626
 website: https://www.restaurantkavita.com
 reserve: https://www.opentable.ca/r/kavita-vancouver
-lat:
-lng:
+lat: 49.268258
+lng: -123.11011
 checked: 2026-10-12
 ---
 

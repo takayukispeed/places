@@ -7,8 +7,8 @@ address: 317 E Broadway, Vancouver, BC V5T 1W5
 phone: 604-568-0400
 website: https://www.songyvr.com
 reserve: https://www.opentable.com/r/song-by-kin-kao-vancouver-1
-lat:
-lng:
+lat: 49.263007
+lng: -123.098598
 checked: 2026-10-12
 ---
 
