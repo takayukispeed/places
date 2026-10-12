@@ -20,7 +20,7 @@ checked: 2026-10-12
 
 ## Notes
 
-Open since 1989 ([Daily Hive](https://dailyhive.com/vancouver/best-pies-vancouver)). Its ice cream parlour next door, at 1531 Marine Dr, is open 12:00–20:00 ([official site](https://savaryislandpiecompany.ca/pages/ice-cream-shop-west-vancouver)).
+Its ice cream parlour next door, at 1531 Marine Dr, is open 12:00–20:00 ([official site](https://savaryislandpiecompany.ca/pages/ice-cream-shop-west-vancouver)).
 
 - Hours: [Official site](https://savaryislandpiecompany.ca/pages/locations), October 2026; Yelp and Yellow Pages agree.
 - Suggested by lyon.
