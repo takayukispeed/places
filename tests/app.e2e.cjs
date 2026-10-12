@@ -89,8 +89,11 @@ const KAZU = [{
   page.on("pageerror", (e) => { errors.push(e.message); if (process.env.DEBUG) console.log(e.stack); });
   const toList = async () => { await page.click("[data-mode=list]"); await page.waitForSelector(".card"); };
   const shot = (name) => SHOTS && page.screenshot({ path: path.join(SHOTS, `${name}.png`), fullPage: false });
-  const placeCount = Object.keys(repo).filter((p) => p.startsWith("places/")).length;
-  const count = (cat) => Object.values(repo).filter((t) => new RegExp(`^category: ${cat}$`, "m").test(t)).length;
+  // The list opens on one city (Montréal, the first); counts are per city.
+  const inCity = (c) => Object.keys(repo).filter((p) => p.startsWith(`places/${c}/`)).length;
+  const placeCount = inCity("montreal");
+  const allCount = Object.keys(repo).filter((p) => p.startsWith("places/")).length;
+  const count = (cat) => Object.entries(repo).filter(([p, t]) => p.startsWith("places/montreal/") && new RegExp(`^category: ${cat}$`, "m").test(t)).length;
 
   // List: every place, grouped by category in a fixed order
   await page.goto(base);
@@ -134,7 +137,7 @@ const KAZU = [{
   await page.click("#open-now");
   // Reservations: only places with a booking link
   await page.click("#reservable");
-  assert.equal(await page.locator(".card").count(), Object.values(repo).filter((t) => /^reserve: https?:\/\//m.test(t)).length);
+  assert.equal(await page.locator(".card").count(), Object.entries(repo).filter(([p, t]) => p.startsWith("places/montreal/") && /^reserve: https?:\/\//m.test(t)).length);
   await page.click("#reservable");
   assert.equal(await page.locator(".card").count(), placeCount);
 
@@ -255,11 +258,11 @@ const KAZU = [{
   await toList();
   await page.waitForSelector("#city");
   assert.equal(await page.inputValue("#city"), "Toronto", "remembers the last city");
-  assert.equal(await page.locator(".card").count(), 1);
+  assert.equal(await page.locator(".card").count(), inCity("toronto"), "Toronto, including Kazu");
   await page.selectOption("#city", "Montréal");
   assert.equal(await page.locator(".card").count(), placeCount);
   await page.selectOption("#city", "");
-  assert.equal(await page.locator(".card").count(), placeCount + 1);
+  assert.equal(await page.locator(".card").count(), allCount + 1);
 
   // Delete
   page.once("dialog", (d) => d.accept());
