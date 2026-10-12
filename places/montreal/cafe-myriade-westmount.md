@@ -7,8 +7,8 @@ address: 347 Avenue Victoria, Westmount, QC
 phone: +1 438-700-0586
 website: https://cafemyriade.com
 reserve:
-lat:
-lng:
+lat: 45.478308
+lng: -73.601373
 checked: 2026-10-12
 ---
 

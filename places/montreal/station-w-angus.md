@@ -7,8 +7,8 @@ address: 2600 Rue William-Tremblay, Montréal, QC
 phone: +1 514-543-9768
 website: https://www.station-w.com
 reserve:
-lat:
-lng:
+lat: 45.543253
+lng: -73.563984
 checked: 2026-10-12
 ---
 

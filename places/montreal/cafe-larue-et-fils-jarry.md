@@ -7,8 +7,8 @@ address: 405 Rue Jarry Est, Montréal, QC
 phone: +1 514-564-6444
 website: https://cafelarue.ca
 reserve:
-lat:
-lng:
+lat: 45.542843
+lng: -73.629237
 checked: 2026-10-12
 ---
 

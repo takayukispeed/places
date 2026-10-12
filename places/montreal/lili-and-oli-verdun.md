@@ -7,8 +7,8 @@ address: 4554 Rue Wellington, Montréal, QC H4G 1W7
 phone: +1 514-504-5464
 website:
 reserve:
-lat:
-lng:
+lat: 45.45867
+lng: -73.567163
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 260 Place du Marché-du-Nord, Montréal, QC
 phone:
 website: https://sainthenri.ca
 reserve:
-lat:
-lng:
+lat: 45.535924
+lng: -73.614044
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 151 Rue Rachel Est, Montréal, QC H2W 1E1
 phone: +1 514-903-9294
 website: https://www.cafeneve.com
 reserve:
-lat:
-lng:
+lat: 45.519522
+lng: -73.580509
 checked: 2026-10-12
 ---
 

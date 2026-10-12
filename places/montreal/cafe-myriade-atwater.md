@@ -7,8 +7,8 @@ address: 2021 Avenue Atwater, Montréal, QC
 phone: +1 514-600-0726
 website: https://cafemyriade.com
 reserve:
-lat:
-lng:
+lat: 45.490486
+lng: -73.585923
 checked: 2026-10-12
 ---
 

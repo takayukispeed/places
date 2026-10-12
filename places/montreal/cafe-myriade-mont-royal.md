@@ -7,8 +7,8 @@ address: 28 Avenue du Mont-Royal Ouest, Montréal, QC
 phone: +1 438-700-0592
 website: https://cafemyriade.com
 reserve:
-lat:
-lng:
+lat: 45.519566
+lng: -73.586362
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 520 Boulevard Saint-Laurent, Montréal, QC H2Y 2Y9
 phone: +1 514-543-0747
 website:
 reserve:
-lat:
-lng:
+lat: 45.506254
+lng: -73.556166
 checked: 2026-10-12
 ---
 

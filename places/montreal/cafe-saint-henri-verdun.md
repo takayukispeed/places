@@ -7,8 +7,8 @@ address: 4327 Rue Wellington, Montréal, QC
 phone:
 website: https://sainthenri.ca
 reserve:
-lat:
-lng:
+lat: 45.460632
+lng: -73.567453
 checked: 2026-10-12
 ---
 

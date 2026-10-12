@@ -7,8 +7,8 @@ address: 1001 Boulevard Robert-Bourassa, Montréal, QC
 phone:
 website: https://sainthenri.ca
 reserve:
-lat:
-lng:
+lat: 45.50065
+lng: -73.56441
 checked: 2026-10-12
 ---
 

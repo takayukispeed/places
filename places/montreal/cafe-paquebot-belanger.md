@@ -7,8 +7,8 @@ address: 2110 Rue Bélanger, Montréal, QC H2G 1C2
 phone: +1 514-439-4344
 website:
 reserve:
-lat:
-lng:
+lat: 45.548803
+lng: -73.601146
 checked: 2026-10-12
 ---
 

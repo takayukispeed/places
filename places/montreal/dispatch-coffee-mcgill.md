@@ -7,8 +7,8 @@ address: 3480 Rue University, Montréal, QC H3A 0E9
 phone:
 website: https://dispatchcoffee.ca
 reserve:
-lat:
-lng:
+lat: 45.505982
+lng: -73.576152
 checked: 2026-10-12
 ---
 

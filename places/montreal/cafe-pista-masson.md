@@ -7,8 +7,8 @@ address: 2650 Rue Masson, Montréal, QC H1Y 1W2
 phone: +1 438-380-1307
 website: https://cafepista.com
 reserve:
-lat:
-lng:
+lat: 45.545959
+lng: -73.575872
 checked: 2026-10-12
 ---
 

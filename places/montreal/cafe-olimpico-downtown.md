@@ -7,8 +7,8 @@ address: 1333 Boulevard Robert-Bourassa, Montréal, QC H3A 2A4
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.503839
+lng: -73.570765
 checked: 2026-10-12
 ---
 

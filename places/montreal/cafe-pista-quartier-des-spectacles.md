@@ -7,8 +7,8 @@ address: 1587 Boulevard Saint-Laurent, Montréal, QC H2X 2S9
 phone: +1 438-384-1444
 website: https://cafepista.com
 reserve:
-lat:
-lng:
+lat: 45.510974
+lng: -73.56563
 checked: 2026-10-12
 ---
 

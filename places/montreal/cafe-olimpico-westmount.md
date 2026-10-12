@@ -7,8 +7,8 @@ address: 357 Avenue Victoria, Westmount, QC H3Z 2N1
 phone: +1 438-380-6658
 website:
 reserve:
-lat:
-lng:
+lat: 45.478456
+lng: -73.601821
 checked: 2026-10-12
 ---
 

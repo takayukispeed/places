@@ -7,8 +7,8 @@ address: 7335 Rue du Mile-End, Montréal, QC
 phone:
 website: https://sainthenri.ca
 reserve:
-lat:
-lng:
+lat: 45.532342
+lng: -73.623227
 checked: 2026-10-12
 ---
 

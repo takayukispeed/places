@@ -7,8 +7,8 @@ address: 419 Rue Saint-Vincent, Montréal, QC H2Y 3A6
 phone: +1 438-386-9071
 website:
 reserve:
-lat:
-lng:
+lat: 45.507146
+lng: -73.553263
 checked: 2026-10-12
 ---
 

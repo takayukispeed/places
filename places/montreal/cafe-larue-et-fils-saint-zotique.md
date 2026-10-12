@@ -7,8 +7,8 @@ address: 919 Rue Saint-Zotique Est, Montréal, QC
 phone: +1 514-379-6444
 website: https://cafelarue.ca
 reserve:
-lat:
-lng:
+lat: 45.538348
+lng: -73.606137
 checked: 2026-10-12
 ---
 
