@@ -19,6 +19,6 @@ checked: 2026-10-12
 
 ## Notes
 
-Bring-your-own-wine bistro in the Village, on the corner of Rue Atateken. Also serves weekend brunch ([MTL.org](https://www.mtl.org/en/experience/where-eat-montreal-village)).
+Bring-your-own-wine bistro in the Village. Also serves weekend brunch ([MTL.org](https://www.mtl.org/en/experience/where-eat-montreal-village)).
 
-- Hours: dinner hours from [Joinpearl](https://joinpearl.co/restaurants/montreal/othym) and [Foodle](https://foodle.pro/restaurants/montreal/o-thym), October 2026. [Sluurpy](https://www.sluurpy.fr/montreal/restaurant/4754543/o-thym) says Thursday runs until 23:00. No source gives brunch hours, so they aren't listed. Some listings give the address as 1257 Rue Atateken, which is the same corner.
+- Hours: dinner hours from [Joinpearl](https://joinpearl.co/restaurants/montreal/othym) and [Foodle](https://foodle.pro/restaurants/montreal/o-thym), October 2026. [Sluurpy](https://www.sluurpy.fr/montreal/restaurant/4754543/o-thym) says Thursday runs until 23:00. No source gives brunch hours, so they aren't listed. Some listings give the address as 1257 Rue Atateken. 1112 de Maisonneuve Est is the address most sources give.
