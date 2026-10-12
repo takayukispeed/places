@@ -7,8 +7,8 @@ address: 316 Avenue du Mont-Royal Est, Montréal, QC H2T 1P7
 phone: +1 514-845-8813
 website:
 reserve:
-lat:
-lng:
+lat: 45.523115
+lng: -73.583481
 checked: 2026-10-12
 ---
 

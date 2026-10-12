@@ -7,8 +7,8 @@ address: 1700 Rue Ontario Est, Montréal, QC H2L 1S7
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.525707
+lng: -73.559362
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 6835 Boulevard Saint-Laurent, Montréal, QC H2S 3C8
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.532997
+lng: -73.613968
 checked: 2026-10-12
 ---
 

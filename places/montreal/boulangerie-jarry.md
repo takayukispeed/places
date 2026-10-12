@@ -7,8 +7,8 @@ address: 380 Rue Jarry Est, Montréal, QC H2P 1T9
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.542426
+lng: -73.629101
 checked: 2026-10-12
 ---
 

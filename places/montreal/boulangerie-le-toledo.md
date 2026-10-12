@@ -7,8 +7,8 @@ address: 351 Avenue du Mont-Royal Est, Montréal, QC H2T 1R1
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.523584
+lng: -73.58347
 checked: 2026-10-12
 ---
 

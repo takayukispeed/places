@@ -7,8 +7,8 @@ address: 5135 Rue Notre-Dame Ouest, Montréal, QC H4C 1T4
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.469716
+lng: -73.592755
 checked: 2026-10-12
 ---
 

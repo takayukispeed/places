@@ -7,8 +7,8 @@ address: 6805 Rue Saint-Hubert, Montréal, QC H2S 2M7
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.538466
+lng: -73.607968
 checked: 2026-10-12
 ---
 

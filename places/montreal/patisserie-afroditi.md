@@ -7,8 +7,8 @@ address: 756 Rue Saint-Roch, Montréal, QC H3N 1L3
 phone: +1 514-274-5302
 website:
 reserve:
-lat:
-lng:
+lat: 45.528283
+lng: -73.629862
 checked: 2026-10-12
 ---
 

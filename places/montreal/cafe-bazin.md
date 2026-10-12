@@ -7,8 +7,8 @@ address: 380 Avenue Victoria, Westmount, QC
 phone: +1 438-387-3070
 website:
 reserve:
-lat:
-lng:
+lat: 45.47848
+lng: -73.602764
 checked: 2026-10-12
 ---
 

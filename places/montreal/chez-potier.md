@@ -7,8 +7,8 @@ address: 630 Rue Wellington, Montréal, QC H3C 0X9
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.481917
+lng: -73.558264
 checked: 2026-10-12
 ---
 

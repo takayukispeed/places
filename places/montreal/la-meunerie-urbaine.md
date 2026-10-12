@@ -7,8 +7,8 @@ address: 6151 Avenue de Monkland, Montréal, QC H4B 1G3
 phone: +1 514-485-2020
 website:
 reserve:
-lat:
-lng:
+lat: 45.469789
+lng: -73.62841
 checked: 2026-10-12
 ---
 

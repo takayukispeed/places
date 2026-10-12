@@ -7,8 +7,8 @@ address: 2105 Rue Beaubien Est, Montréal, QC
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.545823
+lng: -73.594481
 checked: 2026-10-12
 ---
 

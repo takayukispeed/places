@@ -7,8 +7,8 @@ address: 359 Rue Bernard Ouest, Montréal, QC H2V 1T6
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.52352
+lng: -73.605911
 checked: 2026-10-12
 ---
 
