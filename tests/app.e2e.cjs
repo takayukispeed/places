@@ -103,6 +103,12 @@ const KAZU = [{
     ["CHEAP EATS", "NICE MEAL", "BRUNCH", "CAFÉS", "BAKERIES", "BARS", "FANCY BARS"]);
   await shot("1-list");
 
+  // Copy app link: the address without the #/… page
+  await ctx.grantPermissions(["clipboard-read", "clipboard-write"], { origin: base });
+  await page.click("#copy-link");
+  await page.waitForSelector("text=App link copied");
+  assert.equal(await page.evaluate(() => navigator.clipboard.readText()), base);
+
   // Filters: category chip, search (keeps focus), open now
   await page.click(".chip[data-cat=bar]");
   assert.equal(await page.locator(".card").count(), count("bar"));

@@ -171,6 +171,17 @@ const $ = (sel, root = document) => root.querySelector(sel);
 const app = $("#app");
 
 let toastTimer;
+// The app's address without the current page (#/…), to send to friends.
+async function copyAppLink() {
+  const url = location.origin + location.pathname;
+  try {
+    await navigator.clipboard.writeText(url);
+    toast("App link copied");
+  } catch {
+    window.prompt("Copy this link:", url); // clipboard blocked: show it to copy by hand
+  }
+}
+
 function toast(msg) {
   const el = $("#toast");
   el.textContent = msg;
@@ -193,6 +204,7 @@ const ICON = {
   pin: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
   locate: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>',
   calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>',
+  link: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg>',
   back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
 };
 
@@ -205,6 +217,7 @@ function topBar(title) {
   return `<header class="bar">
       <h1>${title}</h1>
       <div class="bar-actions">
+        <button id="copy-link" class="icon-btn" aria-label="Copy app link">${ICON.link}</button>
         <button id="sync" class="icon-btn" aria-label="Sync with GitHub">${ICON.sync}</button>
         <a class="icon-btn" href="#/settings" aria-label="Settings">${ICON.gear}</a>
       </div>
@@ -602,6 +615,7 @@ function placesView() {
   } else show();
 
   $("#sync").onclick = () => sync();
+  $("#copy-link").onclick = copyAppLink;
   updateSyncButton();
   $("#hint-close")?.addEventListener("click", () => { store.set(KEY_HINT, "1"); render(); });
   $("#city")?.addEventListener("change", (e) => { store.set(KEY_CITY, e.target.value); render(); });
