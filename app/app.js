@@ -93,7 +93,12 @@ async function sync({ quiet = false } = {}) {
   state.syncing = true;
   updateSyncButton();
   try {
-    const tree = await (await gh(`/git/trees/${BRANCH}?recursive=1`)).json();
+    // Signed out: one download of every place, published with the app (see scripts/build_bundle.py).
+    // The GitHub API's signed-out limit (60 requests an hour) can't fetch them one by one.
+    const bundle = token() ? null : await fetch("places.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    const tree = bundle
+      ? { tree: Object.entries(bundle.files).map(([path, f]) => ({ path, type: "blob", sha: f.sha })) }
+      : await (await gh(`/git/trees/${BRANCH}?recursive=1`)).json();
     const wanted = tree.tree.filter((e) => e.type === "blob" && /^places\/[^/]+\/[^/]+\.md$/.test(e.path));
     const next = {};
     const todo = [];
@@ -102,6 +107,8 @@ async function sync({ quiet = false } = {}) {
       if (cached && cached.sha === e.sha) next[e.path] = cached;
       else todo.push(e);
     }
+    const changed = todo.length;
+    if (bundle) for (const e of todo.splice(0)) next[e.path] = bundle.files[e.path];
     await pool(todo, 6, async (e) => {
       const res = await gh(`/git/blobs/${e.sha}`, { accept: "application/vnd.github.raw+json" });
       next[e.path] = { sha: e.sha, text: await res.text() };
@@ -111,7 +118,7 @@ async function sync({ quiet = false } = {}) {
     persist();
     rebuild();
     safeRender();
-    if (!quiet && todo.length) toast(`Updated ${todo.length} file${todo.length > 1 ? "s" : ""}`);
+    if (!quiet && changed) toast(`Updated ${changed} file${changed > 1 ? "s" : ""}`);
     state.syncError = null;
   } catch (err) {
     state.syncError = friendlyError(err);
@@ -507,7 +514,7 @@ function placesView() {
       ${cats.map((k) => `<button class="chip" data-cat="${esc(k)}">${esc(categoryLabel(k))}</button>`).join("")}
     </div>
     <div id="results"></div>
-    <a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>
+    ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>` : ""}
   `;
 
   const card = (p) => `
@@ -611,7 +618,7 @@ function placeView(p) {
   const today = todayLine(p.hours);
   const site = p.website && /^https?:\/\//.test(p.website) ? p.website : "";
   app.innerHTML = `
-    ${backBar("#/", "Places", `<a class="text-btn" href="#/edit/${esc(p.path)}">Edit</a>`)}
+    ${backBar("#/", "Places", token() ? `<a class="text-btn" href="#/edit/${esc(p.path)}">Edit</a>` : "")}
     <article class="place">
       <h1>${esc(p.name)}</h1>
       <p class="meta">${catBadge(p.category)}${p.area ? `<span>${esc(p.area)}</span>` : ""}${p.city ? `<span>${esc(p.city)}</span>` : ""}</p>

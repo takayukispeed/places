@@ -84,6 +84,12 @@ The app is a home-screen web app. It is free, needs no App Store, and works offl
 - A GitHub Action then adds map coordinates for new or moved places and rebuilds `INDEX.md`.
 - Edits made on GitHub, or by Claude, appear the next time the app opens or you tap ↻.
 
+## Sharing with friends
+
+Send them https://takayukispeed.github.io/places/. In Safari, they tap **Share → Add to Home Screen**. Without a GitHub token the app is view-only: there is no add (+) or Edit button, and GitHub refuses changes anyway. Their copy updates whenever the site redeploys.
+
+Signed out, the app reads `places.json`, one file holding every place. `scripts/build_bundle.py` builds it when the site deploys, which happens after every push and after the bot adds map coordinates. One download avoids GitHub's limit of 60 signed-out requests an hour. Because this repo is public, anyone with the link (or the repo) can see the places.
+
 ## In the app
 
 - **City** picker (once there is more than one city), **category** chips, **search** (names, neighbourhoods and notes), and **Open now**.

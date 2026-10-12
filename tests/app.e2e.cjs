@@ -12,9 +12,14 @@ const ROOT = path.resolve(__dirname, "..");
 const SHOTS = process.argv[2];
 const TYPES = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".png": "image/png", ".webmanifest": "application/manifest+json", ".md": "text/markdown" };
 
-// Static server for the app.
+// Static server for the app. places.json is built from the fake repo below, like the Pages deploy does.
 const server = http.createServer((req, res) => {
   let p = decodeURIComponent(new URL(req.url, "http://x").pathname);
+  if (p === "/places.json") {
+    const files = Object.fromEntries(Object.entries(repo).filter(([f]) => f.startsWith("places/")).map(([f, text]) => [f, { sha: sha(text), text }]));
+    res.writeHead(200, { "Content-Type": "application/json" });
+    return res.end(JSON.stringify({ files }));
+  }
   if (p.endsWith("/")) p += "index.html";
   const file = path.join(ROOT, p);
   if (!file.startsWith(ROOT) || !fs.existsSync(file)) { res.writeHead(404); return res.end(); }
@@ -34,12 +39,14 @@ repo["README.md"] = "# not a place\n";
 repo["places/montreal/test-no-hours.md"] = "---\nname: Test Spot\ncity: Montréal\ncategory: cheap\naddress: 1 Rue Test, Montréal\n---\n\n# Test Spot\n\n## Hours\n\n## Notes\n";
 const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
 const commits = [];
+const apiCalls = [];
 const cors = { "Access-Control-Allow-Origin": "*" };
 
 async function mockGitHub(route) {
   const req = route.request();
   const url = new URL(req.url());
   const p = url.pathname.replace("/repos/takayukispeed/places", "");
+  apiCalls.push(p);
   const json = (status, body) => route.fulfill({ status, headers: { ...cors, "Content-Type": "application/json" }, body: JSON.stringify(body) });
   if (p.startsWith("/git/trees/")) {
     return json(200, { tree: Object.entries(repo).map(([path, t]) => ({ path, type: "blob", sha: sha(t) })) });
@@ -88,6 +95,10 @@ const KAZU = [{
   await page.goto(base);
   await page.waitForSelector(".card");
   assert.equal(await page.locator(".card").count(), placeCount);
+  // Signed out (a friend's phone): everything comes from places.json, not the rate-limited API,
+  // and there's no way to add or edit.
+  assert.deepEqual(apiCalls, []);
+  assert.equal(await page.locator(".fab").count(), 0);
   assert.deepEqual(await page.locator(".list-heading").allInnerTexts(),
     ["CHEAP EATS", "NICE MEAL", "BRUNCH", "CAFÉS", "BAKERIES", "BARS", "FANCY BARS"]);
   await shot("1-list");
@@ -112,6 +123,7 @@ const KAZU = [{
   assert.equal(await page.locator(".hours li").count(), 3);
   assert.equal(await page.locator(".hours li.today").count(), 1);
   assert.match(await page.locator(".actions").innerText(), /Directions[\s\S]*Google Maps/);
+  assert.equal(await page.locator("text=Edit").count(), 0, "no Edit when signed out");
   assert.match(await page.locator(".actions a").nth(1).getAttribute("href"), /^https:\/\/www\.google\.com\/maps\/search\/\?api=1&query=Big%20in%20Japan%2C%204175/);
   assert.match(await page.locator(".actions a").nth(0).getAttribute("href"), /^https:\/\/www\.google\.com\/maps\/dir\/\?api=1&destination=Big%20in%20Japan%2C%204175/);
   await shot("2-place");
@@ -144,6 +156,7 @@ const KAZU = [{
   await page.fill("#token", "github_pat_test");
   await page.click("#save-token");
   await page.waitForSelector("text=Connected");
+  assert.deepEqual(apiCalls.filter((c) => c.startsWith("/git/blobs/")), [], "signed in, the bundle's cache is reused");
   await shot("3-settings");
 
   // Add a place with an OpenStreetMap lookup

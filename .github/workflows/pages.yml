@@ -3,6 +3,11 @@ name: Deploy app
 on:
   push:
     branches: [main]
+  # The Rebuild index bot's commits (new map coordinates) don't trigger workflows themselves,
+  # so redeploy after it runs; places.json then carries the coordinates.
+  workflow_run:
+    workflows: [Rebuild index]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,6 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - run: python3 scripts/build_bundle.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
