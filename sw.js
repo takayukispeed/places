@@ -1,6 +1,6 @@
 // Offline support for the app shell. Place data is cached by the app itself
 // (localStorage), and GitHub API requests are never intercepted here.
-const CACHE = "places-v33";
+const CACHE = "places-v34";
 const SHELL = [
   "./",
   "index.html",

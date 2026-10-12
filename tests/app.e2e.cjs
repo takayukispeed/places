@@ -162,6 +162,18 @@ const KAZU = [{
   await page.click("[data-sort=near]");
   await page.waitForFunction(() => /^Cloakroom/.test(document.querySelector(".card-title")?.textContent || ""));
 
+  // Back from a place returns to the same spot in the list, not the top
+  await page.evaluate(() => window.scrollTo(0, 1500));
+  const listY = await page.evaluate(() => window.scrollY);
+  assert.ok(listY > 1000, "list is long enough to scroll");
+  await page.evaluate(() => document.elementFromPoint(200, 400).closest("a.card").click());
+  await page.waitForSelector(".place");
+  assert.equal(await page.evaluate(() => window.scrollY), 0, "a place page opens at the top");
+  await page.goBack();
+  await page.waitForSelector(".card");
+  assert.ok(Math.abs(await page.evaluate(() => window.scrollY) - listY) < 5, "list keeps its scroll position");
+  await page.evaluate(() => window.scrollTo(0, 0));
+
   // Place page
   await page.click("text=Big in Japan");
   await page.waitForSelector(".hours");

@@ -1,7 +1,7 @@
 ---
 name: L'Hamburger
 city: Montréal
-category: cheap
+category: sitdown
 area: Petite-Patrie
 address: 933 Rue Saint-Zotique Est, Montréal, QC H2S 1M9
 phone: +1 438-375-9400

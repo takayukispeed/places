@@ -916,14 +916,24 @@ function placeEditor(p) {
 
 // ---- Router ---------------------------------------------------------------
 let lastRoute = "";
+let listScroll = 0; // the list's scroll position, kept while you look at a place
+if ("scrollRestoration" in history) history.scrollRestoration = "manual"; // the app restores it itself
 function render() {
   stopLocating(); // the map view starts it again if it's still showing
   document.body.classList.remove("map-mode"); // the map view sets it again
   const route = decodeURIComponent(location.hash.slice(1) || "/");
+  // A new page starts at the top, except the list: coming back to it lands where you left it.
+  let scrollTo = null;
   if (route !== lastRoute) {
-    window.scrollTo(0, 0);
+    if (lastRoute === "/" && state.placesMode === "list") listScroll = window.scrollY;
+    scrollTo = route === "/" && state.placesMode === "list" ? listScroll : 0;
     lastRoute = route;
   }
+  showRoute(route);
+  if (scrollTo !== null) window.scrollTo(0, scrollTo);
+}
+
+function showRoute(route) {
   let m;
   if (route === "/" || route === "") return placesView();
   if (route === "/settings") return settingsView();
