@@ -7,8 +7,8 @@ address: 1340 Rue Sainte-Catherine Ouest, Montréal, QC H3G 1P6
 phone: +1 514-431-9345
 website: https://shawarmaz.com
 reserve:
-lat:
-lng:
+lat: 45.497329
+lng: -73.575195
 checked: 2026-10-12
 ---
 
