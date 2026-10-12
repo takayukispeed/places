@@ -6,8 +6,8 @@ area: Mile End
 address: 12 Rue Maguire, Montréal, QC H2T 1B8
 phone: +1 514-495-7880
 website: https://cafeeclair.com
-lat:
-lng:
+lat: 45.524621
+lng: -73.595424
 checked: 2026-10
 ---
 

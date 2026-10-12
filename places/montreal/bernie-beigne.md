@@ -6,8 +6,8 @@ area: Mile End
 address: 23 Rue Bernard Ouest, Montréal, QC H2T 2J6
 phone: +1 514-270-5762
 website:
-lat:
-lng:
+lat: 45.52704
+lng: -73.602698
 checked: 2026-10
 ---
 

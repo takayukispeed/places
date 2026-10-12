@@ -6,8 +6,8 @@ area: Plateau
 address: 4021 Boulevard Saint-Laurent, Montréal, QC H2W 1Y4
 phone: +1 514-504-2351
 website:
-lat:
-lng:
+lat: 45.516961
+lng: -73.579052
 checked: 2026-10
 ---
 

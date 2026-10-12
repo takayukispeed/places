@@ -6,8 +6,8 @@ area: Milton-Parc
 address: 3418B Avenue du Parc, Montréal, QC H2X 2H5
 phone:
 website: https://mintar.ca
-lat:
-lng:
+lat: 45.508495
+lng: -73.57189
 checked: 2026-10
 ---
 
