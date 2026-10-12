@@ -87,7 +87,7 @@ The app is a home-screen web app. It is free, needs no App Store, and works offl
 ## In the app
 
 - **City** picker (once there is more than one city), **category** chips, **search** (names, neighbourhoods and notes), and **Open now**.
-- **List / Map.** Pins are coloured by category; tap one for its name and whether it is open. Zoom in to street level and names appear beside the pins; where two would collide only one shows (places open now first), and the other appears as you zoom further in.
+- **List / Map.** Pins are coloured by category; tap one for its name and whether it is open. Zoom in to neighbourhood level and names appear beside the pins, on the right or, if that's taken, the left. A name never covers another name or pin; where there's no room it waits for a closer zoom (places open now get first pick).
 - **My location:** the arrow button on the map shows a blue dot where you are and centres the map on it. The dot follows you while the map is open, and stays on next time. The first tap asks for location permission; if it was refused, turn it on in iPhone Settings → Privacy & Security → Location Services → Safari Websites.
 - **A place:** status (*Open until 23:00*, *Closed · opens 17:00*), **Directions** (Google Maps; opens the Google Maps app on iPhone if it's installed), **Google Maps** (photos, reviews, live hours), Call and Website buttons, the address, hours with today highlighted, and notes.
 - **Adding:** tap +, type the name and city, then **Look up on OpenStreetMap**. It fills in the map location, and the address, phone, website and hours when OpenStreetMap has them. Check the result before saving. Changing the city moves the file to that city's folder.

@@ -227,7 +227,7 @@ details summary { cursor: pointer; color: var(--accent); font-size: 15px; paddin
 /* Place names on the map: plain text with a white halo, no box. */
 .leaflet-tooltip.pin-label {
   padding: 0; background: none; border: 0; box-shadow: none; white-space: nowrap;
-  font: 600 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #2a2520;
+  font: 700 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #2a2520;
   text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff;
 }
 .leaflet-tooltip.pin-label::before { display: none; }

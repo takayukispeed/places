@@ -56,9 +56,21 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   const dot = await page.evaluate(() => { const d = document.querySelector(".me-dot").getBoundingClientRect(); return [d.left + d.width / 2, d.top + d.height / 2]; });
   assert.ok(Math.abs(centre[0] - dot[0]) < 3 && Math.abs(centre[1] - dot[1]) < 3, "map centred on me");
   const labs = await shownLabels();
-  assert.ok(labs.length > 5, `names show once zoomed in (got ${labs.length})`);
+  const inView = await page.evaluate(() => {
+    const m = document.querySelector("#map").getBoundingClientRect();
+    const inside = (r) => r.left >= m.left && r.right <= m.right && r.top >= m.top && r.bottom <= m.bottom;
+    // Leaflet leaves off-screen pins as zero-size shapes, so count only drawn ones.
+    const pins = [...document.querySelectorAll("path.leaflet-interactive")].map((p) => p.getBoundingClientRect()).filter((r) => r.width > 0 && inside(r)).length;
+    const names = [...document.querySelectorAll(".pin-label")].filter((l) => l.style.visibility !== "hidden" && getComputedStyle(l).display !== "none" && inside(l.getBoundingClientRect())).length;
+    return { pins, names };
+  });
+  assert.ok(inView.names >= inView.pins / 3, `pins on screen get names once zoomed in (${inView.names} names, ${inView.pins} pins)`);
   for (const [i, a] of labs.entries()) for (const b2 of labs.slice(i + 1)) {
     assert.ok(a.r <= b2.l || b2.r <= a.l || a.b <= b2.top || b2.b <= a.top, `"${a.t}" overlaps "${b2.t}"`);
+  }
+  const pinBoxes = await page.evaluate(() => [...document.querySelectorAll("path.leaflet-interactive")].map((p) => p.getBoundingClientRect()).filter((r) => r.width > 0).map((r) => ({ l: r.left, r: r.right, top: r.top, b: r.bottom })));
+  for (const a of labs) for (const p of pinBoxes) {
+    assert.ok(a.r <= p.l || p.r <= a.l || a.b <= p.top || p.b <= a.top, `"${a.t}" covers a pin`);
   }
   if (OUT) await page.screenshot({ path: OUT });
   // moving updates the dot, not adds another

@@ -335,7 +335,7 @@ async function geocodeMissing(onFound) {
 // ---- Map: OpenStreetMap through Leaflet --------------------------------------------------
 // draw([[place, [lat, lng]], …]) puts the pins on; fit([[lat, lng], …]) zooms to them.
 const MAP_START = [45.52, -73.58];
-const LABEL_ZOOM = 15; // names show from this zoom in (15 ≈ a few blocks across a phone)
+const LABEL_ZOOM = 14; // names show from this zoom in (14 ≈ a neighbourhood across a phone)
 const popupHtml = (p) => {
   const s = hoursStatus(p.hours);
   return `<a class="pop" href="#/view/${esc(p.path)}"><strong>${esc(p.name)}</strong></a><br>
@@ -366,24 +366,43 @@ async function osmMap(el) {
   }).addTo(map);
   const layer = L.layerGroup().addTo(map);
   let me = null;
-  let labels = []; // tooltip elements, most important first
+  let labels = []; // [tooltip, its pin's element], most important first
 
-  // Names beside the pins, only from neighbourhood zoom up, and never on top of each other:
-  // going down the list, a name is shown only if it doesn't overlap one already shown.
+  // Names beside the pins, only from neighbourhood zoom up, never on top of each other or of
+  // another pin. Going down the list, each name goes to the right of its pin if that space is
+  // free, else to the left, else it waits for a closer zoom.
+  const SIDES = [["right", [9, 0]], ["left", [-9, 0]]];
   const declutter = () => {
     const on = map.getZoom() >= LABEL_ZOOM;
     el.classList.toggle("labels-off", !on);
     if (!on) return;
-    const kept = [];
     const gap = 3;
-    for (const lab of labels) {
+    const overlaps = (r, k) => r.left < k.right + gap && r.right > k.left - gap && r.top < k.bottom + gap && r.bottom > k.top - gap;
+    // Off-screen pins are left as empty shapes at the corner; only real ones count.
+    const pins = labels.map(([, pin]) => [pin, pin.getBoundingClientRect()]).filter(([, r]) => r.width > 0);
+    const kept = [];
+    for (const [tip, own] of labels) {
+      const lab = tip.getElement();
       lab.style.visibility = "";
-      const r = lab.getBoundingClientRect();
-      const hit = kept.some((k) => r.left < k.right + gap && r.right > k.left - gap && r.top < k.bottom + gap && r.bottom > k.top - gap);
-      if (hit) lab.style.visibility = "hidden"; else kept.push(r);
+      let placed = false;
+      for (const [direction, offset] of SIDES) {
+        if (tip.options.direction !== direction) {
+          tip.options.direction = direction;
+          tip.options.offset = offset;
+          tip.update();
+        }
+        const r = lab.getBoundingClientRect();
+        if (!kept.some((k) => overlaps(r, k)) && !pins.some(([pin, k]) => pin !== own && overlaps(r, k))) {
+          kept.push(r);
+          placed = true;
+          break;
+        }
+      }
+      if (!placed) lab.style.visibility = "hidden";
     }
   };
-  map.on("zoomend moveend", declutter);
+  // After Leaflet has redrawn the pins for the new view, so their positions are current.
+  map.on("zoomend moveend", () => requestAnimationFrame(declutter));
 
   return {
     draw(items) {
@@ -394,7 +413,7 @@ async function osmMap(el) {
           .bindPopup(popupHtml(p))
           .bindTooltip(esc(p.name), { permanent: true, direction: "right", offset: [9, 0], className: "pin-label", interactive: false })
           .addTo(layer));
-      labels = markers.map((m) => m.getTooltip().getElement()).filter(Boolean); // places open now get first pick
+      labels = markers.map((m) => [m.getTooltip(), m.getElement()]).filter(([t, pin]) => t.getElement() && pin); // open now get first pick
       declutter();
     },
     fit(pts) {
