@@ -7,8 +7,8 @@ address: 2175 Rue de la Montagne, Montréal, QC H3G 1Z8
 phone: +1 514-284-9393
 website:
 reserve:
-lat:
-lng:
+lat: 45.499468
+lng: -73.57785
 checked: 2026-10-12
 ---
 
