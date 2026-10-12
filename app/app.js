@@ -283,9 +283,15 @@ function settingsView() {
         <p>${state.places.length} places cached for offline use.
           ${state.lastSync ? `Last synced ${state.lastSync.toLocaleTimeString()}.` : ""}</p>
         <div class="buttons"><button id="resync">Re-download everything</button></div>
+        <p id="app-version" class="status"></p>
       </section>
     </div>
   `;
+  // The service worker's cache is named after the app version, so it says which code is running.
+  window.caches?.keys().then((keys) => {
+    const v = keys.find((k) => k.startsWith("places-"));
+    if (v && $("#app-version")) $("#app-version").textContent = `App version ${v.slice(7)}`;
+  }).catch(() => {});
   const status = $("#token-status");
   $("#save-token").onclick = () => withBusy($("#save-token"), async () => {
     const value = $("#token").value.trim();
@@ -1016,8 +1022,18 @@ window.addEventListener("hashchange", render);
 rebuild();
 render();
 sync({ quiet: true });
+// A home-screen app on iPhone often isn't restarted when reopened, just brought back, so coming
+// back after a while counts as a new visit: pick the city you're in again from a fresh fix.
+let hiddenAt = 0;
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible" && !editing()) sync({ quiet: true });
+  if (document.visibilityState === "hidden") { hiddenAt = Date.now(); return; }
+  if (!editing()) sync({ quiet: true });
+  if (hiddenAt && Date.now() - hiddenAt > 10 * 60 * 1000) {
+    cityAutoPicked = false;
+    navigator.permissions?.query({ name: "geolocation" }).then((p) => {
+      if (p.state === "granted") navigator.geolocation.getCurrentPosition(gotFix, () => {}, { maximumAge: 0, timeout: 15000 });
+    }).catch(() => {});
+  }
 });
 
 // ---- App updates ----------------------------------------------------------
