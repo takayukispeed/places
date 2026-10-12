@@ -6,8 +6,8 @@ area: Saint-Henri
 address: 3632 Rue Notre-Dame Ouest, Montréal, QC
 phone: +1 514-507-9696
 website:
-lat:
-lng:
+lat: 45.479405
+lng: -73.580987
 checked: 2026-10
 ---
 

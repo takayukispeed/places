@@ -6,8 +6,8 @@ area: Hochelaga
 address: 2009 Avenue de la Salle, Montréal, QC H1V 2K6
 phone: +1 514-543-3543
 website: https://helicomtl.com
-lat:
-lng:
+lat: 45.552011
+lng: -73.540539
 checked: 2026-10
 ---
 

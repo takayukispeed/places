@@ -6,8 +6,8 @@ area: Quartier des spectacles
 address: 1635 Rue Clark, Montréal, QC H2X 2R4
 phone: +1 514-508-6800
 website:
-lat:
-lng:
+lat: 45.510789
+lng: -73.566823
 checked: 2026-10
 ---
 

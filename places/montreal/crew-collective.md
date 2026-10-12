@@ -6,8 +6,8 @@ area: Old Montreal
 address: 360 Rue Saint-Jacques, Montréal, QC
 phone: +1 514-285-7095
 website: https://crewcollectivecafe.com
-lat:
-lng:
+lat: 45.502262
+lng: -73.559095
 checked: 2026-10
 ---
 

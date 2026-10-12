@@ -6,8 +6,8 @@ area: Rosemont
 address: 2381 Rue Beaubien Est, Montréal, QC H2G 1N3
 phone: +1 514-725-9769
 website:
-lat:
-lng:
+lat: 45.548103
+lng: -73.592631
 checked: 2026-10
 ---
 

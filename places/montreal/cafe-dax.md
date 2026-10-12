@@ -6,8 +6,8 @@ area: Outremont
 address: 1461 Avenue Van Horne, Montréal, QC H2V 1L3
 phone: +1 514-941-9982
 website:
-lat:
-lng:
+lat: 45.519579
+lng: -73.615935
 checked: 2026-10
 ---
 

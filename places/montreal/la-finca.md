@@ -6,8 +6,8 @@ area: Downtown
 address: 1067 Rue de Bleury, Montréal, QC H2Z 1N1
 phone: +1 514-903-8911
 website: https://www.lafinca.ca
-lat:
-lng:
+lat: 45.504564
+lng: -73.56302
 checked: 2026-10
 ---
 

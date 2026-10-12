@@ -6,8 +6,8 @@ area: Pointe-Saint-Charles
 address: 2604 Rue Saint-Patrick, Montréal, QC H3K 1B8
 phone:
 website: https://www.caferedwood.com
-lat:
-lng:
+lat: 45.479445
+lng: -73.571946
 checked: 2026-10
 ---
 

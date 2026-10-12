@@ -6,8 +6,8 @@ area: Petite-Patrie
 address: 1104 Rue Saint-Zotique Est, Montréal, QC H2S 2H1
 phone: +1 438-936-0959
 website:
-lat:
-lng:
+lat: 45.537343
+lng: -73.606859
 checked: 2026-10
 ---
 

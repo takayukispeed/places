@@ -6,8 +6,8 @@ area: Villeray
 address: 432 Rue de Castelnau Est, Montréal, QC H2R 1R3
 phone:
 website:
-lat:
-lng:
+lat: 45.539544
+lng: -73.616956
 checked: 2026-10
 ---
 

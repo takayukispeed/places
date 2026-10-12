@@ -6,8 +6,8 @@ area: Mile End
 address: 5687 Avenue du Parc, Montréal, QC H2V 4H2
 phone: +1 514-495-7248
 website:
-lat:
-lng:
+lat: 45.523381
+lng: -73.604375
 checked: 2026-10
 ---
 

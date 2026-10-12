@@ -6,8 +6,8 @@ area: Little Burgundy
 address: 2471 Rue Notre-Dame Ouest, Montréal, QC H3J 1N6
 phone: +1 514-934-5000
 website: https://septembersurf.com
-lat:
-lng:
+lat: 45.483211
+lng: -73.574982
 checked: 2026-10
 ---
 
