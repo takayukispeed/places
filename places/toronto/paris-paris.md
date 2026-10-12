@@ -7,8 +7,8 @@ address: 146 Ossington Ave, Toronto, ON M6J 2Z5
 phone: +1 437-983-8774
 website: https://www.parisparis.ca
 reserve: https://www.opentable.com/r/paris-paris-toronto
-lat:
-lng:
+lat: 43.647406
+lng: -79.420198
 checked: 2026-10-12
 ---
 

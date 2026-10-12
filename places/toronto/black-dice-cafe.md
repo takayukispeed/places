@@ -7,8 +7,8 @@ address: 1574 Dundas St W, Toronto, ON M6K 1T8
 phone: +1 647-748-1574
 website: https://blackdicecafe.com
 reserve:
-lat:
-lng:
+lat: 43.649914
+lng: -79.434365
 checked: 2026-10-12
 ---
 

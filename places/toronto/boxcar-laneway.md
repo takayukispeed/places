@@ -7,8 +7,8 @@ address: 298 Markham St, Toronto, ON M6J 2G6
 phone:
 website: https://boxcarsocial.ca/pages/laneway
 reserve:
-lat:
-lng:
+lat: 43.655623
+lng: -79.409316
 checked: 2026-10-12
 ---
 

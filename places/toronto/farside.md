@@ -7,8 +7,8 @@ address: 600 Gerrard St E, Toronto, ON M4M 1Y3
 phone: +1 647-347-7433
 website: https://www.farsidebar.com
 reserve:
-lat:
-lng:
+lat: 43.66585
+lng: -79.35186
 checked: 2026-10-12
 ---
 

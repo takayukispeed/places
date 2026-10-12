@@ -7,8 +7,8 @@ address: 1276 Dundas St W, Toronto, ON M6J 1X7
 phone: +1 647-980-5664
 website:
 reserve: https://resy.com/cities/toronto-on/venues/mahjong-bar
-lat:
-lng:
+lat: 43.64968
+lng: -79.42518
 checked: 2026-10-12
 ---
 

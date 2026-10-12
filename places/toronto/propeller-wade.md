@@ -7,8 +7,8 @@ address: 50 Wade Ave, Toronto, ON M6H 2Z3
 phone: +1 416-479-3771
 website: https://www.propellercoffee.com
 reserve:
-lat:
-lng:
+lat: 43.659377
+lng: -79.44504
 checked: 2026-10-12
 ---
 

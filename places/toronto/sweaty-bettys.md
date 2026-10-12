@@ -7,8 +7,8 @@ address: 13 Ossington Ave, Toronto, ON M6J 2Y8
 phone: +1 416-535-6861
 website:
 reserve:
-lat:
-lng:
+lat: 43.644598
+lng: -79.418778
 checked: 2026-10-12
 ---
 

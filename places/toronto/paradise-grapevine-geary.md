@@ -7,8 +7,8 @@ address: 218 Geary Ave, Toronto, ON M6H 2C1
 phone: +1 416-536-7178
 website: https://paradisegrapevine.com
 reserve:
-lat:
-lng:
+lat: 43.669774
+lng: -79.438494
 checked: 2026-10-12
 ---
 

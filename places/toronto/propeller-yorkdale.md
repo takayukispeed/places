@@ -7,8 +7,8 @@ address: 3401 Dufferin St, Toronto, ON M6A 2T9
 phone:
 website: https://www.propellercoffee.com
 reserve:
-lat:
-lng:
+lat: 43.725624
+lng: -79.452308
 checked: 2026-10-12
 ---
 

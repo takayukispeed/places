@@ -7,8 +7,8 @@ address: 841 Bloor St W, Toronto, ON M6G 1M1
 phone: +1 416-536-7178
 website: https://paradisegrapevine.com
 reserve:
-lat:
-lng:
+lat: 43.662348
+lng: -79.423446
 checked: 2026-10-12
 ---
 

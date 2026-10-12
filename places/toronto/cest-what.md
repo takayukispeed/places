@@ -7,8 +7,8 @@ address: 67 Front St E, Toronto, ON M5E 1B5
 phone: +1 416-867-9499
 website: https://cestwhat.com
 reserve:
-lat:
-lng:
+lat: 43.648423
+lng: -79.373493
 checked: 2026-10-12
 ---
 

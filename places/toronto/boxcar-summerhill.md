@@ -7,8 +7,8 @@ address: 1208 Yonge St, Toronto, ON M4T 1W1
 phone: +1 844-726-9227
 website: https://boxcarsocial.ca/pages/summerhill
 reserve:
-lat:
-lng:
+lat: 43.681698
+lng: -79.391649
 checked: 2026-10-12
 ---
 

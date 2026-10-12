@@ -7,8 +7,8 @@ address: 221 Carlton St, Toronto, ON M5A 2L2
 phone: +1 647-344-7676
 website:
 reserve:
-lat:
-lng:
+lat: 43.663929
+lng: -79.368973
 checked: 2026-10-12
 ---
 

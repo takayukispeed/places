@@ -7,8 +7,8 @@ address: 235 Queens Quay W, Toronto, ON M5J 2G8
 phone: +1 647-349-1210
 website: https://boxcarsocial.ca/pages/harbourfront
 reserve: https://www.opentable.ca/r/boxcar-social-harbourfront-toronto
-lat:
-lng:
+lat: 43.638903
+lng: -79.382843
 checked: 2026-10-12
 ---
 
