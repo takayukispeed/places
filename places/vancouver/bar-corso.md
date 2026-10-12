@@ -7,8 +7,8 @@ address: 1566 Commercial Dr, Vancouver, BC V5L 3Y2
 phone: +1 604-336-9466
 website: https://www.barcorso.ca/
 reserve: https://www.opentable.ca/r/bar-corso-vancouver
-lat:
-lng:
+lat: 49.27075
+lng: -123.069425
 checked: 2026-10-12
 ---
 

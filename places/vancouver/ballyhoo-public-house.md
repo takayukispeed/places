@@ -7,8 +7,8 @@ address: 888 Burrard St, Vancouver, BC
 phone: +1 604-423-2771
 website: https://www.freehouse.co/locations/ballyhoo
 reserve: https://www.opentable.com/r/the-ballyhoo-public-house-vancouver
-lat:
-lng:
+lat: 49.28224
+lng: -123.123807
 checked: 2026-10-12
 ---
 

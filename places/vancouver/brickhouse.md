@@ -7,8 +7,8 @@ address: 730 Main St, Vancouver, BC V6A 2V7
 phone: +1 604-689-8645
 website:
 reserve:
-lat:
-lng:
+lat: 49.278021
+lng: -123.09937
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1055 Canada Pl, Vancouver, BC V6C 0C3
 phone: +1 604-647-7513
 website: https://www.mahonystavern.com/
 reserve: https://www.opentable.ca/r/mahonys-tavern-convention-centre-vancouver
-lat:
-lng:
+lat: 49.288907
+lng: -123.116077
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 6196 Fraser St, Vancouver, BC V5W 3A1
 phone: +1 604-677-4247
 website: https://www.salylimon.ca/fraser
 reserve:
-lat:
-lng:
+lat: 49.228303
+lng: -123.090496
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1100 Lansdowne Dr, Coquitlam, BC V3B 5E2
 phone: +1 604-467-4160
 website: https://www.marinerbrewing.ca/
 reserve:
-lat:
-lng:
+lat: 49.277327
+lng: -122.809491
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2683 E Hastings St, Vancouver, BC V5K 1Z5
 phone: +1 604-255-3188
 website:
 reserve:
-lat:
-lng:
+lat: 49.281325
+lng: -123.049761
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2428 160 St, Surrey, BC
 phone: +1 604-385-2171
 website: https://www.salylimon.ca/south-surrey
 reserve:
-lat:
-lng:
+lat: 49.046452
+lng: -122.778499
 checked: 2026-10-12
 ---
 

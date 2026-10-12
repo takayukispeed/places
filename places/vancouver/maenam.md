@@ -7,8 +7,8 @@ address: 1938 W 4th Ave, Vancouver, BC V6J 1M5
 phone: +1 604-730-5579
 website: https://www.maenam.ca
 reserve: https://www.opentable.ca/r/maenam
-lat:
-lng:
+lat: 49.26791
+lng: -123.14891
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 244 E Georgia St, Vancouver, BC V6A 1Z7
 phone: +1 604-682-5777
 website:
 reserve: https://www.opentable.ca/r/phnom-penh-restaurant-vancouver
-lat:
-lng:
+lat: 49.278351
+lng: -123.098202
 checked: 2026-10-12
 ---
 

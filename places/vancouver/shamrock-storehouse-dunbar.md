@@ -7,8 +7,8 @@ address: 4497 Dunbar St, Vancouver, BC V6S 2G4
 phone: +1 604-620-1322
 website: https://www.shamrockstorehouse.com/shamrocklocations/dunbar
 reserve:
-lat:
-lng:
+lat: 49.246296
+lng: -123.185398
 checked: 2026-10-12
 ---
 

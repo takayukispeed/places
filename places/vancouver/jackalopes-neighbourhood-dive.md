@@ -7,8 +7,8 @@ address: 2257 E Hastings St, Vancouver, BC V5L 1V3
 phone: +1 604-568-6674
 website: https://www.jackalopesdive.ca/
 reserve:
-lat:
-lng:
+lat: 49.281318
+lng: -123.058906
 checked: 2026-10-12
 ---
 

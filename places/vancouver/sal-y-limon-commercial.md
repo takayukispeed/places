@@ -7,8 +7,8 @@ address: 1752 Commercial Dr, Vancouver, BC V5N 4A3
 phone: +1 604-428-6223
 website: https://www.salylimon.ca/commercial-drive
 reserve:
-lat:
-lng:
+lat: 49.268808
+lng: -123.069424
 checked: 2026-10-12
 ---
 

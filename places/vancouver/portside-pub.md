@@ -7,8 +7,8 @@ address: 7 Alexander St, Vancouver, BC V6A 1E9
 phone: +1 604-559-6333
 website: https://theportsidepub.com
 reserve: https://www.opentable.ca/the-portside-pub
-lat:
-lng:
+lat: 49.283562
+lng: -123.103881
 checked: 2026-10-12
 ---
 

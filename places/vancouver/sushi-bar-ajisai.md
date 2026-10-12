@@ -7,8 +7,8 @@ address: 2081 W 42nd Ave, Vancouver, BC
 phone: +1 604-266-1428
 website: https://sushibarajisai.com/
 reserve:
-lat:
-lng:
+lat: 49.233933
+lng: -123.153698
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 670 E Broadway, Vancouver, BC V5T 1X6
 phone: +1 604-829-7032
 website: https://www.hailmaryrestaurant.com/
 reserve:
-lat:
-lng:
+lat: 49.262308
+lng: -123.089504
 checked: 2026-10-12
 ---
 

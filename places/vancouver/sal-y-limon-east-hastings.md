@@ -7,8 +7,8 @@ address: 3614 E Hastings St, Vancouver, BC V5K 0H7
 phone: +1 604-569-8887
 website: https://www.salylimon.ca/east-hastings
 reserve:
-lat:
-lng:
+lat: 49.281123
+lng: -123.026253
 checked: 2026-10-12
 ---
 
