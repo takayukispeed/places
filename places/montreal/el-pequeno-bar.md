@@ -22,6 +22,6 @@ checked: 2026-10
 
 ## Notes
 
-Tiny Cuban-inspired rum and cocktail bar, styled after 1920s Havana; same address and team as The Coldroom.
+Tiny Cuban-inspired rum and cocktail bar, styled after 1920s Havana; same address and phone number as The Coldroom.
 
 - Hours: [elpequenobar.com](https://www.elpequenobar.com/contact).
