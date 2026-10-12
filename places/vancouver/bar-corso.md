@@ -1,7 +1,7 @@
 ---
 name: Bar Corso
 city: Vancouver
-category: sitdown
+category: nice
 area: Grandview-Woodland
 address: 1566 Commercial Dr, Vancouver, BC V5L 3Y2
 phone: +1 604-336-9466

@@ -1,7 +1,7 @@
 ---
 name: Lunch Lady (Commercial Drive)
 city: Vancouver
-category: sitdown
+category: nice
 area: Grandview-Woodland
 address: 1046 Commercial Dr, Vancouver, BC V5L 3W9
 phone: +1 604-559-5938
