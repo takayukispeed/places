@@ -21,7 +21,7 @@ checked: 2026-10
 
 ## Notes
 
-Specialty coffee roaster's café.
+Café on Saint-Laurent.
 
 - There's also a counter in McGill's McConnell Engineering Building (3480 University).
 - Hours: [Restaurant Guru](https://restaurantguru.com/Dispatch-Coffee-Montreal-2). Another listing closes at 17:00 on Mondays.
