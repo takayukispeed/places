@@ -21,4 +21,6 @@ checked: 2026-10-12
 
 ## Notes
 
+The chain closed all three locations in March 2026; this original Blood Alley shop reopened on 16 July 2026 ([Vancouver Is Awesome](https://www.vancouverisawesome.com/food-and-drink/gringo-reopens-vancouver-gastown-12558269)). The Davie St shop closed for good ([Daily Hive](https://dailyhive.com/vancouver/gringo-vancouver-2026)).
+
 - Hours: [Gringo Restaurants](https://gringorestaurants.com/contact-us/), 2026; toast ordering page agrees.
