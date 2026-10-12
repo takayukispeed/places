@@ -7,8 +7,8 @@ address: 2660 Rue Beaubien Est, Montréal, QC H1Y 1G7
 phone:
 website:
 reserve: https://www.opentable.ca/r/mitch-deli-montreal
-lat:
-lng:
+lat: 45.551156
+lng: -73.58947
 checked: 2026-10-12
 ---
 

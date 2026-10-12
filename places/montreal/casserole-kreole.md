@@ -7,8 +7,8 @@ address: 151 Rue de Castelnau Est, Montréal, QC H2R 1P3
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.53679
+lng: -73.618917
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 351 Avenue Laurier Est, Montréal, QC H2T 1G7
 phone: +1 514-279-5173
 website:
 reserve:
-lat:
-lng:
+lat: 45.526408
+lng: -73.590054
 checked: 2026-10-12
 ---
 

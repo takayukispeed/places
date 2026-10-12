@@ -7,8 +7,8 @@ address: 4167 Rue Saint-Denis, Montréal, QC H2W 2M7
 phone: +1 514-285-9078
 website:
 reserve:
-lat:
-lng:
+lat: 45.521746
+lng: -73.577721
 checked: 2026-10-12
 ---
 

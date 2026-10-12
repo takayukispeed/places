@@ -7,8 +7,8 @@ address: 5868 Avenue De Lorimier, Montréal, QC H2G 2N9
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.542435
+lng: -73.588438
 checked: 2026-10-12
 ---
 
