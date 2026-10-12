@@ -7,8 +7,8 @@ address: 458 Queen St W, Toronto, ON M5V 2A8
 phone: +1 647-748-2099
 website: https://dromtaberna.com
 reserve:
-lat:
-lng:
+lat: 43.648206
+lng: -79.399558
 checked: 2026-10-12
 ---
 

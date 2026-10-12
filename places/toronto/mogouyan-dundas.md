@@ -7,8 +7,8 @@ address: 124 Dundas St W, Toronto, ON M5G 1C3
 phone: +1 416-890-7981
 website: https://mogouyannoodles.com
 reserve:
-lat:
-lng:
+lat: 43.655676
+lng: -79.384518
 checked: 2026-10-12
 ---
 

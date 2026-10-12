@@ -7,8 +7,8 @@ address: 2088 Yonge St, Toronto, ON M4S 2A3
 phone: +1 416-480-6234
 website: https://www.fivedoorsnorth.com
 reserve:
-lat:
-lng:
+lat: 43.702223
+lng: -79.397592
 checked: 2026-10-12
 ---
 

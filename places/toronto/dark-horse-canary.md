@@ -7,8 +7,8 @@ address: 416 Front St E, Toronto, ON M5A 0H4
 phone: +1 416-583-1461
 website: https://darkhorseespresso.com
 reserve:
-lat:
-lng:
+lat: 43.65297
+lng: -79.357007
 checked: 2026-10-12
 ---
 

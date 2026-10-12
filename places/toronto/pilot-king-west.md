@@ -7,8 +7,8 @@ address: 100 King St W, Toronto, ON M5X 1A9
 phone:
 website: https://pilotcoffeeroasters.com
 reserve:
-lat:
-lng:
+lat: 43.648768
+lng: -79.381692
 checked: 2026-10-12
 ---
 

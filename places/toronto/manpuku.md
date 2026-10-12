@@ -7,8 +7,8 @@ address: 105 McCaul St, Unit 29-31, Toronto, ON M5T 2X4
 phone: +1 416-979-6763
 website: https://manpuku.ca
 reserve:
-lat:
-lng:
+lat: 43.653552
+lng: -79.390753
 checked: 2026-10-12
 ---
 

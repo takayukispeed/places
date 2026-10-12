@@ -7,8 +7,8 @@ address: 191 College St, Toronto, ON M5T 1P9
 phone: +1 416-506-4040
 website:
 reserve:
-lat:
-lng:
+lat: 43.658754
+lng: -79.394793
 checked: 2026-10-12
 ---
 

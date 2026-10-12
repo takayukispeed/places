@@ -7,8 +7,8 @@ address: 165 York St, Toronto, ON M5H 3R8
 phone: +1 416-703-1773
 website: https://thekeg.com/en/locations/york-street
 reserve: https://www.opentable.com/the-keg-steakhouse-and-bar-york-street
-lat:
-lng:
+lat: 43.649975
+lng: -79.384
 checked: 2026-10-12
 ---
 

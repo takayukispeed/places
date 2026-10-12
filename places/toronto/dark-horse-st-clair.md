@@ -7,8 +7,8 @@ address: 1187 St Clair Ave W, Toronto, ON M6E 1B2
 phone: +1 416-657-6262
 website: https://darkhorseespresso.com
 reserve:
-lat:
-lng:
+lat: 43.677523
+lng: -79.443823
 checked: 2026-10-12
 ---
 

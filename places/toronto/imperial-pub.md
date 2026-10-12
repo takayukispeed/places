@@ -7,8 +7,8 @@ address: 54 Dundas St E, Toronto, ON M5B 1C7
 phone: +1 416-977-4667
 website: https://imperialpub.com
 reserve:
-lat:
-lng:
+lat: 43.65625
+lng: -79.378787
 checked: 2026-10-12
 ---
 

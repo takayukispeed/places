@@ -7,8 +7,8 @@ address: 107 Portland St, Toronto, ON M5V 2N3
 phone: +1 416-901-2289
 website: https://www.jimmyscoffee.ca
 reserve:
-lat:
-lng:
+lat: 43.645261
+lng: -79.400213
 checked: 2026-10-12
 ---
 

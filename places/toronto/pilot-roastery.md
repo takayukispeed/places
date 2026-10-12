@@ -7,8 +7,8 @@ address: 50 Wagstaff Dr, Toronto, ON M4L 3W9
 phone:
 website: https://pilotcoffeeroasters.com
 reserve:
-lat:
-lng:
+lat: 43.673907
+lng: -79.329491
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 100 Adelaide St E, Toronto, ON M5C 1K9
 phone: +1 416-366-7827
 website: https://pearldiver.to
 reserve: https://pearldiver.to
-lat:
-lng:
+lat: 43.65156
+lng: -79.3738
 checked: 2026-10-12
 ---
 

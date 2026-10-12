@@ -7,8 +7,8 @@ address: 57 Ossington Ave, Toronto, ON M6J 2Y9
 phone: +1 416-588-6997
 website: https://photienthanh.com
 reserve:
-lat:
-lng:
+lat: 43.64548
+lng: -79.419155
 checked: 2026-10-12
 ---
 

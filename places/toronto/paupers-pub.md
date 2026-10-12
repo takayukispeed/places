@@ -7,8 +7,8 @@ address: 539 Bloor St W, Toronto, ON M5S 1Y5
 phone: +1 416-530-1331
 website: https://pauperspub.com
 reserve: https://www.opentable.com/r/paupers-pub-toronto
-lat:
-lng:
+lat: 43.665216
+lng: -79.41011
 checked: 2026-10-12
 ---
 

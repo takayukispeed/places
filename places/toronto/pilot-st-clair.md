@@ -7,8 +7,8 @@ address: 1 St Clair Ave E, Toronto, ON M4T 2V7
 phone: +1 416-964-0909
 website: https://pilotcoffeeroasters.com
 reserve:
-lat:
-lng:
+lat: 43.68797
+lng: -79.393613
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 117 Ossington Ave, Toronto, ON M6J 2Z2
 phone: +1 416-645-0273
 website: https://pilotcoffeeroasters.com
 reserve:
-lat:
-lng:
+lat: 43.646633
+lng: -79.419556
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 515 Jarvis St, Toronto, ON M4Y 2H7
 phone: +1 416-964-6609
 website: https://thekeg.com/en/locations/mansion
 reserve: https://www.opentable.com/the-keg-steakhouse-and-bar-mansion
-lat:
-lng:
+lat: 43.666814
+lng: -79.377882
 checked: 2026-10-12
 ---
 

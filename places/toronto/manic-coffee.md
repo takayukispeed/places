@@ -7,8 +7,8 @@ address: 426 College St, Toronto, ON M5T 1T3
 phone: +1 416-966-3888
 website: https://maniccoffee.com
 reserve:
-lat:
-lng:
+lat: 43.656758
+lng: -79.407081
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 166 McCaul St, Toronto, ON M5T 1W4
 phone: +1 647-748-0500
 website: https://www.jimmyscoffee.ca
 reserve:
-lat:
-lng:
+lat: 43.655758
+lng: -79.392189
 checked: 2026-10-12
 ---
 

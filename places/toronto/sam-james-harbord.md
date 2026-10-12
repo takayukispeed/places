@@ -7,8 +7,8 @@ address: 297 Harbord St, Toronto, ON M6G 1G7
 phone:
 website: https://samjamescoffeebar.com
 reserve:
-lat:
-lng:
+lat: 43.66025
+lng: -79.415412
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2901 Bayview Ave, Toronto, ON M2K 1E6
 phone: +1 416-222-5424
 website: https://tabule.ca/location/tabule-bayview/
 reserve: https://tabule.ca/location/tabule-bayview/
-lat:
-lng:
+lat: 43.768934
+lng: -79.38564
 checked: 2026-10-12
 ---
 

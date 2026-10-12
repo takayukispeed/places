@@ -7,8 +7,8 @@ address: 630 Queen St E, Toronto, ON M4M 1G3
 phone: +1 647-436-3460
 website: https://darkhorseespresso.com
 reserve:
-lat:
-lng:
+lat: 43.658461
+lng: -79.352665
 checked: 2026-10-12
 ---
 

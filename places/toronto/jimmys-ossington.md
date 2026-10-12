@@ -7,8 +7,8 @@ address: 15 Ossington Ave, Toronto, ON M6J 2Y8
 phone: +1 647-348-2204
 website: https://www.jimmyscoffee.ca
 reserve:
-lat:
-lng:
+lat: 43.644594
+lng: -79.418836
 checked: 2026-10-12
 ---
 

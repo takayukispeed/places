@@ -7,8 +7,8 @@ address: 1132 Dundas St W, Toronto, ON M6J 1X2
 phone: +1 416-850-8886
 website:
 reserve:
-lat:
-lng:
+lat: 43.64955
+lng: -79.420331
 checked: 2026-10-12
 ---
 

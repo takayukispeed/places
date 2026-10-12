@@ -7,8 +7,8 @@ address: 2201 Yonge St, Toronto, ON M4S 2B2
 phone: +1 416-484-4646
 website: https://thekeg.com/en/locations/yonge-eglinton
 reserve: https://www.opentable.ca/the-keg-steakhouse-and-bar-yonge-and-eglinton
-lat:
-lng:
+lat: 43.705717
+lng: -79.397877
 checked: 2026-10-12
 ---
 

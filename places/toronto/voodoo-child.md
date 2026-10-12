@@ -7,8 +7,8 @@ address: 388 College St, Toronto, ON M5T 1S7
 phone: +1 647-748-1011
 website:
 reserve:
-lat:
-lng:
+lat: 43.65706
+lng: -79.405553
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 191 Baldwin St, Toronto, ON M5T 1L9
 phone: +1 647-352-5466
 website: https://www.jimmyscoffee.ca
 reserve:
-lat:
-lng:
+lat: 43.654567
+lng: -79.40132
 checked: 2026-10-12
 ---
 

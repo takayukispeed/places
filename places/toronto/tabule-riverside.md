@@ -7,8 +7,8 @@ address: 810 Queen St E, Toronto, ON M4M 1H7
 phone: +1 416-465-2500
 website: https://tabule.ca/location/tabule-riverside/
 reserve: https://tabule.ca/location/tabule-riverside/
-lat:
-lng:
+lat: 43.659778
+lng: -79.346367
 checked: 2026-10-12
 ---
 

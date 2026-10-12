@@ -7,8 +7,8 @@ address: 735 Queen St W, Toronto, ON M6J 1G1
 phone: +1 647-348-8089
 website: https://www.jimmyscoffee.ca
 reserve:
-lat:
-lng:
+lat: 43.646542
+lng: -79.406765
 checked: 2026-10-12
 ---
 

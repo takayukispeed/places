@@ -7,8 +7,8 @@ address: 307 Augusta Ave, Toronto, ON M5T 2M2
 phone: +1 647-352-3627
 website: https://cafepamenar.ca
 reserve:
-lat:
-lng:
+lat: 43.656668
+lng: -79.402723
 checked: 2026-10-12
 ---
 

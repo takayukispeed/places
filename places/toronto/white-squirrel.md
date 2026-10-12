@@ -7,8 +7,8 @@ address: 907 Queen St W, Toronto, ON M6J 1G5
 phone: +1 647-428-4478
 website: https://whitesquirrelcoffee.com
 reserve:
-lat:
-lng:
+lat: 43.645366
+lng: -79.412387
 checked: 2026-10-12
 ---
 

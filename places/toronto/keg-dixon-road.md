@@ -7,8 +7,8 @@ address: 927 Dixon Rd, Toronto, ON M9W 1J8
 phone: +1 416-675-2311
 website: https://thekeg.com/en/locations/dixon-road
 reserve: https://www.opentable.ca/the-keg-steakhouse-and-bar-dixon-road
-lat:
-lng:
+lat: 43.686544
+lng: -79.595806
 checked: 2026-10-12
 ---
 

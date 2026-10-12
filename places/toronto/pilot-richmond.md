@@ -7,8 +7,8 @@ address: 439 Richmond St W, Toronto, ON M5V 1X9
 phone:
 website: https://pilotcoffeeroasters.com
 reserve:
-lat:
-lng:
+lat: 43.64767
+lng: -79.39697
 checked: 2026-10-12
 ---
 

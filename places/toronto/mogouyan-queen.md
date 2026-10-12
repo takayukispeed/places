@@ -7,8 +7,8 @@ address: 354 Queen St W, Toronto, ON M5V 2A2
 phone:
 website: https://mogouyannoodles.com
 reserve:
-lat:
-lng:
+lat: 43.649148
+lng: -79.395444
 checked: 2026-10-12
 ---
 

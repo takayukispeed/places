@@ -7,8 +7,8 @@ address: 983 Queen St E, Toronto, ON M4M 1K2
 phone:
 website: https://pilotcoffeeroasters.com
 reserve:
-lat:
-lng:
+lat: 43.661301
+lng: -79.338443
 checked: 2026-10-12
 ---
 

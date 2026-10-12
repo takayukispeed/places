@@ -7,8 +7,8 @@ address: 380 Royal York Rd, Toronto, ON M8Y 2R3
 phone: +1 647-748-7333
 website: https://www.jimmyscoffee.ca
 reserve:
-lat:
-lng:
+lat: 43.618701
+lng: -79.4996
 checked: 2026-10-12
 ---
 

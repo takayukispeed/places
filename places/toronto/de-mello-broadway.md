@@ -7,8 +7,8 @@ address: 2389 Yonge St, Toronto, ON M4P 2C8
 phone:
 website: https://hellodemello.com
 reserve:
-lat:
-lng:
+lat: 43.70984
+lng: -79.398828
 checked: 2026-10-12
 ---
 

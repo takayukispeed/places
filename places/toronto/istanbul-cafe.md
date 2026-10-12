@@ -7,8 +7,8 @@ address: 174 Eglinton Ave E, Toronto, ON M4P 1A6
 phone: +1 416-480-0303
 website: https://istanbulcafe.ca
 reserve:
-lat:
-lng:
+lat: 43.707948
+lng: -79.393118
 checked: 2026-10-12
 ---
 

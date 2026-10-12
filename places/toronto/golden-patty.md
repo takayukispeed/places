@@ -7,8 +7,8 @@ address: 187 Baldwin St, Toronto, ON M5T 1L8
 phone: +1 416-977-3191
 website:
 reserve:
-lat:
-lng:
+lat: 43.65456
+lng: -79.40111
 checked: 2026-10-12
 ---
 

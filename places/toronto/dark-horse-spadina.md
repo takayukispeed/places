@@ -7,8 +7,8 @@ address: 215 Spadina Ave, Toronto, ON M5T 2C7
 phone: +1 416-979-1200
 website: https://darkhorseespresso.com
 reserve:
-lat:
-lng:
+lat: 43.650762
+lng: -79.396629
 checked: 2026-10-12
 ---
 

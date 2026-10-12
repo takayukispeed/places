@@ -7,8 +7,8 @@ address: 55 Bloor St W, Toronto, ON M4W 1A5
 phone:
 website: https://pilotcoffeeroasters.com
 reserve:
-lat:
-lng:
+lat: 43.669671
+lng: -79.388752
 checked: 2026-10-12
 ---
 

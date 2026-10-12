@@ -7,8 +7,8 @@ address: 6 Brock Ave, Toronto, ON M6K 2K9
 phone:
 website: https://samjamescoffeebar.com
 reserve:
-lat:
-lng:
+lat: 43.641825
+lng: -79.432636
 checked: 2026-10-12
 ---
 

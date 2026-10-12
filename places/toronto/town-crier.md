@@ -7,8 +7,8 @@ address: 115 John St, Toronto, ON M5V 2E2
 phone: +1 416-204-9588
 website: https://towncrierpub.ca
 reserve:
-lat:
-lng:
+lat: 43.648146
+lng: -79.390128
 checked: 2026-10-12
 ---
 

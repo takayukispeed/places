@@ -7,8 +7,8 @@ address: 102 Portland St, Toronto, ON M5V 2N2
 phone: +1 416-293-1079
 website: https://www.littlesisterto.com/ls-portland
 reserve:
-lat:
-lng:
+lat: 43.645278
+lng: -79.400567
 checked: 2026-10-12
 ---
 

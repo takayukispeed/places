@@ -7,8 +7,8 @@ address: 365 Bloor St E, Unit 19, Toronto, ON M4W 3L4
 phone:
 website: https://hellodemello.com
 reserve:
-lat:
-lng:
+lat: 43.671782
+lng: -79.377879
 checked: 2026-10-12
 ---
 

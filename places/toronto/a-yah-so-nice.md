@@ -7,8 +7,8 @@ address: 1671 Keele St, Toronto, ON M6M 3W6
 phone: +1 647-368-7590
 website:
 reserve:
-lat:
-lng:
+lat: 43.684158
+lng: -79.472291
 checked: 2026-10-12
 ---
 

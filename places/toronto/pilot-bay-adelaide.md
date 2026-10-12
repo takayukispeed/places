@@ -7,8 +7,8 @@ address: 333 Bay St, Toronto, ON M5H 2R2
 phone:
 website: https://pilotcoffeeroasters.com
 reserve:
-lat:
-lng:
+lat: 43.650334
+lng: -79.380766
 checked: 2026-10-12
 ---
 

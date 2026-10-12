@@ -7,8 +7,8 @@ address: 414 College St, Toronto, ON M5T 1T3
 phone: +1 416-929-3253
 website: https://www.greenroomcafe.ca
 reserve:
-lat:
-lng:
+lat: 43.656823
+lng: -79.406793
 checked: 2026-10-12
 ---
 

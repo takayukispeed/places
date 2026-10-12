@@ -7,8 +7,8 @@ address: 585 University Ave, Toronto, ON M5G 2N2
 phone:
 website: https://www.jimmyscoffee.ca
 reserve:
-lat:
-lng:
+lat: 43.657721
+lng: -79.38923
 checked: 2026-10-12
 ---
 

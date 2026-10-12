@@ -7,8 +7,8 @@ address: 100 King St W, Toronto, ON M5X 1A9
 phone: +1 416-216-6767
 website: https://mamannyc.com/locations/toronto
 reserve:
-lat:
-lng:
+lat: 43.648768
+lng: -79.381692
 checked: 2026-10-12
 ---
 

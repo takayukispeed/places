@@ -7,8 +7,8 @@ address: 1977 Leslie St, Toronto, ON M3B 2M3
 phone: +1 416-446-1045
 website: https://thekeg.com/en/locations/leslie-street
 reserve: https://thekeg.com/en/locations/leslie-street
-lat:
-lng:
+lat: 43.758823
+lng: -79.360874
 checked: 2026-10-12
 ---
 

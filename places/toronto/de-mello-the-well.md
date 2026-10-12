@@ -7,8 +7,8 @@ address: 8 Spadina Ave, Toronto, ON M5V 0S8
 phone:
 website: https://hellodemello.com
 reserve:
-lat:
-lng:
+lat: 43.642983
+lng: -79.394527
 checked: 2026-10-12
 ---
 

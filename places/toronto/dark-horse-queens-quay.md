@@ -7,8 +7,8 @@ address: 100 Queens Quay E, Toronto, ON M5E 1V3
 phone: +1 416-360-4542
 website: https://darkhorseespresso.com
 reserve:
-lat:
-lng:
+lat: 43.64371
+lng: -79.37105
 checked: 2026-10-12
 ---
 

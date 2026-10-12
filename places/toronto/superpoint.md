@@ -7,8 +7,8 @@ address: 184 Ossington Ave, Toronto, ON M6J 2Z7
 phone: +1 416-519-6996
 website: https://www.superpoint.ca
 reserve:
-lat:
-lng:
+lat: 43.648382
+lng: -79.420704
 checked: 2026-10-12
 ---
 

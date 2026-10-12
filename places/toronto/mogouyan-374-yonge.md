@@ -7,8 +7,8 @@ address: 374A Yonge St, Toronto, ON M5B 1S5
 phone: +1 416-890-1296
 website: https://mogouyannoodles.com
 reserve:
-lat:
-lng:
+lat: 43.658851
+lng: -79.382151
 checked: 2026-10-12
 ---
 

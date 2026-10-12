@@ -7,8 +7,8 @@ address: 2009 Yonge St, Toronto, ON M4S 1Z8
 phone: +1 416-483-3747
 website: https://tabule.ca/location/tabule-midtown/
 reserve: https://www.opentable.ca/r/tabule-on-yonge-toronto
-lat:
-lng:
+lat: 43.70091
+lng: -79.396921
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1 York St, Toronto, ON M5J 0B6
 phone:
 website: https://darkhorseespresso.com
 reserve:
-lat:
-lng:
+lat: 43.641709
+lng: -79.379678
 checked: 2026-10-12
 ---
 

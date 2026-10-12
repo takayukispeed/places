@@ -7,8 +7,8 @@ address: 150 King St W, Toronto, ON M5H 1J9
 phone:
 website: https://samjamescoffeebar.com
 reserve:
-lat:
-lng:
+lat: 43.648024
+lng: -79.384005
 checked: 2026-10-12
 ---
 

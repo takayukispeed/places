@@ -7,8 +7,8 @@ address: 760 Yonge St, Toronto, ON M4Y 2B6
 phone: +1 416-890-1296
 website: https://mogouyannoodles.com
 reserve:
-lat:
-lng:
+lat: 43.669459
+lng: -79.386631
 checked: 2026-10-12
 ---
 

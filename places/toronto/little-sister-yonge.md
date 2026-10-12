@@ -7,8 +7,8 @@ address: 2031 Yonge St, Toronto, ON M4S 2A2
 phone: +1 416-488-2031
 website: https://www.littlesisterto.com
 reserve:
-lat:
-lng:
+lat: 43.701573
+lng: -79.39706
 checked: 2026-10-12
 ---
 

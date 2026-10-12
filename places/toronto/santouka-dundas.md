@@ -7,8 +7,8 @@ address: 91 Dundas St E, Toronto, ON M5B 2C8
 phone: +1 647-748-1717
 website: https://santouka-canada.com/locations/dundas-st/
 reserve:
-lat:
-lng:
+lat: 43.656206
+lng: -79.378092
 checked: 2026-10-12
 ---
 

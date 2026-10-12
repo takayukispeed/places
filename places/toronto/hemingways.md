@@ -7,8 +7,8 @@ address: 142 Cumberland St, Toronto, ON M5R 1A8
 phone: +1 416-968-2828
 website: https://hemingways.to
 reserve: https://www.opentable.com/r/hemingways-toronto
-lat:
-lng:
+lat: 43.670153
+lng: -79.392836
 checked: 2026-10-12
 ---
 

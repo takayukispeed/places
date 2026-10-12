@@ -7,8 +7,8 @@ address: 14 Madison Ave, Toronto, ON M5R 2S1
 phone: +1 416-927-1722
 website: https://www.madisonavenuepub.com
 reserve: https://www.opentable.ca/r/madison-avenue-pub-toronto
-lat:
-lng:
+lat: 43.667859
+lng: -79.403471
 checked: 2026-10-12
 ---
 

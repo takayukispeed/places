@@ -7,8 +7,8 @@ address: 84 Gerrard St W, Toronto, ON M5G 1J5
 phone: +1 416-792-1141
 website: https://www.jimmyscoffee.ca
 reserve:
-lat:
-lng:
+lat: 43.658545
+lng: -79.385529
 checked: 2026-10-12
 ---
 

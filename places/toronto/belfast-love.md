@@ -7,8 +7,8 @@ address: 548 King St W, Toronto, ON M5V 1M3
 phone: +1 416-363-2223
 website:
 reserve: https://www.opentable.com/r/belfast-love-toronto
-lat:
-lng:
+lat: 43.645151
+lng: -79.398495
 checked: 2026-10-12
 ---
 
