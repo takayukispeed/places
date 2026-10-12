@@ -3,7 +3,7 @@ name: Katsu San (Richmond)
 city: Vancouver
 category: sitdown
 area: Richmond (Terra Nova)
-address: 6011 No. 1 Rd, Richmond, BC
+address: 6011 No 1 Road, Richmond, BC
 phone: +1 604-370-4420
 website: https://www.katsusan.ca
 reserve:
