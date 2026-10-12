@@ -115,7 +115,8 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); ou
 .card:active { transform: scale(.99); }
 .card-title { font-weight: 600; font-size: 18px; }
 .card-dist { float: right; margin-left: 8px; font-size: 14px; font-weight: 500; color: var(--muted); }
-.sort-row { display: flex; align-items: center; gap: 12px; margin: 8px 0 -4px; }
+.sort-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 8px 0 4px; }
+.sort-row .chip.open-chip { margin-right: 0; }
 .sort-row .segmented { margin: 0; flex: 0 0 auto; padding: 2px; gap: 2px; border-radius: 8px; }
 .sort-row .segmented > * { padding: 3px 10px; font-size: 13px; border-radius: 6px; }
 .sort-status { font-size: 13px; }

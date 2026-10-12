@@ -553,9 +553,16 @@ function placesView() {
     <input id="search" type="search" placeholder="Search names, neighbourhoods, notes"
       value="${esc(state.placeQuery)}" autocomplete="off" autocorrect="off">
     <div class="chips">
-      <button class="chip open-chip ${state.placeOpenNow ? "on" : ""}" id="open-now" aria-pressed="${state.placeOpenNow}">Open now</button>
       <button class="chip" data-cat="">All</button>
       ${cats.map((k) => `<button class="chip" data-cat="${esc(k)}">${esc(categoryLabel(k))}</button>`).join("")}
+    </div>
+    <div class="sort-row">
+      ${map ? "" : `<div class="segmented small" role="group" aria-label="Sort">
+        <button data-sort="near">Nearest</button>
+        <button data-sort="az">A–Z</button>
+      </div>`}
+      <button class="chip open-chip ${state.placeOpenNow ? "on" : ""}" id="open-now" aria-pressed="${state.placeOpenNow}">Open now</button>
+      <span id="sort-status" class="sort-status"></span>
     </div>
     <div id="results"></div>
     ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>` : ""}
@@ -595,36 +602,42 @@ function placesView() {
     const sorted = !sortAz && myPos
       ? [...matches].sort((a, b) => (away(a) ?? Infinity) - (away(b) ?? Infinity))
       : matches;
-    const status = sortAz || myPos ? "" : listFix === "pending" ? "Finding you…" : "Location off, so A–Z";
-    const sortRow = `<div class="sort-row">
-      <div class="segmented small" role="group" aria-label="Sort">
-        <button data-sort="near" class="${sortAz ? "" : "on"}" aria-pressed="${!sortAz}">Nearest</button>
-        <button data-sort="az" class="${sortAz ? "on" : ""}" aria-pressed="${sortAz}">A–Z</button>
-      </div>${status ? `<span class="sort-status">${status}</span>` : ""}</div>`;
-    $("#results").innerHTML = `${sortRow}<ul class="cards">${sorted.map(card).join("")}</ul>`;
-    app.querySelectorAll("[data-sort]").forEach((b) => {
-      b.onclick = () => {
-        if (b.dataset.sort === "az") { store.set(KEY_SORT, "az"); show(); return; }
-        store.del(KEY_SORT);
-        if (myPos) show(); else findMe(true);
-      };
-    });
+    $("#results").innerHTML = `<ul class="cards">${sorted.map(card).join("")}</ul>`;
   };
+  // The sort toggle and its status line (list only) sit outside #results, next to Open now.
+  const showSort = () => {
+    if (map) return;
+    const sortAz = store.get(KEY_SORT) === "az";
+    app.querySelectorAll("[data-sort]").forEach((b) => {
+      const on = (b.dataset.sort === "az") === sortAz;
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-pressed", String(on));
+    });
+    $("#sort-status").textContent = sortAz || myPos ? "" : listFix === "pending" ? "Finding you…" : "Location off, so A–Z";
+  };
+  const showAll = (opts) => { show(opts); showSort(); };
+  app.querySelectorAll("[data-sort]").forEach((b) => {
+    b.onclick = () => {
+      if (b.dataset.sort === "az") { store.set(KEY_SORT, "az"); showAll(); return; }
+      store.del(KEY_SORT);
+      if (myPos) showAll(); else findMe(true);
+    };
+  });
   const results = $("#results");
   // A fix for nearest-first. Asked for automatically, it fails quietly to A–Z; after a tap on
   // Nearest, a failure says why.
   const findMe = (tapped) => {
     listFix = "pending";
-    show();
+    showAll();
     locateOnce(() => {
       listFix = null;
       store.set(KEY_LOCATE, "1"); // the map shows the dot too from now on
-      if (results.isConnected) show();
+      if (results.isConnected) showAll();
     }, (err) => {
       listFix = "failed";
       if (err.code === 1) { if (tapped) locationDenied(); else store.del(KEY_LOCATE); }
       else if (tapped) toast("Couldn't find your location. Try again outside or with Wi-Fi on.");
-      if (results.isConnected) show();
+      if (results.isConnected) showAll();
     });
   };
 
@@ -669,7 +682,7 @@ function placesView() {
         .then(() => { if (document.getElementById("map")) show({ refit: !hadPins }); });
     }).catch((err) => { $("#results").innerHTML = `<p class="empty">${esc(err.message)}</p>`; });
   } else {
-    show();
+    showAll();
     // Nearest first by default: refresh the fix if location is on, or ask once per visit.
     if (store.get(KEY_SORT) !== "az" && (store.get(KEY_LOCATE) || listFix === null)) findMe(false);
   }
