@@ -279,6 +279,23 @@ body.map-mode .map-note:empty { display: none; }
   display: block; margin: 0 0 8px; padding: 7px 12px; border-radius: 8px; font-size: 15px;
   background: var(--accent-soft); color: var(--text); font-weight: 600; text-decoration: none;
 }
-.panel.review { margin-top: 20px; }
+.review-tag {
+  display: inline-block; margin: 0 0 6px; padding: 2px 10px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 600;
+}
+body.reviewing #app { padding-bottom: calc(84px + env(safe-area-inset-bottom)); } /* room for the bar */
+.review-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000;
+  display: flex; gap: 10px; max-width: 680px; margin: 0 auto;
+  padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
+  background: var(--bg); border-top: 1px solid var(--line);
+}
+.rv {
+  flex: 1; min-height: 48px; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--text); font-weight: 600; cursor: pointer;
+}
+.rv-reject { flex: .8; color: #c0392b; }
+.rv-approve { flex: 1.4; background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+.rv:disabled { opacity: .5; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .muted { color: var(--muted); }

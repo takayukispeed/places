@@ -311,6 +311,7 @@ const KAZU = [{
   await page.goto(base);
   await page.click("#sync");
   await page.waitForSelector(".review-banner");
+  assert.equal(await page.locator(".suggest-btn").count(), 0, "signed in, no Suggest button: that's for friends");
   assert.equal((await page.textContent(".review-banner")).trim(), "2 suggested places to review");
   await page.click(".review-banner");
   await page.click("text=Sugg One");

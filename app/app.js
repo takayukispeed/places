@@ -1057,16 +1057,16 @@ function suggestionsView() {
 function suggestionView(p) {
   placeView(p);
   app.querySelector("header.bar").outerHTML = backBar("#/suggestions", "Suggestions");
+  // Approve / Edit / Reject in a bar pinned to the bottom of the screen, under the details.
+  app.querySelector("article.place").insertAdjacentHTML("afterbegin",
+    `<p class="review-tag">Suggested place${/Suggested by ([^.\n]+)/.test(p.notes) ? ` · from ${esc(p.notes.match(/Suggested by ([^.\n]+)/)[1])}` : ""}</p>`);
   app.insertAdjacentHTML("beforeend", `
-    <div class="panel review">
-      <h2>Add this place?</h2>
-      <p class="muted">Check the details above; Edit lets you fix anything first.</p>
-      <div class="buttons">
-        <button id="approve" class="primary">Approve</button>
-        <button id="edit-approve">Edit</button>
-        <button id="reject" class="danger">Reject</button>
-      </div>
+    <div class="review-bar" role="group" aria-label="Review">
+      <button id="reject" class="rv rv-reject">Reject</button>
+      <button id="edit-approve" class="rv">Edit</button>
+      <button id="approve" class="rv rv-approve">Approve</button>
     </div>`);
+  document.body.classList.add("reviewing");
   $("#approve").onclick = () => withBusy($("#approve"), async () => {
     const path = uniquePath(placePath(p), p.name);
     await saveFile(path, state.files[p.path].text, `Add place: ${p.name} (suggested)`);
@@ -1100,7 +1100,7 @@ let listScroll = 0; // the list's scroll position, kept while you look at a plac
 if ("scrollRestoration" in history) history.scrollRestoration = "manual"; // the app restores it itself
 function render() {
   stopLocating(); // the map view starts it again if it's still showing
-  document.body.classList.remove("map-mode"); // the map view sets it again
+  document.body.classList.remove("map-mode", "reviewing"); // the views that need them set them again
   const route = decodeURIComponent(location.hash.slice(1) || "/");
   // A new page starts at the top, except the list: coming back to it lands where you left it.
   let scrollTo = null;
