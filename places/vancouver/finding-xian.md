@@ -7,8 +7,8 @@ address: 8338 Capstan Way, Richmond, BC V6X 4B5
 phone: +1 604-362-4442
 website:
 reserve:
-lat:
-lng:
+lat: 49.187225
+lng: -123.131875
 checked: 2026-10-12
 ---
 
