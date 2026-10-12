@@ -915,6 +915,15 @@ function placeEditor(p) {
 }
 
 // ---- Router ---------------------------------------------------------------
+// Feel like an app: no pinch-zooming the page. iPhone Safari ignores user-scalable=no, so stop its
+// pinch gestures here too. The map does its own zooming with touch events, which this leaves alone.
+for (const type of ["gesturestart", "gesturechange"]) {
+  document.addEventListener(type, (e) => { if (!e.target.closest?.(".leaflet-container")) e.preventDefault(); }, { passive: false });
+}
+document.addEventListener("touchmove", (e) => {
+  if (e.touches.length > 1 && !e.target.closest?.(".leaflet-container")) e.preventDefault();
+}, { passive: false });
+
 let lastRoute = "";
 let listScroll = 0; // the list's scroll position, kept while you look at a place
 if ("scrollRestoration" in history) history.scrollRestoration = "manual"; // the app restores it itself
