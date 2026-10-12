@@ -20,4 +20,4 @@ checked: 2026-10-12
 
 ## Notes
 
-- Hours: third-party directory via [Latin World](https://www.latinworldon.com/), October 2026. A fourth location at 823 Bloor St W has no hours on the official site, so it is not added.
+- Hours: a third-party directory, October 2026; the [official site](https://www.latinworldon.com/) says hours vary by location. A fourth location at 823 Bloor St W has no hours on the official site, so it is not added.
