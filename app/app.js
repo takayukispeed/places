@@ -460,6 +460,10 @@ async function osmMap(el) {
         dot.setLatLng([lat, lng]);
       }
     },
+    // Where the map is, so coming back to it (from a place page, or the list) lands in the same spot.
+    view: () => ({ center: map.getCenter(), zoom: map.getZoom() }),
+    restore({ center, zoom }) { map.setView(center, zoom, { animate: false }); },
+    onMove(fn) { map.on("moveend", fn); },
     centre({ lat, lng }) {
       const go = () => map.setView([lat, lng], Math.max(map.getZoom(), 15));
       // Leaflet ends a zoom animation by jumping to its own target, so wait for any (e.g. pinch) to finish.
@@ -467,6 +471,9 @@ async function osmMap(el) {
     },
   };
 }
+
+// The map's last position this visit, per city (not saved), so Back from a place lands where you were.
+const lastMapView = {};
 
 // ---- My location: watched only while the map is on screen ----------------------------------
 let watchId = null;
@@ -652,7 +659,9 @@ function placesView() {
     osmMap($("#map")).then((view) => {
       if (!document.getElementById("map")) return;
       mapView = view;
-      show();
+      const key = city || "*";
+      if (lastMapView[key]) { view.restore(lastMapView[key]); show({ refit: false }); } else show();
+      view.onMove(() => { lastMapView[key] = view.view(); });
       // My location: the button centres on you; once turned on, the dot shows whenever the map opens.
       let centreNext = false;
       const btn = $("#locate");

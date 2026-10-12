@@ -76,7 +76,19 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   await page.locator(".pin-label", { hasText: labs[0].t }).click();
   await page.waitForSelector(".leaflet-popup");
   assert.ok((await page.locator(".leaflet-popup-content").innerText()).startsWith(labs[0].t), "label opens its place's popup");
-  await page.locator(".leaflet-popup-close-button").click();
+  // From the popup to the place page and Back: the map is where it was, not refitted to the city
+  const pinSpots = () => page.evaluate(() => {
+    const m = document.querySelector("#map").getBoundingClientRect();
+    return [...document.querySelectorAll("path.leaflet-interactive")].map((p) => p.getBoundingClientRect())
+      .filter((r) => r.width > 0).map((r) => `${Math.round(r.x - m.x)},${Math.round(r.y - m.y)}`).sort().join(" ");
+  });
+  const spotsBefore = await pinSpots();
+  await page.locator(".leaflet-popup-content a").first().click();
+  await page.waitForSelector(".place");
+  await page.goBack();
+  await page.waitForSelector("path.leaflet-interactive");
+  await page.waitForTimeout(300);
+  assert.equal(await pinSpots(), spotsBefore, "map keeps its position after Back");
   if (OUT) await page.screenshot({ path: OUT });
   // moving updates the dot, not adds another
   await ctx.setGeolocation({ latitude: 45.525, longitude: -73.59, accuracy: 20 });
