@@ -115,11 +115,15 @@ async function sync({ quiet = false } = {}) {
       const res = await gh(`/git/blobs/${e.sha}`, { accept: "application/vnd.github.raw+json" });
       next[e.path] = { sha: e.sha, text: await res.text() };
     });
-    state.files = next;
+    // Nothing new: keep what's on screen rather than redrawing it (and the map) for no change.
+    const removed = Object.keys(state.files).length !== Object.keys(next).length;
     state.lastSync = new Date();
-    persist();
-    rebuild();
-    safeRender();
+    if (changed || removed) {
+      state.files = next;
+      persist();
+      rebuild();
+      safeRender();
+    }
     if (!quiet && changed) toast(`Updated ${changed} file${changed > 1 ? "s" : ""}`);
     state.syncError = null;
   } catch (err) {
@@ -377,10 +381,10 @@ function loadLeaflet() {
   leafletReady ||= new Promise((resolve, reject) => {
     const css = document.createElement("link");
     css.rel = "stylesheet";
-    css.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+    css.href = "app/vendor/leaflet/leaflet.css"; // Leaflet 1.9.4, served with the app so it is cached with it
     document.head.append(css);
     const js = document.createElement("script");
-    js.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+    js.src = "app/vendor/leaflet/leaflet.js";
     js.onload = () => resolve(window.L);
     js.onerror = () => { leafletReady = null; reject(new Error("The map needs a connection to load.")); };
     document.head.append(js);
@@ -501,8 +505,8 @@ async function osmMap(el) {
   return {
     draw(items) {
       layer.clearLayers();
-      const open = (p) => (hoursStatus(p.hours)?.open ? 0 : 1);
-      markers = [...items].sort(([a], [b]) => open(a) - open(b)).map(([p, c]) => {
+      const shut = new Map(items.map(([p]) => [p, hoursStatus(p.hours)?.open ? 0 : 1]));
+      markers = [...items].sort(([a], [b]) => shut.get(a) - shut.get(b)).map(([p, c]) => {
         const m = L.circleMarker(c, { radius: 9, color: "#fff", weight: 2, fillColor: categoryColour(p.category), fillOpacity: 1 })
           .bindPopup(popupHtml(p))
           .addTo(layer);

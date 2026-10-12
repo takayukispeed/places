@@ -110,10 +110,17 @@ function parseDays(s) {
 }
 
 // → array of 7 (Mon..Sun), each null (unknown) or a list of [open, close] minutes; [] = closed.
+// Remembered per hours list, since the list and map ask about every place on each draw.
+const parsed = new WeakMap();
 export function parseHours(lines) {
+  if (!lines) return null;
+  if (!parsed.has(lines)) parsed.set(lines, readHours(lines));
+  return parsed.get(lines);
+}
+function readHours(lines) {
   const week = Array(7).fill(null);
   let any = false;
-  for (const line of lines || []) {
+  for (const line of lines) {
     const m = line.match(/^([^:]+?)\s*:\s*(.+)$/);
     if (!m) continue;
     const days = parseDays(m[1]);

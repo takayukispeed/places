@@ -1,6 +1,6 @@
 // Offline support for the app shell. Place data is cached by the app itself
 // (localStorage), and GitHub API requests are never intercepted here.
-const CACHE = "places-v40";
+const CACHE = "places-v41";
 const SHELL = [
   "./",
   "index.html",
@@ -11,6 +11,8 @@ const SHELL = [
   "app/styles.css",
   "app/icons/icon-180.png",
   "app/icons/icon-192.png",
+  "app/vendor/leaflet/leaflet.js",
+  "app/vendor/leaflet/leaflet.css",
 ];
 
 self.addEventListener("install", (e) => {

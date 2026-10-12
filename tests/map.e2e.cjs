@@ -1,20 +1,10 @@
-// The map with the real Leaflet (fetched once from npm) and a fake GPS fix: pins visible, the
+// The map with the real Leaflet (app/vendor) and a fake GPS fix: pins visible, the
 // "my location" button, dot, centring, remembered setting and a denied permission.
 //   NODE_PATH=$(npm root -g) node tests/map.e2e.cjs [screenshot.png]
 const { chromium, devices } = require("playwright");
 const http = require("node:http"), fs = require("node:fs"), path = require("node:path"), crypto = require("node:crypto");
 const assert = require("node:assert/strict");
-const { execSync } = require("node:child_process");
-const os = require("node:os");
 const ROOT = path.resolve(__dirname, ".."), OUT = process.argv[2];
-// Leaflet itself, same version the app loads from unpkg, cached in the temp folder.
-const CACHE = path.join(os.tmpdir(), "places-leaflet-1.9.4");
-const LF = path.join(CACHE, "package", "dist");
-if (!fs.existsSync(LF)) {
-  fs.mkdirSync(CACHE, { recursive: true });
-  const tgz = execSync("npm pack leaflet@1.9.4 --silent", { cwd: CACHE }).toString().trim();
-  execSync(`tar xzf ${tgz}`, { cwd: CACHE });
-}
 const T = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".png": "image/png" };
 const srv = http.createServer((q, r) => { let p = decodeURIComponent(new URL(q.url, "http://x").pathname); if (p.endsWith("/")) p += "index.html";
   if (p === "/places.json") { r.writeHead(404); return r.end(); } // a local build may be stale; read the mocked API instead
@@ -29,7 +19,6 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   await ctx.route("https://api.github.com/**", (r) => { const p = new URL(r.request().url()).pathname;
     if (p.includes("/git/trees/")) return r.fulfill({ headers: cors, contentType: "application/json", body: JSON.stringify({ tree: Object.entries(repo).map(([path, t]) => ({ path, type: "blob", sha: sha(t) })) }) });
     const hit = Object.values(repo).find((t) => sha(t) === p.split("/").pop()); return r.fulfill({ headers: cors, body: hit || "" }); });
-  await ctx.route("https://unpkg.com/**", (r) => r.fulfill({ path: LF + "/" + new URL(r.request().url()).pathname.split("/dist/")[1] }));
   await ctx.route("https://tile.openstreetmap.org/**", (r) => r.abort());
   const page = await ctx.newPage(); const errs = []; page.on("pageerror", (e) => errs.push(e.message));
   const base = `http://localhost:${srv.address().port}/`;

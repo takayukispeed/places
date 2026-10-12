@@ -80,7 +80,7 @@ const KAZU = [{
   const browser = await chromium.launch();
   const ctx = await browser.newContext({ ...devices["iPhone 15"], serviceWorkers: "block" });
   await ctx.route("https://api.github.com/**", mockGitHub);
-  await ctx.route("https://unpkg.com/**", (r) => r.abort()); // no Leaflet offline: the map shows a message
+  await ctx.route("**/app/vendor/leaflet/**", (r) => r.abort()); // no Leaflet: the map shows a message
   await ctx.route("https://nominatim.openstreetmap.org/**", (r) => r.fulfill({
     status: 200, headers: { ...cors, "Content-Type": "application/json" }, body: JSON.stringify(KAZU),
   }));
