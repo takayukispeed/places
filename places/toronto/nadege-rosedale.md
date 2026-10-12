@@ -7,8 +7,8 @@ address: 1099 Yonge St, Toronto, ON M4W 2L7
 phone: +1 416-968-2011
 website: https://www.nadege-patisserie.com
 reserve:
-lat:
-lng:
+lat: 43.680127
+lng: -79.390634
 checked: 2026-10-12
 ---
 

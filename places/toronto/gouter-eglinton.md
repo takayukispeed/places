@@ -7,8 +7,8 @@ address: 300 Eglinton Ave W, Toronto, ON M4R 1B2
 phone: +1 416-519-9967
 website: https://www.gouter.ca
 reserve:
-lat:
-lng:
+lat: 43.704904
+lng: -79.408158
 checked: 2026-10-12
 ---
 

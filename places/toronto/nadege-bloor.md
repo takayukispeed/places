@@ -7,8 +7,8 @@ address: 494 Bloor St W, Toronto, ON M5S 1Y1
 phone: +1 437-915-9265
 website: https://www.nadege-patisserie.com
 reserve:
-lat:
-lng:
+lat: 43.665531
+lng: -79.40987
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 8 Pardee Ave, Toronto, ON M6K 3H1
 phone: +1 416-536-4848
 website: https://brodflour.com
 reserve:
-lat:
-lng:
+lat: 43.636582
+lng: -79.422431
 checked: 2026-10-12
 ---
 

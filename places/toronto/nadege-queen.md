@@ -7,8 +7,8 @@ address: 780 Queen St W, Toronto, ON M6J 1G2
 phone: +1 416-203-2009
 website: https://www.nadege-patisserie.com
 reserve:
-lat:
-lng:
+lat: 43.645891
+lng: -79.411436
 checked: 2026-10-12
 ---
 

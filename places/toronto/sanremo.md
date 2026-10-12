@@ -7,8 +7,8 @@ address: 374 Royal York Rd, Toronto, ON M8Y 2R3
 phone: +1 416-255-2808
 website: https://sanremobakery.com
 reserve:
-lat:
-lng:
+lat: 43.618543
+lng: -79.499522
 checked: 2026-10-12
 ---
 

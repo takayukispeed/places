@@ -7,8 +7,8 @@ address: 175 Roncesvalles Ave, Toronto, ON M6R 2L3
 phone: +1 416-535-3020
 website: https://deargrain.com/pages/dear-grain-toronto-roncesvalles
 reserve:
-lat:
-lng:
+lat: 43.64448
+lng: -79.447965
 checked: 2026-10-12
 ---
 

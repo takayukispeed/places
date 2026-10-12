@@ -7,8 +7,8 @@ address: 635 Queen St E, Unit 101, Toronto, ON M4M 1G4
 phone: +1 416-465-0043
 website:
 reserve:
-lat:
-lng:
+lat: 43.658082
+lng: -79.352723
 checked: 2026-10-12
 ---
 

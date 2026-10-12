@@ -7,8 +7,8 @@ address: 48 Ossington Ave, Toronto, ON M6J 2Y7
 phone: +1 416-532-7243
 website: https://deargrain.com/pages/toronto
 reserve:
-lat:
-lng:
+lat: 43.64525
+lng: -79.41955
 checked: 2026-10-12
 ---
 

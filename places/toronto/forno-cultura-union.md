@@ -7,8 +7,8 @@ address: 65 Front St W, Toronto, ON M5J 1E6
 phone: +1 416-214-5656
 website: https://www.fornocultura.com
 reserve:
-lat:
-lng:
+lat: 43.644621
+lng: -79.380968
 checked: 2026-10-12
 ---
 

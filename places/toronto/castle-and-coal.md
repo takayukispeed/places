@@ -7,8 +7,8 @@ address: 108 Dovercourt Rd, Toronto, ON M6J 1H8
 phone:
 website: https://castleandcoal.ca
 reserve: https://www.exploretock.com/castle--coal-toronto/search/
-lat:
-lng:
+lat: 43.643765
+lng: -79.422637
 checked: 2026-10-12
 ---
 

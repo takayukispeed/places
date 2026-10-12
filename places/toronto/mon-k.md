@@ -7,8 +7,8 @@ address: 1040 Coxwell Ave, Toronto, ON M4C 3G5
 phone: +1 416-696-8181
 website: https://www.monkpatisserie.ca
 reserve:
-lat:
-lng:
+lat: 43.696947
+lng: -79.329419
 checked: 2026-10-12
 ---
 

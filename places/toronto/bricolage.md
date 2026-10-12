@@ -7,8 +7,8 @@ address: 981 College St, Toronto, ON M6H 1A6
 phone: +1 647-471-0642
 website: https://bricolagebakery.com
 reserve:
-lat:
-lng:
+lat: 43.653219
+lng: -79.427694
 checked: 2026-10-12
 ---
 

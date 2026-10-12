@@ -7,8 +7,8 @@ address: 1056 Queen St W, Toronto, ON M6J 1H8
 phone: +1 416-530-2444
 website: https://www.fornocultura.com
 reserve:
-lat:
-lng:
+lat: 43.644081
+lng: -79.421008
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 507 King St E, Toronto, ON M5A 1M3
 phone:
 website: https://www.fornocultura.com
 reserve:
-lat:
-lng:
+lat: 43.654612
+lng: -79.359132
 checked: 2026-10-12
 ---
 

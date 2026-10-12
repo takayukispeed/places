@@ -7,8 +7,8 @@ address: 3014 Dundas St W, Toronto, ON M6P 1Z3
 phone: +1 416-766-2178
 website: https://noctuabakery.com
 reserve:
-lat:
-lng:
+lat: 43.665813
+lng: -79.46986
 checked: 2026-10-12
 ---
 

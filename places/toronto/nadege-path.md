@@ -7,8 +7,8 @@ address: 120 Adelaide St W, Toronto, ON M5H 1T1
 phone: +1 416-350-2014
 website: https://www.nadege-patisserie.com
 reserve:
-lat:
-lng:
+lat: 43.649929
+lng: -79.383122
 checked: 2026-10-12
 ---
 

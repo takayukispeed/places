@@ -7,8 +7,8 @@ address: 172 Baldwin St, Toronto, ON M5T 1L8
 phone: +1 416-546-2280
 website:
 reserve:
-lat:
-lng:
+lat: 43.65497
+lng: -79.40063
 checked: 2026-10-12
 ---
 

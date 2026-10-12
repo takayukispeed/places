@@ -7,8 +7,8 @@ address: 34 Six Point Rd, Toronto, ON M8Z 2X2
 phone: +1 416-234-9066
 website: https://www.gouter.ca
 reserve:
-lat:
-lng:
+lat: 43.63571
+lng: -79.527661
 checked: 2026-10-12
 ---
 

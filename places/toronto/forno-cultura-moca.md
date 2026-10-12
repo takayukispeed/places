@@ -7,8 +7,8 @@ address: 158 Sterling Rd, Toronto, ON M6R 2B2
 phone: +1 416-516-6999
 website: https://www.fornocultura.com
 reserve:
-lat:
-lng:
+lat: 43.654614
+lng: -79.445203
 checked: 2026-10-12
 ---
 
