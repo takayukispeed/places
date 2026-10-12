@@ -281,6 +281,11 @@ const KAZU = [{
   await page.selectOption("#city", "Montréal");
   await page.waitForTimeout(500);
   assert.equal(await page.inputValue("#city"), "Montréal", "a city picked by hand sticks for the visit");
+  // …and from "All cities" too, which is only a choice for that visit
+  await page.evaluate(() => localStorage.setItem("pl.city", ""));
+  await page.reload();
+  await page.click("[data-mode=list]");
+  await page.waitForFunction(() => document.querySelector("#city")?.value === "Toronto");
 
   // Unknown pages
   await page.goto(base + "#/view/places/montreal/nope.md");

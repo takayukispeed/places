@@ -566,13 +566,12 @@ function gotFix(pos) {
 }
 
 // On the first location fix of a visit, switch to the city you're in (the one whose places are
-// nearest, within 150 km), unless you've picked "All cities". Picking a city by hand still works.
+// nearest, within 150 km), even from "All cities". A city picked by hand this visit is kept.
 let cityAutoPicked = false;
 function autoCity() {
   const all = cities();
   if (cityAutoPicked || !myPos || !all.length) return;
   cityAutoPicked = true;
-  if (store.get(KEY_CITY) === "") return;
   let best = null, bestKm = Infinity;
   for (const c of all) {
     const pts = state.places.filter((p) => p.city === c).map(coords).filter(Boolean);
@@ -801,7 +800,7 @@ function placesView() {
   $("#copy-link").onclick = copyAppLink;
   updateSyncButton();
   $("#hint-close")?.addEventListener("click", () => { store.set(KEY_HINT, "1"); render(); });
-  $("#city")?.addEventListener("change", (e) => { store.set(KEY_CITY, e.target.value); render(); });
+  $("#city")?.addEventListener("change", (e) => { cityAutoPicked = true; store.set(KEY_CITY, e.target.value); render(); });
   app.querySelectorAll("[data-mode]").forEach((b) => {
     b.onclick = () => { state.placesMode = b.dataset.mode; render(); };
   });
