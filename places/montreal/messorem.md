@@ -1,7 +1,7 @@
 ---
 name: Messorem
 city: Montréal
-category: beer
+category: bar
 area: Pointe-Saint-Charles
 address: 2233 Rue Pitt, Montréal, QC H4E 1A2
 phone: +1 438-375-3776

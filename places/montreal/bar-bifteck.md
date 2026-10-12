@@ -1,7 +1,7 @@
 ---
 name: Bar Bifteck
 city: Montréal
-category: beer
+category: bar
 area: Plateau
 address: 3702 Boulevard Saint-Laurent, Montréal, QC H2X 2V4
 phone:

@@ -1,7 +1,7 @@
 ---
 name: Poincaré
 city: Montréal
-category: beer
+category: bar
 area: Chinatown
 address: 1071 Boulevard Saint-Laurent (2nd floor), Montréal, QC H2Z 1J6
 phone:

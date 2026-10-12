@@ -4,8 +4,8 @@ city: Montréal
 category: cafe
 area: Downtown
 address: 904 Rue Sherbrooke Ouest, Montréal, QC
-phone:
-website:
+phone: +1 514-844-5466
+website: https://shop.humblelion.com
 lat: 45.503341
 lng: -73.574846
 checked: 2026-10
@@ -15,8 +15,11 @@ checked: 2026-10
 
 ## Hours
 
+- Mon–Fri: 7:30–16:30
+- Sat–Sun: 10:00–17:00
+
 ## Notes
 
 Near McGill, so busy with students; mid-afternoon is quietest.
 
-- Directories give roughly 7:30–17:00 on weekdays and 10:00–17:00 at weekends, but they disagree on details ([tablejourney](https://tablejourney.com/canada/montreal/cafes/cafe-humble-lion/)).
+- Hours: [Humble Lion](https://shop.humblelion.com/en/pages/nos-addresses) (the café's own site).

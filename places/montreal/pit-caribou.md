@@ -1,10 +1,10 @@
 ---
 name: Pit Caribou
 city: Montréal
-category: beer
+category: bar
 area: Plateau
 address: 951 Rue Rachel Est, Montréal, QC H2J 2J4
-phone:
+phone: +1 514-522-9773
 website:
 lat: 45.525033
 lng: -73.575458
@@ -15,8 +15,14 @@ checked: 2026-10
 
 ## Hours
 
+- Mon–Wed: 16:00–00:00
+- Thu: 16:00–01:00
+- Fri: 14:00–03:00
+- Sat: 14:00–01:00
+- Sun: 14:00–00:00
+
 ## Notes
 
 Montréal pub of the Gaspésie brewery, with limited releases and guest taps.
 
-- Opens mid-afternoon and closes between midnight and 3:00 depending on the day ([Tastet](https://tastet.ca/critiques/pub-pit-caribou-montreal/)).
+- Hours: [Yelp](https://www.yelp.ca/biz/pub-pit-caribou-montr%C3%A9al-2), May 2026.

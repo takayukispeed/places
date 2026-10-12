@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 # Same keys and labels as app/places.js.
 CATEGORIES = {"cheap": "Cheap eats", "nice": "Nice meal", "cafe": "Cafés", "bakery": "Bakeries",
-              "beer": "Beer bars", "cocktail": "Fancy bars"}
+              "bar": "Bars", "cocktail": "Fancy bars"}
 
 
 def front_matter(path):

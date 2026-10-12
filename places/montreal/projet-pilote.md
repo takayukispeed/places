@@ -1,7 +1,7 @@
 ---
 name: Projet Pilote
 city: Montréal
-category: beer
+category: bar
 area: Plateau
 address: 980 Rue Rachel Est, Montréal, QC H2J 2J3
 phone: +1 514-688-0282

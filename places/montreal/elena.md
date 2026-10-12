@@ -15,6 +15,10 @@ checked: 2026-10
 
 ## Hours
 
+- Daily: 17:00–23:00
+
 ## Notes
 
 Pizza and Italian plates. Reservations on [OpenTable](https://www.opentable.ca/r/elena-reservations-montreal).
+
+- Hours: [Yelp](https://www.yelp.ca/biz/elena-montr%C3%A9al), Aug 2026. Tripadvisor also lists weekend lunch.

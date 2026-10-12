@@ -206,9 +206,4 @@ details summary { cursor: pointer; color: var(--accent); font-size: 15px; paddin
 .hours li.today { font-weight: 600; background: var(--accent-soft); }
 .fine, .muted { font-size: 14px; color: var(--muted); }
 .lookup { margin: -6px 0 0; }
-/* Google Maps pop-ups are always white, so don't inherit the dark-mode text colour. */
-.gm-style-iw { color: #2a2520; font: 15px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-.gm-style-iw .open { color: #2e7d32; }
-.gm-style-iw .shut { color: #7a7065; }
 .pop { color: #1f6f78; }
-.panel code { font-size: 13px; overflow-wrap: anywhere; }

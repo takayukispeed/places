@@ -1,11 +1,11 @@
 ---
 name: Siboire
 city: Montréal
-category: beer
+category: bar
 area: Mile End
 address: 5101 Boulevard Saint-Laurent, Montréal, QC H2T 1R9
-phone:
-website:
+phone: +1 514-379-3633
+website: https://siboire.ca
 lat: 45.523194
 lng: -73.592804
 checked: 2026-10
@@ -15,9 +15,11 @@ checked: 2026-10
 
 ## Hours
 
+- Daily: 11:30–03:00
+
 ## Notes
 
-Brewpub from the Sherbrooke brewery.
+Brewpub from the Sherbrooke brewery. Kitchen closes at 23:00; the bar may close earlier on quiet nights.
 
 - There's also a Saint-Henri pub at Notre-Dame and Turgeon, near Atwater Market.
-- One directory lists 11:30–midnight ([Sortir au Québec](https://sortirauquebec.com/en/listing/microbrewery/microbrasserie-siboire-saint-laurent)).
+- Hours: [siboire.ca](https://siboire.ca/fr/succursales/st-laurent/).

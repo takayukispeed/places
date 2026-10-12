@@ -8,7 +8,7 @@ export const CATEGORIES = [
   ["nice", "Nice meal", "#b5452b"],
   ["cafe", "Cafés", "#8a5a2b"],
   ["bakery", "Bakeries", "#c0841a"],
-  ["beer", "Beer bars", "#2f6f8f"],
+  ["bar", "Bars", "#2f6f8f"],
   ["cocktail", "Fancy bars", "#7b3f91"],
 ];
 const CAT = Object.fromEntries(CATEGORIES.map(([k, label, colour]) => [k, { label, colour }]));

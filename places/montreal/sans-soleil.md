@@ -15,8 +15,11 @@ checked: 2026-10
 
 ## Hours
 
+- Mon–Tue: 18:30–01:00
+- Wed–Sun: 18:30–03:00
+
 ## Notes
 
 Speakeasy in the basement of Fleurs & Cadeaux. Japanese-inspired food and cocktails, vinyl-only music; it turns into more of a club late at night.
 
-- Opens about 18:30. Closing time varies by source (1:00 or 3:00), so check before going ([RestoMontréal](https://www.restomontreal.ca/resto/sans-soleil-bar-montreal/15617/en/)).
+- Hours: [Apple Maps](https://maps.apple.com/place?query=Sans+Soleil&coordinate=45.5065338%2C-73.5605335&place-id=I5DF065E60A220181&_provider=9902) and [RestoMontréal](https://www.restomontreal.ca/resto/sans-soleil-bar-montreal/15617/en/).

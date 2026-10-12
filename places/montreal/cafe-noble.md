@@ -15,9 +15,14 @@ checked: 2026-10
 
 ## Hours
 
+- Mon–Wed: 7:00–16:30
+- Thu: 7:00–17:00
+- Fri–Sat: 7:00–17:30
+- Sun: 8:30–17:00
+
 ## Notes
 
 Café counter beside Laurier metro.
 
 - Second location on Rue Alexandra (Mile-Ex); sources give 7060 or 7066, so check the number.
-- Source: [Tastet](https://tastet.ca/en/reviews/cafe-noble-the-charming-cafe-counter-at-laurier-metro/)
+- Hours: [Yelp](https://www.yelp.ca/biz/noble-caf%C3%A9-montr%C3%A9al), July 2026.

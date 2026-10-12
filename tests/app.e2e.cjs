@@ -30,6 +30,8 @@ for (const city of fs.readdirSync(path.join(ROOT, "places"))) {
   }
 }
 repo["README.md"] = "# not a place\n";
+// One place with no hours saved, to check the app points to Google Maps instead.
+repo["places/montreal/test-no-hours.md"] = "---\nname: Test Spot\ncity: Montréal\ncategory: cheap\naddress: 1 Rue Test, Montréal\n---\n\n# Test Spot\n\n## Hours\n\n## Notes\n";
 const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
 const commits = [];
 const cors = { "Access-Control-Allow-Origin": "*" };
@@ -87,12 +89,12 @@ const KAZU = [{
   await page.waitForSelector(".card");
   assert.equal(await page.locator(".card").count(), placeCount);
   assert.deepEqual(await page.locator(".list-heading").allInnerTexts(),
-    ["CHEAP EATS", "NICE MEAL", "CAFÉS", "BAKERIES", "BEER BARS", "FANCY BARS"]);
+    ["CHEAP EATS", "NICE MEAL", "CAFÉS", "BAKERIES", "BARS", "FANCY BARS"]);
   await shot("1-list");
 
   // Filters: category chip, search (keeps focus), open now
-  await page.click(".chip[data-cat=beer]");
-  assert.equal(await page.locator(".card").count(), count("beer"));
+  await page.click(".chip[data-cat=bar]");
+  assert.equal(await page.locator(".card").count(), count("bar"));
   await page.fill("#search", "rachel");
   assert.equal(await page.evaluate(() => document.activeElement.id), "search");
   assert.equal(await page.locator(".card").count(), 2, "Pit Caribou and Projet Pilote");
@@ -111,10 +113,11 @@ const KAZU = [{
   assert.equal(await page.locator(".hours li.today").count(), 1);
   assert.match(await page.locator(".actions").innerText(), /Directions[\s\S]*Google Maps/);
   assert.match(await page.locator(".actions a").nth(1).getAttribute("href"), /^https:\/\/www\.google\.com\/maps\/search\/\?api=1&query=Big%20in%20Japan%2C%204175/);
+  assert.match(await page.locator(".actions a").nth(0).getAttribute("href"), /^https:\/\/www\.google\.com\/maps\/dir\/\?api=1&destination=Big%20in%20Japan%2C%204175/);
   await shot("2-place");
 
   // A place without hours points to Google Maps
-  await page.goto(base + "#/view/places/montreal/dieu-du-ciel.md");
+  await page.goto(base + "#/view/places/montreal/test-no-hours.md");
   await page.waitForSelector("text=No hours saved");
 
   // Map: Leaflet can't load in this test, so it explains instead of breaking
@@ -131,43 +134,6 @@ const KAZU = [{
     return `${width} ${fill}`;
   }), "300px rgb(0, 0, 0)");
   await page.click("[data-mode=list]");
-
-  // Google Maps, when this device has a key. A stand-in for Google's script records what the app asks for.
-  await ctx.route("https://maps.googleapis.com/**", (r) => {
-    const cb = new URL(r.request().url()).searchParams.get("callback");
-    r.fulfill({ status: 200, contentType: "text/javascript", body: `(() => {
-      const log = window.__gm = { markers: [], options: null, fitted: 0, key: new URL(document.currentScript.src).searchParams.get("key") };
-      class Map { constructor(el, o) { log.options = o; el.textContent = "google map"; } fitBounds() { log.fitted++; } getZoom() { return 13; } setZoom() {} setCenter() {} }
-      class LatLngBounds { extend() {} }
-      class InfoWindow { setContent(h) { log.popup = h; } open() {} }
-      class PinElement { constructor(o) { this.o = o; this.element = document.createElement("div"); } }
-      class AdvancedMarkerElement { constructor(o) { Object.assign(this, o); log.markers.push(this); this.l = {}; }
-        addListener(t, f) { this.l[t] = f; } set map(v) { this._m = v; if (!v) log.markers.splice(log.markers.indexOf(this), 1); } get map() { return this._m; } }
-      window.google = { maps: { Map, LatLngBounds, InfoWindow, event: { addListenerOnce: (m, t, f) => f() }, marker: { PinElement, AdvancedMarkerElement } } };
-      window[${JSON.stringify(cb)}]();
-    })();` });
-  });
-  await page.goto(base + "#/settings");
-  await page.fill("#gkey", "AIza-test");
-  await page.click("#save-gkey");
-  await page.goto(base);
-  await page.waitForSelector(".card");
-  await page.click("[data-mode=map]");
-  await page.waitForFunction(() => window.__gm?.markers.length);
-  let gm = await page.evaluate(() => ({ n: window.__gm.markers.length, key: window.__gm.key, mapId: window.__gm.options.mapId, fitted: window.__gm.fitted }));
-  assert.deepEqual(gm, { n: placeCount, key: "AIza-test", mapId: "DEMO_MAP_ID", fitted: 1 });
-  await page.click(".chip[data-cat=cocktail]");
-  assert.equal(await page.evaluate(() => window.__gm.markers.length), count("cocktail"), "filters apply to the pins");
-  await page.evaluate(() => window.__gm.markers.find((m) => m.title === "Big in Japan").l.click());
-  assert.match(await page.evaluate(() => window.__gm.popup), /href="#\/view\/places\/montreal\/big-in-japan\.md"/);
-  // A rejected key falls back to OpenStreetMap
-  await page.evaluate(() => window.gm_authFailure());
-  await page.waitForSelector("text=The map needs a connection");
-  await page.click(".chip[data-cat='']");
-  await page.click("[data-mode=list]");
-  await page.goto(base + "#/settings");
-  await page.click("#clear-gkey");
-  await page.waitForLoadState("load");
 
   // Editing without a token is blocked
   await page.goto(base + "#/new/place");

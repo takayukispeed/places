@@ -22,8 +22,6 @@ const KEY_TOKEN = "pl.token";
 const KEY_HINT = "pl.installHintDismissed";
 const KEY_CITY = "pl.city";
 const KEY_GEO = "pl.geo.v1";
-const KEY_GKEY = "pl.googleMapsKey";
-const KEY_GMAPID = "pl.googleMapId";
 
 // ---- Storage (wrapped: private mode can make localStorage throw) ----------
 const store = {
@@ -254,27 +252,6 @@ function settingsView() {
         </details>
       </section>
       <section class="panel">
-        <h2>Map</h2>
-        <p>The map uses OpenStreetMap. To use Google Maps instead, paste a Google Maps API key. Like the token, it is stored only on this device.</p>
-        <label class="field"><span>Google Maps API key <small>optional</small></span>
-          <input id="gkey" type="password" value="${esc(store.get(KEY_GKEY) || "")}" autocomplete="off" autocapitalize="none" placeholder="AIza…"></label>
-        <label class="field"><span>Map ID <small>optional</small></span>
-          <input id="gmapid" value="${esc(store.get(KEY_GMAPID) || "")}" autocomplete="off" autocapitalize="none" placeholder="DEMO_MAP_ID"></label>
-        <div class="buttons">
-          <button id="save-gkey" class="primary">Save</button>
-          ${store.get(KEY_GKEY) ? `<button id="clear-gkey">Use OpenStreetMap</button>` : ""}
-        </div>
-        <details>
-          <summary>How to get a key</summary>
-          <ol>
-            <li>Open <a href="https://console.cloud.google.com/google/maps-apis/start" target="_blank" rel="noopener">Google Maps Platform</a>, create a project and turn on billing. Google's free monthly allowance covers personal use.</li>
-            <li>Under <em>APIs &amp; Services</em>, enable the <strong>Maps JavaScript API</strong>.</li>
-            <li>Under <em>Keys &amp; Credentials</em>, create an API key. Restrict it: <strong>Websites</strong> → <code>${esc(location.origin)}/*</code>, and <strong>API restrictions</strong> → Maps JavaScript API only.</li>
-            <li>Paste the key here. A Map ID is optional; create one under <em>Map management</em> if Google asks for it.</li>
-          </ol>
-        </details>
-      </section>
-      <section class="panel">
         <h2>Data</h2>
         <p>${state.places.length} places cached for offline use.
           ${state.lastSync ? `Last synced ${state.lastSync.toLocaleTimeString()}.` : ""}</p>
@@ -298,17 +275,6 @@ function settingsView() {
     }
   });
   $("#clear-token")?.addEventListener("click", () => { store.del(KEY_TOKEN); render(); toast("Token removed"); });
-  $("#save-gkey").onclick = () => {
-    const key = $("#gkey").value.trim();
-    const mapId = $("#gmapid").value.trim();
-    key ? store.set(KEY_GKEY, key) : store.del(KEY_GKEY);
-    mapId ? store.set(KEY_GMAPID, mapId) : store.del(KEY_GMAPID);
-    // A different key needs a fresh page, since Google's script can only load once.
-    toast(key ? "Saved. The map will use Google Maps." : "Saved. The map will use OpenStreetMap.");
-    if (window.google?.maps || googleBroken) setTimeout(() => location.reload(), 800);
-    else render();
-  };
-  $("#clear-gkey")?.addEventListener("click", () => { $("#gkey").value = ""; $("#save-gkey").click(); });
   $("#resync").onclick = () => { state.files = {}; persist(); rebuild(); sync(); toast("Re-downloading…"); };
 }
 
@@ -325,11 +291,8 @@ function currentCity() {
 }
 
 const googleMaps = (p) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([p.name, p.address || p.city].filter(Boolean).join(", "))}`;
-const directions = (p) => {
-  const dest = p.address || `${p.name}, ${p.city}`;
-  return isIOS() ? `https://maps.apple.com/?daddr=${encodeURIComponent(dest)}&q=${encodeURIComponent(p.name)}`
-    : `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}`;
-};
+// Google Maps directions; on iPhone this opens the Google Maps app when it's installed.
+const directions = (p) => `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent([p.name, p.address || p.city].filter(Boolean).join(", "))}`;
 const catBadge = (k) => `<span class="badge cat" style="--c:${categoryColour(k)}">${esc(categoryLabel(k))}</span>`;
 const statusHtml = (p, cls = "") => {
   const s = hoursStatus(p.hours);
@@ -367,8 +330,8 @@ async function geocodeMissing(onFound) {
   } finally { geocoding = false; }
 }
 
-// ---- Maps: OpenStreetMap (Leaflet) by default, Google Maps when this device has a key -------
-// Both give the same two calls: draw([[place, [lat, lng]], …]) and fit([[lat, lng], …]).
+// ---- Map: OpenStreetMap through Leaflet --------------------------------------------------
+// draw([[place, [lat, lng]], …]) puts the pins on; fit([[lat, lng], …]) zooms to them.
 const MAP_START = [45.52, -73.58];
 const popupHtml = (p) => {
   const s = hoursStatus(p.hours);
@@ -414,69 +377,6 @@ async function osmMap(el) {
   };
 }
 
-// A rejected key only shows up after the script loads, through this global callback.
-let googleBroken = false;
-window.gm_authFailure = () => {
-  googleBroken = true;
-  toast("Google Maps rejected the API key. Showing OpenStreetMap instead; check the key in Settings.");
-  if (state.placesMode === "map" && (location.hash || "#/") === "#/") render();
-};
-
-let googleReady;
-function loadGoogle(key) {
-  googleReady ||= new Promise((resolve, reject) => {
-    window.__plGoogleReady = () => resolve(window.google.maps);
-    const js = document.createElement("script");
-    js.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&v=weekly&libraries=marker&loading=async&callback=__plGoogleReady`;
-    js.onerror = () => { googleReady = null; js.remove(); reject(new Error("Google Maps couldn't load. Check your connection.")); };
-    document.head.append(js);
-  });
-  return googleReady;
-}
-
-async function googleMap(el, key) {
-  const maps = await loadGoogle(key);
-  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const map = new maps.Map(el, {
-    center: { lat: MAP_START[0], lng: MAP_START[1] }, zoom: 12,
-    mapId: store.get(KEY_GMAPID) || "DEMO_MAP_ID", // markers need a map ID; Google provides this one
-    colorScheme: dark ? "DARK" : "LIGHT",
-    disableDefaultUI: true, clickableIcons: false, gestureHandling: "greedy",
-  });
-  const info = new maps.InfoWindow();
-  let markers = [];
-  return {
-    draw(items) {
-      for (const m of markers) m.map = null;
-      markers = items.map(([p, c]) => {
-        const pin = new maps.marker.PinElement({
-          background: categoryColour(p.category), borderColor: "#ffffff", glyphColor: "#ffffff", scale: 0.9,
-        });
-        const marker = new maps.marker.AdvancedMarkerElement({
-          map, position: { lat: c[0], lng: c[1] }, content: pin.element || pin, title: p.name,
-        });
-        marker.addListener("click", () => { info.setContent(popupHtml(p)); info.open({ map, anchor: marker }); });
-        return marker;
-      });
-    },
-    fit(pts) {
-      if (pts.length > 1) {
-        const bounds = new maps.LatLngBounds();
-        for (const [lat, lng] of pts) bounds.extend({ lat, lng });
-        map.fitBounds(bounds, 30);
-        maps.event.addListenerOnce(map, "idle", () => { if (map.getZoom() > 15) map.setZoom(15); });
-      } else if (pts.length === 1) {
-        map.setCenter({ lat: pts[0][0], lng: pts[0][1] });
-        map.setZoom(15);
-      }
-    },
-  };
-}
-
-function makeMap(el) {
-  const key = store.get(KEY_GKEY);
-  return key && !googleBroken ? googleMap(el, key) : osmMap(el);
-}
 
 function filteredPlaces() {
   const city = currentCity();
@@ -566,7 +466,7 @@ function placesView() {
 
   if (map) {
     $("#results").innerHTML = `<div id="map" class="map"></div><p id="map-note" class="map-note"></p>`;
-    makeMap($("#map")).then((view) => {
+    osmMap($("#map")).then((view) => {
       if (!document.getElementById("map")) return;
       mapView = view;
       show();

@@ -1,7 +1,7 @@
 ---
 name: La Cave de Mamie
 city: Montréal
-category: beer
+category: bar
 area: Little Italy
 address: 322 Rue Beaubien Est, Montréal, QC
 phone: +1 514-398-0111

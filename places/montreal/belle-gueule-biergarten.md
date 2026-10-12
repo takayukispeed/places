@@ -1,7 +1,7 @@
 ---
 name: Aux Quartiers Belle Gueule (Biergarten)
 city: Montréal
-category: beer
+category: bar
 area: Plateau
 address: 5579 Avenue Christophe-Colomb, Montréal, QC H2J 3H3
 phone: +1 514-241-5389

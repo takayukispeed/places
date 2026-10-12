@@ -15,8 +15,12 @@ checked: 2026-10
 
 ## Hours
 
+- Mon: Closed
+- Tue–Sat: 10:00–16:00
+- Sun: Closed
+
 ## Notes
 
 Since 1932. Order the Wilensky Special (grilled baloney and salami on a kaiser, mustard included, no substitutions) and a hand-mixed soda.
 
-- Daytime only. Sources disagree on which days it opens (Tue–Sat 10:00–16:00 per [Tastet](https://tastet.ca/en/reviews/wilensky-a-timeless-and-successful-classic)).
+- Hours: [Yelp](https://www.yelp.ca/biz/wilensky-montr%C3%A9al), Oct 2026, and Tripadvisor.
