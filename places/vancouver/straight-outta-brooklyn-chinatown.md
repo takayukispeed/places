@@ -7,8 +7,8 @@ address: 648 Main St, Vancouver, BC V6A 2V3
 phone: +1 604-683-4440
 website: https://www.straightbkpizza.com
 reserve:
-lat:
-lng:
+lat: 49.278688
+lng: -123.099504
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 7 E 7th Ave, Vancouver, BC V5T 1M4
 phone: +1 778-945-1677
 website: https://fabriquestgeorge.com
 reserve:
-lat:
-lng:
+lat: 49.264829
+lng: -123.104625
 checked: 2026-10-12
 ---
 

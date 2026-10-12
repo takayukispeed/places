@@ -7,8 +7,8 @@ address: 926 Main St, Vancouver, BC
 phone: +1 778-945-6751
 website: https://www.theamerican.bar
 reserve:
-lat:
-lng:
+lat: 49.27631
+lng: -123.099559
 checked: 2026-10-12
 ---
 

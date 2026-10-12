@@ -7,8 +7,8 @@ address: 2450 Yukon St, Vancouver, BC
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 49.263558
+lng: -123.112674
 checked: 2026-10-12
 ---
 

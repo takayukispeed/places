@@ -7,8 +7,8 @@ address: 305 Alexander St, Vancouver, BC V6A 1C4
 phone: +1 604-428-2544
 website: https://askforluigi.com
 reserve: https://www.opentable.com/r/ask-for-luigi-vancouver
-lat:
-lng:
+lat: 49.284212
+lng: -123.097715
 checked: 2026-10-12
 ---
 

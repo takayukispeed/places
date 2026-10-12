@@ -7,8 +7,8 @@ address: 1833 Anderson St, Vancouver, BC
 phone:
 website: https://www.straightbkpizza.com
 reserve:
-lat:
-lng:
+lat: 49.269404
+lng: -123.138959
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 769 Hornby St, Vancouver, BC V6Z 1S2
 phone: +1 604-267-0769
 website: https://www.faubourg.com
 reserve:
-lat:
-lng:
+lat: 49.283065
+lng: -123.121477
 checked: 2026-10-12
 ---
 

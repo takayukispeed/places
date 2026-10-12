@@ -7,8 +7,8 @@ address: 8902 University High St, Burnaby, BC V5A 4X6
 phone:
 website: https://biercraft.com
 reserve:
-lat:
-lng:
+lat: 49.278005
+lng: -122.912328
 checked: 2026-10-12
 ---
 

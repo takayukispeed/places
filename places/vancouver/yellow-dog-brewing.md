@@ -7,8 +7,8 @@ address: 2817 Murray St, Port Moody, BC
 phone: +1 604-492-0191
 website: https://yellowdogbeer.com
 reserve:
-lat:
-lng:
+lat: 49.278554
+lng: -122.84871
 checked: 2026-10-12
 ---
 

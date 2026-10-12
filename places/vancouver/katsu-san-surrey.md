@@ -7,8 +7,8 @@ address: 15976 108 Ave, Surrey, BC V4N 5V6
 phone: +1 604-496-2772
 website: https://www.katsusan.ca
 reserve:
-lat:
-lng:
+lat: 49.198532
+lng: -122.779248
 checked: 2026-10-12
 ---
 

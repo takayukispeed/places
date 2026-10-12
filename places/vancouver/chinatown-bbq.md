@@ -7,8 +7,8 @@ address: 130 E Pender St, Vancouver, BC V6A 1T3
 phone: +1 604-428-2626
 website: https://www.chinatownbbq.com
 reserve:
-lat:
-lng:
+lat: 49.280222
+lng: -123.10151
 checked: 2026-10-12
 ---
 

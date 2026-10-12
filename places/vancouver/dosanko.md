@@ -7,8 +7,8 @@ address: 566 Powell St, Vancouver, BC V6A 1G9
 phone: +1 604-251-2020
 website: http://dosankorestaurant.ca
 reserve:
-lat:
-lng:
+lat: 49.282811
+lng: -123.091936
 checked: 2026-10-12
 ---
 

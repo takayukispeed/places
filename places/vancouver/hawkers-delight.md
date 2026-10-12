@@ -7,8 +7,8 @@ address: 4127 Main St, Vancouver, BC V5V 3P6
 phone: +1 604-709-8188
 website:
 reserve:
-lat:
-lng:
+lat: 49.248395
+lng: -123.101343
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1046 Commercial Dr, Vancouver, BC V5L 3W9
 phone: +1 604-559-5938
 website: https://thelunchlady.com
 reserve: https://www.opentable.ca/r/the-lunch-lady-vancouver
-lat:
-lng:
+lat: 49.274969
+lng: -123.069283
 checked: 2026-10-12
 ---
 

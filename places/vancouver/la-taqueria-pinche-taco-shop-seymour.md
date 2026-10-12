@@ -7,8 +7,8 @@ address: 367 Seymour St, Vancouver, BC
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 49.285058
+lng: -123.112589
 checked: 2026-10-12
 ---
 

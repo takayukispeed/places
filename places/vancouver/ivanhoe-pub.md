@@ -7,8 +7,8 @@ address: 1038 Main St, Vancouver, BC V6A 2W1
 phone: +1 604-608-1444
 website: https://www.ivanhoepub.ca
 reserve:
-lat:
-lng:
+lat: 49.275136
+lng: -123.099496
 checked: 2026-10-12
 ---
 

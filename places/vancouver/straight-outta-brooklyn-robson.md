@@ -7,8 +7,8 @@ address: 350 Robson St, Vancouver, BC V6B 2B2
 phone: +1 604-559-3500
 website: https://www.straightbkpizza.com
 reserve:
-lat:
-lng:
+lat: 49.2791
+lng: -123.116632
 checked: 2026-10-12
 ---
 

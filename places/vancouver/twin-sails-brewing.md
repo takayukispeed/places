@@ -7,8 +7,8 @@ address: 2821 Murray St, Port Moody, BC V3H 1X3
 phone: +1 604-492-4234
 website: https://twinsailsbrewing.com
 reserve:
-lat:
-lng:
+lat: 49.278487
+lng: -122.848409
 checked: 2026-10-12
 ---
 

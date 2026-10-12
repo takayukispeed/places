@@ -7,8 +7,8 @@ address: 55 Dunlevy Ave, Vancouver, BC V6A 3A3
 phone: +1 604-699-1989
 website:
 reserve: https://www.opentable.ca/r/belgard-kitchen-vancouver
-lat:
-lng:
+lat: 49.284279
+lng: -123.095604
 checked: 2026-10-12
 ---
 

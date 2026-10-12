@@ -7,8 +7,8 @@ address: 114 Water St, Vancouver, BC
 phone: +1 604-566-4717
 website: https://www.straightbkpizza.com
 reserve:
-lat:
-lng:
+lat: 49.283885
+lng: -123.107042
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 801 W Georgia St, Vancouver, BC V6C 1P7
 phone: +1 604-673-7043
 website: https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace
 reserve: https://www.opentable.com/r/reflections-garden-vancouver
-lat:
-lng:
+lat: 49.283487
+lng: -123.119333
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 918 Kingsway, Vancouver, BC
 phone:
 website: https://www.straightbkpizza.com
 reserve:
-lat:
-lng:
+lat: 49.254336
+lng: -123.085145
 checked: 2026-10-12
 ---
 

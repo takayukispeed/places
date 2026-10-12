@@ -7,8 +7,8 @@ address: 1944 W 4th Ave, Vancouver, BC V6J 1M5
 phone: +1 604-732-1322
 website: https://fablekitchen.ca
 reserve: https://www.opentable.ca/fable-kitchen
-lat:
-lng:
+lat: 49.26787
+lng: -123.149017
 checked: 2026-10-12
 ---
 

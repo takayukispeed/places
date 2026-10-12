@@ -7,8 +7,8 @@ address: 755 Richards St, Vancouver, BC V6B 3A6
 phone: +1 604-566-2253
 website: https://fabledinerbar.com
 reserve: https://www.opentable.ca/r/fable-diner-and-bar-vancouver
-lat:
-lng:
+lat: 49.280752
+lng: -123.117186
 checked: 2026-10-12
 ---
 

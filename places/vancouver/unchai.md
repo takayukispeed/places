@@ -7,8 +7,8 @@ address: 2351 Burrard St, Vancouver, BC V6J 3J2
 phone: +1 604-559-6484
 website: https://unchai.ca
 reserve:
-lat:
-lng:
+lat: 49.265019
+lng: -123.145904
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 302 Davie St, Vancouver, BC
 phone: +1 604-423-4611
 website: https://www.faubourg.com
 reserve:
-lat:
-lng:
+lat: 49.274526
+lng: -123.122419
 checked: 2026-10-12
 ---
 

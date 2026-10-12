@@ -7,8 +7,8 @@ address: 2156 W 41st Ave, Vancouver, BC V6M 1Z1
 phone: +1 604-266-2156
 website: https://www.faubourg.com
 reserve:
-lat:
-lng:
+lat: 49.234497
+lng: -123.157446
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2419 Main St, Vancouver, BC V5T 3E1
 phone: +1 604-423-5578
 website: https://eatsuperbaba.com
 reserve:
-lat:
-lng:
+lat: 49.263366
+lng: -123.10119
 checked: 2026-10-12
 ---
 

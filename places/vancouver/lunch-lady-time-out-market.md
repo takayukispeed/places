@@ -7,8 +7,8 @@ address: 650 W 41st Ave, Vancouver, BC V5Z 2M9
 phone:
 website: https://thelunchlady.com
 reserve:
-lat:
-lng:
+lat: 49.231641
+lng: -123.118766
 checked: 2026-10-12
 ---
 
