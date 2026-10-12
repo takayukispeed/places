@@ -94,7 +94,7 @@ Signed out, the app reads `places.json`, one file holding every place. `scripts/
 
 ## In the app
 
-- **City** picker (once there is more than one city), **category** chips, **search** (names, neighbourhoods and notes), and **Open now**.
+- **City** picker (once there is more than one city), **category** chips (tap several to combine them, e.g. Bars + Fancy bars; **All** clears), **search** (names, neighbourhoods and notes), and **Open now**.
 - **Map / List.** The app opens on the map. The list has a **Nearest / A–Z** toggle. Nearest is the default: the list asks for your location and shows one list, closest first, with the straight-line distance on each card. A–Z is one alphabetical list. Each card's coloured badge shows its category, and the chips filter by category. If location is off, it falls back to A–Z and says so. A choice of A–Z is remembered.
 - **Map pins** are coloured by category; tap a pin or its name for the name and whether it is open. Zoom in to neighbourhood level and names appear beside the pins, on the right or, if that's taken, the left. A name never covers another name or pin; where there's no room it waits for a closer zoom (places open now get first pick).
 - **My location:** the arrow button on the map shows a blue dot where you are and centres the map on it. The dot follows you while the map is open, and stays on next time. The first tap asks for location permission; if it was refused, turn it on in iPhone Settings → Privacy & Security → Location Services → Safari Websites.

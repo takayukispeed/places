@@ -36,7 +36,7 @@ const state = {
   files: JSON.parse(store.get(KEY_CACHE) || "{}"), // path -> { sha, text }
   places: [],
   placeQuery: "",
-  placeCat: null,
+  placeCats: new Set(), // categories shown; empty means all
   placeOpenNow: false,
   placesMode: "map", // or "list"
   syncing: false,
@@ -518,7 +518,7 @@ function filteredPlaces() {
   const q = state.placeQuery.trim().toLowerCase();
   return state.places.filter((p) => {
     if (city && p.city !== city) return false;
-    if (state.placeCat && p.category !== state.placeCat) return false;
+    if (state.placeCats.size && !state.placeCats.has(p.category)) return false;
     if (state.placeOpenNow && !hoursStatus(p.hours)?.open) return false;
     if (!q) return true;
     const hay = [p.name, p.area, p.address, categoryLabel(p.category), p.notes].join(" ").toLowerCase();
@@ -532,7 +532,7 @@ function placesView() {
   const inCity = state.places.filter((p) => !city || p.city === city);
   const cats = CATEGORIES.map(([k]) => k).filter((k) => inCity.some((p) => p.category === k))
     .concat([...new Set(inCity.map((p) => p.category))].filter((k) => categoryOrder(k) === 99).sort());
-  if (state.placeCat && !cats.includes(state.placeCat)) state.placeCat = null;
+  for (const k of state.placeCats) if (!cats.includes(k)) state.placeCats.delete(k);
   const map = state.placesMode === "map";
   const showHint = isIOS() && !isStandalone() && !store.get(KEY_HINT);
 
@@ -580,7 +580,11 @@ function placesView() {
 
   const show = ({ refit = true } = {}) => {
     const matches = filteredPlaces();
-    app.querySelectorAll("[data-cat]").forEach((c) => c.classList.toggle("on", (c.dataset.cat || null) === state.placeCat));
+    app.querySelectorAll("[data-cat]").forEach((c) => {
+      const on = c.dataset.cat ? state.placeCats.has(c.dataset.cat) : !state.placeCats.size;
+      c.classList.toggle("on", on);
+      c.setAttribute("aria-pressed", String(on));
+    });
     if (map) {
       if (!mapView || !$("#map-note")) return; // still loading, or it couldn't load
       const missing = matches.filter((p) => !coords(p)).length;
@@ -703,7 +707,14 @@ function placesView() {
     show();
   };
   app.querySelectorAll("[data-cat]").forEach((c) => {
-    c.onclick = () => { state.placeCat = c.dataset.cat || null; show(); };
+    // Categories toggle, so several can be on at once; All clears them.
+    c.onclick = () => {
+      const k = c.dataset.cat;
+      if (!k) state.placeCats.clear();
+      else if (state.placeCats.has(k)) state.placeCats.delete(k);
+      else state.placeCats.add(k);
+      show();
+    };
   });
 }
 
@@ -744,7 +755,7 @@ const HOURS_HINT = "one line per day or range · e.g. Mon–Fri: 11:30–22:00 �
 function placeEditor(p) {
   const isNew = !p;
   const city = currentCity();
-  p ||= { name: "", city, category: state.placeCat || "nice", area: "", address: "", phone: "", website: "", reserve: "", lat: null, lng: null, checked: "", hours: [], notes: "" };
+  p ||= { name: "", city, category: state.placeCats.size === 1 ? [...state.placeCats][0] : "nice", area: "", address: "", phone: "", website: "", reserve: "", lat: null, lng: null, checked: "", hours: [], notes: "" };
   const cats = CATEGORIES.some(([k]) => k === p.category) ? CATEGORIES : [...CATEGORIES, [p.category, p.category]];
   app.innerHTML = `
     ${backBar(isNew ? "#/" : `#/view/${esc(p.path)}`, "Cancel", `<button class="text-btn strong" id="save" ${token() ? "" : "disabled"}>Save</button>`)}

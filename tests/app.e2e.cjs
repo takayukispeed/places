@@ -117,7 +117,16 @@ const KAZU = [{
   assert.equal(await page.evaluate(() => document.activeElement.id), "search");
   assert.equal(await page.locator(".card").count(), 2, "Pit Caribou and Projet Pilote");
   await page.fill("#search", "");
+  // Several categories at once; tapping one again turns it off; All clears
+  await page.click(".chip[data-cat=cocktail]");
+  assert.equal(await page.locator(".card").count(), count("bar") + count("cocktail"));
+  assert.equal(await page.getAttribute(".chip[data-cat='']", "aria-pressed"), "false");
+  await page.click(".chip[data-cat=bar]");
+  assert.equal(await page.locator(".card").count(), count("cocktail"));
+  await page.click(".chip[data-cat=bar]");
   await page.click(".chip[data-cat='']");
+  assert.equal(await page.locator(".card").count(), placeCount);
+  assert.equal(await page.locator(".chip.on[data-cat]").count(), 1, "only All is on");
   await page.click("#open-now");
   const open = await page.locator(".card").count();
   assert.ok(open < placeCount);
