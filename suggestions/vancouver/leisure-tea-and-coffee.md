@@ -21,7 +21,7 @@ checked: 2026-10-12
 
 ## Notes
 
-Taiwanese-style tea house on Alexandra Rd ("Food Street"), unit 1110: fruit and milk teas, desserts and small bites ([Corner](https://www.corner.inc/place/prbE8i3XeMss)).
+Unit 1110. Fruit and milk teas, traditional desserts and Taiwanese small bites ([Corner](https://www.corner.inc/place/prbE8i3XeMss)).
 
 - Hours: [Tripadvisor](https://www.tripadvisor.com/Restaurant_Review-g181716-d5033236-Reviews-Leisure_Tea_Coffee-Richmond_British_Columbia.html), October 2026; other listings show 21:00–23:00 closes.
 - Suggested by Lyon.
