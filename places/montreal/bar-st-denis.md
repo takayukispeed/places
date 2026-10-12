@@ -6,7 +6,7 @@ area: Petite-Patrie
 address: 6966 Rue Saint-Denis, Montréal, QC H2S 2S4
 phone: +1 514-276-9717
 website: https://www.barstdenis.com
-reserve:
+reserve: https://www.opentable.ca/r/bar-st-denis-montreal
 lat: 45.537194
 lng: -73.61254
 checked: 2026-10

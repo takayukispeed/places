@@ -6,7 +6,7 @@ area: Outremont
 address: 1201 Avenue Van Horne, Montréal, QC
 phone: +1 514-439-5435
 website: https://www.damas.ca
-reserve:
+reserve: https://www.opentable.ca/r/damas-montreal
 lat: 45.522551
 lng: -73.613182
 checked: 2026-10

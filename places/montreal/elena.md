@@ -6,7 +6,7 @@ area: Saint-Henri
 address: 5090 Rue Notre-Dame Ouest, Montréal, QC H4C 1T1
 phone: +1 514-379-4883
 website:
-reserve:
+reserve: https://www.opentable.ca/r/elena-reservations-montreal
 lat: 45.469787
 lng: -73.591746
 checked: 2026-10

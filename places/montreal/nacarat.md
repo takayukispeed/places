@@ -6,7 +6,7 @@ area: Downtown
 address: 900 Boulevard René-Lévesque Ouest, Montréal, QC H3B 4A5
 phone: +1 514-954-2872
 website: https://www.fairmont.com/en/hotels/montreal/fairmont-the-queen-elizabeth/dining/nacarat.bar.html
-reserve:
+reserve: https://www.opentable.ca/r/nacarat-montreal
 lat: 45.500444
 lng: -73.568359
 checked: 2026-10
