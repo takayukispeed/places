@@ -6,8 +6,8 @@ area: Mile-Ex
 address: 6512 Avenue du Parc, Montréal, QC H2V 4H9
 phone: +1 514-544-6512
 website: https://www.taverneatlantic.com
-lat:
-lng:
+lat: 45.526935
+lng: -73.613257
 checked: 2026-10
 ---
 

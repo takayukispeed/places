@@ -6,8 +6,8 @@ area: Mile End
 address: 52 Rue Saint-Viateur Ouest, Montréal, QC H2T 2K8
 phone: +1 514-277-4400
 website: https://www.bishopandbagg.com
-lat:
-lng:
+lat: 45.525091
+lng: -73.599384
 checked: 2026-10
 ---
 

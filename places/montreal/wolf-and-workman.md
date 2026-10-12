@@ -6,8 +6,8 @@ area: Old Montreal
 address: 139 Rue Saint-Paul Ouest, Montréal, QC H2Y 1Z5
 phone: +1 514-737-1787
 website: https://www.wolfandworkman.com
-lat:
-lng:
+lat: 45.503728
+lng: -73.554907
 checked: 2026-10
 ---
 

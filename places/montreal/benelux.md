@@ -6,8 +6,8 @@ area: Milton-Parc
 address: 245 Rue Sherbrooke Ouest, Montréal, QC H2X 1X7
 phone: +1 514-543-9750
 website: https://brasseriebenelux.com
-lat:
-lng:
+lat: 45.50959
+lng: -73.571023
 checked: 2026-10
 ---
 
