@@ -231,4 +231,5 @@ details summary { cursor: pointer; color: var(--accent); font-size: 15px; paddin
   text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff;
 }
 .leaflet-tooltip.pin-label::before { display: none; }
+.leaflet-tooltip.pin-label.leaflet-interactive { cursor: pointer; } /* tapping a name opens its popup, like the pin */
 .labels-off .pin-label { display: none; }

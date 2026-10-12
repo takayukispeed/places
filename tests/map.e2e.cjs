@@ -73,6 +73,11 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   for (const a of labs) for (const p of pinBoxes) {
     assert.ok(a.r <= p.l || p.r <= a.l || a.b <= p.top || p.b <= a.top, `"${a.t}" covers a pin`);
   }
+  // Tapping a name opens the same popup as its pin
+  await page.locator(".pin-label", { hasText: labs[0].t }).click();
+  await page.waitForSelector(".leaflet-popup");
+  assert.ok((await page.locator(".leaflet-popup-content").innerText()).startsWith(labs[0].t), "label opens its place's popup");
+  await page.locator(".leaflet-popup-close-button").click();
   if (OUT) await page.screenshot({ path: OUT });
   // moving updates the dot, not adds another
   await ctx.setGeolocation({ latitude: 45.525, longitude: -73.59, accuracy: 20 });

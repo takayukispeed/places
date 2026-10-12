@@ -432,7 +432,7 @@ async function osmMap(el) {
       const markers = [...items].sort(([a], [b]) => open(a) - open(b)).map(([p, c]) =>
         L.circleMarker(c, { radius: 9, color: "#fff", weight: 2, fillColor: categoryColour(p.category), fillOpacity: 1 })
           .bindPopup(popupHtml(p))
-          .bindTooltip(esc(p.name), { permanent: true, direction: "right", offset: [9, 0], className: "pin-label", interactive: false })
+          .bindTooltip(esc(p.name), { permanent: true, direction: "right", offset: [9, 0], className: "pin-label", interactive: true })
           .addTo(layer));
       labels = markers.map((m) => [m.getTooltip(), m.getElement()]).filter(([t, pin]) => t.getElement() && pin); // open now get first pick
       declutter();
