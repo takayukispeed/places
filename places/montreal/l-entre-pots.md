@@ -7,8 +7,8 @@ address: 1995 Rue Masson, Montréal, QC
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.538924
+lng: -73.582616
 checked: 2026-10-12
 ---
 
