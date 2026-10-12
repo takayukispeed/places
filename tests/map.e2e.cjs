@@ -34,6 +34,27 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   const page = await ctx.newPage(); const errs = []; page.on("pageerror", (e) => errs.push(e.message));
   const base = `http://localhost:${srv.address().port}/`;
   await page.goto(base); await page.waitForSelector("path.leaflet-interactive"); // opens on the map, pins drawn
+  // Double-tap on an empty spot zooms in exactly one level (Safari needs the app's own handling)
+  const zoom = () => page.evaluate(() => Number(document.querySelector("#map").dataset.zoom));
+  const mb = await page.locator("#map").boundingBox();
+  const empty = await page.evaluate(({ x, y, w, h }) => {
+    for (let fy = 0.15; fy < 0.9; fy += 0.05) for (let fx = 0.1; fx < 0.9; fx += 0.05) {
+      const px = x + w * fx, py = y + h * fy;
+      const el = document.elementFromPoint(px, py);
+      if (el && !el.closest(".leaflet-interactive, .leaflet-control, .locate-btn, .pin-label")) return { px, py };
+    }
+  }, { x: mb.x, y: mb.y, w: mb.width, h: mb.height });
+  const z0 = await zoom();
+  await page.touchscreen.tap(empty.px, empty.py); await page.waitForTimeout(60); await page.touchscreen.tap(empty.px, empty.py);
+  await page.waitForFunction((z) => Number(document.querySelector("#map").dataset.zoom) !== z, z0);
+  await page.waitForTimeout(400);
+  assert.equal(await zoom(), z0 + 1, "double-tap zooms in one level");
+  // two taps far apart, or slow, don't zoom
+  await page.touchscreen.tap(empty.px, empty.py); await page.waitForTimeout(500); await page.touchscreen.tap(empty.px, empty.py);
+  await page.waitForTimeout(500);
+  assert.equal(await zoom(), z0 + 1, "slow taps don't zoom");
+  // back to the starting view for the rest of the test
+  await page.reload(); await page.waitForSelector("path.leaflet-interactive");
   assert.equal(await page.getAttribute("#locate", "aria-pressed"), "false");
   const before = await page.locator("path.leaflet-interactive").count();
   // Names: hidden on the whole-city view, shown from neighbourhood zoom, never overlapping.

@@ -390,6 +390,44 @@ async function osmMap(el) {
   }).addTo(map);
   const layer = L.layerGroup().addTo(map);
   let me = null;
+  map.on("zoomend", () => { el.dataset.zoom = map.getZoom(); });
+  el.dataset.zoom = map.getZoom();
+
+  // Double-tap to zoom in. Safari on iPhone doesn't pass double-taps on to Leaflet, so touch
+  // double-taps are spotted here: two quick, still, one-finger taps close together, not on a pin,
+  // name or popup. Leaflet's own double-click zoom stays for the mouse.
+  map.doubleClickZoom.disable();
+  let lastPointer = "mouse";
+  map.on("dblclick", (e) => {
+    if (lastPointer !== "mouse") return;
+    map.setZoomAround(e.containerPoint, map.getZoom() + (e.originalEvent.shiftKey ? -1 : 1));
+  });
+  const touches = new Map();
+  let multi = false, lastTap = null;
+  el.addEventListener("pointerdown", (e) => {
+    lastPointer = e.pointerType;
+    if (e.pointerType !== "touch") return;
+    touches.set(e.pointerId, { x: e.clientX, y: e.clientY, t: e.timeStamp });
+    if (touches.size > 1) multi = true; // a pinch, not a tap
+  }, true);
+  const lift = (e) => {
+    if (e.pointerType !== "touch") return;
+    const start = touches.get(e.pointerId);
+    touches.delete(e.pointerId);
+    const wasMulti = multi;
+    if (!touches.size) multi = false;
+    const tap = start && e.type === "pointerup" && !wasMulti
+      && Math.hypot(e.clientX - start.x, e.clientY - start.y) < 10 && e.timeStamp - start.t < 300
+      && !e.target.closest(".leaflet-interactive, .leaflet-popup, .leaflet-control, .locate-btn");
+    if (!tap) { lastTap = null; return; }
+    if (lastTap && e.timeStamp - lastTap.t < 350 && Math.hypot(e.clientX - lastTap.x, e.clientY - lastTap.y) < 30) {
+      lastTap = null;
+      const box = el.getBoundingClientRect();
+      map.setZoomAround(L.point(e.clientX - box.left, e.clientY - box.top), Math.min(map.getZoom() + 1, map.getMaxZoom()));
+    } else lastTap = { x: e.clientX, y: e.clientY, t: e.timeStamp };
+  };
+  el.addEventListener("pointerup", lift, true);
+  el.addEventListener("pointercancel", lift, true);
   let labels = []; // [tooltip, its pin's element], most important first
 
   // Names beside the pins, only from neighbourhood zoom up, never on top of each other or of
