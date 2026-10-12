@@ -7,8 +7,8 @@ address: 4019 MacDonald St, Vancouver, BC V6L 2N8
 phone: +1 604-738-2144
 website:
 reserve:
-lat:
-lng:
+lat: 49.253667
+lng: -123.167789
 checked: 2026-10-12
 ---
 
