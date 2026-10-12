@@ -1,7 +1,7 @@
 ---
 name: Phnom Penh
 city: Vancouver
-category: sitdown
+category: nice
 area: Chinatown
 address: 244 E Georgia St, Vancouver, BC V6A 1Z7
 phone: +1 604-682-5777
