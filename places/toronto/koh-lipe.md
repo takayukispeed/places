@@ -1,7 +1,7 @@
 ---
 name: Koh Lipe Thai Kitchen
 city: Toronto
-category: sitdown
+category: nice
 area: Baldwin Village
 address: 35 Baldwin St, Toronto, ON M5T 1L1
 phone: +1 416-599-9988

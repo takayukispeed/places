@@ -1,7 +1,7 @@
 ---
 name: Pearl Diver
 city: Toronto
-category: sitdown
+category: nice
 area: St. Lawrence
 address: 100 Adelaide St E, Toronto, ON M5C 1K9
 phone: +1 416-366-7827

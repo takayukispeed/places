@@ -1,7 +1,7 @@
 ---
 name: Sunny's Chinese
 city: Toronto
-category: sitdown
+category: nice
 area: Kensington
 address: 60 Kensington Ave, Toronto, ON M5T 2K2
 phone: +1 437-833-5798
