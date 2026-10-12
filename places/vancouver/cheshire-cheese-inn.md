@@ -7,8 +7,8 @@ address: 4585 Dunbar St, Vancouver, BC V6S 2G7
 phone: +1 604-224-2521
 website:
 reserve: https://www.opentable.com/r/the-cheshire-cheese-inn-vancouver
-lat:
-lng:
+lat: 49.245461
+lng: -123.185435
 checked: 2026-10-12
 ---
 
