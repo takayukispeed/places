@@ -23,5 +23,4 @@ checked: 2026-10-12
 Shawarma. There's more than one location; this is the downtown one.
 
 - Address and phone: [Shawarmaz](https://shawarmaz.com/), [Yelp](https://www.yelp.ca/biz/shawarmaz-montr%C3%A9al).
-
 - Hours: [RestoMontreal](https://www.restomontreal.ca/resto/shawarmaz-montreal/19090/fr/?page=12), October 2026.
