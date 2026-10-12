@@ -589,28 +589,19 @@ function placesView() {
         : loading ? "Loading…" : "No places yet. Tap + to add one."}</p>`;
       return;
     }
-    // Nearest first (the default, once we know where you are): one list, no headings. A–Z: grouped
-    // by category in a fixed order (state.places is already sorted by name, and sort() is stable).
+    // One combined list: nearest first (the default, once we know where you are), or A–Z
+    // (state.places is already sorted by name). Each card's badge shows its category.
     const sortAz = store.get(KEY_SORT) === "az";
-    const byDistance = !sortAz && myPos;
-    const groups = new Map();
-    const sorted = byDistance
+    const sorted = !sortAz && myPos
       ? [...matches].sort((a, b) => (away(a) ?? Infinity) - (away(b) ?? Infinity))
-      : [...matches].sort((a, b) => categoryOrder(a.category) - categoryOrder(b.category));
-    for (const p of sorted) {
-      const k = byDistance ? "" : p.category;
-      if (!groups.has(k)) groups.set(k, []);
-      groups.get(k).push(p);
-    }
+      : matches;
     const status = sortAz || myPos ? "" : listFix === "pending" ? "Finding you…" : "Location off, so A–Z";
     const sortRow = `<div class="sort-row">
       <div class="segmented small" role="group" aria-label="Sort">
         <button data-sort="near" class="${sortAz ? "" : "on"}" aria-pressed="${!sortAz}">Nearest</button>
         <button data-sort="az" class="${sortAz ? "on" : ""}" aria-pressed="${sortAz}">A–Z</button>
       </div>${status ? `<span class="sort-status">${status}</span>` : ""}</div>`;
-    $("#results").innerHTML = sortRow + [...groups].map(([k, ps]) => `
-      ${state.placeCat || byDistance ? "" : `<h2 class="list-heading">${esc(categoryLabel(k))}</h2>`}
-      <ul class="cards">${ps.map(card).join("")}</ul>`).join("");
+    $("#results").innerHTML = `${sortRow}<ul class="cards">${sorted.map(card).join("")}</ul>`;
     app.querySelectorAll("[data-sort]").forEach((b) => {
       b.onclick = () => {
         if (b.dataset.sort === "az") { store.set(KEY_SORT, "az"); show(); return; }

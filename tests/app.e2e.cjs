@@ -101,8 +101,7 @@ const KAZU = [{
   // and there's no way to add or edit.
   assert.deepEqual(apiCalls, []);
   assert.equal(await page.locator(".fab").count(), 0);
-  assert.deepEqual(await page.locator(".list-heading").allInnerTexts(),
-    ["CHEAP EATS", "NICE MEAL", "BRUNCH", "CAFÉS", "BAKERIES", "BARS", "FANCY BARS"]);
+  assert.equal(await page.locator(".list-heading").count(), 0, "one combined list, no headings");
   await shot("1-list");
 
   // Copy app link: the address without the #/… page
@@ -132,18 +131,17 @@ const KAZU = [{
   await ctx.setGeolocation({ latitude: 45.4989, longitude: -73.5778 }); // at Cloakroom Bar, downtown
   await page.click("[data-sort=near]");
   await page.waitForSelector(".card-dist");
-  // Nearest: one combined list, no category headings, closest first
-  assert.equal(await page.locator(".list-heading").count(), 0);
+  // Nearest: closest first
   assert.equal(await page.locator(".card").count(), placeCount);
   assert.match(await page.locator(".card-title").first().innerText(), /^Cloakroom Bar\s*\d+ m$/);
   const dists = await page.locator(".card-dist").allInnerTexts();
   const km = dists.map((d) => parseFloat(d) / (d.endsWith(" m") ? 1000 : 1));
   assert.deepEqual(km, [...km].sort((a, b) => a - b), "sorted by distance");
-  // A–Z toggle: grouped by category again, alphabetical, distances still shown, and remembered
+  // A–Z toggle: one alphabetical list, distances still shown, and remembered
   await page.click("[data-sort=az]");
-  const firstFancy = () => page.locator(".cards").nth(6).locator(".card-title").first().innerText();
-  assert.equal(await page.locator(".list-heading").nth(6).innerText(), "FANCY BARS");
-  assert.match(await firstFancy(), /^Atwater Cocktail Club\s*[\d.]+ k?m$/);
+  const names = await page.locator(".card-title").evaluateAll((els) => els.map((e) => e.firstChild.textContent));
+  assert.deepEqual(names, [...names].sort((a, b) => a.localeCompare(b)), "alphabetical");
+  assert.ok(await page.locator(".card-dist").count() > 0, "distances still shown");
   await page.reload();
   await toList();
   assert.equal(await page.getAttribute("[data-sort=az]", "aria-pressed"), "true");

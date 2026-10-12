@@ -95,11 +95,11 @@ input[type="search"], .field input, .field select, .field textarea {
 }
 input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
 
-.chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 0 4px; margin: 0 calc(-1 * var(--gutter)); padding-inline: var(--gutter); scrollbar-width: none; }
+.chips { display: flex; gap: 6px; overflow-x: auto; padding: 10px 0 4px; margin: 0 calc(-1 * var(--gutter)); padding-inline: var(--gutter); scrollbar-width: none; }
 .chips::-webkit-scrollbar { display: none; }
 .chip {
-  flex: none; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
-  background: var(--surface); font-size: 15px; cursor: pointer;
+  flex: none; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--surface); font-size: 13px; cursor: pointer;
 }
 .chip.on { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
 
@@ -113,8 +113,9 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); ou
 .card-title { font-weight: 600; font-size: 18px; }
 .card-dist { float: right; margin-left: 8px; font-size: 14px; font-weight: 500; color: var(--muted); }
 .sort-row { display: flex; align-items: center; gap: 12px; margin: 8px 0 -4px; }
-.sort-row .segmented { margin: 0; flex: 0 0 auto; }
-.sort-row .segmented > * { padding: 5px 14px; font-size: 14px; }
+.sort-row .segmented { margin: 0; flex: 0 0 auto; padding: 2px; gap: 2px; border-radius: 8px; }
+.sort-row .segmented > * { padding: 3px 10px; font-size: 13px; border-radius: 6px; }
+.sort-status { font-size: 13px; }
 .sort-status { color: var(--muted); font-size: 14px; }
 .card-meta { display: flex; gap: 10px; align-items: center; color: var(--muted); font-size: 14px; }
 .card-tags { color: var(--muted); font-size: 14px; }
@@ -172,7 +173,6 @@ details summary { cursor: pointer; color: var(--accent); font-size: 15px; paddin
 .place h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; }
 .notes ul { padding-left: 20px; }
 .notes li { margin: 6px 0; }
-.list-heading { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 20px 0 8px; }
 
 /* ---- Places ---- */
 :root { --open: #2e7d32; }
