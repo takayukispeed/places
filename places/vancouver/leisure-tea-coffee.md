@@ -7,8 +7,8 @@ address: 8391 Alexandra Rd, Richmond, BC V6X 1C3
 phone: +1 604-821-9998
 website:
 reserve:
-lat:
-lng:
+lat: 49.17856
+lng: -123.129809
 checked: 2026-10-12
 ---
 

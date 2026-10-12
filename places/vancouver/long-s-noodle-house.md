@@ -7,8 +7,8 @@ address: 4853 Main St, Vancouver, BC V5V 3R9
 phone: +1 604-879-7879
 website:
 reserve:
-lat:
-lng:
+lat: 49.241243
+lng: -123.101694
 checked: 2026-10-12
 ---
 

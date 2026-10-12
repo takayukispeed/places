@@ -7,8 +7,8 @@ address: 3685 W 10th Ave, Vancouver, BC V6R 2G2
 phone: +1 604-739-4403
 website: https://mrfalafel.ca
 reserve:
-lat:
-lng:
+lat: 49.26381
+lng: -123.185429
 checked: 2026-10-12
 ---
 
