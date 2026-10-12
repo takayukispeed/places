@@ -527,18 +527,46 @@ function startLocating(onFix, onError) {
   if (watchId !== null) return;
   if (!("geolocation" in navigator)) { onError({ code: 0 }); return; }
   watchId = navigator.geolocation.watchPosition(
-    (pos) => { myPos = { lat: pos.coords.latitude, lng: pos.coords.longitude, accuracy: pos.coords.accuracy }; onFix(myPos); },
+    (pos) => { gotFix(pos); onFix(myPos); },
     (err) => { stopLocating(); onError(err); },
     { enableHighAccuracy: true, maximumAge: 15000, timeout: 20000 },
   );
 }
 
 
+function gotFix(pos) {
+  myPos = { lat: pos.coords.latitude, lng: pos.coords.longitude, accuracy: pos.coords.accuracy };
+  autoCity();
+}
+
+// On the first location fix of a visit, switch to the city you're in (the one whose places are
+// nearest, within 150 km), unless you've picked "All cities". Picking a city by hand still works.
+let cityAutoPicked = false;
+function autoCity() {
+  const all = cities();
+  if (cityAutoPicked || !myPos || !all.length) return;
+  cityAutoPicked = true;
+  if (store.get(KEY_CITY) === "") return;
+  let best = null, bestKm = Infinity;
+  for (const c of all) {
+    const pts = state.places.filter((p) => p.city === c).map(coords).filter(Boolean);
+    if (!pts.length) continue;
+    const mid = [pts.reduce((a, [lat]) => a + lat, 0) / pts.length, pts.reduce((a, [, lng]) => a + lng, 0) / pts.length];
+    const km = distanceKm([myPos.lat, myPos.lng], mid);
+    if (km < bestKm) { best = c; bestKm = km; }
+  }
+  if (best && bestKm < 150 && best !== currentCity()) {
+    store.set(KEY_CITY, best);
+    toast(`Showing ${best}`);
+    render();
+  }
+}
+
 // One-off fix for sorting the list; the map keeps its own watch running while it's open.
 function locateOnce(onFix, onError) {
   if (!("geolocation" in navigator)) { onError({ code: 0 }); return; }
   navigator.geolocation.getCurrentPosition(
-    (pos) => { myPos = { lat: pos.coords.latitude, lng: pos.coords.longitude, accuracy: pos.coords.accuracy }; onFix(myPos); },
+    (pos) => { gotFix(pos); onFix(myPos); },
     onError,
     { enableHighAccuracy: false, maximumAge: 60000, timeout: 15000 },
   );

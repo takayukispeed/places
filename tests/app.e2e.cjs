@@ -254,6 +254,7 @@ const KAZU = [{
   await page.click("#save");
   await page.waitForURL(/#\/view\/places\/toronto\/kazu\.md$/);
   assert.ok(repo["places/toronto/kazu.md"] && !repo["places/montreal/kazu.md"]);
+  await ctx.setGeolocation({ latitude: 48.8566, longitude: 2.3522 }); // far from both cities: no automatic switch
   await page.goto(base);
   await toList();
   await page.waitForSelector("#city");
@@ -270,6 +271,16 @@ const KAZU = [{
   await page.click("#delete");
   await page.waitForURL(/#\/$/);
   assert.ok(!repo["places/toronto/kazu.md"]);
+
+  // In another city: the first location fix switches the app to it
+  await ctx.setGeolocation({ latitude: 43.6532, longitude: -79.3832 }); // downtown Toronto
+  await page.evaluate(() => { localStorage.setItem("pl.city", "Montréal"); localStorage.setItem("pl.showMyLocation", "1"); });
+  await page.reload();
+  await page.click("[data-mode=list]");
+  await page.waitForFunction(() => document.querySelector("#city")?.value === "Toronto");
+  await page.selectOption("#city", "Montréal");
+  await page.waitForTimeout(500);
+  assert.equal(await page.inputValue("#city"), "Montréal", "a city picked by hand sticks for the visit");
 
   // Unknown pages
   await page.goto(base + "#/view/places/montreal/nope.md");
