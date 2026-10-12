@@ -214,6 +214,12 @@ body.map-mode main > * { flex: none; }
 body.map-mode #results { flex: 1; min-height: 0; display: flex; flex-direction: column; }
 body.map-mode .map-wrap { flex: 1; min-height: 0; margin-top: 4px; }
 body.map-mode .map { height: 100%; min-height: 0; }
+/* The "Finding N more on the map…" note floats over the map, so showing it never resizes the map. */
+body.map-mode #results { position: relative; }
+body.map-mode .map-note {
+  position: absolute; left: 8px; bottom: 8px; z-index: 500; margin: 0; min-height: 0;
+  padding: 2px 8px; border-radius: 6px; background: var(--surface); box-shadow: var(--shadow); font-size: 13px;
+}
 body.map-mode .map-note:empty { display: none; }
 .leaflet-popup-content { font: 15px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
 .leaflet-popup-content .open { color: #2e7d32; }

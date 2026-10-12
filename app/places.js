@@ -9,6 +9,7 @@ export const CATEGORIES = [
   ["brunch", "Brunch", "#c2185b"],
   ["cafe", "Cafés", "#8a5a2b"],
   ["bakery", "Bakeries", "#c0841a"],
+  ["icecream", "Ice cream", "#3d9ed6"],
   ["bar", "Bars", "#2f6f8f"],
   ["cocktail", "Fancy bars", "#7b3f91"],
 ];

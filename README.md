@@ -24,6 +24,7 @@ tests/       format and hours tests, an iPhone end-to-end test, and an app-updat
 | `brunch` | Brunch |
 | `cafe` | Cafés |
 | `bakery` | Bakeries |
+| `icecream` | Ice cream |
 | `bar` | Bars |
 | `cocktail` | Fancy bars |
 

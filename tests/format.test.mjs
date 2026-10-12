@@ -10,7 +10,7 @@ for (const city of readdirSync("places")) {
     const text = readFileSync(`places/${city}/${f}`, "utf8");
     const p = parsePlace(text);
     assert.equal(serializePlace(p), text, `round trip: places/${city}/${f}`);
-    assert.ok(["cheap", "nice", "brunch", "cafe", "bakery", "bar", "cocktail"].includes(p.category), `category: ${f}`);
+    assert.ok(["cheap", "nice", "brunch", "cafe", "bakery", "icecream", "bar", "cocktail"].includes(p.category), `category: ${f}`);
     assert.ok(p.address, `address: ${f}`);
     if (p.hours.length) assert.ok(parseHours(p.hours), `hours parse: ${f}`);
   }
