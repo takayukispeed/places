@@ -7,8 +7,8 @@ address: 50 Avenue Laurier Ouest, Montréal, QC H2T 2N4
 phone: +1 514-400-2072
 website: https://iconoglace.ca
 reserve:
-lat:
-lng:
+lat: 45.522368
+lng: -73.593201
 checked: 2026-10-12
 ---
 

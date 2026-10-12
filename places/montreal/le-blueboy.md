@@ -7,8 +7,8 @@ address: 150 Avenue du Mont-Royal Est, Montréal, QC H2T 1P1
 phone: +1 438-383-4034
 website:
 reserve:
-lat:
-lng:
+lat: 45.521551
+lng: -73.584902
 checked: 2026-10-12
 ---
 

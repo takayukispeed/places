@@ -7,8 +7,8 @@ address: 1843 Avenue du Mont-Royal Est, Montréal, QC H2H 1J2
 phone: +1 514-559-5768
 website:
 reserve:
-lat:
-lng:
+lat: 45.533566
+lng: -73.574207
 checked: 2026-10-12
 ---
 

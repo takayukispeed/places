@@ -7,8 +7,8 @@ address: 1320 Rue Bélanger, Montréal, QC H2G 1A1
 phone: +1 514-400-2072
 website: https://iconoglace.ca
 reserve:
-lat:
-lng:
+lat: 45.543366
+lng: -73.605978
 checked: 2026-10-12
 ---
 

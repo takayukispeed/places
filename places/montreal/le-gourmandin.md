@@ -7,8 +7,8 @@ address: 2308 Rue Ontario Est, Montréal, QC H2K 1W1
 phone: +1 514-523-9050
 website:
 reserve:
-lat:
-lng:
+lat: 45.530453
+lng: -73.554821
 checked: 2026-10-12
 ---
 

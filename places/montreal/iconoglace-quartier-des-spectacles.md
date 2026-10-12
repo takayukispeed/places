@@ -7,8 +7,8 @@ address: 1419 Rue Clark, Montréal, QC H2X 2R3
 phone: +1 514-400-2072
 website: https://iconoglace.ca
 reserve:
-lat:
-lng:
+lat: 45.509944
+lng: -73.564664
 checked: 2026-10-12
 ---
 
