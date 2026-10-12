@@ -266,3 +266,13 @@ body.map-mode .map-note:empty { display: none; }
 }
 .leaflet-tooltip.pin-label::before { display: none; }
 .leaflet-tooltip.pin-label.leaflet-interactive { cursor: pointer; } /* tapping a name opens its popup, like the pin */
+
+/* Suggestions: the banner leading to the review list (signed in), the review buttons, and the
+   form's hidden field that only bots fill in. */
+.review-banner {
+  display: block; margin: 0 0 8px; padding: 7px 12px; border-radius: 8px; font-size: 15px;
+  background: var(--accent-soft); color: var(--text); font-weight: 600; text-decoration: none;
+}
+.panel.review { margin-top: 20px; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.muted { color: var(--muted); }

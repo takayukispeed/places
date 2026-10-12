@@ -1,15 +1,16 @@
 // Run: node tests/format.test.mjs
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
 import assert from "node:assert/strict";
 import { inline, slugify } from "../app/format.js";
 import { parsePlace, serializePlace, parseHours, hoursStatus, todayLine, osmHoursToLines } from "../app/places.js";
 
-// Every place in the repo must survive a parse → serialize round trip unchanged, with valid fields.
-for (const city of readdirSync("places")) {
-  for (const f of readdirSync(`places/${city}`).filter((f) => f.endsWith(".md"))) {
-    const text = readFileSync(`places/${city}/${f}`, "utf8");
+// Every place in the repo, and every suggestion waiting for review, must survive a parse →
+// serialize round trip unchanged, with valid fields.
+for (const root of ["places", "suggestions"].filter((d) => existsSync(d))) for (const city of readdirSync(root)) {
+  for (const f of readdirSync(`${root}/${city}`).filter((f) => f.endsWith(".md"))) {
+    const text = readFileSync(`${root}/${city}/${f}`, "utf8");
     const p = parsePlace(text);
-    assert.equal(serializePlace(p), text, `round trip: places/${city}/${f}`);
+    assert.equal(serializePlace(p), text, `round trip: ${root}/${city}/${f}`);
     assert.ok(["cheap", "sitdown", "nice", "cafe", "bakery", "icecream", "bar", "cocktail"].includes(p.category), `category: ${f}`);
     assert.ok(p.address, `address: ${f}`);
     if (p.hours.length) assert.ok(parseHours(p.hours), `hours parse: ${f}`);

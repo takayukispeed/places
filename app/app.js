@@ -15,6 +15,8 @@ const onPages = location.hostname.endsWith(".github.io");
 const OWNER = onPages ? location.hostname.split(".")[0] : DEFAULT_OWNER;
 const REPO = onPages ? location.pathname.split("/").filter(Boolean)[0] || DEFAULT_REPO : DEFAULT_REPO;
 const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
+// Friends' "Suggest a place" form posts here (worker/suggest.js, on Cloudflare). Empty hides it.
+const SUGGEST_URL = window.PLACES_SUGGEST_URL ?? ""; // tests set PLACES_SUGGEST_URL
 
 // Prefixed "pl." because other apps on the same github.io address share this storage.
 const KEY_CACHE = "pl.files.v1";
@@ -35,6 +37,7 @@ const store = {
 const state = {
   files: JSON.parse(store.get(KEY_CACHE) || "{}"), // path -> { sha, text }
   places: [],
+  suggestions: [], // drafts researched from friends' suggestions, waiting for review (signed in only)
   placeQuery: "",
   placeCats: new Set(), // categories shown; empty means all
   placeOpenNow: false,
@@ -101,7 +104,7 @@ async function sync({ quiet = false } = {}) {
     const tree = bundle
       ? { tree: Object.entries(bundle.files).map(([path, f]) => ({ path, type: "blob", sha: f.sha })) }
       : await (await gh(`/git/trees/${BRANCH}?recursive=1`)).json();
-    const wanted = tree.tree.filter((e) => e.type === "blob" && /^places\/[^/]+\/[^/]+\.md$/.test(e.path));
+    const wanted = tree.tree.filter((e) => e.type === "blob" && /^(places|suggestions)\/[^/]+\/[^/]+\.md$/.test(e.path));
     const next = {};
     const todo = [];
     for (const e of wanted) {
@@ -160,9 +163,11 @@ async function deleteFile(path, message) {
 function persist() { store.set(KEY_CACHE, JSON.stringify(state.files)); }
 
 function rebuild() {
-  state.places = Object.entries(state.files).filter(([p]) => p.startsWith("places/"))
+  const read = (folder) => Object.entries(state.files).filter(([p]) => p.startsWith(folder))
     .map(([path, f]) => ({ path, ...parsePlace(f.text) }))
     .sort((a, b) => a.name.localeCompare(b.name));
+  state.places = read("places/");
+  state.suggestions = read("suggestions/");
 }
 
 function uniquePath(folder, title) {
@@ -662,6 +667,7 @@ function placesView() {
 
   app.innerHTML = `
     ${topBar("Places")}
+    ${token() && state.suggestions.length ? `<a class="review-banner" href="#/suggestions">${state.suggestions.length} suggested place${state.suggestions.length > 1 ? "s" : ""} to review</a>` : ""}
     ${showHint ? `<div class="hint"><span>Install: tap <strong>Share</strong> → <strong>Add to Home Screen</strong></span>
       <button id="hint-close" aria-label="Dismiss">✕</button></div>` : ""}
     <div class="place-tools">
@@ -690,7 +696,8 @@ function placesView() {
       </div>`}
     </div>
     <div id="results"></div>
-    ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>` : ""}
+    ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>`
+      : SUGGEST_URL ? `<a class="fab" href="#/suggest" aria-label="Suggest a place">${ICON.plus}</a>` : ""}
   `;
 
   const away = (p) => { const c = myPos && coords(p); return c ? distanceKm([myPos.lat, myPos.lng], c) : null; };
@@ -884,13 +891,15 @@ function placeView(p) {
 
 const HOURS_HINT = "one line per day or range · e.g. Mon–Fri: 11:30–22:00 · Sat: 10:00–14:00, 17:00–23:00 · Sun: Closed · Daily: Open 24 hours";
 
-function placeEditor(p) {
-  const isNew = !p;
+// `fromSuggestion`: editing a friend's suggestion before approving it. Saving adds it as a new
+// place and removes the suggestion.
+function placeEditor(p, fromSuggestion = null) {
+  const isNew = !p || !!fromSuggestion;
   const city = currentCity();
   p ||= { name: "", city, category: state.placeCats.size === 1 ? [...state.placeCats][0] : "nice", area: "", address: "", phone: "", website: "", reserve: "", lat: null, lng: null, checked: "", hours: [], notes: "" };
   const cats = CATEGORIES.some(([k]) => k === p.category) ? CATEGORIES : [...CATEGORIES, [p.category, p.category]];
   app.innerHTML = `
-    ${backBar(isNew ? "#/" : `#/view/${esc(p.path)}`, "Cancel", `<button class="text-btn strong" id="save" ${token() ? "" : "disabled"}>Save</button>`)}
+    ${backBar(fromSuggestion ? `#/suggestion/${esc(fromSuggestion)}` : isNew ? "#/" : `#/view/${esc(p.path)}`, "Cancel", `<button class="text-btn strong" id="save" ${token() ? "" : "disabled"}>Save</button>`)}
     <form class="editor" onsubmit="return false">
       <h1>${isNew ? "New place" : "Edit place"}</h1>
       ${tokenBanner()}
@@ -973,6 +982,7 @@ function placeEditor(p) {
     const folder = placePath(next);
     const path = isNew || !p.path.startsWith(`${folder}/`) ? uniquePath(folder, name) : p.path;
     await saveFile(path, serializePlace(next), `${isNew ? "Add" : "Update"} place: ${name}`);
+    if (fromSuggestion) await deleteFile(fromSuggestion, `Approve suggestion: ${name}`);
     if (!isNew && path !== p.path) await deleteFile(p.path, `Move place: ${name}`); // city changed
     if (next.city) store.set(KEY_CITY, next.city);
     toast("Saved");
@@ -987,6 +997,85 @@ function placeEditor(p) {
       location.hash = "#/";
     });
   });
+}
+
+// ---- Suggestions ------------------------------------------------------------
+// Friends (signed out) send a name and city; a daily Claude routine researches it into a draft in
+// suggestions/ (see SUGGESTIONS.md); signed in, you approve, edit or reject each draft here.
+function suggestView() {
+  const city = currentCity();
+  app.innerHTML = `
+    ${backBar("#/", "Places", `<button class="text-btn strong" id="send">Send</button>`)}
+    <form class="editor" onsubmit="return false">
+      <h1>Suggest a place</h1>
+      <p class="muted">Just the name and city. It gets looked up and added after a quick review.</p>
+      ${field("s-name", "Place", "", 'required autocapitalize="words" placeholder="e.g. Bar Raval"')}
+      ${field("s-city", "City", city, 'required autocapitalize="words" list="city-list"')}
+      <datalist id="city-list">${cities().map((c) => `<option value="${esc(c)}">`).join("")}</datalist>
+      ${field("s-by", "Your name <small>optional</small>", "", 'autocapitalize="words"')}
+      ${area("s-note", "Note", "", "optional: what's good there, a neighbourhood…", 3)}
+      <input id="s-website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p id="s-status" class="status"></p>
+    </form>`;
+  $("#send").onclick = () => withBusy($("#send"), async () => {
+    const name = $("#s-name").value.trim();
+    const where = $("#s-city").value.trim();
+    if (!name || !where) { toast("Add the place and the city."); return; }
+    $("#s-status").textContent = "Sending…";
+    const res = await fetch(SUGGEST_URL, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, city: where, by: $("#s-by").value.trim(), note: $("#s-note").value.trim(), website: $("#s-website").value }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) { $("#s-status").textContent = ""; throw new Error(data.error || "Couldn't send it. Try again later."); }
+    toast(`Thanks! ${name} is on the list.`);
+    location.hash = "#/";
+  });
+}
+
+function suggestionsView() {
+  const list = state.suggestions;
+  app.innerHTML = `
+    ${backBar("#/", "Places")}
+    <div class="editor">
+      <h1>Suggestions</h1>
+      ${list.length ? `<ul class="cards">${list.map((p) => `
+        <li><a class="card" href="#/suggestion/${esc(p.path)}">
+          <span class="card-title">${esc(p.name)}</span>
+          <span class="card-meta">${catBadge(p.category)}${p.area ? `<span>${esc(p.area)}</span>` : ""}${p.city ? `<span>${esc(p.city)}</span>` : ""}</span>
+        </a></li>`).join("")}</ul>` : `<p class="empty">Nothing to review.</p>`}
+    </div>`;
+}
+
+function suggestionView(p) {
+  placeView(p);
+  app.querySelector("header.bar").outerHTML = backBar("#/suggestions", "Suggestions");
+  app.insertAdjacentHTML("beforeend", `
+    <div class="panel review">
+      <h2>Add this place?</h2>
+      <p class="muted">Check the details above; Edit lets you fix anything first.</p>
+      <div class="buttons">
+        <button id="approve" class="primary">Approve</button>
+        <button id="edit-approve">Edit</button>
+        <button id="reject" class="danger">Reject</button>
+      </div>
+    </div>`);
+  $("#approve").onclick = () => withBusy($("#approve"), async () => {
+    const path = uniquePath(placePath(p), p.name);
+    await saveFile(path, state.files[p.path].text, `Add place: ${p.name} (suggested)`);
+    await deleteFile(p.path, `Approve suggestion: ${p.name}`);
+    toast(`Added ${p.name}`);
+    location.hash = state.suggestions.length ? "#/suggestions" : `#/view/${path}`;
+  });
+  $("#edit-approve").onclick = () => { location.hash = `#/approve/${p.path}`; };
+  $("#reject").onclick = () => {
+    if (!confirm(`Reject "${p.name}"?`)) return;
+    withBusy($("#reject"), async () => {
+      await deleteFile(p.path, `Reject suggestion: ${p.name}`);
+      toast("Rejected");
+      location.hash = state.suggestions.length ? "#/suggestions" : "#/";
+    });
+  };
 }
 
 // ---- Router ---------------------------------------------------------------
@@ -1022,6 +1111,13 @@ function showRoute(route) {
   if (route === "/" || route === "") return placesView();
   if (route === "/settings") return settingsView();
   if (route === "/new/place") return placeEditor(null);
+  if (route === "/suggest") return SUGGEST_URL ? suggestView() : notFound();
+  if (route === "/suggestions") return suggestionsView();
+  if ((m = route.match(/^\/(suggestion|approve)\/(suggestions\/.+)$/))) {
+    const s = state.suggestions.find((p) => p.path === m[2]);
+    if (!s) return state.lastSync ? suggestionsView() : (app.innerHTML = '<p class="empty">Loading…</p>');
+    return m[1] === "suggestion" ? suggestionView(s) : placeEditor(s, s.path);
+  }
   if ((m = route.match(/^\/(view|edit)\/(places\/.+)$/))) {
     const place = state.places.find((p) => p.path === m[2]);
     if (!place) return state.lastSync ? notFound() : (app.innerHTML = '<p class="empty">Loading…</p>');
@@ -1031,7 +1127,7 @@ function showRoute(route) {
 }
 
 // Background syncs must not redraw over a form someone is typing in.
-const editing = () => /^#\/(edit|new)\//.test(location.hash) || location.hash === "#/settings";
+const editing = () => /^#\/(edit|new|approve)\//.test(location.hash) || ["#/settings", "#/suggest"].includes(location.hash);
 function safeRender() { if (!editing()) render(); }
 
 window.addEventListener("hashchange", render);

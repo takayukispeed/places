@@ -93,6 +93,10 @@ Send them https://takayukispeed.github.io/places/. In Safari, they tap **Share â
 
 Signed out, the app reads `places.json`, one file holding every place. `scripts/build_bundle.py` builds it when the site deploys, which happens after every push and after the bot adds map coordinates. One download avoids GitHub's limit of 60 signed-out requests an hour. Because this repo is public, anyone with the link (or the repo) can see the places.
 
+### Suggestions from friends
+
+Signed out, the + button opens **Suggest a place**: a name, a city, and optionally their name and a note. The form posts to a small Cloudflare Worker (`worker/suggest.js`, setup steps at the top of that file). The Worker saves each suggestion to `inbox/` using its own GitHub token, which never reaches the app. Once a day, a scheduled Claude session follows `SUGGESTIONS.md`: it researches each suggestion and writes a draft to `suggestions/<city>/`, in the same format as a place. Signed in, the app shows "N suggested places to review" at the top. Each draft has **Approve** (moves it into `places/`), **Edit** (fix it first, then save) and **Reject** (delete). Drafts never appear on the map or in `places.json`. The Worker's address goes in `SUGGEST_URL` near the top of `app/app.js`; while that is empty, the button is hidden.
+
 ## In the app
 
 - **City** picker (once there is more than one city), **category** chips (tap several to combine them, e.g. Bars + Fancy bars; **ALL** clears), **search** (names, neighbourhoods and notes), **Open now**, and **Reserve** (only places with an online booking link).

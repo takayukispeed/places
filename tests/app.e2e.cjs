@@ -212,6 +212,22 @@ const KAZU = [{
   await page.goto(base + "#/new/place");
   assert.ok(await page.locator("#save").isDisabled());
 
+  // Friends can suggest a place: the form posts to the suggestion Worker (worker/suggest.js)
+  const suggested = [];
+  await ctx.route("https://suggest.test/**", (r) => {
+    suggested.push(JSON.parse(r.request().postData()));
+    return r.fulfill({ status: 200, headers: { ...cors, "Content-Type": "application/json" }, body: '{"ok":true}' });
+  });
+  await page.addInitScript(() => { window.PLACES_SUGGEST_URL = "https://suggest.test/"; });
+  await page.goto(base);
+  await page.click('.fab[aria-label="Suggest a place"]');
+  await page.fill("#s-name", "Bar Raval");
+  await page.fill("#s-city", "Toronto");
+  await page.fill("#s-by", "Sam");
+  await page.click("#send");
+  await page.waitForSelector("text=Bar Raval is on the list");
+  assert.deepEqual(suggested, [{ name: "Bar Raval", city: "Toronto", by: "Sam", note: "", website: "" }]);
+
   // Add a token
   await page.goto(base + "#/settings");
   await page.fill("#token", "github_pat_test");
@@ -287,6 +303,27 @@ const KAZU = [{
   await page.click("[data-mode=list]");
   await page.waitForFunction(() => document.querySelector("#city")?.value === "Toronto");
 
+  // Suggestions: drafts researched from friends' suggestions wait for review, then become places
+  const draft = (name) => `---\nname: ${name}\ncity: Toronto\ncategory: bar\naddress: 1 Test St, Toronto, ON\n---\n\n# ${name}\n\n## Hours\n\n- Daily: 17:00–02:00\n\n## Notes\n\n- Suggested by Sam.\n`;
+  repo["suggestions/toronto/sugg-one.md"] = draft("Sugg One");
+  repo["suggestions/toronto/sugg-two.md"] = draft("Sugg Two");
+  await page.goto(base);
+  await page.click("#sync");
+  await page.waitForSelector(".review-banner");
+  assert.equal((await page.textContent(".review-banner")).trim(), "2 suggested places to review");
+  await page.click(".review-banner");
+  await page.click("text=Sugg One");
+  await page.click("#approve");
+  await page.waitForURL(/#\/suggestions$/);
+  assert.equal(repo["places/toronto/sugg-one.md"], draft("Sugg One"), "approving moves the draft into places/ as is");
+  assert.ok(!repo["suggestions/toronto/sugg-one.md"]);
+  page.once("dialog", (d) => d.accept());
+  await page.click("text=Sugg Two");
+  await page.click("#reject");
+  await page.waitForURL(/#\/$/);
+  assert.ok(!repo["suggestions/toronto/sugg-two.md"] && !repo["places/toronto/sugg-two.md"]);
+  assert.equal(await page.locator(".review-banner").count(), 0, "nothing left to review");
+
   // Unknown pages
   await page.goto(base + "#/view/places/montreal/nope.md");
   await page.waitForSelector("text=That page isn't here");
@@ -301,6 +338,7 @@ const KAZU = [{
 
   assert.deepEqual(commits.map((c) => c.message), [
     "Add place: Kazu", "Update place: Kazu", "Update place: Kazu", "Move place: Kazu", "Delete place: Kazu",
+    "Add place: Sugg One (suggested)", "Approve suggestion: Sugg One", "Reject suggestion: Sugg Two",
   ]);
   assert.deepEqual(errors, []);
   await browser.close();

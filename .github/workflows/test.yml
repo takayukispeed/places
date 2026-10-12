@@ -1,7 +1,7 @@
 name: Test
 on:
   push:
-    paths: ["app/**", "tests/**", "places/**"]
+    paths: ["app/**", "tests/**", "places/**", "suggestions/**", "worker/**"]
   pull_request:
 jobs:
   format:
@@ -11,3 +11,4 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: node tests/format.test.mjs
+      - run: node tests/worker.test.mjs
