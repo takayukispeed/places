@@ -6,8 +6,8 @@ area: Plateau
 address: 5579 Avenue Christophe-Colomb, Montréal, QC H2J 3H3
 phone: +1 514-241-5389
 website:
-lat:
-lng:
+lat: 45.533237
+lng: -73.591121
 checked: 2026-10
 ---
 

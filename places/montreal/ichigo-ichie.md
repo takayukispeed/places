@@ -6,8 +6,8 @@ area: Plateau
 address: 360 Rue Rachel Est, Montréal, QC H2W 1E9
 phone: +1 514-282-0009
 website:
-lat:
-lng:
+lat: 45.521295
+lng: -73.578460
 checked: 2026-10
 ---
 

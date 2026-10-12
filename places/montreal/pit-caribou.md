@@ -6,8 +6,8 @@ area: Plateau
 address: 951 Rue Rachel Est, Montréal, QC H2J 2J4
 phone:
 website:
-lat:
-lng:
+lat: 45.525033
+lng: -73.575458
 checked: 2026-10
 ---
 

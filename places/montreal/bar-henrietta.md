@@ -6,8 +6,8 @@ area: Mile End
 address: 115 Avenue Laurier Ouest, Montréal, QC
 phone:
 website:
-lat:
-lng:
+lat: 45.521647
+lng: -73.594380
 checked: 2026-10
 ---
 

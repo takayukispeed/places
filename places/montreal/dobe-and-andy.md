@@ -6,8 +6,8 @@ area: Chinatown
 address: 1071 Rue Saint-Urbain, Montréal, QC H2Z 1Y6
 phone:
 website:
-lat:
-lng:
+lat: 45.507594
+lng: -73.561617
 checked: 2026-10
 ---
 

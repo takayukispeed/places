@@ -6,8 +6,8 @@ area: Chinatown
 address: 1006 Boulevard Saint-Laurent, Montréal, QC
 phone:
 website:
-lat:
-lng:
+lat: 45.507775
+lng: -73.559629
 checked: 2026-10
 ---
 

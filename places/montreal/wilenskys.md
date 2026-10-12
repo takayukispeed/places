@@ -6,8 +6,8 @@ area: Mile End
 address: 34 Avenue Fairmount Ouest, Montréal, QC
 phone: +1 514-271-0247
 website:
-lat:
-lng:
+lat: 45.523317
+lng: -73.594830
 checked: 2026-10
 ---
 

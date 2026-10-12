@@ -6,8 +6,8 @@ area: Mile End
 address: 29 Avenue Laurier Ouest, Montréal, QC H2T 2N2
 phone: +1 514-490-9555
 website: https://dieuduciel.com
-lat:
-lng:
+lat: 45.522754
+lng: -73.593455
 checked: 2026-10
 ---
 

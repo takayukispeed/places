@@ -6,8 +6,8 @@ area: Petite-Patrie
 address: 1290 Rue Beaubien Est, Montréal, QC
 phone:
 website:
-lat:
-lng:
+lat: 45.539749
+lng: -73.599615
 checked: 2026-10
 ---
 

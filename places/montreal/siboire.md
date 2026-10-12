@@ -6,8 +6,8 @@ area: Mile End
 address: 5101 Boulevard Saint-Laurent, Montréal, QC H2T 1R9
 phone:
 website:
-lat:
-lng:
+lat: 45.523194
+lng: -73.592804
 checked: 2026-10
 ---
 

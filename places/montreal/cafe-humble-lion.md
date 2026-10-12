@@ -6,8 +6,8 @@ area: Downtown
 address: 904 Rue Sherbrooke Ouest, Montréal, QC
 phone:
 website:
-lat:
-lng:
+lat: 45.503341
+lng: -73.574846
 checked: 2026-10
 ---
 

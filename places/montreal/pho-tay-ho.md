@@ -6,8 +6,8 @@ area: Petite-Patrie
 address: 6414 Rue Saint-Denis, Montréal, QC H2S 2R7
 phone: +1 514-273-5627
 website:
-lat:
-lng:
+lat: 45.533616
+lng: -73.604727
 checked: 2026-10
 ---
 

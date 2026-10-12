@@ -6,8 +6,8 @@ area: Mile End
 address: 68 Avenue Fairmount Ouest, Montréal, QC H2T 2M2
 phone:
 website:
-lat:
-lng:
+lat: 45.523007
+lng: -73.594976
 checked: 2026-10
 ---
 

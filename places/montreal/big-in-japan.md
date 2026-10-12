@@ -6,8 +6,8 @@ area: Plateau
 address: 4175 Boulevard Saint-Laurent, Montréal, QC
 phone:
 website:
-lat:
-lng:
+lat: 45.518053
+lng: -73.581331
 checked: 2026-10
 ---
 
