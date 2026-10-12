@@ -6,7 +6,7 @@ area: Plateau
 address: 3927 Rue Saint-Denis, Montréal, QC H2W 2M4
 phone:
 website: https://restaurantlexpress.com
-lat: 45.520310
+lat: 45.52031
 lng: -73.574383
 checked: 2026-10
 ---

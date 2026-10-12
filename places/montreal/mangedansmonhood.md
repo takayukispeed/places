@@ -6,7 +6,7 @@ area: Villeray
 address: 1380 Rue Jean-Talon Est, Montréal, QC H2E 1S2
 phone:
 website:
-lat: 45.545720
+lat: 45.54572
 lng: -73.608755
 checked: 2026-10
 ---

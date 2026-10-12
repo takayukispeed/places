@@ -6,7 +6,7 @@ area: Plateau
 address: 4328 Boulevard Saint-Laurent, Montréal, QC H2W 1Z3
 phone: +1 514-379-1233
 website:
-lat: 45.518900
+lat: 45.5189
 lng: -73.584025
 checked: 2026-10
 ---

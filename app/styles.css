@@ -47,7 +47,8 @@ main {
 a { color: var(--accent); }
 h1, h2 { line-height: 1.2; }
 button, input, select, textarea { font: inherit; color: inherit; }
-svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+/* Toolbar and button icons only: Leaflet draws map pins in an <svg> too. */
+.icon-btn svg, .back svg, .fab svg, .actions svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* ---- Top bar ---- */
 .bar {

@@ -7,7 +7,7 @@ address: 115 Avenue Laurier Ouest, Montréal, QC
 phone:
 website:
 lat: 45.521647
-lng: -73.594380
+lng: -73.59438
 checked: 2026-10
 ---
 

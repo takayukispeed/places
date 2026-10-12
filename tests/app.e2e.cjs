@@ -121,6 +121,15 @@ const KAZU = [{
   await page.goto(base);
   await page.click("[data-mode=map]");
   await page.waitForSelector("text=The map needs a connection");
+  // Icon styles must not reach other <svg>s: Leaflet draws the pins in one, and a 22px rule hid them all.
+  assert.equal(await page.evaluate(() => {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("width", "300"); svg.setAttribute("height", "200");
+    document.querySelector("#results").append(svg);
+    const { width, fill } = getComputedStyle(svg);
+    svg.remove();
+    return `${width} ${fill}`;
+  }), "300px rgb(0, 0, 0)");
   await page.click("[data-mode=list]");
 
   // Editing without a token is blocked

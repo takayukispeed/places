@@ -20,6 +20,11 @@ def field(text, key):
     return m.group(1).strip() if m else ""
 
 
+def coord(x):
+    """6 decimals (about 10 cm) without trailing zeros, as the app writes them."""
+    return f"{x:.6f}".rstrip("0").rstrip(".")
+
+
 def geocode(query):
     url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(
         {"q": query, "format": "jsonv2", "limit": 1})
@@ -50,8 +55,8 @@ def main():
         if not hit:
             print(f"{path.relative_to(ROOT)}: not found ({address})")
             continue
-        text = re.sub(r"^lat:.*$", f"lat: {hit[0]:.6f}", text, count=1, flags=re.M)
-        text = re.sub(r"^lng:.*$", f"lng: {hit[1]:.6f}", text, count=1, flags=re.M)
+        text = re.sub(r"^lat:.*$", f"lat: {coord(hit[0])}", text, count=1, flags=re.M)
+        text = re.sub(r"^lng:.*$", f"lng: {coord(hit[1])}", text, count=1, flags=re.M)
         path.write_text(text, encoding="utf-8")
         filled += 1
     print(f"geocoded {filled} places")
