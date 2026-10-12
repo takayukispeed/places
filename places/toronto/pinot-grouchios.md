@@ -7,8 +7,8 @@ address: 1609 Dundas St W, Toronto, ON M6K 1T9
 phone:
 website: https://www.pinotgrouchios.com
 reserve:
-lat:
-lng:
+lat: 43.649687
+lng: -79.435129
 checked: 2026-10-12
 ---
 
