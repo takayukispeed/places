@@ -6,8 +6,8 @@ area: Centre-Sud
 address: 1250 Rue Ontario Est, Montréal, QC H2L 1R6
 phone: +1 514-507-8777
 website:
-lat:
-lng:
+lat: 45.521589
+lng: -73.561911
 checked: 2026-10
 ---
 

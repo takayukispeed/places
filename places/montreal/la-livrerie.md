@@ -6,8 +6,8 @@ area: Centre-Sud
 address: 1289 Rue Ontario Est, Montréal, QC H2L 1R7
 phone: +1 438-476-6647
 website: https://www.lalivrerie.com
-lat:
-lng:
+lat: 45.522174
+lng: -73.561958
 checked: 2026-10
 ---
 

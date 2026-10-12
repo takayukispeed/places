@@ -6,8 +6,8 @@ area: Little Burgundy
 address: 2501 Rue Notre-Dame Ouest, Montréal, QC
 phone: +1 514-313-6049
 website: https://liverpoolhouse.ca
-lat:
-lng:
+lat: 45.482964
+lng: -73.575375
 checked: 2026-10
 ---
 

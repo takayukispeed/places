@@ -6,8 +6,8 @@ area: Plateau
 address: 1546 Avenue Laurier Est, Montréal, QC H2J 1H9
 phone: +1 514-776-5070
 website:
-lat:
-lng:
+lat: 45.534684
+lng: -73.582418
 checked: 2026-10
 ---
 

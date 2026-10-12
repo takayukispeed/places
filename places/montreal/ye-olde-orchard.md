@@ -6,8 +6,8 @@ area: Downtown
 address: 1189 Rue de la Montagne, Montréal, QC H3G 1Z2
 phone: +1 514-874-1569
 website:
-lat:
-lng:
+lat: 45.497317
+lng: -73.573507
 checked: 2026-10
 ---
 

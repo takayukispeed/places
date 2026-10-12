@@ -6,8 +6,8 @@ area: Petite-Patrie
 address: 901 Rue Saint-Zotique Est, Montréal, QC H2S 1M9
 phone: +1 514-439-0992
 website: https://yisst.com
-lat:
-lng:
+lat: 45.538214
+lng: -73.606259
 checked: 2026-10
 ---
 

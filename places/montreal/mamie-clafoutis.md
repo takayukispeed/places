@@ -6,8 +6,8 @@ area: Plateau
 address: 3660 Rue Saint-Denis, Montréal, QC
 phone: +1 438-380-5624
 website:
-lat:
-lng:
+lat: 45.518065
+lng: -73.570459
 checked: 2026-10
 ---
 

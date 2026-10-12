@@ -6,8 +6,8 @@ area: Plateau
 address: 1258 Avenue Laurier Est, Montréal, QC
 phone: +1 438-376-9574
 website:
-lat:
-lng:
+lat: 45.532447
+lng: -73.584534
 checked: 2026-10
 ---
 
