@@ -527,7 +527,9 @@ async function osmMap(el) {
         const m = L.circleMarker(c, { radius: 9, color: "#fff", weight: 2, fillColor: categoryColour(p.category), fillOpacity: 1 })
           .bindPopup(popupHtml(p))
           .addTo(layer);
-        m.placeName = p.name; // its name is added once declutter finds room for it
+        // Its name is added once declutter finds room for it. On the map a chain's "(Location)" is
+        // left off to keep labels short; the popup and place page still give the full name.
+        m.placeName = p.name.replace(/\s*\([^)]*\)\s*$/, "") || p.name;
         return m;
       });
       declutter();
