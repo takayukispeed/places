@@ -94,9 +94,11 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
     assert.ok(a.r <= p.l || p.r <= a.l || a.b <= p.top || p.b <= a.top, `"${a.t}" covers a pin`);
   }
   // Tapping a name opens the same popup as its pin
-  await page.locator(".pin-label", { hasText: labs[0].t }).click();
+  const mapRect = await page.locator("#map").boundingBox();
+  const tapLabel = labs.find((l) => l.l >= mapRect.x && l.r <= mapRect.x + mapRect.width && l.top >= mapRect.y && l.b <= mapRect.y + mapRect.height);
+  await page.locator(".pin-label", { hasText: tapLabel.t }).click();
   await page.waitForSelector(".leaflet-popup");
-  assert.ok((await page.locator(".leaflet-popup-content").innerText()).startsWith(labs[0].t), "label opens its place's popup");
+  assert.ok((await page.locator(".leaflet-popup-content").innerText()).startsWith(tapLabel.t), "label opens its place's popup");
   // From the popup to the place page and Back: the map is where it was, not refitted to the city
   const pinSpots = () => page.evaluate(() => {
     const m = document.querySelector("#map").getBoundingClientRect();
@@ -107,7 +109,7 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   await page.locator(".leaflet-popup-content a").first().click();
   await page.waitForSelector(".place");
   await page.goBack();
-  await page.waitForSelector("path.leaflet-interactive");
+  await page.waitForFunction(() => [...document.querySelectorAll("path.leaflet-interactive")].some((p) => p.getBoundingClientRect().width > 0));
   await page.waitForTimeout(300);
   assert.equal(await pinSpots(), spotsBefore, "map keeps its position after Back");
   if (OUT) await page.screenshot({ path: OUT });
