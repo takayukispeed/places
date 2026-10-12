@@ -6,8 +6,8 @@ area: Rosemont
 address: 4051 Rue Molson, Montréal, QC H1Y 3L1
 phone: +1 514-419-2998
 website: https://leredtiger.com
-lat:
-lng:
+lat: 45.541767
+lng: -73.563204
 checked: 2026-10
 ---
 
