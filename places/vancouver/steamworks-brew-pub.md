@@ -7,8 +7,8 @@ address: 375 Water St, Vancouver, BC V6B 5C6
 phone: +1 604-689-2739
 website: https://steamworks.com/
 reserve:
-lat:
-lng:
+lat: 49.284869
+lng: -123.110987
 checked: 2026-10-12
 ---
 

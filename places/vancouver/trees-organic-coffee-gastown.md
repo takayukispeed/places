@@ -7,8 +7,8 @@ address: 321 Water St, Vancouver, BC V6B 1B8
 phone: +1 604-633-3880
 website: https://treescoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.284646
+lng: -123.109301
 checked: 2026-10-12
 ---
 

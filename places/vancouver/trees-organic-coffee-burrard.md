@@ -7,8 +7,8 @@ address: 930 Burrard St, Vancouver, BC V6Z 3G5
 phone: +1 604-620-1212
 website: https://treescoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.28188
+lng: -123.124522
 checked: 2026-10-12
 ---
 

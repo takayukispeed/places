@@ -7,8 +7,8 @@ address: 3096 Main St, Vancouver, BC
 phone: +1 604-873-1441
 website: https://www.burgoo.ca/locations/
 reserve:
-lat:
-lng:
+lat: 49.257633
+lng: -123.100801
 checked: 2026-10-12
 ---
 

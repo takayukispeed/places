@@ -7,8 +7,8 @@ address: 310 W Cordova St, Vancouver, BC V6B 1E8
 phone: +1 778-859-3127
 website: https://nusacoffeecompany.com/
 reserve:
-lat:
-lng:
+lat: 49.283556
+lng: -123.109591
 checked: 2026-10-12
 ---
 

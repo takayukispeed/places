@@ -7,8 +7,8 @@ address: 625 Howe St, Vancouver, BC V6C 2T6
 phone: +1 604-569-1010
 website: https://www.bellagelateria.com/bella-gelateria-howe-is-officially-open/
 reserve:
-lat:
-lng:
+lat: 49.28428
+lng: -123.117988
 checked: 2026-10-12
 ---
 

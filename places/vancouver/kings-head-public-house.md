@@ -7,8 +7,8 @@ address: 1618 Yew St, Vancouver, BC V6K 3E7
 phone: +1 604-738-6966
 website: https://thekingsheadkits.com/
 reserve:
-lat:
-lng:
+lat: 49.271304
+lng: -123.154846
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1901 Powell St, Vancouver, BC V5L 1J2
 phone: +1 604-253-6645
 website: https://www.theprincetonpub.ca/
 reserve:
-lat:
-lng:
+lat: 49.284993
+lng: -123.065027
 checked: 2026-10-12
 ---
 

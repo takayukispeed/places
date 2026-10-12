@@ -7,8 +7,8 @@ address: 423 Seymour St, Vancouver, BC V6B 3H5
 phone: +1 604-669-3388
 website: https://kita-no-donburi.com/
 reserve:
-lat:
-lng:
+lat: 49.284544
+lng: -123.113301
 checked: 2026-10-12
 ---
 

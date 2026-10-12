@@ -7,8 +7,8 @@ address: 1830 Ontario St, Vancouver, BC V5T 2W6
 phone: +1 778-819-6794
 website: https://www.facultybrewing.com/
 reserve:
-lat:
-lng:
+lat: 49.268609
+lng: -123.10445
 checked: 2026-10-12
 ---
 

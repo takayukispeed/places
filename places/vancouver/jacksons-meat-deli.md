@@ -7,8 +7,8 @@ address: 2214 W 4th Ave, Vancouver, BC
 phone: +1 604-738-6328
 website: https://www.jacksonsmeat.com/locations
 reserve:
-lat:
-lng:
+lat: 49.26802
+lng: -123.155773
 checked: 2026-10-12
 ---
 

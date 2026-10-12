@@ -7,8 +7,8 @@ address: 320 Abbott St, Vancouver, BC
 phone: +1 604-408-5822
 website:
 reserve:
-lat:
-lng:
+lat: 49.282533
+lng: -123.106704
 checked: 2026-10-12
 ---
 

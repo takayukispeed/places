@@ -7,8 +7,8 @@ address: 3040 W Broadway, Vancouver, BC
 phone: +1 604-225-9252
 website: https://www.justanother.ca/kitsilano
 reserve: https://www.opentable.ca/r/just-another-vancouver
-lat:
-lng:
+lat: 49.264013
+lng: -123.172947
 checked: 2026-10-12
 ---
 

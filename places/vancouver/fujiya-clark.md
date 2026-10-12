@@ -7,8 +7,8 @@ address: 912 Clark Dr, Vancouver, BC V5L 3J8
 phone: +1 604-251-3711
 website: https://fujiya.ca/
 reserve:
-lat:
-lng:
+lat: 49.276493
+lng: -123.076841
 checked: 2026-10-12
 ---
 

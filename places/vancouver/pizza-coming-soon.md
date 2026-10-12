@@ -7,8 +7,8 @@ address: 179 E Pender St, Vancouver, BC V6A 1T6
 phone: +1 604-558-4900
 website: https://pizzacomingsoon.com/
 reserve:
-lat:
-lng:
+lat: 49.280544
+lng: -123.100144
 checked: 2026-10-12
 ---
 

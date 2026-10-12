@@ -7,8 +7,8 @@ address: 505 Clark Dr, Vancouver, BC V5L 3H6
 phone:
 website: https://www.superfluxbeer.com/
 reserve: https://www.opentable.ca/r/superflux-beer-company-vancouver
-lat:
-lng:
+lat: 49.280177
+lng: -123.077511
 checked: 2026-10-12
 ---
 

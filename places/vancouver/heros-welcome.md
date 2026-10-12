@@ -7,8 +7,8 @@ address: 3917 Main St, Vancouver, BC V5V 3P3
 phone: +1 604-879-1020
 website: https://www.heros-welcome.com/
 reserve: https://resy.com/cities/vancouver-bc/venues/heros-welcome
-lat:
-lng:
+lat: 49.250125
+lng: -123.101377
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1123 Venables St, Vancouver, BC
 phone: +1 604-255-4997
 website: https://www.luppolobrewing.ca/
 reserve:
-lat:
-lng:
+lat: 49.276973
+lng: -123.080592
 checked: 2026-10-12
 ---
 

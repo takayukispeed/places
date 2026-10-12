@@ -7,8 +7,8 @@ address: 4434 W 10th Ave, Vancouver, BC
 phone: +1 604-221-7839
 website: https://www.burgoo.ca/locations/
 reserve:
-lat:
-lng:
+lat: 49.263631
+lng: -123.20717
 checked: 2026-10-12
 ---
 

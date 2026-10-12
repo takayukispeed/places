@@ -7,8 +7,8 @@ address: 1190 Victoria Dr, Vancouver, BC V5L 4G5
 phone: +1 604-336-1803
 website: https://www.viateverepizzeria.com/victoria-drive
 reserve:
-lat:
-lng:
+lat: 49.27388
+lng: -123.065435
 checked: 2026-10-12
 ---
 

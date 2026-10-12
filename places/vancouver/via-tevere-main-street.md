@@ -7,8 +7,8 @@ address: 3240 Main St, Vancouver, BC V5V 3M5
 phone: +1 604-876-5408
 website: https://www.viateverepizzeria.com/main-street
 reserve:
-lat:
-lng:
+lat: 49.256284
+lng: -123.100993
 checked: 2026-10-12
 ---
 

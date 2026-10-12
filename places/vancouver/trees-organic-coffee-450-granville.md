@@ -7,8 +7,8 @@ address: 450 Granville St, Vancouver, BC V6C 1V4
 phone: +1 604-684-5022
 website: https://treescoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.284859
+lng: -123.114309
 checked: 2026-10-12
 ---
 

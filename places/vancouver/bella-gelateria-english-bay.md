@@ -7,8 +7,8 @@ address: 1752 Davie St, Vancouver, BC V6G 1W3
 phone: +1 604-569-1010
 website: https://www.bellagelateria.com/locations/
 reserve:
-lat:
-lng:
+lat: 49.286631
+lng: -123.14109
 checked: 2026-10-12
 ---
 

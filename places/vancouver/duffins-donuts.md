@@ -7,8 +7,8 @@ address: 1391 E 41st Ave, Vancouver, BC V5W 1R7
 phone: +1 604-325-5544
 website:
 reserve:
-lat:
-lng:
+lat: 49.233001
+lng: -123.077638
 checked: 2026-10-12
 ---
 

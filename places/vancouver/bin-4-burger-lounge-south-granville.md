@@ -7,8 +7,8 @@ address: 2996 Granville St, Vancouver, BC V6H 3J7
 phone: +1 604-428-7649
 website: https://bin4burgerlounge.com/
 reserve: https://www.opentable.com/r/bin-4-burger-lounge-south-granville-vancouver
-lat:
-lng:
+lat: 49.259043
+lng: -123.13851
 checked: 2026-10-12
 ---
 

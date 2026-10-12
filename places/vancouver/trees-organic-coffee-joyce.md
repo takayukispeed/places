@@ -7,8 +7,8 @@ address: 5078 Joyce St, Vancouver, BC V5R 4G6
 phone: +1 604-895-4211
 website: https://treescoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.238562
+lng: -123.031292
 checked: 2026-10-12
 ---
 

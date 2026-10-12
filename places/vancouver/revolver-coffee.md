@@ -7,8 +7,8 @@ address: 325 Cambie St, Vancouver, BC V6B 2N4
 phone: +1 604-558-4444
 website: https://revolvercoffee.ca/
 reserve:
-lat:
-lng:
+lat: 49.283172
+lng: -123.109459
 checked: 2026-10-12
 ---
 

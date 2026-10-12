@@ -7,8 +7,8 @@ address: 127 W 5th Ave, Vancouver, BC
 phone:
 website: https://www.justanother.ca/mtpleasant
 reserve:
-lat:
-lng:
+lat: 49.26668
+lng: -123.107807
 checked: 2026-10-12
 ---
 

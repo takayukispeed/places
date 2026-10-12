@@ -7,8 +7,8 @@ address: 1399 Commercial Dr, Vancouver, BC
 phone: +1 604-423-3869
 website: http://www.liviasweets.com/
 reserve:
-lat:
-lng:
+lat: 49.272268
+lng: -123.069786
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1447 Commercial Dr, Vancouver, BC V5L 3X8
 phone: +1 604-253-2777
 website: https://thecharlatanrestaurant.com/
 reserve:
-lat:
-lng:
+lat: 49.271552
+lng: -123.069804
 checked: 2026-10-12
 ---
 

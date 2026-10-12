@@ -7,8 +7,8 @@ address: 2480 Vine St, Vancouver, BC V6K 3K8
 phone: +1 604-734-4440
 website: https://www.caserecciofoods.com/
 reserve:
-lat:
-lng:
+lat: 49.26418
+lng: -123.15747
 checked: 2026-10-12
 ---
 

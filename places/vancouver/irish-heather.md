@@ -7,8 +7,8 @@ address: 248 E Georgia St, Vancouver, BC V6A 1Z7
 phone: +1 604-688-9779
 website: https://www.irishheather.com/
 reserve: https://www.opentable.ca/irish-heather
-lat:
-lng:
+lat: 49.278419
+lng: -123.09809
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1111 Mainland St, Vancouver, BC V6B 2T9
 phone: +1 604-681-2739
 website: https://yaletownbrewing.com/
 reserve: https://www.opentable.com/yaletown-brewing-company
-lat:
-lng:
+lat: 49.2755
+lng: -123.120947
 checked: 2026-10-12
 ---
 

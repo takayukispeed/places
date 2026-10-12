@@ -7,8 +7,8 @@ address: 1505 W 1st Ave, Vancouver, BC V6J 1E8
 phone: +1 604-730-5040
 website:
 reserve:
-lat:
-lng:
+lat: 49.273015
+lng: -123.138558
 checked: 2026-10-12
 ---
 

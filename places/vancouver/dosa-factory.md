@@ -7,8 +7,8 @@ address: 1345 Kingsway, Vancouver, BC V5V 3E3
 phone: +1 778-379-7791
 website: http://dosafactoryvancouver.com/
 reserve:
-lat:
-lng:
+lat: 49.250925
+lng: -123.077162
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 916 Commercial Dr, Vancouver, BC V5L 3W7
 phone: +1 604-788-1750
 website: http://www.bumpngrindcafe.com/
 reserve:
-lat:
-lng:
+lat: 49.276425
+lng: -123.069358
 checked: 2026-10-12
 ---
 

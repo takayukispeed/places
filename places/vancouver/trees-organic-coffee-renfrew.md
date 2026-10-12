@@ -7,8 +7,8 @@ address: 2607 Renfrew St, Vancouver, BC
 phone: +1 604-416-0589
 website: https://treescoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.260724
+lng: -123.044592
 checked: 2026-10-12
 ---
 

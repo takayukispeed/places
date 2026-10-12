@@ -7,8 +7,8 @@ address: 2303 Main St, Vancouver, BC V5T 3C9
 phone: +1 778-788-6120
 website: https://narrowgroup.ca/project/key-party/
 reserve:
-lat:
-lng:
+lat: 49.264463
+lng: -123.101195
 checked: 2026-10-12
 ---
 

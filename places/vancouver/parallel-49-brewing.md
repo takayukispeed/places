@@ -7,8 +7,8 @@ address: 1950 Triumph St, Vancouver, BC V5L 1K5
 phone: +1 604-558-2739
 website:
 reserve:
-lat:
-lng:
+lat: 49.283751
+lng: -123.064371
 checked: 2026-10-12
 ---
 

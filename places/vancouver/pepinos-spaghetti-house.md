@@ -7,8 +7,8 @@ address: 631 Commercial Dr, Vancouver, BC V5L 3W3
 phone: +1 604-254-5633
 website: https://pepinos.ca/
 reserve:
-lat:
-lng:
+lat: 49.278877
+lng: -123.070604
 checked: 2026-10-12
 ---
 

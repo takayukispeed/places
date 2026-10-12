@@ -7,8 +7,8 @@ address: 20 E 4th Ave, Vancouver, BC V5T 1E8
 phone: +1 604-709-9939
 website: https://electricbicyclebrewing.com/
 reserve:
-lat:
-lng:
+lat: 49.267193
+lng: -123.104238
 checked: 2026-10-12
 ---
 

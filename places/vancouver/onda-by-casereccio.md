@@ -7,8 +7,8 @@ address: 1610 Salt St, Vancouver, BC V5Y 0E4
 phone: +1 604-829-1610
 website: https://ondayvr.ca/
 reserve:
-lat:
-lng:
+lat: 49.271409
+lng: -123.105849
 checked: 2026-10-12
 ---
 

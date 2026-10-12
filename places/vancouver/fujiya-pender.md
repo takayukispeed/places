@@ -7,8 +7,8 @@ address: 1050 W Pender St, Vancouver, BC V6E 3T4
 phone: +1 604-608-1050
 website: https://fujiya.ca/
 reserve:
-lat:
-lng:
+lat: 49.286694
+lng: -123.119214
 checked: 2026-10-12
 ---
 

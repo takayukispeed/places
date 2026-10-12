@@ -7,8 +7,8 @@ address: 255 E Broadway, Vancouver, BC V5T 1W4
 phone: +1 604-695-9639
 website: https://treescoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.262996
+lng: -123.099936
 checked: 2026-10-12
 ---
 

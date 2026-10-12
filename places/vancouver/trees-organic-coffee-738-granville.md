@@ -7,8 +7,8 @@ address: 738 Granville St, Vancouver, BC V6Z 1E4
 phone: +1 778-814-7065
 website: https://treescoffee.com/
 reserve:
-lat:
-lng:
+lat: 49.281907
+lng: -123.118763
 checked: 2026-10-12
 ---
 
