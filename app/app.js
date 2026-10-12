@@ -378,12 +378,14 @@ async function osmMap(el) {
       if (pts.length > 1) map.fitBounds(pts, { padding: [30, 30], maxZoom: 15, animate: false });
       else if (pts.length === 1) map.setView(pts[0], 15, { animate: false });
     },
-    // Blue dot for where you are, with a faint circle for how accurate the fix is.
+    // "You are here": a pulsing blue dot (an HTML marker, so it can't be mistaken for a place pin
+    // and always sits above them), with a faint circle for how accurate the fix is.
     me({ lat, lng, accuracy }) {
       if (!me) {
+        const icon = L.divIcon({ className: "me-marker", html: '<span class="me-pulse"></span><span class="me-dot"></span>', iconSize: [22, 22] });
         me = L.layerGroup([
-          L.circle([lat, lng], { radius: accuracy, color: "#1a73e8", weight: 1, fillOpacity: 0.12, interactive: false }),
-          L.circleMarker([lat, lng], { radius: 8, color: "#fff", weight: 3, fillColor: "#1a73e8", fillOpacity: 1, interactive: false }),
+          L.circle([lat, lng], { radius: accuracy, color: "#1a73e8", weight: 1, opacity: 0.4, fillOpacity: 0.1, interactive: false }),
+          L.marker([lat, lng], { icon, interactive: false, keyboard: false, zIndexOffset: 1000, title: "You are here" }),
         ]).addTo(map);
       } else {
         const [ring, dot] = me.getLayers();

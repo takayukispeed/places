@@ -217,3 +217,10 @@ details summary { cursor: pointer; color: var(--accent); font-size: 15px; paddin
 .locate-btn.on svg { fill: currentColor; }
 .locate-btn.busy svg { animation: pulse 1s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: .35; } }
+/* "You are here" on the map */
+.me-marker { position: relative; }
+.me-dot, .me-pulse { position: absolute; inset: 0; border-radius: 50%; }
+.me-dot { inset: 3px; background: #1a73e8; border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .45); }
+.me-pulse { background: rgba(26, 115, 232, .45); animation: me-pulse 2s ease-out infinite; }
+@keyframes me-pulse { from { transform: scale(1); opacity: .9; } to { transform: scale(3.2); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .me-pulse { animation: none; transform: scale(1.8); opacity: .35; } }

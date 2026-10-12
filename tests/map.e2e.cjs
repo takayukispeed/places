@@ -41,22 +41,24 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   const pane = await page.locator("svg.leaflet-zoom-animated").boundingBox();
   assert.ok(pane.width > 100 && pane.height > 100, "pins are drawn in a full-size layer, not a 22px icon box");
   await page.click("#locate");
-  await page.waitForFunction(() => document.querySelectorAll(".leaflet-overlay-pane path").length > 0 && document.querySelector("#locate").getAttribute("aria-pressed") === "true");
+  await page.waitForFunction(() => document.querySelector(".me-dot") && document.querySelector("#locate").getAttribute("aria-pressed") === "true");
   await page.waitForTimeout(800);
   const paths = await page.locator(".leaflet-overlay-pane path").count();
-  assert.equal(paths, before + 2);
+  assert.equal(paths, before + 1, "accuracy ring");
+  assert.equal(await page.locator(".me-marker").count(), 1, "one you-are-here marker");
   // centred on the fix
   const centre = await page.evaluate(() => { const r = document.querySelector("#map").getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; });
-  const dot = await page.evaluate(() => { const d = document.querySelector('.leaflet-overlay-pane path[fill="#1a73e8"][stroke="#fff"]').getBoundingClientRect(); return [d.left + d.width / 2, d.top + d.height / 2]; });
+  const dot = await page.evaluate(() => { const d = document.querySelector(".me-dot").getBoundingClientRect(); return [d.left + d.width / 2, d.top + d.height / 2]; });
   assert.ok(Math.abs(centre[0] - dot[0]) < 3 && Math.abs(centre[1] - dot[1]) < 3, "map centred on me");
   if (OUT) await page.screenshot({ path: OUT });
   // moving updates the dot, not adds another
   await ctx.setGeolocation({ latitude: 45.525, longitude: -73.59, accuracy: 20 });
   await page.waitForTimeout(1500);
-  assert.equal(await page.locator(".leaflet-overlay-pane path").count(), before + 2);
+  assert.equal(await page.locator(".leaflet-overlay-pane path").count(), before + 1);
+  assert.equal(await page.locator(".me-marker").count(), 1, "moving updates the marker, not adds one");
   // remembered: list → map shows the dot again without tapping
   await page.click("[data-mode=list]"); await page.click("[data-mode=map]"); await page.waitForSelector(".leaflet-container");
-  await page.waitForFunction((n) => document.querySelectorAll(".leaflet-overlay-pane path").length === n, before + 2);
+  await page.waitForFunction(() => document.querySelectorAll(".me-marker").length === 1);
   assert.equal(await page.getAttribute("#locate", "aria-pressed"), "true");
   // denied permission: friendly message, button off, setting forgotten
   await ctx.clearPermissions();
