@@ -579,11 +579,13 @@ function placesView() {
     .concat([...new Set(inCity.map((p) => p.category))].filter((k) => categoryOrder(k) === 99).sort());
   for (const k of state.placeCats) if (!cats.includes(k)) state.placeCats.delete(k);
   const map = state.placesMode === "map";
+  // On the map, the page fits the screen and doesn't scroll: the map takes whatever height is left.
+  document.body.classList.toggle("map-mode", map);
   const showHint = isIOS() && !isStandalone() && !store.get(KEY_HINT);
 
   app.innerHTML = `
     ${topBar("Places")}
-    ${showHint ? `<div class="hint"><span>Tap <strong>Share</strong> then <strong>Add to Home Screen</strong> to install this as an app.</span>
+    ${showHint ? `<div class="hint"><span>Install: tap <strong>Share</strong> → <strong>Add to Home Screen</strong></span>
       <button id="hint-close" aria-label="Dismiss">✕</button></div>` : ""}
     <div class="place-tools">
       ${all.length > 1 ? `<select id="city" aria-label="City">
@@ -908,6 +910,7 @@ function placeEditor(p) {
 let lastRoute = "";
 function render() {
   stopLocating(); // the map view starts it again if it's still showing
+  document.body.classList.remove("map-mode"); // the map view sets it again
   const route = decodeURIComponent(location.hash.slice(1) || "/");
   if (route !== lastRoute) {
     window.scrollTo(0, 0);
