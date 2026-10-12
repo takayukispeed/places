@@ -7,8 +7,8 @@ address: 6 Powell St, Vancouver, BC V6A 1E7
 phone: +1 604-568-8272
 website:
 reserve:
-lat:
-lng:
+lat: 49.283134
+lng: -123.104021
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 135 Keefer St, Vancouver, BC V6A 1X3
 phone: +1 604-688-1961
 website: https://thekeeferbar.com
 reserve:
-lat:
-lng:
+lat: 49.279776
+lng: -123.101316
 checked: 2026-10-12
 ---
 
