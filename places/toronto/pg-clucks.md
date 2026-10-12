@@ -7,8 +7,8 @@ address: 610 College St, Toronto, ON
 phone: +1 416-539-8224
 website: https://www.pgclucks.com
 reserve:
-lat:
-lng:
+lat: 43.655203
+lng: -79.414554
 checked: 2026-10-12
 ---
 

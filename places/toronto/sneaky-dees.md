@@ -7,8 +7,8 @@ address: 431 College St, Toronto, ON M5T 1T1
 phone: +1 416-603-3090
 website: https://www.sneakydees.com
 reserve:
-lat:
-lng:
+lat: 43.656246
+lng: -79.407432
 checked: 2026-10-12
 ---
 

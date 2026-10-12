@@ -7,8 +7,8 @@ address: 35 Baldwin St, Toronto, ON M5T 1L1
 phone: +1 416-599-9988
 website: https://kohlipe.ca
 reserve: https://www.opentable.ca/r/koh-lipe-thai-downtown-toronto
-lat:
-lng:
+lat: 43.655883
+lng: -79.39345
 checked: 2026-10-12
 ---
 

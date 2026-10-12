@@ -7,8 +7,8 @@ address: 29 Powerhouse St, Toronto, ON M6H 0C7
 phone:
 website: https://balzacs.com
 reserve:
-lat:
-lng:
+lat: 43.66962
+lng: -79.44853
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 199 Bay St, Toronto, ON
 phone:
 website: https://dineencoffee.com
 reserve:
-lat:
-lng:
+lat: 43.648203
+lng: -79.379539
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1042 Gerrard St E, Toronto, ON M4M 1Z5
 phone:
 website: https://dineencoffee.com
 reserve:
-lat:
-lng:
+lat: 43.669098
+lng: -79.3368
 checked: 2026-10-12
 ---
 

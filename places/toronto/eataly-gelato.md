@@ -7,8 +7,8 @@ address: 55 Bloor St W, Toronto, ON M4W 1A6
 phone: +1 437-374-0250
 website: https://www.eataly.ca
 reserve:
-lat:
-lng:
+lat: 43.669671
+lng: -79.388752
 checked: 2026-10-12
 ---
 

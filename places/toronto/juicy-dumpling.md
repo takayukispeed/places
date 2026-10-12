@@ -7,8 +7,8 @@ address: 280 Spadina Ave, Toronto, ON M5T 0A1
 phone: +1 647-352-5678
 website:
 reserve:
-lat:
-lng:
+lat: 43.652507
+lng: -79.398297
 checked: 2026-10-12
 ---
 

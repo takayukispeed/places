@@ -7,8 +7,8 @@ address: 1 Trinity St, Toronto, ON M5A 3C4
 phone:
 website: https://balzacs.com
 reserve:
-lat:
-lng:
+lat: 43.64975
+lng: -79.35913
 checked: 2026-10-12
 ---
 

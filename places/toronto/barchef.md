@@ -7,8 +7,8 @@ address: 472 Queen St W, Toronto, ON M5V 2B2
 phone: +1 416-868-4800
 website: https://www.barchef.com
 reserve: https://www.barchef.com/reservations
-lat:
-lng:
+lat: 43.648078
+lng: -79.400212
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 43 Hanna Ave, Toronto, ON M6K 1X1
 phone:
 website: https://balzacs.com
 reserve:
-lat:
-lng:
+lat: 43.639012
+lng: -79.418926
 checked: 2026-10-12
 ---
 

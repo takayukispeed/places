@@ -7,8 +7,8 @@ address: 200 King St W, Toronto, ON
 phone:
 website: https://dineencoffee.com
 reserve:
-lat:
-lng:
+lat: 43.647872
+lng: -79.385592
 checked: 2026-10-12
 ---
 

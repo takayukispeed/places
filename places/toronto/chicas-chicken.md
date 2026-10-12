@@ -7,8 +7,8 @@ address: 2853 Dundas St W, Toronto, ON M6P 1Y6
 phone: +1 647-343-6562
 website:
 reserve:
-lat:
-lng:
+lat: 43.665314
+lng: -79.46435
 checked: 2026-10-12
 ---
 

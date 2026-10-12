@@ -7,8 +7,8 @@ address: 140 Yonge St, Toronto, ON
 phone:
 website: https://dineencoffee.com
 reserve:
-lat:
-lng:
+lat: 43.651076
+lng: -79.379083
 checked: 2026-10-12
 ---
 

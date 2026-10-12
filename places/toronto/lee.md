@@ -7,8 +7,8 @@ address: 497 Richmond St W, Toronto, ON
 phone: +1 416-504-7867
 website:
 reserve: https://www.opentable.ca/lee
-lat:
-lng:
+lat: 43.647109
+lng: -79.399411
 checked: 2026-10-12
 ---
 

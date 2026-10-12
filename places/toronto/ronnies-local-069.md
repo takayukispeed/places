@@ -7,8 +7,8 @@ address: 69 Nassau St, Toronto, ON M5T 1M6
 phone: +1 416-340-1110
 website:
 reserve:
-lat:
-lng:
+lat: 43.65505
+lng: -79.402529
 checked: 2026-10-12
 ---
 

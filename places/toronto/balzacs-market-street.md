@@ -7,8 +7,8 @@ address: 10 Market St, Toronto, ON M5E 1M6
 phone: +1 416-368-4949
 website: https://balzacs.com
 reserve:
-lat:
-lng:
+lat: 43.648291
+lng: -79.371951
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 81 Bay St, Toronto, ON
 phone:
 website: https://dineencoffee.com
 reserve:
-lat:
-lng:
+lat: 43.644169
+lng: -79.377351
 checked: 2026-10-12
 ---
 

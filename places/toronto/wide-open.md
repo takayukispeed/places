@@ -7,8 +7,8 @@ address: 139A Spadina Ave, Toronto, ON M5V 2K8
 phone:
 website: https://wideopenbar.ca
 reserve:
-lat:
-lng:
+lat: 43.647616
+lng: -79.395608
 checked: 2026-10-12
 ---
 

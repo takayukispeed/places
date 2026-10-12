@@ -7,8 +7,8 @@ address: 483 Bloor St W, Toronto, ON M5S 1Y2
 phone: +1 416-922-5875
 website: https://futurebistro.ca
 reserve:
-lat:
-lng:
+lat: 43.66575
+lng: -79.407623
 checked: 2026-10-12
 ---
 

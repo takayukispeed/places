@@ -7,8 +7,8 @@ address: 162 Ossington Ave, Toronto, ON M6J 2Z7
 phone: +1 647-352-2762
 website:
 reserve:
-lat:
-lng:
+lat: 43.647867
+lng: -79.420427
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 89 Ossington Ave, Toronto, ON M6J 2Z2
 phone: +1 416-546-5432
 website:
 reserve: https://www.opentable.ca/r/gift-shop-toronto
-lat:
-lng:
+lat: 43.64614
+lng: -79.419371
 checked: 2026-10-12
 ---
 
