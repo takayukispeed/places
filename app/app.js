@@ -230,7 +230,8 @@ function topBar(title) {
   return `<header class="bar">
       <h1>${title}</h1>
       <div class="bar-actions">
-        ${!token() && SUGGEST_URL ? '<a class="suggest-btn" href="#/suggest">Suggest place</a>' : ""}
+        ${token() ? `<a class="icon-btn" href="#/new/place" aria-label="New place">${ICON.plus}</a>`
+          : SUGGEST_URL ? '<a class="suggest-btn" href="#/suggest">Suggest place</a>' : ""}
         <button id="copy-link" class="icon-btn" aria-label="Copy app link">${ICON.link}</button>
         <button id="sync" class="icon-btn" aria-label="Sync with GitHub">${ICON.sync}</button>
         <a class="icon-btn" href="#/settings" aria-label="Settings">${ICON.gear}</a>
@@ -704,7 +705,6 @@ function placesView() {
       </div>`}
     </div>
     <div id="results"></div>
-    ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>` : ""}
   `;
 
   const away = (p) => { const c = myPos && coords(p); return c ? distanceKm([myPos.lat, myPos.lng], c) : null; };

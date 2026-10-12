@@ -103,7 +103,7 @@ const KAZU = [{
   // Signed out (a friend's phone): everything comes from places.json, not the rate-limited API,
   // and there's no way to add or edit.
   assert.deepEqual(apiCalls, []);
-  assert.equal(await page.locator('.fab[aria-label="New place"]').count(), 0);
+  assert.equal(await page.locator('[aria-label="New place"]').count(), 0);
   assert.equal(await page.locator('.suggest-btn').count(), 1, "friends get Suggest place instead");
   assert.equal(await page.locator(".list-heading").count(), 0, "one combined list, no headings");
   await shot("1-list");
@@ -240,7 +240,7 @@ const KAZU = [{
   // Add a place with an OpenStreetMap lookup
   await page.goto(base);
   await toList();
-  await page.click(".fab");
+  await page.click('[aria-label="New place"]');
   await page.fill("#name", "Kazu");
   await page.selectOption("#category", "cheap");
   assert.equal(await page.inputValue("#city"), "Montréal", "defaults to the city being browsed");
