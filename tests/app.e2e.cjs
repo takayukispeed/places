@@ -103,7 +103,8 @@ const KAZU = [{
   // Signed out (a friend's phone): everything comes from places.json, not the rate-limited API,
   // and there's no way to add or edit.
   assert.deepEqual(apiCalls, []);
-  assert.equal(await page.locator(".fab").count(), 0);
+  assert.equal(await page.locator('.fab[aria-label="New place"]').count(), 0);
+  assert.equal(await page.locator('.fab[aria-label="Suggest a place"]').count(), 1, "friends get Suggest instead");
   assert.equal(await page.locator(".list-heading").count(), 0, "one combined list, no headings");
   await shot("1-list");
 

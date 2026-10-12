@@ -16,7 +16,7 @@ const OWNER = onPages ? location.hostname.split(".")[0] : DEFAULT_OWNER;
 const REPO = onPages ? location.pathname.split("/").filter(Boolean)[0] || DEFAULT_REPO : DEFAULT_REPO;
 const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
 // Friends' "Suggest a place" form posts here (worker/suggest.js, on Cloudflare). Empty hides it.
-const SUGGEST_URL = window.PLACES_SUGGEST_URL ?? ""; // tests set PLACES_SUGGEST_URL
+const SUGGEST_URL = window.PLACES_SUGGEST_URL ?? "https://places-suggest.brandonhillier.workers.dev/"; // tests set PLACES_SUGGEST_URL
 
 // Prefixed "pl." because other apps on the same github.io address share this storage.
 const KEY_CACHE = "pl.files.v1";
