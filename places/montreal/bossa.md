@@ -3,7 +3,7 @@ name: Bossa
 city: Montréal
 category: cheap
 area: Verdun
-address: 4354 Rue Wellington, Montréal, QC H4G 1W4
+address: 4354 Rue Wellington, Montréal, QC
 phone: +1 438-387-1211
 website:
 lat:
