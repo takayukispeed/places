@@ -6,7 +6,7 @@ area: Villeray
 address: 7495 Rue Saint-Denis, Montréal, QC H2R 2E5
 phone: +1 514-495-9899
 website: https://moccione.com
-reserve: https://moccione.com
+reserve: https://resy.com/cities/montreal-qc/venues/moccione
 lat: 45.540081
 lng: -73.619913
 checked: 2026-10
@@ -27,3 +27,4 @@ Italian restaurant in the [Michelin Guide](https://guide.michelin.com/ca/en/queb
 
 - Not to be confused with Moccione Pizza, 380 Villeray.
 - Hours: [moccione.com](https://moccione.com/new-page-2).
+- Reservations: Books on [Resy](https://resy.com/cities/montreal-qc/venues/moccione), 14 days ahead at 8:00; call 514-495-9899 if the slot you want isn't there.
