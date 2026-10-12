@@ -48,7 +48,7 @@ a { color: var(--accent); }
 h1, h2 { line-height: 1.2; }
 button, input, select, textarea { font: inherit; color: inherit; }
 /* Toolbar and button icons only: Leaflet draws map pins in an <svg> too. */
-.icon-btn svg, .back svg, .fab svg, .actions svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.icon-btn svg, .back svg, .fab svg, .actions svg, .locate-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* ---- Top bar ---- */
 .bar {
@@ -185,7 +185,8 @@ details summary { cursor: pointer; color: var(--accent); font-size: 15px; paddin
 .status-dot.open { color: var(--open); }
 .status-dot.open::before { background: var(--open); }
 .status-dot.big { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
-.map { height: calc(100vh - 290px); min-height: 320px; margin-top: 12px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); z-index: 0; }
+.map-wrap { position: relative; margin-top: 12px; }
+.map { height: calc(100vh - 290px); min-height: 320px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); z-index: 0; }
 .map-note { font-size: 14px; color: var(--muted); text-align: center; margin: 6px 0 0; min-height: 1.4em; }
 .leaflet-popup-content { font: 15px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
 .leaflet-popup-content .open { color: #2e7d32; }
@@ -207,3 +208,12 @@ details summary { cursor: pointer; color: var(--accent); font-size: 15px; paddin
 .fine, .muted { font-size: 14px; color: var(--muted); }
 .lookup { margin: -6px 0 0; }
 .pop { color: #1f6f78; }
+.locate-btn {
+  position: absolute; top: 12px; right: 12px; z-index: 1000;
+  display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 12px;
+  background: #fff; color: #5f6368; box-shadow: 0 1px 4px rgba(0, 0, 0, .3); cursor: pointer;
+}
+.locate-btn.on { color: #1a73e8; }
+.locate-btn.on svg { fill: currentColor; }
+.locate-btn.busy svg { animation: pulse 1s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .35; } }

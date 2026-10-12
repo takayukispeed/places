@@ -22,6 +22,7 @@ const KEY_TOKEN = "pl.token";
 const KEY_HINT = "pl.installHintDismissed";
 const KEY_CITY = "pl.city";
 const KEY_GEO = "pl.geo.v1";
+const KEY_LOCATE = "pl.showMyLocation";
 
 // ---- Storage (wrapped: private mode can make localStorage throw) ----------
 const store = {
@@ -183,6 +184,7 @@ const ICON = {
   gear: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
   plus: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
   pin: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
+  locate: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>',
   back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
 };
 
@@ -362,6 +364,7 @@ async function osmMap(el) {
     maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
   const layer = L.layerGroup().addTo(map);
+  let me = null;
   return {
     draw(items) {
       layer.clearLayers();
@@ -371,10 +374,46 @@ async function osmMap(el) {
       }
     },
     fit(pts) {
-      if (pts.length > 1) map.fitBounds(pts, { padding: [30, 30], maxZoom: 15 });
-      else if (pts.length === 1) map.setView(pts[0], 15);
+      // Not animated: a zoom animation still running would undo a "centre on me" made meanwhile.
+      if (pts.length > 1) map.fitBounds(pts, { padding: [30, 30], maxZoom: 15, animate: false });
+      else if (pts.length === 1) map.setView(pts[0], 15, { animate: false });
+    },
+    // Blue dot for where you are, with a faint circle for how accurate the fix is.
+    me({ lat, lng, accuracy }) {
+      if (!me) {
+        me = L.layerGroup([
+          L.circle([lat, lng], { radius: accuracy, color: "#1a73e8", weight: 1, fillOpacity: 0.12, interactive: false }),
+          L.circleMarker([lat, lng], { radius: 8, color: "#fff", weight: 3, fillColor: "#1a73e8", fillOpacity: 1, interactive: false }),
+        ]).addTo(map);
+      } else {
+        const [ring, dot] = me.getLayers();
+        ring.setLatLng([lat, lng]).setRadius(accuracy);
+        dot.setLatLng([lat, lng]);
+      }
+    },
+    centre({ lat, lng }) {
+      const go = () => map.setView([lat, lng], Math.max(map.getZoom(), 15));
+      // Leaflet ends a zoom animation by jumping to its own target, so wait for any (e.g. pinch) to finish.
+      if (map._animatingZoom) map.once("zoomend", go); else go();
     },
   };
+}
+
+// ---- My location: watched only while the map is on screen ----------------------------------
+let watchId = null;
+let myPos = null;
+function stopLocating() {
+  if (watchId !== null) navigator.geolocation.clearWatch(watchId);
+  watchId = null;
+}
+function startLocating(onFix, onError) {
+  if (watchId !== null) return;
+  if (!("geolocation" in navigator)) { onError({ code: 0 }); return; }
+  watchId = navigator.geolocation.watchPosition(
+    (pos) => { myPos = { lat: pos.coords.latitude, lng: pos.coords.longitude, accuracy: pos.coords.accuracy }; onFix(myPos); },
+    (err) => { stopLocating(); onError(err); },
+    { enableHighAccuracy: true, maximumAge: 15000, timeout: 20000 },
+  );
 }
 
 
@@ -465,11 +504,42 @@ function placesView() {
   };
 
   if (map) {
-    $("#results").innerHTML = `<div id="map" class="map"></div><p id="map-note" class="map-note"></p>`;
+    $("#results").innerHTML = `<div class="map-wrap"><div id="map" class="map"></div>
+      <button id="locate" class="locate-btn" aria-label="Show my location" aria-pressed="false">${ICON.locate}</button></div>
+      <p id="map-note" class="map-note"></p>`;
     osmMap($("#map")).then((view) => {
       if (!document.getElementById("map")) return;
       mapView = view;
       show();
+      // My location: the button centres on you; once turned on, the dot shows whenever the map opens.
+      let centreNext = false;
+      const btn = $("#locate");
+      const setOn = (on) => { btn.classList.toggle("on", on); btn.setAttribute("aria-pressed", String(on)); };
+      const onFix = (pos) => {
+        if (!document.getElementById("map")) return;
+        view.me(pos);
+        if (centreNext) { view.centre(pos); centreNext = false; }
+      };
+      const onError = (err) => {
+        setOn(false);
+        btn.classList.remove("busy");
+        if (err.code === 1) {
+          store.del(KEY_LOCATE);
+          toast(isIOS() ? "Location is off for this app. Turn it on in Settings → Privacy & Security → Location Services → Safari Websites."
+            : "Location permission was denied. Allow it in your browser's site settings.");
+        } else toast("Couldn't find your location. Try again outside or with Wi-Fi on.");
+      };
+      const locate = () => {
+        setOn(true);
+        if (myPos) { view.me(myPos); view.centre(myPos); } else { centreNext = true; btn.classList.add("busy"); }
+        startLocating((pos) => { btn.classList.remove("busy"); onFix(pos); }, onError);
+      };
+      btn.onclick = () => { store.set(KEY_LOCATE, "1"); locate(); };
+      if (store.get(KEY_LOCATE)) { // show the dot without moving the map
+        setOn(true);
+        if (myPos) view.me(myPos);
+        startLocating(onFix, onError);
+      }
       // Pins appear as they're found, without moving the map under your finger. If none were
       // known yet (a new city), zoom to them once the lookups finish.
       const hadPins = filteredPlaces().some(coords);
@@ -630,6 +700,7 @@ function placeEditor(p) {
 // ---- Router ---------------------------------------------------------------
 let lastRoute = "";
 function render() {
+  stopLocating(); // the map view starts it again if it's still showing
   const route = decodeURIComponent(location.hash.slice(1) || "/");
   if (route !== lastRoute) {
     window.scrollTo(0, 0);

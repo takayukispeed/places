@@ -87,6 +87,7 @@ The app is a home-screen web app. It is free, needs no App Store, and works offl
 
 - **City** picker (once there is more than one city), **category** chips, **search** (names, neighbourhoods and notes), and **Open now**.
 - **List / Map.** Pins are coloured by category; tap one for its name and whether it is open.
+- **My location:** the arrow button on the map shows a blue dot where you are and centres the map on it. The dot follows you while the map is open, and stays on next time. The first tap asks for location permission; if it was refused, turn it on in iPhone Settings → Privacy & Security → Location Services → Safari Websites.
 - **A place:** status (*Open until 23:00*, *Closed · opens 17:00*), **Directions** (Google Maps; opens the Google Maps app on iPhone if it's installed), **Google Maps** (photos, reviews, live hours), Call and Website buttons, the address, hours with today highlighted, and notes.
 - **Adding:** tap +, type the name and city, then **Look up on OpenStreetMap**. It fills in the map location, and the address, phone, website and hours when OpenStreetMap has them. Check the result before saving. Changing the city moves the file to that city's folder.
 
@@ -98,4 +99,5 @@ The app is a home-screen web app. It is free, needs no App Store, and works offl
 node tests/format.test.mjs                                  # every place round-trips; hours logic
 NODE_PATH=$(npm root -g) node tests/app.e2e.cjs [shots]     # full flow in an emulated iPhone (needs Playwright)
 NODE_PATH=$(npm root -g) node tests/update.e2e.cjs          # installed app picks up a new deploy
+NODE_PATH=$(npm root -g) node tests/map.e2e.cjs [shot.png]  # the map with real Leaflet: pins, my location
 ```
