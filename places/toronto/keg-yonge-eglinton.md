@@ -1,7 +1,7 @@
 ---
 name: The Keg (Yonge & Eglinton)
 city: Toronto
-category: sitdown
+category: nice
 area: Yonge & Eglinton
 address: 2201 Yonge St, Toronto, ON M4S 2B2
 phone: +1 416-484-4646

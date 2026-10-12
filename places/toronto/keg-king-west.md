@@ -1,7 +1,7 @@
 ---
 name: The Keg (King West)
 city: Toronto
-category: sitdown
+category: nice
 area: King West
 address: 560 King St W, Toronto, ON M5V 0L5
 phone: +1 416-364-7227

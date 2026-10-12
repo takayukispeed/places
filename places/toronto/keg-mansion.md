@@ -1,7 +1,7 @@
 ---
 name: The Keg Mansion
 city: Toronto
-category: sitdown
+category: nice
 area: Church & Wellesley
 address: 515 Jarvis St, Toronto, ON M4Y 2H7
 phone: +1 416-964-6609

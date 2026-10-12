@@ -1,7 +1,7 @@
 ---
 name: The Keg (York Street)
 city: Toronto
-category: sitdown
+category: nice
 area: Financial District
 address: 165 York St, Toronto, ON M5H 3R8
 phone: +1 416-703-1773
