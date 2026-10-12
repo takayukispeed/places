@@ -7,8 +7,8 @@ address: 230 Augusta Ave, Toronto, ON M5T 2L6
 phone:
 website:
 reserve: https://www.opentable.com/r/film-cafe-toronto
-lat:
-lng:
+lat: 43.655104
+lng: -79.402401
 checked: 2026-10-12
 ---
 

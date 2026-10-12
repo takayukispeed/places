@@ -7,8 +7,8 @@ address: 181 Dovercourt Rd, Toronto, ON M6J 3C6
 phone: +1 416-531-5555
 website:
 reserve:
-lat:
-lng:
+lat: 43.646115
+lng: -79.423343
 checked: 2026-10-12
 ---
 

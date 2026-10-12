@@ -7,8 +7,8 @@ address: 388 Spadina Ave, Toronto, ON M5T 2G5
 phone: +1 416-977-1128
 website:
 reserve:
-lat:
-lng:
+lat: 43.655441
+lng: -79.399342
 checked: 2026-10-12
 ---
 

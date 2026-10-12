@@ -7,8 +7,8 @@ address: 923 Dundas St W, Toronto, ON M6J 1W3
 phone: +1 416-792-7511
 website: https://hoofcocktailbar.com
 reserve:
-lat:
-lng:
+lat: 43.650705
+lng: -79.413268
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 612 College St, Toronto, ON M6G 1B4
 phone: +1 416-531-7373
 website:
 reserve:
-lat:
-lng:
+lat: 43.655187
+lng: -79.414603
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 39 Prince Arthur Ave, Toronto, ON M5R 1B2
 phone: +1 416-964-2441
 website:
 reserve:
-lat:
-lng:
+lat: 43.669136
+lng: -79.397388
 checked: 2026-10-12
 ---
 

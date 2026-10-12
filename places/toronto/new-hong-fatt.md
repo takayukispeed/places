@@ -7,8 +7,8 @@ address: 443 Dundas St W, Toronto, ON M5T 1G8
 phone: +1 416-977-3945
 website:
 reserve:
-lat:
-lng:
+lat: 43.653254
+lng: -79.395927
 checked: 2026-10-12
 ---
 

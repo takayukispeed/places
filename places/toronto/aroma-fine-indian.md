@@ -7,8 +7,8 @@ address: 287 King St W, Toronto, ON M5V 1J5
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 43.644613
+lng: -79.38813
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 126 McCaul St, Toronto, ON M5T 1W2
 phone: +1 416-597-1175
 website:
 reserve:
-lat:
-lng:
+lat: 43.654431
+lng: -79.391648
 checked: 2026-10-12
 ---
 

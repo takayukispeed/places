@@ -7,8 +7,8 @@ address: 594 College St, Toronto, ON M6G 1B3
 phone: +1 416-534-4637
 website:
 reserve: https://www.opentable.com/r/cafe-diplomatico-toronto
-lat:
-lng:
+lat: 43.655369
+lng: -79.413731
 checked: 2026-10-12
 ---
 

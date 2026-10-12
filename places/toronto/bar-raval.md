@@ -7,8 +7,8 @@ address: 505 College St, Toronto, ON M6G 1A4
 phone:
 website: https://thisisbarraval.com
 reserve:
-lat:
-lng:
+lat: 43.655877
+lng: -79.409924
 checked: 2026-10-12
 ---
 

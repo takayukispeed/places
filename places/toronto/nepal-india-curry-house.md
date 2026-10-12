@@ -7,8 +7,8 @@ address: 167 Roncesvalles Ave, Toronto, ON M6R 2L3
 phone: +1 416-536-7979
 website: https://nepalindiacurryhouse.ca
 reserve:
-lat:
-lng:
+lat: 43.64427
+lng: -79.447996
 checked: 2026-10-12
 ---
 

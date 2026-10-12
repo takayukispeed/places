@@ -7,8 +7,8 @@ address: 60 Kensington Ave, Toronto, ON M5T 2K2
 phone: +1 437-833-5798
 website:
 reserve: https://www.opentable.com/r/sunny-chinese-toronto
-lat:
-lng:
+lat: 43.6542
+lng: -79.40096
 checked: 2026-10-12
 ---
 

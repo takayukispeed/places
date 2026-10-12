@@ -7,8 +7,8 @@ address: 182 Dupont St, Toronto, ON M5R 2E6
 phone: +1 416-967-7687
 website:
 reserve:
-lat:
-lng:
+lat: 43.675781
+lng: -79.403898
 checked: 2026-10-12
 ---
 

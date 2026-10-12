@@ -7,8 +7,8 @@ address: 7 Elm St, Toronto, ON M5G 1H1
 phone: +1 416-597-0335
 website: https://barberians.com
 reserve: https://www.opentable.com/barberians-steakhouse
-lat:
-lng:
+lat: 43.657609
+lng: -79.382135
 checked: 2026-10-12
 ---
 
