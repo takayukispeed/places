@@ -230,6 +230,7 @@ function topBar(title) {
   return `<header class="bar">
       <h1>${title}</h1>
       <div class="bar-actions">
+        ${!token() && SUGGEST_URL ? '<a class="suggest-btn" href="#/suggest">Suggest place</a>' : ""}
         <button id="copy-link" class="icon-btn" aria-label="Copy app link">${ICON.link}</button>
         <button id="sync" class="icon-btn" aria-label="Sync with GitHub">${ICON.sync}</button>
         <a class="icon-btn" href="#/settings" aria-label="Settings">${ICON.gear}</a>
@@ -266,6 +267,10 @@ function settingsView() {
     ${backBar("#/", "Places")}
     <div class="editor">
       <h1>Settings</h1>
+      ${!token() && isIOS() && !isStandalone() ? `<section class="panel">
+        <h2>Install</h2>
+        <p>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> to open Places like an app.</p>
+      </section>` : ""}
       <section class="panel">
         <h2>GitHub sync</h2>
         <p>Places live in <a href="${repoUrl}" target="_blank" rel="noopener">${OWNER}/${REPO}</a>.
@@ -665,7 +670,8 @@ function placesView() {
   const map = state.placesMode === "map";
   // On the map, the page fits the screen and doesn't scroll: the map takes whatever height is left.
   document.body.classList.toggle("map-mode", map);
-  const showHint = isIOS() && !isStandalone() && !store.get(KEY_HINT);
+  // Guests find install instructions in Settings instead (settingsView).
+  const showHint = token() && isIOS() && !isStandalone() && !store.get(KEY_HINT);
 
   app.innerHTML = `
     ${topBar("Places")}
@@ -698,8 +704,7 @@ function placesView() {
       </div>`}
     </div>
     <div id="results"></div>
-    ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>`
-      : SUGGEST_URL ? `<a class="fab" href="#/suggest" aria-label="Suggest a place">${ICON.plus}</a>` : ""}
+    ${token() ? `<a class="fab" href="#/new/place" aria-label="New place">${ICON.plus}</a>` : ""}
   `;
 
   const away = (p) => { const c = myPos && coords(p); return c ? distanceKm([myPos.lat, myPos.lng], c) : null; };

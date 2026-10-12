@@ -69,6 +69,12 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .icon-btn.spinning svg { animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .back { display: flex; align-items: center; gap: 2px; min-height: 44px; text-decoration: none; margin-left: -6px; }
+.suggest-btn {
+  display: inline-flex; align-items: center; min-height: 32px; padding: 0 11px; margin: 0 2px 0 8px;
+  border: 1px solid var(--accent); border-radius: 999px; color: var(--accent);
+  font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap;
+}
+.suggest-btn:active { background: var(--accent-soft); }
 .text-btn {
   min-height: 44px; padding: 0 6px; border: 0; background: none;
   color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; cursor: pointer;

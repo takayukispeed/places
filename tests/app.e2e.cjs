@@ -104,7 +104,7 @@ const KAZU = [{
   // and there's no way to add or edit.
   assert.deepEqual(apiCalls, []);
   assert.equal(await page.locator('.fab[aria-label="New place"]').count(), 0);
-  assert.equal(await page.locator('.fab[aria-label="Suggest a place"]').count(), 1, "friends get Suggest instead");
+  assert.equal(await page.locator('.suggest-btn').count(), 1, "friends get Suggest place instead");
   assert.equal(await page.locator(".list-heading").count(), 0, "one combined list, no headings");
   await shot("1-list");
 
@@ -221,7 +221,7 @@ const KAZU = [{
   });
   await page.addInitScript(() => { window.PLACES_SUGGEST_URL = "https://suggest.test/"; });
   await page.goto(base);
-  await page.click('.fab[aria-label="Suggest a place"]');
+  await page.click(".suggest-btn");
   await page.fill("#s-name", "Bar Raval");
   await page.fill("#s-city", "Toronto");
   await page.fill("#s-by", "Sam");
