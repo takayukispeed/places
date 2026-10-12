@@ -1,7 +1,7 @@
 ---
 name: Greenspot
 city: Montréal
-category: cheap
+category: sitdown
 area: Saint-Henri
 address: 3041 Rue Notre-Dame Ouest, Montréal, QC H4C 1N9
 phone:

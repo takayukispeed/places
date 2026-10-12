@@ -19,7 +19,8 @@ tests/       format and hours tests, an iPhone end-to-end test, and an app-updat
 
 | `category:` | Shown as |
 |---|---|
-| `cheap` | Cheap eats |
+| `cheap` | Cheap eats (counter service) |
+| `sitdown` | Sit-down (casual, table service) |
 | `nice` | Nice meal |
 | `brunch` | Brunch |
 | `cafe` | Cafés |

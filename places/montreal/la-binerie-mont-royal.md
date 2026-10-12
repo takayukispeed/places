@@ -1,7 +1,7 @@
 ---
 name: La Binerie Mont-Royal
 city: Montréal
-category: cheap
+category: sitdown
 area: Plateau
 address: 4167 Rue Saint-Denis, Montréal, QC H2W 2M7
 phone: +1 514-285-9078

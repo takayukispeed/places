@@ -1,7 +1,7 @@
 ---
 name: Sammi & Soupe Dumpling
 city: Montréal
-category: cheap
+category: sitdown
 area: Chinatown
 address: 68 Rue de la Gauchetière Ouest, Montréal, QC H2Z 1C1
 phone: +1 514-393-1888

@@ -1,7 +1,7 @@
 ---
 name: La Belle Tonki
 city: Montréal
-category: cheap
+category: sitdown
 area: Petite-Patrie
 address: 1335 Rue Beaubien Est, Montréal, QC
 phone: +1 514-419-0660

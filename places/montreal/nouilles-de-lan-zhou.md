@@ -1,7 +1,7 @@
 ---
 name: Nouilles de Lan Zhou
 city: Montréal
-category: cheap
+category: sitdown
 area: Chinatown
 address: 1006 Boulevard Saint-Laurent, Montréal, QC
 phone: +1 514-800-2959

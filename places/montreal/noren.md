@@ -1,7 +1,7 @@
 ---
 name: Noren
 city: Montréal
-category: cheap
+category: sitdown
 area: Plateau
 address: 77 Rue Rachel Ouest, Montréal, QC H2W 1G2
 phone: +1 514-397-1141

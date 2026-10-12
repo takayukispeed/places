@@ -1,7 +1,7 @@
 ---
 name: Hoshi
 city: Montréal
-category: cheap
+category: sitdown
 area: Chinatown
 address: 14 Rue de la Gauchetière Est, Montréal, QC H2X 1P4
 phone: +1 438-772-9427

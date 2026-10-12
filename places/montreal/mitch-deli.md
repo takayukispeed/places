@@ -1,7 +1,7 @@
 ---
 name: Mitch Deli
 city: Montréal
-category: cheap
+category: sitdown
 area: Rosemont
 address: 2660 Rue Beaubien Est, Montréal, QC H1Y 1G7
 phone:

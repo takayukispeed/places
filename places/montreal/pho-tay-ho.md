@@ -1,7 +1,7 @@
 ---
 name: Pho Tay Ho
 city: Montréal
-category: cheap
+category: sitdown
 area: Petite-Patrie
 address: 6414 Rue Saint-Denis, Montréal, QC H2S 2R7
 phone: +1 514-273-5627

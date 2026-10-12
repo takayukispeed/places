@@ -1,7 +1,7 @@
 ---
 name: Pichai
 city: Montréal
-category: cheap
+category: sitdown
 area: Petite-Patrie
 address: 5985 Rue Saint-Hubert, Montréal, QC H2S 2L8
 phone: +1 514-419-1606

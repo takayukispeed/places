@@ -1,7 +1,7 @@
 ---
 name: Ho Guom
 city: Montréal
-category: cheap
+category: sitdown
 area: Villeray
 address: 2605 Rue Jean-Talon Est, Montréal, QC
 phone: +1 514-507-8598

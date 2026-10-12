@@ -1,7 +1,7 @@
 ---
 name: Dosa Pointe
 city: Montréal
-category: cheap
+category: sitdown
 area: Parc-Extension
 address: 895 Rue Jean-Talon Ouest, Montréal, QC H3N 1S7
 phone: +1 514-303-7755

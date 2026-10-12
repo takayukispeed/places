@@ -1,7 +1,7 @@
 ---
 name: Resto-Bar Le Pick-Up
 city: Montréal
-category: cheap
+category: sitdown
 area: Hochelaga
 address: 3739 Rue Ontario Est, Montréal, QC H1W 1S3
 phone: +1 514-526-3739

@@ -1,7 +1,7 @@
 ---
 name: Stash Café
 city: Montréal
-category: cheap
+category: sitdown
 area: Old Montreal
 address: 200 Rue Saint-Paul Ouest, Montréal, QC H2Y 1Z9
 phone: +1 514-845-6611

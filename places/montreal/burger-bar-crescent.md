@@ -1,7 +1,7 @@
 ---
 name: Burger Bar Crescent
 city: Montréal
-category: cheap
+category: sitdown
 area: Downtown
 address: 1465 Rue Crescent, Montréal, QC H3G 2B2
 phone: +1 514-903-5575
