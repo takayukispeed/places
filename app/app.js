@@ -395,9 +395,21 @@ function loadLeaflet() {
 async function osmMap(el) {
   const L = await loadLeaflet();
   const map = L.map(el, { zoomControl: false }).setView(MAP_START, 12);
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
+  // Leaflet leaves a tile grey for good if its download fails once (a busy tile server, a weak
+  // connection), so try each failed tile again a few times, waiting longer each time.
+  tiles.on("tileerror", ({ tile }) => {
+    const tries = Number(tile.dataset.tries || 0);
+    if (tries >= 4) return;
+    tile.dataset.tries = tries + 1;
+    const src = tile.src;
+    setTimeout(() => { if (tile.isConnected) tile.src = src; }, 1000 * 2 ** tries); // setting src again reloads it
+  });
+  // Back online, or back in the app: fill in whatever is still missing.
+  const refill = () => { if (navigator.onLine) tiles.redraw(); };
+  window.addEventListener("online", refill);
   const layer = L.layerGroup().addTo(map);
   let me = null;
   map.on("zoomend", () => { el.dataset.zoom = map.getZoom(); });
