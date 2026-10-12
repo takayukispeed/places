@@ -6,8 +6,8 @@ area: Downtown
 address: 1404 Rue Drummond, Montréal, QC H3G 1V9
 phone: +1 514-843-8057
 website: https://joespanini.com
-lat:
-lng:
+lat: 45.498632
+lng: -73.574602
 checked: 2026-10
 ---
 
