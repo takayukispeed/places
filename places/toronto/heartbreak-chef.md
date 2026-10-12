@@ -7,8 +7,8 @@ address: 170 Baldwin St, Toronto, ON M5T 1L8
 phone: +1 437-388-9536
 website: https://theheartbreakchef.com
 reserve:
-lat:
-lng:
+lat: 43.654882
+lng: -79.400543
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 938 Bathurst St, Toronto, ON M5R 3G4
 phone: +1 613-295-7184
 website: https://www.tinymarketco.com
 reserve:
-lat:
-lng:
+lat: 43.669092
+lng: -79.413027
 checked: 2026-10-12
 ---
 

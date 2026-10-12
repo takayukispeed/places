@@ -7,8 +7,8 @@ address: 92 Ossington Ave, Toronto, ON M6J 2Z4
 phone: +1 416-537-0134
 website: https://www.lacubana.ca/ossington
 reserve:
-lat:
-lng:
+lat: 43.64621
+lng: -79.41979
 checked: 2026-10-12
 ---
 

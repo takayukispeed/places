@@ -7,8 +7,8 @@ address: 1324A Gerrard St E, Toronto, ON M4L 1Z3
 phone: +1 416-463-8800
 website: https://goodbehaviourto.ca
 reserve:
-lat:
-lng:
+lat: 43.67164
+lng: -79.32561
 checked: 2026-10-12
 ---
 

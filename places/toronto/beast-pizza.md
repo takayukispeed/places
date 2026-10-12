@@ -7,8 +7,8 @@ address: 96 Tecumseth St, Toronto, ON M6J 2H1
 phone: +1 647-352-6000
 website:
 reserve:
-lat:
-lng:
+lat: 43.644148
+lng: -79.405698
 checked: 2026-10-12
 ---
 

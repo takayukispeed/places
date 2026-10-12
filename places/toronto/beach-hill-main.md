@@ -7,8 +7,8 @@ address: 172 Main St, Toronto, ON M4E 2W1
 phone: +1 416-792-8275
 website: https://beachhillsmokehouse.com
 reserve:
-lat:
-lng:
+lat: 43.684086
+lng: -79.300561
 checked: 2026-10-12
 ---
 

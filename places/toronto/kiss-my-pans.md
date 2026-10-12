@@ -7,8 +7,8 @@ address: 713 College St, Toronto, ON M6G 1C2
 phone: +1 416-546-8511
 website:
 reserve:
-lat:
-lng:
+lat: 43.655051
+lng: -79.418374
 checked: 2026-10-12
 ---
 

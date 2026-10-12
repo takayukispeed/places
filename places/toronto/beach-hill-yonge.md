@@ -7,8 +7,8 @@ address: 620 Yonge St, Toronto, ON M4Y 1Z8
 phone: +1 416-923-8088
 website: https://beachhillsmokehouse.com
 reserve:
-lat:
-lng:
+lat: 43.66614
+lng: -79.38524
 checked: 2026-10-12
 ---
 

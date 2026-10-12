@@ -7,8 +7,8 @@ address: 1515 Gerrard St E, Toronto, ON M4L 2A4
 phone: +1 647-341-4070
 website: https://lazydaisyscafe.ca
 reserve:
-lat:
-lng:
+lat: 43.672677
+lng: -79.31957
 checked: 2026-10-12
 ---
 

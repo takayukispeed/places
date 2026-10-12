@@ -7,8 +7,8 @@ address: 163 Spadina Ave, Toronto, ON M5V 2L6
 phone: +1 416-260-3444
 website: https://www.aloetterestaurant.com/spadina
 reserve: https://www.opentable.com/r/aloette-toronto
-lat:
-lng:
+lat: 43.648501
+lng: -79.395939
 checked: 2026-10-12
 ---
 

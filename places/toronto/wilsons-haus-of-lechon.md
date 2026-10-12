@@ -7,8 +7,8 @@ address: 365 Wilson Ave, Toronto, ON M3H 1T3
 phone: +1 416-792-7548
 website:
 reserve:
-lat:
-lng:
+lat: 43.736491
+lng: -79.437097
 checked: 2026-10-12
 ---
 

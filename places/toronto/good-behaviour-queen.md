@@ -7,8 +7,8 @@ address: 335 Queen St W, Toronto, ON M5V 2A4
 phone: +1 416-205-9518
 website: https://goodbehaviourto.ca
 reserve:
-lat:
-lng:
+lat: 43.649536
+lng: -79.392099
 checked: 2026-10-12
 ---
 

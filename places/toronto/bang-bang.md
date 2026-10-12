@@ -7,8 +7,8 @@ address: 93A Ossington Ave, Toronto, ON M6J 2Z2
 phone: +1 647-348-1900
 website: https://bangbangicecream.ca
 reserve:
-lat:
-lng:
+lat: 43.646239
+lng: -79.419406
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 998 St Clair Ave W, Toronto, ON M6E 1A2
 phone: +1 647-701-0420
 website:
 reserve:
-lat:
-lng:
+lat: 43.67951
+lng: -79.43724
 checked: 2026-10-12
 ---
 

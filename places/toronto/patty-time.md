@@ -7,8 +7,8 @@ address: 2919 Lawrence Ave E, Toronto, ON M1J 1W8
 phone: +1 416-265-4555
 website:
 reserve:
-lat:
-lng:
+lat: 43.75394
+lng: -79.25213
 checked: 2026-10-12
 ---
 

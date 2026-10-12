@@ -7,8 +7,8 @@ address: 226 Greenwood Ave, Toronto, ON M4L 2R2
 phone: +1 416-462-2703
 website: https://www.mahasbrunch.com
 reserve:
-lat:
-lng:
+lat: 43.671695
+lng: -79.328483
 checked: 2026-10-12
 ---
 

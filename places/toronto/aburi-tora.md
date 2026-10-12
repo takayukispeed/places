@@ -7,8 +7,8 @@ address: 3401 Dufferin St, Unit 612B, Toronto, ON M6A 2T9
 phone: +1 647-349-1193
 website: https://www.aburitora.com
 reserve:
-lat:
-lng:
+lat: 43.726097
+lng: -79.454986
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 161 Harbord St, Toronto, ON M5S 1H1
 phone: +1 416-922-1626
 website: https://www.emmertoronto.ca
 reserve:
-lat:
-lng:
+lat: 43.661953
+lng: -79.406994
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 9010 Yonge St, Richmond Hill, ON L4C 6Z8
 phone: +1 905-881-8222
 website: https://abruzzopizza.com
 reserve:
-lat:
-lng:
+lat: 43.847141
+lng: -79.43207
 checked: 2026-10-12
 ---
 
