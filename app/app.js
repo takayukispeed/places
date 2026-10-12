@@ -589,14 +589,18 @@ function placesView() {
         : loading ? "Loading…" : "No places yet. Tap + to add one."}</p>`;
       return;
     }
-    // Group by category in a fixed order; within each, nearest first (the default, once we know
-    // where you are) or A–Z (state.places is already sorted by name, and sort() is stable).
+    // Nearest first (the default, once we know where you are): one list, no headings. A–Z: grouped
+    // by category in a fixed order (state.places is already sorted by name, and sort() is stable).
     const sortAz = store.get(KEY_SORT) === "az";
-    const near = (p) => (sortAz || !myPos ? 0 : away(p) ?? Infinity);
+    const byDistance = !sortAz && myPos;
     const groups = new Map();
-    for (const p of [...matches].sort((a, b) => categoryOrder(a.category) - categoryOrder(b.category) || near(a) - near(b))) {
-      if (!groups.has(p.category)) groups.set(p.category, []);
-      groups.get(p.category).push(p);
+    const sorted = byDistance
+      ? [...matches].sort((a, b) => (away(a) ?? Infinity) - (away(b) ?? Infinity))
+      : [...matches].sort((a, b) => categoryOrder(a.category) - categoryOrder(b.category));
+    for (const p of sorted) {
+      const k = byDistance ? "" : p.category;
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(p);
     }
     const status = sortAz || myPos ? "" : listFix === "pending" ? "Finding you…" : "Location off, so A–Z";
     const sortRow = `<div class="sort-row">
@@ -605,7 +609,7 @@ function placesView() {
         <button data-sort="az" class="${sortAz ? "on" : ""}" aria-pressed="${sortAz}">A–Z</button>
       </div>${status ? `<span class="sort-status">${status}</span>` : ""}</div>`;
     $("#results").innerHTML = sortRow + [...groups].map(([k, ps]) => `
-      ${state.placeCat ? "" : `<h2 class="list-heading">${esc(categoryLabel(k))}</h2>`}
+      ${state.placeCat || byDistance ? "" : `<h2 class="list-heading">${esc(categoryLabel(k))}</h2>`}
       <ul class="cards">${ps.map(card).join("")}</ul>`).join("");
     app.querySelectorAll("[data-sort]").forEach((b) => {
       b.onclick = () => {

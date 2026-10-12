@@ -132,17 +132,23 @@ const KAZU = [{
   await ctx.setGeolocation({ latitude: 45.4989, longitude: -73.5778 }); // at Cloakroom Bar, downtown
   await page.click("[data-sort=near]");
   await page.waitForSelector(".card-dist");
+  // Nearest: one combined list, no category headings, closest first
+  assert.equal(await page.locator(".list-heading").count(), 0);
+  assert.equal(await page.locator(".card").count(), placeCount);
+  assert.match(await page.locator(".card-title").first().innerText(), /^Cloakroom Bar\s*\d+ m$/);
+  const dists = await page.locator(".card-dist").allInnerTexts();
+  const km = dists.map((d) => parseFloat(d) / (d.endsWith(" m") ? 1000 : 1));
+  assert.deepEqual(km, [...km].sort((a, b) => a - b), "sorted by distance");
+  // A–Z toggle: grouped by category again, alphabetical, distances still shown, and remembered
+  await page.click("[data-sort=az]");
   const firstFancy = () => page.locator(".cards").nth(6).locator(".card-title").first().innerText();
   assert.equal(await page.locator(".list-heading").nth(6).innerText(), "FANCY BARS");
-  assert.match(await firstFancy(), /^Cloakroom Bar\s*\d+ m$/);
-  // A–Z toggle: alphabetical, distances still shown, and remembered
-  await page.click("[data-sort=az]");
   assert.match(await firstFancy(), /^Atwater Cocktail Club\s*[\d.]+ k?m$/);
   await page.reload();
   await toList();
   assert.equal(await page.getAttribute("[data-sort=az]", "aria-pressed"), "true");
   await page.click("[data-sort=near]");
-  await page.waitForFunction(() => /^Cloakroom/.test(document.querySelectorAll(".cards")[6]?.querySelector(".card-title")?.textContent || ""));
+  await page.waitForFunction(() => /^Cloakroom/.test(document.querySelector(".card-title")?.textContent || ""));
 
   // Place page
   await page.click("text=Big in Japan");
