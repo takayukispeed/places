@@ -6,7 +6,7 @@ area: Plateau
 address: 3927 Rue Saint-Denis, Montréal, QC H2W 2M4
 phone: +1 514-845-5333
 website: https://restaurantlexpress.com
-reserve:
+reserve: https://restaurantlexpress.com/en/
 lat: 45.52031
 lng: -73.574383
 checked: 2026-10
@@ -24,3 +24,4 @@ Classic Parisian-style bistro, open late. Book on [OpenTable](https://www.openta
 
 - Listed in the [Michelin Guide](https://guide.michelin.com/en/quebec/montreal_2433514/restaurant/l-express).
 - Hours: [restaurantlexpress.com](https://restaurantlexpress.com/).
+- Reservations: Book Now button on [its own site](https://restaurantlexpress.com/en/).

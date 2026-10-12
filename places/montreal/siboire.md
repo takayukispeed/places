@@ -6,7 +6,7 @@ area: Mile End
 address: 5101 Boulevard Saint-Laurent, Montréal, QC H2T 1R9
 phone: +1 514-379-3633
 website: https://siboire.ca
-reserve:
+reserve: https://siboire.ca/fr/reservation/
 lat: 45.523194
 lng: -73.592804
 checked: 2026-10
@@ -24,3 +24,4 @@ Brewpub from the Sherbrooke brewery. Kitchen closes at 23:00; the bar may close 
 
 - There's also a Saint-Henri pub at Notre-Dame and Turgeon, near Atwater Market.
 - Hours: [siboire.ca](https://siboire.ca/fr/succursales/st-laurent/).
+- Reservations: Online booking for up to 9; no terrace bookings ([Siboire FAQ](https://siboire.ca/fr/faq/)).

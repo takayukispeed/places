@@ -6,7 +6,7 @@ area: Outremont
 address: 1045 Avenue Laurier Ouest, Montréal, QC
 phone: +1 514-270-0999
 website: https://www.restaurantlemeac.com
-reserve:
+reserve: https://www.restaurantlemeac.com/contact
 lat: 45.518284
 lng: -73.597247
 checked: 2026-10
@@ -24,3 +24,4 @@ checked: 2026-10
 Chic French brasserie and Montréal institution, at the corner of Durocher ([Tastet](https://tastet.ca/en/reviews/lemeac-a-chic-french-brasserie-and-a-montreal-institution/)). In the [Michelin Guide](https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/lemeac).
 
 - Hours: [restaurantlemeac.com](https://www.restaurantlemeac.com/contact-en).
+- Reservations: Online booking on [its own site](https://www.restaurantlemeac.com/contact).

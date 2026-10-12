@@ -6,7 +6,7 @@ area: Downtown
 address: 1189 Rue de la Montagne, Montréal, QC H3G 1Z2
 phone: +1 514-874-1569
 website:
-reserve:
+reserve: https://www.yeoldeorchard.com/de-la-montagne
 lat: 45.497317
 lng: -73.573507
 checked: 2026-10
@@ -24,3 +24,4 @@ Pub and grill.
 
 - There's also a Monkland Village pub at 5563 Avenue de Monkland (NDG).
 - Hours: [RestoMontréal](https://www.restomontreal.ca/resto/ye-olde-orchard-pub-grill-montreal/4479/en/), Restaurantji and Sirved agree.
+- Reservations: No bookings on Bell Centre event nights ([its own site](https://www.yeoldeorchard.com/de-la-montagne)).

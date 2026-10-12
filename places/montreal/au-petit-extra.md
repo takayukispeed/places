@@ -6,7 +6,7 @@ area: Centre-Sud
 address: 1690 Rue Ontario Est, Montréal, QC H2L 1S7
 phone: +1 514-527-5552
 website:
-reserve:
+reserve: https://aupetitextra.com/reservation/
 lat: 45.525524
 lng: -73.559474
 checked: 2026-10
@@ -26,3 +26,4 @@ checked: 2026-10
 French bistro on Ontario Est.
 
 - Hours: [RestoMontréal](https://www.restomontreal.ca/resto/au-petit-extra-montreal/32/en/) and Tripadvisor. Yelp has dinner ending at 21:00.
+- Reservations: Online booking on [its own site](https://aupetitextra.com/reservation/).

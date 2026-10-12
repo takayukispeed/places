@@ -6,7 +6,7 @@ area: Plateau
 address: 360 Rue Rachel Est, Montréal, QC H2W 1E9
 phone: +1 514-282-0009
 website:
-reserve:
+reserve: https://ichigoichie.ca/en/reservations-restaurants-in-plateau/
 lat: 45.521295
 lng: -73.57846
 checked: 2026-10
@@ -26,3 +26,4 @@ checked: 2026-10
 Lively izakaya: takoyaki, yuzu tuna tataki, pork shoulder with apple-miso butter.
 
 - Hours: [Tastet](https://tastet.ca/critiques/ichigo-ichie-izakaya-montreal/)
+- Reservations: Bookings on [its own site](https://ichigoichie.ca/en/reservations-restaurants-in-plateau/) are for the izakaya only; a booked table can't order from the ramen bar next door.

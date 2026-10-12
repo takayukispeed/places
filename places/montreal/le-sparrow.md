@@ -6,7 +6,7 @@ area: Mile End
 address: 5322 Boulevard Saint-Laurent, Montréal, QC H2T 1S1
 phone: +1 514-507-1642
 website: http://lesparrowbar.com
-reserve:
+reserve: https://www.opentable.ca/r/bar-le-sparrow-montreal
 lat: 45.524561
 lng: -73.596597
 checked: 2026-10
@@ -27,3 +27,4 @@ checked: 2026-10
 Bar with weekend brunch and a dog-friendly patio.
 
 - Hours: [RestoMontréal](https://www.restomontreal.ca/resto/bar-le-sparrow-le-plateau/5152/en/). Some listings close at 1:00 or 2:00 on Friday.
+- Reservations: [OpenTable](https://www.opentable.com/r/bar-le-sparrow-montreal) bookings are for Sunday to Wednesday evenings; Thursday to Saturday nights are walk-in only.

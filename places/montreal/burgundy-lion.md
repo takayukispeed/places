@@ -6,7 +6,7 @@ area: Little Burgundy
 address: 2496 Rue Notre-Dame Ouest, Montréal, QC
 phone: +1 514-934-0888
 website: https://www.burgundylion.com
-reserve:
+reserve: https://www.opentable.ca/r/pub-burgundy-lion-montreal
 lat: 45.482773
 lng: -73.575198
 checked: 2026-10
@@ -26,3 +26,4 @@ checked: 2026-10
 British pub with a whisky list ([MTL Resto Rap](https://mtlrestorap.com/pub-burgundy-lion-provides-a-unique-twist-on-british-cuisine-and-some-fine-whiskey/)).
 
 - Hours: [burgundylion.com](https://www.burgundylion.com/); RestoMontréal agrees.
+- Reservations: Also books through [its own site](https://www.burgundylion.com/); quiz and comedy nights through MTLOL.

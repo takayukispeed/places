@@ -6,7 +6,7 @@ area: Petite-Patrie
 address: 5985 Rue Saint-Hubert, Montréal, QC H2S 2L8
 phone: +1 514-419-1606
 website: https://pichai.biz
-reserve:
+reserve: https://www.opentable.ca/r/pichai-montreal
 lat: 45.534424
 lng: -73.598966
 checked: 2026-10

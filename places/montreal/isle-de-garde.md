@@ -6,7 +6,7 @@ area: Petite-Patrie
 address: 1039 Rue Beaubien Est, Montréal, QC H2S 1T3
 phone: +1 514-835-4007
 website: https://isledegarde.com
-reserve:
+reserve: https://www.isledegarde.com/reservations
 lat: 45.537577
 lng: -73.602075
 checked: 2026-10

@@ -6,7 +6,7 @@ area: Villeray
 address: 350 Rue de Castelnau Est, Montréal, QC H2R 1P9
 phone: +1 438-380-0970
 website: https://www.casavantmontreal.com
-reserve:
+reserve: https://www.casavantmontreal.com
 lat: 45.538526
 lng: -73.617577
 checked: 2026-10
@@ -25,3 +25,4 @@ checked: 2026-10
 French bistro near Jean-Talon Market; Michelin Bib Gourmand ([Michelin](https://guide.michelin.com/us/en/quebec/montreal_2433514/restaurant/casavant)).
 
 - Hours: [Tastet](https://tastet.ca/en/reviews/casavant-exceptional-french-brasserie-near-the-jean-talon-market/) and most listings. Restaurant Guru has it closed Monday and Tuesday.
+- Reservations: [RestoMontreal](https://www.restomontreal.ca/resto/casavant-villeray-saint-michel/17544/en//) says it takes online bookings; the [Michelin Guide](https://guide.michelin.com/ca/en/quebec/montreal_2433514/restaurant/casavant) says it manages its own. A reviewer says bookings open a month ahead ([Restaurant Guru](https://restaurantguru.com/Casavant-Montreal)).
