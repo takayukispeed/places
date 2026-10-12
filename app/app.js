@@ -205,6 +205,8 @@ const ICON = {
   locate: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>',
   calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>',
   link: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg>',
+  phone: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>',
+  external: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>',
   back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
 };
 
@@ -643,8 +645,8 @@ function placeView(p) {
         <a href="${esc(directions(p))}" target="_blank" rel="noopener">${ICON.pin}<span>Directions</span></a>
         <a href="${esc(googleMaps(p))}" target="_blank" rel="noopener"><span class="g">G</span><span>Google Maps</span></a>
         ${reserve ? `<a href="${esc(reserve)}" target="_blank" rel="noopener">${ICON.calendar}<span>Reserve</span></a>` : ""}
-        ${p.phone ? `<a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}"><span class="g">☎</span><span>Call</span></a>` : ""}
-        ${site ? `<a href="${esc(site)}" target="_blank" rel="noopener"><span class="g">↗</span><span>Website</span></a>` : ""}
+        ${p.phone ? `<a href="tel:${esc(p.phone.replace(/[^\d+]/g, ""))}">${ICON.phone}<span>Call</span></a>` : ""}
+        ${site ? `<a href="${esc(site)}" target="_blank" rel="noopener">${ICON.external}<span>Website</span></a>` : ""}
       </div>
       <section>
         <h2>Address</h2>
