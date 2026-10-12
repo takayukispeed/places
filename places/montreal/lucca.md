@@ -21,6 +21,6 @@ checked: 2026-10
 
 ## Notes
 
-Italian restaurant on Rue Dante in Little Italy, a few doors from Impasto.
+Italian restaurant on Rue Dante in Little Italy, the same street as Impasto.
 
 - Hours: [restaurantlucca.ca](https://restaurantlucca.ca/). Tripadvisor and Yellow Pages also list Sunday dinner; the restaurant's own site says Sundays are for private events only.
