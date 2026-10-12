@@ -7,8 +7,8 @@ address: 1257 Rue Atateken, Montréal, QC H2L 3K9
 phone: +1 514-525-3443
 website: https://othym.com
 reserve: https://othym.com
-lat:
-lng:
+lat: 45.517145
+lng: -73.555993
 checked: 2026-10-12
 ---
 
