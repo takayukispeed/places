@@ -37,6 +37,9 @@ assert.deepEqual(hoursStatus(["Daily: 12:00–00:00"], at("2026-10-12T23:30")), 
 assert.equal(hoursStatus(["Mon: 9:00–17:00"], at("2026-10-13T10:00")), null, "today unknown");
 assert.equal(hoursStatus([], at("2026-10-13T10:00")), null);
 assert.equal(todayLine(bij, at("2026-10-14T12:00")), 1);
+assert.deepEqual(hoursStatus(["Daily: Open 24 hours"], at("2026-10-12T03:00")), { open: true, text: "Open 24 hours" });
+assert.deepEqual(hoursStatus(["Mon–Fri: 24h", "Sat–Sun: 8:00–20:00"], at("2026-10-18T07:00")), { open: false, text: "Closed · opens 8:00" });
+assert.deepEqual(hoursStatus(["Mon–Fri: 24h", "Sat–Sun: 8:00–20:00"], at("2026-10-16T23:30")), { open: true, text: "Open 24 hours" });
 assert.deepEqual(osmHoursToLines("Mo-Fr 11:00-22:00; Sa,Su 10:00-23:00; Tu off"), ["Mon–Fri: 11:00–22:00", "Sat, Sun: 10:00–23:00", "Tue: Closed"]);
 assert.deepEqual(osmHoursToLines("24/7"), []);
 console.log("format and hours tests passed");

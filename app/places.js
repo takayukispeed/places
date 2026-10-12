@@ -77,6 +77,7 @@ export const placePath = (p) => `places/${slugify(p.city || "other")}`;
 //   Sat, Sun: 10:00–03:00     (a closing time earlier than the opening runs past midnight)
 //   Tue: Closed
 //   Daily: 8:00–15:00
+//   Daily: Open 24 hours
 export const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 const DAY_RE = /^(mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?$/i;
 const dayIndex = (s) => { const m = s.trim().match(DAY_RE); return m ? DAYS.findIndex((d) => d.toLowerCase() === m[1].toLowerCase()) : -1; };
@@ -115,7 +116,8 @@ export function parseHours(lines) {
     const days = parseDays(m[1]);
     if (!days) continue;
     let ranges = [];
-    if (!/^closed$/i.test(m[2].trim())) {
+    if (/^(open )?24 ?(h|hrs|hours)$/i.test(m[2].trim())) ranges = [[0, 24 * 60]];
+    else if (!/^closed$/i.test(m[2].trim())) {
       for (const r of m[2].split(",")) {
         const [a, b] = r.split(/\s*[–—-]\s*/);
         const open = parseTime(a || ""); let close = parseTime(b || "");
@@ -144,6 +146,7 @@ export function hoursStatus(lines, now = new Date()) {
   for (const [o, c] of yesterday) if (c > 24 * 60 && t < c - 24 * 60) return { open: true, text: `Open until ${fmt(c)}` };
   const today = week[d];
   if (today === null) return null;
+  if (today.some(([o, c]) => o === 0 && c === 24 * 60)) return { open: true, text: "Open 24 hours" };
   for (const [o, c] of today) if (t >= o && t < c) return { open: true, text: `Open until ${fmt(c)}` };
   const later = today.find(([o]) => o > t);
   if (later) return { open: false, text: `Closed · opens ${fmt(later[0])}` };

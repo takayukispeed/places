@@ -594,7 +594,7 @@ function placeView(p) {
   `;
 }
 
-const HOURS_HINT = "one line per day or range · e.g. Mon–Fri: 11:30–22:00 · Sat: 10:00–14:00, 17:00–23:00 · Sun: Closed";
+const HOURS_HINT = "one line per day or range · e.g. Mon–Fri: 11:30–22:00 · Sat: 10:00–14:00, 17:00–23:00 · Sun: Closed · Daily: Open 24 hours";
 
 function placeEditor(p) {
   const isNew = !p;
