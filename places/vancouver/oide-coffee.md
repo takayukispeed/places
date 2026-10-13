@@ -7,8 +7,8 @@ address: 1548 W 2nd Ave, Vancouver, BC
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 49.269559
+lng: -123.140211
 checked: 2026-10-13
 ---
 

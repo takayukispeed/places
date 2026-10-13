@@ -7,8 +7,8 @@ address: 1540 W 2nd Ave, Vancouver, BC
 phone:
 website:
 reserve: https://www.exploretock.com/ellipsis-vancouver/
-lat:
-lng:
+lat: 49.269358
+lng: -123.140083
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: 54 Alexander St, Vancouver, BC
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 49.283359
+lng: -123.102838
 checked: 2026-10-13
 ---
 

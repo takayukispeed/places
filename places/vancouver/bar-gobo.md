@@ -7,8 +7,8 @@ address: 237 Union St, Vancouver, BC V6A 0J4
 phone: +1 604-423-5400
 website:
 reserve: https://www.opentable.com/r/bar-gobo-vancouver
-lat:
-lng:
+lat: 49.277787
+lng: -123.098373
 checked: 2026-10-13
 ---
 
