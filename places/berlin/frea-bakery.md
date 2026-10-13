@@ -7,8 +7,8 @@ address: Gartenstraße 9, 10115 Berlin
 phone: +49 30 13897068
 website:
 reserve:
-lat:
-lng:
+lat: 52.530268
+lng: 13.392015
 checked: 2026-10-13
 ---
 

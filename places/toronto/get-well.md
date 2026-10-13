@@ -7,8 +7,8 @@ address: 1181 Dundas St W, Toronto, ON
 phone: +1 647-351-2337
 website: http://www.getwellbar.com/
 reserve:
-lat:
-lng:
+lat: 43.649251
+lng: -79.42192
 checked: 2026-10-13
 ---
 

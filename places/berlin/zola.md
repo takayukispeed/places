@@ -7,8 +7,8 @@ address: Paul-Lincke-Ufer 39, 10999 Berlin
 phone: +49 30 27695938
 website:
 reserve:
-lat:
-lng:
+lat: 52.496128
+lng: 13.422348
 checked: 2026-10-13
 ---
 

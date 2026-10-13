@@ -7,8 +7,8 @@ address: Hobrechtstraße 57, 12047 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.49114
+lng: 13.425935
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Kastanienallee 33, 10435 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.536665
+lng: 13.407433
 checked: 2026-10-13
 ---
 

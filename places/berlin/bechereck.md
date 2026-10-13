@@ -7,8 +7,8 @@ address: Okerstraße 35, 12049 Berlin
 phone: +49 176 60828836
 website:
 reserve:
-lat:
-lng:
+lat: 52.473764
+lng: 13.423664
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Sorauer Straße 31, 10997 Berlin
 phone: +49 30 88061080
 website: https://www.hopfenreich.de
 reserve:
-lat:
-lng:
+lat: 52.499561
+lng: 13.439276
 checked: 2026-10-13
 ---
 

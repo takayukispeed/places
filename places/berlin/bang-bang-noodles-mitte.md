@@ -7,8 +7,8 @@ address: Rosenthaler Straße 69, 10119 Berlin
 phone:
 website: https://bangbangnoodles.de/
 reserve:
-lat:
-lng:
+lat: 52.528751
+lng: 13.402184
 checked: 2026-10-13
 ---
 

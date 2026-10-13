@@ -7,8 +7,8 @@ address: Graefestraße 11, 10967 Berlin
 phone: +49 30 98339073
 website: https://kuchi.de/restaurant/cocolo-x-berg/
 reserve:
-lat:
-lng:
+lat: 52.493688
+lng: 13.418052
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Alte Schönhauser Straße 46, 10119 Berlin
 phone: +49 30 99296924
 website: https://www.monsieurvuong.de/
 reserve:
-lat:
-lng:
+lat: 52.526625
+lng: 13.407898
 checked: 2026-10-13
 ---
 

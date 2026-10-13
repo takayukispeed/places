@@ -7,8 +7,8 @@ address: EUREF-Campus 1, 10829 Berlin
 phone:
 website: https://gorilla-baeckerei.de/
 reserve:
-lat:
-lng:
+lat: 52.479959
+lng: 13.353388
 checked: 2026-10-13
 ---
 

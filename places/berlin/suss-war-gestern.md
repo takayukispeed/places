@@ -7,8 +7,8 @@ address: Wühlischstraße 43, 10245 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.508603
+lng: 13.461099
 checked: 2026-10-13
 ---
 

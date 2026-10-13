@@ -7,8 +7,8 @@ address: 391 King St W, Toronto, ON M5V 1K1
 phone: +1 647-352-7476
 website: https://www.barhopbar.com
 reserve:
-lat:
-lng:
+lat: 43.6456
+lng: -79.39359
 checked: 2026-10-13
 ---
 

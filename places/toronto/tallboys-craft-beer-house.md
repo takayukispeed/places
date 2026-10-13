@@ -7,8 +7,8 @@ address: 838 Bloor St W, Toronto, ON M6G 1M2
 phone: +1 416-535-7486
 website: https://www.tallboyscraft.com/
 reserve:
-lat:
-lng:
+lat: 43.662526
+lng: -79.423826
 checked: 2026-10-13
 ---
 

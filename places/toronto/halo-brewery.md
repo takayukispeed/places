@@ -7,8 +7,8 @@ address: 247 Wallace Ave, Toronto, ON M6H 1V5
 phone: +1 416-606-7778
 website: https://www.halobrewery.com/
 reserve:
-lat:
-lng:
+lat: 43.661715
+lng: -79.446596
 checked: 2026-10-13
 ---
 

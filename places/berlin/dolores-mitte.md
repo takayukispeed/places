@@ -7,8 +7,8 @@ address: Rosa-Luxemburg-Straße 7, 10178 Berlin
 phone: +49 30 28099597
 website:
 reserve:
-lat:
-lng:
+lat: 52.523801
+lng: 13.409195
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: 255 Bremner Blvd, Toronto, ON M5V 3M9
 phone: +1 416-362-2337
 website: https://steamwhistle.ca
 reserve:
-lat:
-lng:
+lat: 43.640647
+lng: -79.385956
 checked: 2026-10-13
 ---
 

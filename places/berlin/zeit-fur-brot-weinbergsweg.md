@@ -7,8 +7,8 @@ address: Weinbergsweg 2, 10119 Berlin
 phone: +49 30 41500490
 website: https://zeitfuerbrot.com/
 reserve:
-lat:
-lng:
+lat: 52.530368
+lng: 13.402156
 checked: 2026-10-13
 ---
 

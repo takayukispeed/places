@@ -7,8 +7,8 @@ address: Kantstraße 33, 10625 Berlin
 phone: +49 30 31519678
 website:
 reserve:
-lat:
-lng:
+lat: 52.506512
+lng: 13.316681
 checked: 2026-10-13
 ---
 

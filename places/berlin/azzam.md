@@ -7,8 +7,8 @@ address: Sonnenallee 54, 12045 Berlin
 phone: +49 30 30131541
 website:
 reserve:
-lat:
-lng:
+lat: 52.484981
+lng: 13.432835
 checked: 2026-10-13
 ---
 

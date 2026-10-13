@@ -7,8 +7,8 @@ address: Hermannstraße 37, 12049 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.48031
+lng: 13.424983
 checked: 2026-10-13
 ---
 

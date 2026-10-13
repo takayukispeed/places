@@ -7,8 +7,8 @@ address: Wrangelstraße 24, 10997 Berlin
 phone:
 website: https://schwarzetraube.eatbu.com
 reserve:
-lat:
-lng:
+lat: 52.502204
+lng: 13.432854
 checked: 2026-10-13
 ---
 

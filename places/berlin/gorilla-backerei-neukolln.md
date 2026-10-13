@@ -7,8 +7,8 @@ address: Hermannstraße 211, 12049 Berlin
 phone:
 website: https://gorilla-baeckerei.de/
 reserve:
-lat:
-lng:
+lat: 52.477825
+lng: 13.426372
 checked: 2026-10-13
 ---
 

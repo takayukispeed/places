@@ -7,8 +7,8 @@ address: Eisenbahnstraße 42/43, 10997 Berlin
 phone: +49 30 21002402
 website: https://sironi.de/
 reserve:
-lat:
-lng:
+lat: 52.502166
+lng: 13.431489
 checked: 2026-10-13
 ---
 

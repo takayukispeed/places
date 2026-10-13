@@ -7,8 +7,8 @@ address: Stargarder Straße 72, 10437 Berlin
 phone: +49 179 4246832
 website: https://www.hokey-pokey.de/
 reserve:
-lat:
-lng:
+lat: 52.546823
+lng: 13.417741
 checked: 2026-10-13
 ---
 

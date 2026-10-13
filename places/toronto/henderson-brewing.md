@@ -7,8 +7,8 @@ address: 128A Sterling Rd, Toronto, ON M6R 2B7
 phone: +1 416-535-1212
 website: https://shophendersonbrewing.com/en-us/pages/taproom
 reserve: https://shophendersonbrewing.com/en-us/pages/reservations
-lat:
-lng:
+lat: 43.653678
+lng: -79.44507
 checked: 2026-10-13
 ---
 

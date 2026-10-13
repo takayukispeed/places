@@ -7,8 +7,8 @@ address: Friedelstraße 38, Berlin
 phone: +49 30 95595521
 website: https://xn--frulein-frost-cfb.de/
 reserve:
-lat:
-lng:
+lat: 52.492256
+lng: 13.427759
 checked: 2026-10-13
 ---
 

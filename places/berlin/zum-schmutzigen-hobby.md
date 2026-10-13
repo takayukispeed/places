@@ -7,8 +7,8 @@ address: Revaler Straße 99, 10245 Berlin
 phone: +49 30 36468446
 website:
 reserve:
-lat:
-lng:
+lat: 52.506442
+lng: 13.457215
 checked: 2026-10-13
 ---
 

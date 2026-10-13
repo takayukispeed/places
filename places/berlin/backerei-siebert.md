@@ -7,8 +7,8 @@ address: Schönfließer Straße 12, 10439 Berlin
 phone: +49 30 4457576
 website: https://www.baeckerei-siebert.de/
 reserve:
-lat:
-lng:
+lat: 52.552967
+lng: 13.407954
 checked: 2026-10-13
 ---
 

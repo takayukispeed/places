@@ -7,8 +7,8 @@ address: Eberswalder Straße 26, 10437 Berlin
 phone: +49 30 89545600
 website: https://zeitfuerbrot.com/
 reserve:
-lat:
-lng:
+lat: 52.541236
+lng: 13.411472
 checked: 2026-10-13
 ---
 

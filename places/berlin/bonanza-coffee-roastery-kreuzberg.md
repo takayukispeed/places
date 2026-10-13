@@ -7,8 +7,8 @@ address: Adalbertstraße 70, 10999 Berlin
 phone:
 website: https://bonanzacoffee.de/
 reserve:
-lat:
-lng:
+lat: 52.504183
+lng: 13.420258
 checked: 2026-10-13
 ---
 

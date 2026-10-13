@@ -7,8 +7,8 @@ address: Reuterstraße 56, 12047 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.48848
+lng: 13.428716
 checked: 2026-10-13
 ---
 

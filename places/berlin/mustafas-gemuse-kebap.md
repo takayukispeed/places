@@ -7,8 +7,8 @@ address: Mehringdamm 33, 10961 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.493382
+lng: 13.388854
 checked: 2026-10-13
 ---
 

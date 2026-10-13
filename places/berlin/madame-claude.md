@@ -7,8 +7,8 @@ address: Lübbener Straße 19, 10997 Berlin
 phone: +49 30 84110859
 website:
 reserve:
-lat:
-lng:
+lat: 52.49961
+lng: 13.437406
 checked: 2026-10-13
 ---
 

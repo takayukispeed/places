@@ -7,8 +7,8 @@ address: 2125 Dundas St W, Toronto, ON M6R 1X1
 phone: +1 647-348-1002
 website: https://www.banditbrewery.ca/
 reserve: https://www.banditbrewery.ca/reservations
-lat:
-lng:
+lat: 43.65249
+lng: -79.449592
 checked: 2026-10-13
 ---
 

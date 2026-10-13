@@ -7,8 +7,8 @@ address: Willdenowstraße 12, 13353 Berlin
 phone: +49 155 11358160
 website:
 reserve:
-lat:
-lng:
+lat: 52.544126
+lng: 13.360249
 checked: 2026-10-13
 ---
 

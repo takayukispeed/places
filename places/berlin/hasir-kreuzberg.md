@@ -7,8 +7,8 @@ address: Adalbertstraße 10, 10999 Berlin
 phone: +49 30 6142373
 website:
 reserve:
-lat:
-lng:
+lat: 52.50079
+lng: 13.419474
 checked: 2026-10-13
 ---
 

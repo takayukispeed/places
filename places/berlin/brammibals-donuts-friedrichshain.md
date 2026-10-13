@@ -7,8 +7,8 @@ address: Warschauer Straße 76, Berlin
 phone:
 website: https://www.brammibalsdonuts.com/
 reserve:
-lat:
-lng:
+lat: 52.513024
+lng: 13.453231
 checked: 2026-10-13
 ---
 

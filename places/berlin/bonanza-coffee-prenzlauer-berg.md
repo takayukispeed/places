@@ -7,8 +7,8 @@ address: Oderberger Straße 35, 10435 Berlin
 phone:
 website: https://bonanzacoffee.de/
 reserve:
-lat:
-lng:
+lat: 52.539901
+lng: 13.405425
 checked: 2026-10-13
 ---
 

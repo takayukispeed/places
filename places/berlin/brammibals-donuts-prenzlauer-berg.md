@@ -7,8 +7,8 @@ address: Danziger Straße 65, Berlin
 phone:
 website: https://www.brammibalsdonuts.com/
 reserve:
-lat:
-lng:
+lat: 52.539617
+lng: 13.423014
 checked: 2026-10-13
 ---
 

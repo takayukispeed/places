@@ -7,8 +7,8 @@ address: Reichenberger Straße 177, 10999 Berlin
 phone: +49 30 23274690
 website:
 reserve:
-lat:
-lng:
+lat: 52.500058
+lng: 13.417443
 checked: 2026-10-13
 ---
 

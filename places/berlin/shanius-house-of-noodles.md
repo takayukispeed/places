@@ -7,8 +7,8 @@ address: Pariser Straße 58, Berlin
 phone: +49 30 28640526
 website:
 reserve:
-lat:
-lng:
+lat: 52.496132
+lng: 13.327991
 checked: 2026-10-13
 ---
 

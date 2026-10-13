@@ -7,8 +7,8 @@ address: Vor dem Schlesischen Tor 2a, 10997 Berlin
 phone: +49 30 61074309
 website: https://www.freischwimmer-berlin.com
 reserve:
-lat:
-lng:
+lat: 52.49678
+lng: 13.449681
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Graefestraße 66/67, 10967 Berlin
 phone: +49 176 80097982
 website: https://albatrossberlin.com/
 reserve:
-lat:
-lng:
+lat: 52.488192
+lng: 13.414098
 checked: 2026-10-13
 ---
 

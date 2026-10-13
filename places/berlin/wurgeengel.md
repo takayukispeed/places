@@ -7,8 +7,8 @@ address: Dresdener Straße 122, 10999 Berlin
 phone: +49 30 6155560
 website: https://www.wuergeengel.de
 reserve:
-lat:
-lng:
+lat: 52.50107
+lng: 13.416663
 checked: 2026-10-13
 ---
 

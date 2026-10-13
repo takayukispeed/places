@@ -7,8 +7,8 @@ address: Reichenberger Straße 35, 10999 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.497269
+lng: 13.423258
 checked: 2026-10-13
 ---
 

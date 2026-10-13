@@ -7,8 +7,8 @@ address: Weserstraße 42, 12045 Berlin
 phone:
 website: https://www.tier.bar
 reserve:
-lat:
-lng:
+lat: 52.484815
+lng: 13.437705
 checked: 2026-10-13
 ---
 

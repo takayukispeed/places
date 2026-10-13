@@ -7,8 +7,8 @@ address: Berliner Straße 49, Berlin
 phone:
 website: https://www.hokey-pokey.de/
 reserve:
-lat:
-lng:
+lat: 52.559755
+lng: 13.412801
 checked: 2026-10-13
 ---
 

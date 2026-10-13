@@ -7,8 +7,8 @@ address: Mehringdamm 51, 10961 Berlin
 phone: +49 155 63364608
 website: https://bangbangnoodles.de/
 reserve:
-lat:
-lng:
+lat: 52.491631
+lng: 13.387538
 checked: 2026-10-13
 ---
 

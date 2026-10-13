@@ -7,8 +7,8 @@ address: Mehringdamm 36, 10961 Berlin
 phone: +49 30 2517368
 website:
 reserve:
-lat:
-lng:
+lat: 52.493492
+lng: 13.387687
 checked: 2026-10-13
 ---
 

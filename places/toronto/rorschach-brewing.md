@@ -7,8 +7,8 @@ address: 1001 Eastern Ave, Toronto, ON M4L 1A8
 phone: +1 416-901-3233
 website: https://www.rorschachbrewing.com
 reserve:
-lat:
-lng:
+lat: 43.663569
+lng: -79.319925
 checked: 2026-10-13
 ---
 

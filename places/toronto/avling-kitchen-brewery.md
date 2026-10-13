@@ -7,8 +7,8 @@ address: 1042 Queen St E, Toronto, ON M4M 1K4
 phone: +1 416-469-1010
 website: https://www.avling.ca
 reserve: https://www.opentable.ca/r/avling-toronto
-lat:
-lng:
+lat: 43.661729
+lng: -79.338263
 checked: 2026-10-13
 ---
 

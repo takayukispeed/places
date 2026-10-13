@@ -7,8 +7,8 @@ address: Auguststraße 58, 10119 Berlin
 phone:
 website: https://thebarn.de/pages/locations/mitte
 reserve:
-lat:
-lng:
+lat: 52.527379
+lng: 13.398253
 checked: 2026-10-13
 ---
 

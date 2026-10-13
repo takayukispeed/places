@@ -7,8 +7,8 @@ address: Wühlischstraße 22, 10245 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.509002
+lng: 13.460447
 checked: 2026-10-13
 ---
 

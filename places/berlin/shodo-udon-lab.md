@@ -7,8 +7,8 @@ address: Simon-Dach-Straße 41, 10245 Berlin
 phone: +49 30 25933179
 website: https://www.shodo-udonlab.com/
 reserve:
-lat:
-lng:
+lat: 52.511388
+lng: 13.457118
 checked: 2026-10-13
 ---
 

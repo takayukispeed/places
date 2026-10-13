@@ -7,8 +7,8 @@ address: Alte Schönhauser Straße 14, 10119 Berlin
 phone:
 website: https://www.fiveelephant.com/pages/five-elephant-mitte
 reserve:
-lat:
-lng:
+lat: 52.526728
+lng: 13.407623
 checked: 2026-10-13
 ---
 

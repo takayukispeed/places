@@ -7,8 +7,8 @@ address: Adalbertstraße 96, 10999 Berlin
 phone: +49 173 6173226
 website:
 reserve:
-lat:
-lng:
+lat: 52.500079
+lng: 13.4178
 checked: 2026-10-13
 ---
 

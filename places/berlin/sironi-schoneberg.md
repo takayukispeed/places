@@ -7,8 +7,8 @@ address: Goltzstraße 36, 10781 Berlin
 phone: +49 30 21002402
 website: https://sironi.de/
 reserve:
-lat:
-lng:
+lat: 52.493773
+lng: 13.353559
 checked: 2026-10-13
 ---
 

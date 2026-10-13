@@ -7,8 +7,8 @@ address: Reichenberger Straße 101, 10999 Berlin
 phone: +49 30 69507446
 website: https://fiveelephant.com/pages/five-elephant-kreuzberg
 reserve:
-lat:
-lng:
+lat: 52.493397
+lng: 13.438276
 checked: 2026-10-13
 ---
 

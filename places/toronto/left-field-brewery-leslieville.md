@@ -7,8 +7,8 @@ address: 36 Wagstaff Dr, Toronto, ON M4L 3W9
 phone: +1 647-346-5001
 website: https://www.leftfieldbrewery.ca
 reserve:
-lat:
-lng:
+lat: 43.67379
+lng: -79.33052
 checked: 2026-10-13
 ---
 

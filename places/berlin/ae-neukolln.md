@@ -7,8 +7,8 @@ address: Weserstraße 40, 12045 Berlin
 phone: +49 30 30648752
 website: https://ae-neukoelln.de
 reserve:
-lat:
-lng:
+lat: 52.485021
+lng: 13.437285
 checked: 2026-10-13
 ---
 

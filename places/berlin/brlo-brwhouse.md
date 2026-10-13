@@ -7,8 +7,8 @@ address: Schöneberger Straße 16, 10963 Berlin
 phone:
 website: https://www.brlo.de
 reserve:
-lat:
-lng:
+lat: 52.500012
+lng: 13.373358
 checked: 2026-10-13
 ---
 

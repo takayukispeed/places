@@ -7,8 +7,8 @@ address: Gleimstraße 38, 10437 Berlin
 phone:
 website: https://sironi.de/
 reserve:
-lat:
-lng:
+lat: 52.547572
+lng: 13.410514
 checked: 2026-10-13
 ---
 

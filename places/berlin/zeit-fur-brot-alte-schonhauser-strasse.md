@@ -7,8 +7,8 @@ address: Alte Schönhauser Straße 4, 10119 Berlin
 phone: +49 30 28046780
 website: https://zeitfuerbrot.com/
 reserve:
-lat:
-lng:
+lat: 52.527977
+lng: 13.408526
 checked: 2026-10-13
 ---
 

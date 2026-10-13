@@ -7,8 +7,8 @@ address: Gipsstraße 3, 10119 Berlin
 phone: +49 172 3047584
 website: https://kuchi.de/restaurant/cocolo-ramen/
 reserve:
-lat:
-lng:
+lat: 52.527169
+lng: 13.399274
 checked: 2026-10-13
 ---
 

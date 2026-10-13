@@ -7,8 +7,8 @@ address: 150 Symes Rd, Toronto, ON M6N 0B1
 phone: +1 416-766-1616
 website: https://www.junctioncraft.com/
 reserve:
-lat:
-lng:
+lat: 43.673468
+lng: -79.478682
 checked: 2026-10-13
 ---
 

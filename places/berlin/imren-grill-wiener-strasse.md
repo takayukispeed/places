@@ -7,8 +7,8 @@ address: Wiener Straße 10, 10999 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.498086
+lng: 13.427548
 checked: 2026-10-13
 ---
 

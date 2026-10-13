@@ -7,8 +7,8 @@ address: Boppstraße 10, 10967 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.490507
+lng: 13.422895
 checked: 2026-10-13
 ---
 

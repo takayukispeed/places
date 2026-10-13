@@ -7,8 +7,8 @@ address: Boxhagener Straße 26, Berlin
 phone: +49 30 84426700
 website:
 reserve:
-lat:
-lng:
+lat: 52.512586
+lng: 13.458
 checked: 2026-10-13
 ---
 

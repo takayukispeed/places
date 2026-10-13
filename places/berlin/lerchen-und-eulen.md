@@ -7,8 +7,8 @@ address: Pücklerstraße 33, 10997 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.502055
+lng: 13.430695
 checked: 2026-10-13
 ---
 

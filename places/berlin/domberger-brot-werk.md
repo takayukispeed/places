@@ -7,8 +7,8 @@ address: Essener Straße 11, 10555 Berlin
 phone: +49 30 23560471
 website: https://domberger-brot-werk.com/
 reserve:
-lat:
-lng:
+lat: 52.523899
+lng: 13.338329
 checked: 2026-10-13
 ---
 

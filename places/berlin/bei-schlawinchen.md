@@ -7,8 +7,8 @@ address: Schönleinstraße 34, 10967 Berlin
 phone: +49 30 6932015
 website:
 reserve:
-lat:
-lng:
+lat: 52.492672
+lng: 13.42171
 checked: 2026-10-13
 ---
 

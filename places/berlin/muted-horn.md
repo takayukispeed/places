@@ -7,8 +7,8 @@ address: Flughafenstraße 49, Berlin
 phone:
 website: https://themutedhorn.com
 reserve:
-lat:
-lng:
+lat: 52.480654
+lng: 13.426217
 checked: 2026-10-13
 ---
 

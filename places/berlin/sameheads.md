@@ -7,8 +7,8 @@ address: Richardstraße 10, 12043 Berlin
 phone: +49 30 70121060
 website:
 reserve:
-lat:
-lng:
+lat: 52.477885
+lng: 13.439388
 checked: 2026-10-13
 ---
 

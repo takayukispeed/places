@@ -7,8 +7,8 @@ address: 40 Hanna Ave, Toronto, ON M6K 0C3
 phone: +1 416-350-1958
 website: https://www.leftfieldbrewery.ca
 reserve:
-lat:
-lng:
+lat: 43.639453
+lng: -79.420032
 checked: 2026-10-13
 ---
 

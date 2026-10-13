@@ -7,8 +7,8 @@ address: Schönhauser Allee 44B, 10435 Berlin
 phone: +49 30 4427765
 website:
 reserve:
-lat:
-lng:
+lat: 52.540475
+lng: 13.412219
 checked: 2026-10-13
 ---
 

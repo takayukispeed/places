@@ -7,8 +7,8 @@ address: Admiralstraße 36, 10999 Berlin
 phone: +49 30 61656127
 website:
 reserve:
-lat:
-lng:
+lat: 52.497794
+lng: 13.417287
 checked: 2026-10-13
 ---
 

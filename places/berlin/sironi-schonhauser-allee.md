@@ -7,8 +7,8 @@ address: Schönhauser Allee 45A, 10437 Berlin
 phone:
 website: https://sironi.de/
 reserve:
-lat:
-lng:
+lat: 52.541629
+lng: 13.412542
 checked: 2026-10-13
 ---
 

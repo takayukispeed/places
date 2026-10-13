@@ -7,8 +7,8 @@ address: Schönhauser Allee 8, 10119 Berlin
 phone:
 website: https://thebarn.de/pages/locations/schonhauser-allee
 reserve:
-lat:
-lng:
+lat: 52.529935
+lng: 13.410693
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Gabriel-Max-Straße 4, 10245 Berlin
 phone: +49 30 62608833
 website:
 reserve:
-lat:
-lng:
+lat: 52.510136
+lng: 13.458375
 checked: 2026-10-13
 ---
 

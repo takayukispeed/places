@@ -7,8 +7,8 @@ address: 100 Symes Rd, Toronto, ON M6N 0A8
 phone: +1 416-763-2337
 website: https://rainhardbrewing.com/
 reserve:
-lat:
-lng:
+lat: 43.672692
+lng: -79.478991
 checked: 2026-10-13
 ---
 

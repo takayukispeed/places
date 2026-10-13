@@ -7,8 +7,8 @@ address: Torstraße 195, 10115 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.528315
+lng: 13.392071
 checked: 2026-10-13
 ---
 

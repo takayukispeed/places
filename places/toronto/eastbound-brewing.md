@@ -7,8 +7,8 @@ address: 700 Queen St E, Toronto, ON
 phone: +1 416-901-1299
 website: https://eastboundbeer.com
 reserve: https://www.exploretock.com/eastbound-brewing-company-toronto/
-lat:
-lng:
+lat: 43.658915
+lng: -79.350229
 checked: 2026-10-13
 ---
 

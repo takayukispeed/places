@@ -7,8 +7,8 @@ address: Münzstraße 21, 10178 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.524444
+lng: 13.406596
 checked: 2026-10-13
 ---
 

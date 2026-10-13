@@ -7,8 +7,8 @@ address: Bergstraße 68, 10115 Berlin
 phone: +49 30 54594033
 website:
 reserve:
-lat:
-lng:
+lat: 52.53161
+lng: 13.394174
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: 165 Geary Ave, Toronto, ON M6H 2B8
 phone: +1 647-628-6062
 website: https://www.bloodbrothersbrewing.com/
 reserve:
-lat:
-lng:
+lat: 43.669984
+lng: -79.436145
 checked: 2026-10-13
 ---
 

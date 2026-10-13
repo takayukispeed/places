@@ -7,8 +7,8 @@ address: 1184 Bloor St W, Toronto, ON M6H 1N2
 phone: +1 416-546-4033
 website: https://burdockbrewery.com/pages/bloor-st
 reserve: https://www.opentable.com/r/burdock-brewery-toronto
-lat:
-lng:
+lat: 43.659501
+lng: -79.437801
 checked: 2026-10-13
 ---
 

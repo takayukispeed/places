@@ -7,8 +7,8 @@ address: 1177 Queen St E, Toronto, ON
 phone: +1 647-794-7909
 website: https://www.radicalroadbrew.com
 reserve:
-lat:
-lng:
+lat: 43.662636
+lng: -79.33244
 checked: 2026-10-13
 ---
 

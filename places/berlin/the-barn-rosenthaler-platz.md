@@ -7,8 +7,8 @@ address: Weinbergsweg 1, 10119 Berlin
 phone:
 website: https://thebarn.de/pages/locations/rosenthaler-platz
 reserve:
-lat:
-lng:
+lat: 52.530072
+lng: 13.401766
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Friedelstraße 27, 12047 Berlin
 phone:
 website: https://thebarn.de/pages/locations/cafe-neukolln
 reserve:
-lat:
-lng:
+lat: 52.49231
+lng: 13.428674
 checked: 2026-10-13
 ---
 

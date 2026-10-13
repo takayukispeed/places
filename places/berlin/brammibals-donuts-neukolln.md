@@ -7,8 +7,8 @@ address: Maybachufer 8, Berlin
 phone:
 website: https://www.brammibalsdonuts.com/
 reserve:
-lat:
-lng:
+lat: 52.495025
+lng: 13.423015
 checked: 2026-10-13
 ---
 

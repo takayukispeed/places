@@ -7,8 +7,8 @@ address: Kastanienallee 16, 10435 Berlin
 phone: +49 30 81001026
 website: https://hako-ramen.de/ramen-berlin-prenzlauer-berg
 reserve:
-lat:
-lng:
+lat: 52.538496
+lng: 13.409347
 checked: 2026-10-13
 ---
 

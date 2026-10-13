@@ -7,8 +7,8 @@ address: Kastanienallee 7, 10435 Berlin
 phone:
 website: https://www.pratergarten.de
 reserve:
-lat:
-lng:
+lat: 52.539802
+lng: 13.410758
 checked: 2026-10-13
 ---
 
