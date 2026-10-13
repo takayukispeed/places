@@ -7,8 +7,8 @@ address: Alt-Treptow 15, 12435 Berlin
 phone: +49 30 5337370
 website:
 reserve:
-lat:
-lng:
+lat: 52.487506
+lng: 13.477763
 checked: 2026-10-13
 ---
 

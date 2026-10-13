@@ -7,8 +7,8 @@ address: Schönhauser Allee 176, 10119 Berlin
 phone: +49 30 233289800
 website:
 reserve:
-lat:
-lng:
+lat: 52.531982
+lng: 13.411766
 checked: 2026-10-13
 ---
 

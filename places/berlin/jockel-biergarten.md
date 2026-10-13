@@ -7,8 +7,8 @@ address: Ratiborstraße 14c, 10999 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.491926
+lng: 13.438387
 checked: 2026-10-13
 ---
 

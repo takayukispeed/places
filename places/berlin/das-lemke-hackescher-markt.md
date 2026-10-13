@@ -7,8 +7,8 @@ address: Dircksenstraße 143, 10178 Berlin
 phone: +49 30 24728727
 website: https://www.lemke.berlin
 reserve: https://www.opentable.ca/r/das-lemke-berlin
-lat:
-lng:
+lat: 52.523274
+lng: 13.404656
 checked: 2026-10-13
 ---
 

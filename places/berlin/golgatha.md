@@ -7,8 +7,8 @@ address: Dudenstraße 40, 10965 Berlin
 phone: +49 30 7852453
 website:
 reserve:
-lat:
-lng:
+lat: 52.486749
+lng: 13.37851
 checked: 2026-10-13
 ---
 

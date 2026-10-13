@@ -7,8 +7,8 @@ address: Karl-Marx-Straße 66, 12043 Berlin
 phone:
 website: https://www.klunkerkranich.org
 reserve:
-lat:
-lng:
+lat: 52.481962
+lng: 13.432773
 checked: 2026-10-13
 ---
 

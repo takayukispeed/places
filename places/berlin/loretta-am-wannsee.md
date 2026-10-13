@@ -7,8 +7,8 @@ address: Kronprinzessinnenweg 260, 14109 Berlin
 phone: +49 30 80105333
 website:
 reserve:
-lat:
-lng:
+lat: 52.420319
+lng: 13.176481
 checked: 2026-10-13
 ---
 

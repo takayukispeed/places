@@ -7,8 +7,8 @@ address: Lichtensteinallee 2, 10787 Berlin
 phone: +49 30 25449321
 website:
 reserve:
-lat:
-lng:
+lat: 52.510379
+lng: 13.344492
 checked: 2026-10-13
 ---
 

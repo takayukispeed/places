@@ -7,8 +7,8 @@ address: Elisabeth-Abegg-Straße 1, 10557 Berlin
 phone: +49 30 33099720
 website: https://zollpackhof.de
 reserve:
-lat:
-lng:
+lat: 52.521282
+lng: 13.36685
 checked: 2026-10-13
 ---
 

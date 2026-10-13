@@ -7,8 +7,8 @@ address: Fischerhüttenstraße 136, 14163 Berlin
 phone: +49 30 80498310
 website:
 reserve:
-lat:
-lng:
+lat: 52.445144
+lng: 13.227449
 checked: 2026-10-13
 ---
 

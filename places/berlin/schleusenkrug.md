@@ -7,8 +7,8 @@ address: Müller-Breslau-Straße 14b, 10623 Berlin
 phone: +49 30 3139909
 website:
 reserve:
-lat:
-lng:
+lat: 52.51193
+lng: 13.332572
 checked: 2026-10-13
 ---
 
