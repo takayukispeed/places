@@ -7,8 +7,8 @@ address: Skalitzer Straße 82, 10997 Berlin
 phone: +49 1577 9527020
 website: https://www.duoicecream.de/
 reserve:
-lat:
-lng:
+lat: 52.50066
+lng: 13.438875
 checked: 2026-10-13
 ---
 

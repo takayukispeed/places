@@ -7,8 +7,8 @@ address: Lützowstraße 23, 10785 Berlin
 phone: +49 30 2616918
 website: http://www.kumpelnest3000.com/
 reserve:
-lat:
-lng:
+lat: 52.503065
+lng: 13.366453
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Hermannstraße 178, 12051 Berlin
 phone: +49 30 91565617
 website:
 reserve:
-lat:
-lng:
+lat: 52.471835
+lng: 13.429215
 checked: 2026-10-13
 ---
 

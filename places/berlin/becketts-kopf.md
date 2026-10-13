@@ -7,8 +7,8 @@ address: Pappelallee 64, 10437 Berlin
 phone: +49 30 44035880
 website:
 reserve:
-lat:
-lng:
+lat: 52.545524
+lng: 13.416938
 checked: 2026-10-13
 ---
 

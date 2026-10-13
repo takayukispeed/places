@@ -7,8 +7,8 @@ address: Reichenberger Straße 118, 10999 Berlin
 phone: +49 30 78954731
 website: https://www.vanille-marille.de/
 reserve:
-lat:
-lng:
+lat: 52.494825
+lng: 13.433424
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Hagelberger Straße 1, 10965 Berlin
 phone: +49 30 78954731
 website: https://www.vanille-marille.de/
 reserve:
-lat:
-lng:
+lat: 52.49147
+lng: 13.386382
 checked: 2026-10-13
 ---
 

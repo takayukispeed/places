@@ -7,8 +7,8 @@ address: Eisenbahnstraße 42, 10997 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.502027
+lng: 13.432033
 checked: 2026-10-13
 ---
 

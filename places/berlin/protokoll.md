@@ -7,8 +7,8 @@ address: Boxhagener Straße 110, 10245 Berlin
 phone: +49 176 60886670
 website: https://protokollberlin.de
 reserve:
-lat:
-lng:
+lat: 52.51322
+lng: 13.457051
 checked: 2026-10-13
 ---
 

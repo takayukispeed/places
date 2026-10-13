@@ -7,8 +7,8 @@ address: Grimmstraße 29, 10967 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.494685
+lng: 13.415648
 checked: 2026-10-13
 ---
 

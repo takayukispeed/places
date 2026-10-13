@@ -7,8 +7,8 @@ address: Sredzkistraße 19A, 10435 Berlin
 phone: +49 1577 9527020
 website: https://www.duoicecream.de/
 reserve:
-lat:
-lng:
+lat: 52.538558
+lng: 13.415524
 checked: 2026-10-13
 ---
 

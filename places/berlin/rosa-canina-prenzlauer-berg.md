@@ -7,8 +7,8 @@ address: Hufelandstraße 7, 10407 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.532616
+lng: 13.430684
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Schönhauser Allee 123, 10437 Berlin
 phone: +49 176 22553614
 website:
 reserve:
-lat:
-lng:
+lat: 52.547934
+lng: 13.412139
 checked: 2026-10-13
 ---
 

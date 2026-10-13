@@ -7,8 +7,8 @@ address: Oranienstraße 177, 10999 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.501061
+lng: 13.419454
 checked: 2026-10-13
 ---
 

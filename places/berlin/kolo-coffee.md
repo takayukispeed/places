@@ -7,8 +7,8 @@ address: Brunnenstraße 158, 10115 Berlin
 phone:
 website: https://kolocoffee.eu
 reserve:
-lat:
-lng:
+lat: 52.535248
+lng: 13.397627
 checked: 2026-10-13
 ---
 

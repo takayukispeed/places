@@ -7,8 +7,8 @@ address: Seestraße 102, 13353 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.549488
+lng: 13.348658
 checked: 2026-10-13
 ---
 

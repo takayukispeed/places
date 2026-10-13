@@ -7,8 +7,8 @@ address: Oudenarder Straße 16, Berlin
 phone: +49 30 45977635
 website: https://www.vagabund.de/
 reserve: https://www.opentable.com/r/vagabund-brauerei-berlin
-lat:
-lng:
+lat: 52.55274
+lng: 13.360634
 checked: 2026-10-13
 ---
 

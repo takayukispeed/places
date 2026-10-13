@@ -7,8 +7,8 @@ address: Schönhauser Allee 173, Berlin
 phone: +49 30 44312854
 website:
 reserve:
-lat:
-lng:
+lat: 52.532555
+lng: 13.412163
 checked: 2026-10-13
 ---
 

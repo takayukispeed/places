@@ -7,8 +7,8 @@ address: Wiener Straße 15, 10999 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.497941
+lng: 13.429699
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Weinbergsweg 27, 10119 Berlin
 phone: +49 30 44312363
 website:
 reserve:
-lat:
-lng:
+lat: 52.530405
+lng: 13.401542
 checked: 2026-10-13
 ---
 

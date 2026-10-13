@@ -7,8 +7,8 @@ address: Motzstraße 22, 10777 Berlin
 phone: +49 30 20051922
 website:
 reserve:
-lat:
-lng:
+lat: 52.49823
+lng: 13.348918
 checked: 2026-10-13
 ---
 

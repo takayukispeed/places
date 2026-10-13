@@ -7,8 +7,8 @@ address: Schendelgasse 9, 10119 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.526859
+lng: 13.40858
 checked: 2026-10-13
 ---
 

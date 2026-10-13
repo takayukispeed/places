@@ -7,8 +7,8 @@ address: Goltzstraße 3, 10781 Berlin
 phone: +49 171 8335780
 website:
 reserve:
-lat:
-lng:
+lat: 52.490444
+lng: 13.353471
 checked: 2026-10-13
 ---
 
