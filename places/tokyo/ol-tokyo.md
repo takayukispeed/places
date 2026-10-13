@@ -7,8 +7,8 @@ address: 37-10 Udagawacho, Shibuya City, Tokyo
 phone:
 website:
 reserve: https://www.hotpepper.jp/strJ003829892/
-lat:
-lng:
+lat: 35.6618
+lng: 139.6977
 checked: 2026-10-13
 ---
 
