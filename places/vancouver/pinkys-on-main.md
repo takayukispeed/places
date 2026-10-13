@@ -7,8 +7,8 @@ address: 2420 Main St, Vancouver, BC V5T 3E2
 phone: +1 604-336-7465
 website:
 reserve:
-lat:
-lng:
+lat: 49.263541
+lng: -123.100647
 checked: 2026-10-13
 ---
 
