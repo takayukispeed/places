@@ -7,8 +7,8 @@ address: 2-6-4 Otemachi, Chiyoda City, Tokyo
 phone: +81 3-6262-3102
 website:
 reserve:
-lat:
-lng:
+lat: 35.686301
+lng: 139.768087
 checked: 2026-10-13
 ---
 

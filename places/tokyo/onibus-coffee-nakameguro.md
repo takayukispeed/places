@@ -7,8 +7,8 @@ address: 2-14-1 Kamimeguro, Meguro City, Tokyo
 phone: +81 3-6412-8683
 website:
 reserve:
-lat:
-lng:
+lat: 35.643619
+lng: 139.698236
 checked: 2026-10-13
 ---
 

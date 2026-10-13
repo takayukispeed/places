@@ -7,8 +7,8 @@ address: 1-8-8 Honjo, Sumida City, Tokyo
 phone: +81 3-5637-8718
 website:
 reserve:
-lat:
-lng:
+lat: 35.703738
+lng: 139.797267
 checked: 2026-10-13
 ---
 

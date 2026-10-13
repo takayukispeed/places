@@ -7,8 +7,8 @@ address: 1-4-8 Hirano, Koto City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.678264
+lng: 139.799487
 checked: 2026-10-13
 ---
 

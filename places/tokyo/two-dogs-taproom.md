@@ -7,8 +7,8 @@ address: 3-15-24 Roppongi, Minato City, Tokyo
 phone: +81 3-5413-0333
 website:
 reserve:
-lat:
-lng:
+lat: 35.664528
+lng: 139.737741
 checked: 2026-10-13
 ---
 

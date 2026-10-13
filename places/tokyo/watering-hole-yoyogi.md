@@ -7,8 +7,8 @@ address: 5-26-5 Sendagaya, Shibuya City, Tokyo
 phone:
 website: https://wateringhole.jp/
 reserve:
-lat:
-lng:
+lat: 35.6853
+lng: 139.703817
 checked: 2026-10-13
 ---
 

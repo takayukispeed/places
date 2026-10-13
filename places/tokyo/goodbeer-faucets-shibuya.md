@@ -7,8 +7,8 @@ address: 1-29-1 Shoto, Shibuya City, Tokyo
 phone: +81 3-3770-5544
 website:
 reserve:
-lat:
-lng:
+lat: 35.66091
+lng: 139.693453
 checked: 2026-10-13
 ---
 

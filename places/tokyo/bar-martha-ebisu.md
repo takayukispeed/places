@@ -7,8 +7,8 @@ address: 1-22-23 Ebisu, Shibuya City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.647094
+lng: 139.71428
 checked: 2026-10-13
 ---
 

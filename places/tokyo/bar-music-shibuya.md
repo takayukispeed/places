@@ -7,8 +7,8 @@ address: 1-6-7 Dogenzaka, Shibuya City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.657261
+lng: 139.698794
 checked: 2026-10-13
 ---
 

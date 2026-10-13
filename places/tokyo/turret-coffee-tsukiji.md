@@ -7,8 +7,8 @@ address: 2-12-6 Tsukiji, Chuo City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.668618
+lng: 139.772366
 checked: 2026-10-13
 ---
 

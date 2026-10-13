@@ -7,8 +7,8 @@ address: 1-8 Yotsuya, Shinjuku City, Tokyo
 phone: +81 3-3357-9857
 website: https://www.jazz-eagle.com/
 reserve:
-lat:
-lng:
+lat: 35.686425
+lng: 139.728201
 checked: 2026-10-13
 ---
 

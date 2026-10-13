@@ -7,8 +7,8 @@ address: 5-65-4 Yoyogi, Shibuya City, Tokyo
 phone: +81 3-3466-0074
 website: https://littlenap.jp
 reserve:
-lat:
-lng:
+lat: 35.673692
+lng: 139.690105
 checked: 2026-10-13
 ---
 

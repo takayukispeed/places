@@ -7,8 +7,8 @@ address: 8-10-15 Ginza, Chuo City, Tokyo
 phone: +81 3-3571-1551
 website:
 reserve:
-lat:
-lng:
+lat: 35.666698
+lng: 139.763463
 checked: 2026-10-13
 ---
 

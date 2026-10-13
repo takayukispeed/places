@@ -7,8 +7,8 @@ address: 5-14-16 Shiba, Minato City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.647148
+lng: 139.746984
 checked: 2026-10-13
 ---
 

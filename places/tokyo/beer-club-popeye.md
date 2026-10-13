@@ -7,8 +7,8 @@ address: 2-18-7 Ryogoku, Sumida City, Tokyo
 phone: +81 3-3633-2120
 website:
 reserve:
-lat:
-lng:
+lat: 35.693886
+lng: 139.792108
 checked: 2026-10-13
 ---
 

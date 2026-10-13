@@ -7,8 +7,8 @@ address: 7-8 Ginza, Chuo City, Tokyo
 phone:
 website: https://ginzamusicbar.com/
 reserve:
-lat:
-lng:
+lat: 35.668438
+lng: 139.763386
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: 1-16-11 Tomigaya, Shibuya City, Tokyo
 phone: +81 3-3481-0884
 website: https://fuglen.com
 reserve:
-lat:
-lng:
+lat: 35.667276
+lng: 139.690501
 checked: 2026-10-13
 ---
 

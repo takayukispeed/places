@@ -7,8 +7,8 @@ address: 1-20-28 Shibuya, Shibuya City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.661813
+lng: 139.705073
 checked: 2026-10-13
 ---
 

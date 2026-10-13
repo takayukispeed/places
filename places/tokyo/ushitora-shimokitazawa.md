@@ -7,8 +7,8 @@ address: 2-9-3 Kitazawa, Setagaya City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.662013
+lng: 139.668297
 checked: 2026-10-13
 ---
 

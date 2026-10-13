@@ -7,8 +7,8 @@ address: 3-16-7 Nihonbashi Hamacho, Chuo City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.685222
+lng: 139.789481
 checked: 2026-10-13
 ---
 

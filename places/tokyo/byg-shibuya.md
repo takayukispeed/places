@@ -7,8 +7,8 @@ address: 2-19-14 Dogenzaka, Shibuya City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.660528
+lng: 139.696894
 checked: 2026-10-13
 ---
 

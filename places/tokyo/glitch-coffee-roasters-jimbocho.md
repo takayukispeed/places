@@ -7,8 +7,8 @@ address: 3-16 Kanda-Nishikicho, Chiyoda City, Tokyo
 phone: +81 3-5244-5458
 website:
 reserve:
-lat:
-lng:
+lat: 35.692324
+lng: 139.760722
 checked: 2026-10-13
 ---
 

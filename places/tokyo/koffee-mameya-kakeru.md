@@ -7,8 +7,8 @@ address: 2-16-14 Hirano, Koto City, Tokyo
 phone:
 website:
 reserve: https://www.autoreserve.com/en/restaurants/kG8beo7HPF4ruxDzTd85
-lat:
-lng:
+lat: 35.67761
+lng: 139.802589
 checked: 2026-10-13
 ---
 

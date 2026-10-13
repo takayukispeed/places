@@ -7,8 +7,8 @@ address: 13-1 Daikanyamacho, Shibuya City, Tokyo
 phone:
 website:
 reserve: https://restaurant.ikyu.com/107118/
-lat:
-lng:
+lat: 35.655146
+lng: 139.704338
 checked: 2026-10-13
 ---
 

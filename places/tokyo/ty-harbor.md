@@ -7,8 +7,8 @@ address: 2-1-3 Higashi-Shinagawa, Shinagawa City, Tokyo
 phone: +81 3-5479-4555
 website: https://tysons.jp/tyharbor/
 reserve:
-lat:
-lng:
+lat: 35.621564
+lng: 139.750307
 checked: 2026-10-13
 ---
 

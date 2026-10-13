@@ -7,8 +7,8 @@ address: 2-14-8 Takadanobaba, Shinjuku City, Tokyo
 phone: +81 3-3200-4396
 website: http://jazzspot.intro.co.jp/
 reserve:
-lat:
-lng:
+lat: 35.713001
+lng: 139.707919
 checked: 2026-10-13
 ---
 

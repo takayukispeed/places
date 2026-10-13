@@ -7,8 +7,8 @@ address: 1-24-7 Shibuya, Shibuya City, Tokyo
 phone: +81 3-3407-9505
 website: http://www.grandfather.jp/
 reserve:
-lat:
-lng:
+lat: 35.661813
+lng: 139.705073
 checked: 2026-10-13
 ---
 

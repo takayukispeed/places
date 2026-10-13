@@ -7,8 +7,8 @@ address: 1-25-6 Shibuya, Shibuya City, Tokyo
 phone: +81 3-6427-6568
 website:
 reserve:
-lat:
-lng:
+lat: 35.661813
+lng: 139.705073
 checked: 2026-10-13
 ---
 

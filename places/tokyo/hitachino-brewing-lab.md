@@ -7,8 +7,8 @@ address: 1-25-4 Kanda-Sudacho, Chiyoda City, Tokyo
 phone: +81 3-3254-3434
 website: https://hitachino.cc/brewing-lab/en
 reserve:
-lat:
-lng:
+lat: 35.696223
+lng: 139.769841
 checked: 2026-10-13
 ---
 

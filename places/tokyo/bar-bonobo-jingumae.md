@@ -7,8 +7,8 @@ address: 2-23-4 Jingumae, Shibuya City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.673993
+lng: 139.711098
 checked: 2026-10-13
 ---
 
