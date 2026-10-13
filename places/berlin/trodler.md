@@ -7,8 +7,8 @@ address: Dresdener Straße 123, 10999 Berlin
 phone: +49 30 61789616
 website:
 reserve:
-lat:
-lng:
+lat: 52.500969
+lng: 13.416699
 checked: 2026-10-13
 ---
 

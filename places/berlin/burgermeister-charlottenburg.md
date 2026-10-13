@@ -7,8 +7,8 @@ address: Joachimsthaler Straße 1, 10623 Berlin
 phone: +49 30 40364 5333
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.505971
+lng: 13.331798
 checked: 2026-10-13
 ---
 

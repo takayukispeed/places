@@ -7,8 +7,8 @@ address: Novalisstraße 2, 10115 Berlin
 phone: +49 30 20687037
 website: https://smartdeli.org/
 reserve: https://smartdeli.org/pages/table-booking
-lat:
-lng:
+lat: 52.528119
+lng: 13.38911
 checked: 2026-10-13
 ---
 

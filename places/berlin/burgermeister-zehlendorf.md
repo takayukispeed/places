@@ -7,8 +7,8 @@ address: Berliner Straße 1, 14169 Berlin
 phone: +49 30 4036453302
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.435132
+lng: 13.26177
 checked: 2026-10-13
 ---
 

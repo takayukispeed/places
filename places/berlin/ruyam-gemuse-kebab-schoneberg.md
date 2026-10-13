@@ -7,8 +7,8 @@ address: Hauptstraße 36, 10827 Berlin
 phone: +49 30 69564413
 website: https://rueyam.de/
 reserve:
-lat:
-lng:
+lat: 52.484536
+lng: 13.352407
 checked: 2026-10-13
 ---
 

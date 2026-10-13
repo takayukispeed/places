@@ -7,8 +7,8 @@ address: Johannisthaler Chaussee 317, 12351 Berlin
 phone: +49 30 40364 5337
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.429431
+lng: 13.454824
 checked: 2026-10-13
 ---
 

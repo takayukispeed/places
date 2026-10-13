@@ -7,8 +7,8 @@ address: Chausseestraße 124, Berlin
 phone:
 website: https://www.takuminineberlin.de/takumi-nine-2
 reserve:
-lat:
-lng:
+lat: 52.529013
+lng: 13.384752
 checked: 2026-10-13
 ---
 

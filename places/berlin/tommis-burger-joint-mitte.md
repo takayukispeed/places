@@ -7,8 +7,8 @@ address: Invalidenstraße 160, 10115 Berlin
 phone: +49 30 52132190
 website: https://tommis.is/de/joint/mitte/
 reserve:
-lat:
-lng:
+lat: 52.532388
+lng: 13.397715
 checked: 2026-10-13
 ---
 

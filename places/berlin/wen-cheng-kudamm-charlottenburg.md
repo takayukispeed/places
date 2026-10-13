@@ -7,8 +7,8 @@ address: Joachimsthaler Straße 10, 10719 Berlin
 phone:
 website: https://www.wenchengnoodles.com/locations/berlin/kudamm
 reserve:
-lat:
-lng:
+lat: 52.503445
+lng: 13.330896
 checked: 2026-10-13
 ---
 

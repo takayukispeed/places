@@ -7,8 +7,8 @@ address: Potsdamer Platz 1, 10785 Berlin
 phone: +49 179 5154938
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.509146
+lng: 13.374946
 checked: 2026-10-13
 ---
 

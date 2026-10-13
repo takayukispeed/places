@@ -7,8 +7,8 @@ address: Grunewaldstraße 118, 10823 Berlin
 phone:
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.489774
+lng: 13.353013
 checked: 2026-10-13
 ---
 

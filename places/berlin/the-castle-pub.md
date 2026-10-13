@@ -7,8 +7,8 @@ address: Invalidenstraße 129, 10115 Berlin
 phone: +49 30 28047126
 website: https://www.thecastleberlin.de/
 reserve: https://www.thecastleberlin.de/reservations
-lat:
-lng:
+lat: 52.53149
+lng: 13.388528
 checked: 2026-10-13
 ---
 

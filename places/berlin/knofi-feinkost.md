@@ -7,8 +7,8 @@ address: Bergmannstraße 98, 10961 Berlin
 phone: +49 30 6945807
 website: https://knofi.de
 reserve:
-lat:
-lng:
+lat: 52.48966
+lng: 13.390898
 checked: 2026-10-13
 ---
 

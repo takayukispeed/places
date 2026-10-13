@@ -7,8 +7,8 @@ address: Knaackstraße 99, 10435 Berlin
 phone:
 website: https://www.takuminineberlin.de/takumi-nine-3
 reserve:
-lat:
-lng:
+lat: 52.540589
+lng: 13.414108
 checked: 2026-10-13
 ---
 

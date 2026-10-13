@@ -7,8 +7,8 @@ address: Selchower Straße 20, 12049 Berlin
 phone:
 website: https://www.wenchengnoodles.com/locations/berlin/selchower
 reserve:
-lat:
-lng:
+lat: 52.478462
+lng: 13.420079
 checked: 2026-10-13
 ---
 

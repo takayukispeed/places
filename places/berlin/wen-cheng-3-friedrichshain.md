@@ -7,8 +7,8 @@ address: Simon-Dach-Straße 22, 10245 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.508429
+lng: 13.455269
 checked: 2026-10-13
 ---
 

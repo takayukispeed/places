@@ -7,8 +7,8 @@ address: Oberbaumstraße 8, 10997 Berlin
 phone: +49 30 40364 5331
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.501121
+lng: 13.442458
 checked: 2026-10-13
 ---
 

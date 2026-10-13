@@ -7,8 +7,8 @@ address: Skalitzer Straße 136, 10999 Berlin
 phone: +49 30 40364 5332
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.499502
+lng: 13.418593
 checked: 2026-10-13
 ---
 

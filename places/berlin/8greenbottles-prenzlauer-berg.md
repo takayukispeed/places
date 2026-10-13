@@ -7,8 +7,8 @@ address: Senefelderstraße 34, 10437 Berlin
 phone: +49 30 98407522
 website: https://www.8greenbottles.de
 reserve:
-lat:
-lng:
+lat: 52.540061
+lng: 13.42177
 checked: 2026-10-13
 ---
 

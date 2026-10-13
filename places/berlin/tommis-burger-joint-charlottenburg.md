@@ -7,8 +7,8 @@ address: Kurfürstendamm 212, Berlin
 phone: +49 30 37432927
 website: https://tommis.is/joint/kudamm/
 reserve:
-lat:
-lng:
+lat: 52.502018
+lng: 13.325359
 checked: 2026-10-13
 ---
 

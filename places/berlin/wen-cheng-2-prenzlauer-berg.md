@@ -7,8 +7,8 @@ address: Schönhauser Allee 10, 10119 Berlin
 phone:
 website: https://www.wenchengnoodles.com/locations/wencheng-2
 reserve:
-lat:
-lng:
+lat: 52.530333
+lng: 13.411555
 checked: 2026-10-13
 ---
 

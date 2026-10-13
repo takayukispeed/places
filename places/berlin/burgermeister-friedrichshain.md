@@ -7,8 +7,8 @@ address: Warschauer Straße 65, 10243 Berlin
 phone: +49 30 89046001
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.510881
+lng: 13.452274
 checked: 2026-10-13
 ---
 

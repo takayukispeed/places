@@ -7,8 +7,8 @@ address: Böckhstraße 12, 10967 Berlin
 phone: +49 30 55249774
 website: https://www.8greenbottles.de
 reserve:
-lat:
-lng:
+lat: 52.49386
+lng: 13.417709
 checked: 2026-10-13
 ---
 

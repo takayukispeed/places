@@ -7,8 +7,8 @@ address: Gabriel-Max-Straße 17, 10245 Berlin
 phone: +49 30 27599599
 website: https://tommis.is/de/joint/friedrichshain/
 reserve:
-lat:
-lng:
+lat: 52.510683
+lng: 13.458279
 checked: 2026-10-13
 ---
 

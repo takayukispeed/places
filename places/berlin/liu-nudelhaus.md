@@ -7,8 +7,8 @@ address: Kronenstraße 72, 10117 Berlin
 phone: +49 178 6684572
 website: https://chengduweidao.de/
 reserve:
-lat:
-lng:
+lat: 52.511218
+lng: 13.387454
 checked: 2026-10-13
 ---
 

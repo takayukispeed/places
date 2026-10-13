@@ -7,8 +7,8 @@ address: Mehringdamm 39, 10961 Berlin
 phone: +49 30 40364 5339
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.492419
+lng: 13.387914
 checked: 2026-10-13
 ---
 

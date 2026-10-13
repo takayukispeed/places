@@ -7,8 +7,8 @@ address: Kantstraße 148, 10623 Berlin
 phone: +49 30 3138038
 website: https://schwarzescafe-berlin.de/
 reserve:
-lat:
-lng:
+lat: 52.505492
+lng: 13.324232
 checked: 2026-10-13
 ---
 

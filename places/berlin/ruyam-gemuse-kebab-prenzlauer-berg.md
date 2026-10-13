@@ -7,8 +7,8 @@ address: Schönhauser Allee 44a, 10435 Berlin
 phone: +49 30 41717017
 website: https://rueyam.de/
 reserve:
-lat:
-lng:
+lat: 52.540496
+lng: 13.412553
 checked: 2026-10-13
 ---
 

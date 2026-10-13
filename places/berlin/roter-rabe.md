@@ -7,8 +7,8 @@ address: Kottbusser Straße 13, 10999 Berlin
 phone: +49 176 24031299
 website: https://www.roter-rabe.berlin
 reserve:
-lat:
-lng:
+lat: 52.496665
+lng: 13.419121
 checked: 2026-10-13
 ---
 

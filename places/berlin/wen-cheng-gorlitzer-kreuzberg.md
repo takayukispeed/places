@@ -7,8 +7,8 @@ address: Spreewaldplatz 5, 10999 Berlin
 phone:
 website: https://www.wenchengnoodles.com/locations/berlin/goerlitzer
 reserve:
-lat:
-lng:
+lat: 52.498653
+lng: 13.431611
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Wildenbruchstraße 86, 12045 Berlin
 phone: +49 30 68080362
 website:
 reserve:
-lat:
-lng:
+lat: 52.483091
+lng: 13.441753
 checked: 2026-10-13
 ---
 

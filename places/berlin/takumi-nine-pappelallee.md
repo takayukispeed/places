@@ -7,8 +7,8 @@ address: Pappelallee 19, 10437 Berlin
 phone:
 website: https://www.takuminineberlin.de/
 reserve:
-lat:
-lng:
+lat: 52.543856
+lng: 13.415621
 checked: 2026-10-13
 ---
 

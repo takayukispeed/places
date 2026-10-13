@@ -7,8 +7,8 @@ address: Dircksenstraße 113, 10178 Berlin
 phone: +49 30 67826820
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.523377
+lng: 13.404693
 checked: 2026-10-13
 ---
 

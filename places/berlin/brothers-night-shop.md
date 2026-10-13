@@ -7,8 +7,8 @@ address: Schönhauser Allee 185, 10119 Berlin
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 52.529582
+lng: 13.409863
 checked: 2026-10-13
 ---
 

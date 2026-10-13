@@ -7,8 +7,8 @@ address: Schönhauser Allee 45, 10435 Berlin
 phone: +49 30 41207414
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.540614
+lng: 13.412529
 checked: 2026-10-13
 ---
 

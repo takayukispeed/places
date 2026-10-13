@@ -7,8 +7,8 @@ address: Hasenheide 113, 10967 Berlin
 phone: +49 30 40364 5336
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.486691
+lng: 13.422173
 checked: 2026-10-13
 ---
 

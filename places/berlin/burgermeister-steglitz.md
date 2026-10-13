@@ -7,8 +7,8 @@ address: Schloßstraße 117, 12163 Berlin
 phone: +49 30 40364 5335
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.462393
+lng: 13.326287
 checked: 2026-10-13
 ---
 

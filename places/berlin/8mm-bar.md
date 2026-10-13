@@ -7,8 +7,8 @@ address: Schönhauser Allee 177B, 10119 Berlin
 phone: +49 30 40500624
 website: https://www.8mmbar.de/
 reserve:
-lat:
-lng:
+lat: 52.531337
+lng: 13.411236
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Schönhauser Allee 65, 10437 Berlin
 phone:
 website: https://www.wenchengnoodles.com/locations/berlin/schoenhauser
 reserve:
-lat:
-lng:
+lat: 52.546325
+lng: 13.413475
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Linienstraße 160, 10115 Berlin
 phone: +49 30 28449500
 website: https://www.lokal-berlinmitte.de
 reserve:
-lat:
-lng:
+lat: 52.527875
+lng: 13.394901
 checked: 2026-10-13
 ---
 

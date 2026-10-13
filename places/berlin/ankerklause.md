@@ -7,8 +7,8 @@ address: Kottbusser Damm 104, 10967 Berlin
 phone: +49 30 6935649
 website:
 reserve:
-lat:
-lng:
+lat: 52.495823
+lng: 13.420585
 checked: 2026-10-13
 ---
 

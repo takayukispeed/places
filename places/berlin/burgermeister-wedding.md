@@ -7,8 +7,8 @@ address: Müllerstraße 28, 13353 Berlin
 phone:
 website: https://burgermeister.com/
 reserve:
-lat:
-lng:
+lat: 52.547212
+lng: 13.35813
 checked: 2026-10-13
 ---
 
