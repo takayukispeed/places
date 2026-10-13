@@ -7,8 +7,8 @@ address: 5278 Kingsway, Burnaby, BC V5H 2E9
 phone:
 website: https://www.maruhachi.ca/
 reserve:
-lat:
-lng:
+lat: 49.224467
+lng: -122.987867
 checked: 2026-10-12
 ---
 

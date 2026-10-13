@@ -7,8 +7,8 @@ address: 1190 Pinetree Way, Coquitlam, BC V3B 0A3
 phone:
 website: https://www.maruhachi.ca/
 reserve:
-lat:
-lng:
+lat: 49.282261
+lng: -122.79351
 checked: 2026-10-12
 ---
 

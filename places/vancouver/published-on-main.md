@@ -7,8 +7,8 @@ address: 3593 Main St, Vancouver, BC V5V 3N4
 phone: +1 604-423-4840
 website: https://publishedonmain.com/
 reserve: https://www.opentable.com/r/published-on-main-vancouver
-lat:
-lng:
+lat: 49.252847
+lng: -123.101173
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 2858 Main St, Vancouver, BC V5T 0C1
 phone:
 website: https://www.maruhachi.ca/
 reserve:
-lat:
-lng:
+lat: 49.259541
+lng: -123.100726
 checked: 2026-10-12
 ---
 

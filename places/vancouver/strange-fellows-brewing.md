@@ -7,8 +7,8 @@ address: 1345 Clark Dr, Vancouver, BC V5L 3K9
 phone: +1 604-215-0092
 website: https://strangefellowsbrewing.com/
 reserve:
-lat:
-lng:
+lat: 49.272505
+lng: -123.078041
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 5 E 5th Ave, Vancouver, BC V5T 1G7
 phone: +1 604-336-9001
 website: https://www.purebread.ca/find-us
 reserve:
-lat:
-lng:
+lat: 49.266644
+lng: -123.104529
 checked: 2026-10-12
 ---
 

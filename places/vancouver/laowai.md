@@ -7,8 +7,8 @@ address: 251 E Georgia St, Vancouver, BC V6A 1Z6
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 49.278657
+lng: -123.097975
 checked: 2026-10-12
 ---
 

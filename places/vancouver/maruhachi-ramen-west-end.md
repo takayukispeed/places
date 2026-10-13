@@ -7,8 +7,8 @@ address: 780 Bidwell St, Vancouver, BC V6G 2J6
 phone:
 website: https://www.maruhachi.ca/
 reserve:
-lat:
-lng:
+lat: 49.290603
+lng: -123.13339
 checked: 2026-10-12
 ---
 

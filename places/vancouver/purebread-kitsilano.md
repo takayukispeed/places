@@ -7,8 +7,8 @@ address: 2887 W Broadway, Vancouver, BC V6K 2G6
 phone: +1 604-336-9670
 website: https://www.purebread.ca/find-us
 reserve:
-lat:
-lng:
+lat: 49.264232
+lng: -123.170105
 checked: 2026-10-12
 ---
 

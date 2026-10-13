@@ -7,8 +7,8 @@ address: 9082 152 St, Surrey, BC V3R 4E7
 phone:
 website: https://www.maruhachi.ca/
 reserve:
-lat:
-lng:
+lat: 49.16786
+lng: -122.80103
 checked: 2026-10-12
 ---
 

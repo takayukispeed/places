@@ -7,8 +7,8 @@ address: 270 Robson St, Vancouver, BC V6B 0E7
 phone:
 website: https://www.maruhachi.ca/
 reserve:
-lat:
-lng:
+lat: 49.278549
+lng: -123.115763
 checked: 2026-10-12
 ---
 

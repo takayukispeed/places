@@ -7,8 +7,8 @@ address: 3211 Grant McConachie Way, Richmond, BC V7B 0A4
 phone: +1 604-285-5901
 website: https://www.purebread.ca/find-us
 reserve:
-lat:
-lng:
+lat: 49.192542
+lng: -123.171334
 checked: 2026-10-12
 ---
 

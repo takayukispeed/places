@@ -7,8 +7,8 @@ address: 2297 E Hastings St, Vancouver, BC V5L 1V3
 phone: +1 604-569-0456
 website: https://dachivancouver.com/
 reserve: https://www.exploretock.com/dachi/
-lat:
-lng:
+lat: 49.281398
+lng: -123.058025
 checked: 2026-10-12
 ---
 

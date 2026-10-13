@@ -7,8 +7,8 @@ address: 93 Lonsdale Ave, North Vancouver, BC V7M 2E5
 phone: +1 236-477-5509
 website: https://luckysdoughnuts.com/pages/locations
 reserve:
-lat:
-lng:
+lat: 49.311839
+lng: -123.078991
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1017 W Hastings St, Vancouver, BC V6E 0C4
 phone: +1 604-695-9500
 website: https://hawknightingale.com/
 reserve: https://www.opentable.com/r/nightingale-vancouver
-lat:
-lng:
+lat: 49.287431
+lng: -123.117594
 checked: 2026-10-12
 ---
 

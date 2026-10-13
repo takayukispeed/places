@@ -7,8 +7,8 @@ address: 1216 Franklin St, Vancouver, BC V6A 1K1
 phone: +1 778-404-0657
 website: https://drinkcontainer.beer/
 reserve: https://www.drinkcontainer.beer/resos
-lat:
-lng:
+lat: 49.282131
+lng: -123.078674
 checked: 2026-10-12
 ---
 

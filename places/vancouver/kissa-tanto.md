@@ -7,8 +7,8 @@ address: 263 E Pender St, Vancouver, BC V6A 1T8
 phone: +1 778-379-8078
 website: https://www.kissatanto.com/
 reserve:
-lat:
-lng:
+lat: 49.280478
+lng: -123.098177
 checked: 2026-10-12
 ---
 

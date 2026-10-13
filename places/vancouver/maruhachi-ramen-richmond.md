@@ -7,8 +7,8 @@ address: 2780 No 3 Rd, Richmond, BC V6X 2B3
 phone:
 website: https://www.maruhachi.ca/
 reserve:
-lat:
-lng:
+lat: 49.110278
+lng: -123.1383
 checked: 2026-10-12
 ---
 
