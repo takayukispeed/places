@@ -7,8 +7,8 @@ address: 3-11-6 Sotokanda, Chiyoda City, Tokyo
 phone:
 website: https://kyushujangara.co.jp/
 reserve:
-lat:
-lng:
+lat: 35.704522
+lng: 139.772852
 checked: 2026-10-13
 ---
 

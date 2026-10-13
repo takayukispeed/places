@@ -7,8 +7,8 @@ address: 1-4 Kanda Ogawamachi, Chiyoda City, Tokyo
 phone:
 website: https://tsukemen-tsujita.com/
 reserve:
-lat:
-lng:
+lat: 35.694724
+lng: 139.766412
 checked: 2026-10-13
 ---
 

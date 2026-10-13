@@ -7,8 +7,8 @@ address: 2-15-15 Akasaka, Minato City, Tokyo
 phone: +81 3-3505-7882
 website:
 reserve:
-lat:
-lng:
+lat: 35.671097
+lng: 139.740694
 checked: 2026-10-13
 ---
 

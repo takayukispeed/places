@@ -7,8 +7,8 @@ address: 7-8-6 Roppongi, Minato City, Tokyo
 phone: +81 3-5786-2626
 website: https://www.tsurutontan.co.jp/
 reserve:
-lat:
-lng:
+lat: 35.664248
+lng: 139.727927
 checked: 2026-10-13
 ---
 

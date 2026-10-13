@@ -7,8 +7,8 @@ address: 2-26-3 Kabukicho, Shinjuku City, Tokyo
 phone: +81 3-5287-2626
 website: https://www.tsurutontan.co.jp/shop/shinjuku/
 reserve:
-lat:
-lng:
+lat: 35.696554
+lng: 139.704375
 checked: 2026-10-13
 ---
 

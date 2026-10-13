@@ -7,8 +7,8 @@ address: 2-14-3 Yoyogi, Shibuya City, Tokyo
 phone: +81 3-6413-8480
 website:
 reserve:
-lat:
-lng:
+lat: 35.685522
+lng: 139.699083
 checked: 2026-10-13
 ---
 

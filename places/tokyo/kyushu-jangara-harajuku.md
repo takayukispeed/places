@@ -7,8 +7,8 @@ address: 1-13-21 Jingumae, Shibuya City, Tokyo
 phone: +81 3-3404-5405
 website: https://kyushujangara.co.jp/
 reserve:
-lat:
-lng:
+lat: 35.671513
+lng: 139.705732
 checked: 2026-10-13
 ---
 

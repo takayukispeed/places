@@ -7,8 +7,8 @@ address: 1-1-25 Nishi-Ikebukuro, Toshima City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.730165
+lng: 139.709385
 checked: 2026-10-13
 ---
 

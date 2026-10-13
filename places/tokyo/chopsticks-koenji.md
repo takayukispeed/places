@@ -7,8 +7,8 @@ address: 3-22-8 Koenji-kita, Suginami City, Tokyo
 phone: +81 3-3330-3992
 website:
 reserve:
-lat:
-lng:
+lat: 35.705445
+lng: 139.648433
 checked: 2026-10-13
 ---
 

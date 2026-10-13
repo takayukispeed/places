@@ -7,8 +7,8 @@ address: 5-2-1 Ginza, Chuo City, Tokyo
 phone:
 website: https://www.tsurutontan.co.jp/
 reserve:
-lat:
-lng:
+lat: 35.670113
+lng: 139.765481
 checked: 2026-10-13
 ---
 

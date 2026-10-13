@@ -7,8 +7,8 @@ address: 2-7-2 Marunouchi, Chiyoda City, Tokyo
 phone: +81 3-6259-1133
 website:
 reserve:
-lat:
-lng:
+lat: 35.680022
+lng: 139.763447
 checked: 2026-10-13
 ---
 
