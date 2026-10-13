@@ -7,8 +7,8 @@ address: 2516 Prince Edward St, Vancouver, BC V5T 4T3
 phone: +1 604-708-5542
 website:
 reserve:
-lat:
-lng:
+lat: 49.262289
+lng: -123.095825
 checked: 2026-10-13
 ---
 
