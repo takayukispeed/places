@@ -7,8 +7,8 @@ address: 4-22-11 Ebisu, Shibuya City, Tokyo
 phone: +81 3-3444-7387
 website:
 reserve:
-lat:
-lng:
+lat: 35.644978
+lng: 139.713966
 checked: 2026-10-13
 ---
 
