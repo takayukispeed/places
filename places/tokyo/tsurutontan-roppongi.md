@@ -24,3 +24,4 @@ checked: 2026-10-13
 Udon Noodle Brasserie in big bowls; listed by [Time Out Tokyo](https://timeout.com/tokyo/restaurants/tsurutontan-roppongi). AXALL Roppongi 7F, near Roppongi Station exit 3. Other branches exist (e.g. Shibuya).
 
 - Hours: [Gurunavi](https://r.gnavi.co.jp/a345203/), October 2026; last order 07:00 (overnight) and 22:00 Sun/holidays; Sun hours also apply on holidays.
+- Pin: approximate, to the chōme (block group) of the address.

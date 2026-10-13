@@ -23,3 +23,4 @@ checked: 2026-10-13
 Akihabara main branch (本店) of the tonkotsu ramen chain, about 5 minutes from Akihabara Station Electric Town Exit ([Akihabara BC](https://en.akihabara-bc.jp/Akihabara-Kyushu-Tonkotsu-Ramen/)). Other branches exist; see the [official site](https://kyushujangara.co.jp/).
 
 - Hours: [Visit Chiyoda](https://visit-chiyoda.tokyo/app/en/spot/detail/927), October 2026; last order 21:45. Another guide lists 10:30–23:30 (09:30 opening weekends).
+- Pin: approximate, to the chōme (block group) of the address.

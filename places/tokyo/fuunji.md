@@ -23,4 +23,5 @@ checked: 2026-10-13
 
 Tsukemen shop (風雲児) known for long queues day and night ([Time Out Tokyo](https://www.timeout.com/tokyo/restaurants/fu-unji)). Hokuto Dai-ichi building 1F; about 5 minutes from Shinjuku Station south exit ([Truly Tokyo](https://trulytokyo.com/fuunji/)).
 
-- Hours: [Time Out Tokyo](https://www.timeout.com/tokyo/restaurants/fu-unji), October 2026; Closed on holidays; closes early when sold out.
+- Hours: [Time Out Tokyo](https://www.timeout.com/tokyo/restaurants/fu-unji), October 2026; closed on holidays; closes early when sold out.
+- Pin: approximate, to the chōme (block group) of the address.

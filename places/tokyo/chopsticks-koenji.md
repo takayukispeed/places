@@ -21,3 +21,4 @@ checked: 2026-10-13
 Main store, inside the Daiichi Ichiba (大一市場) building near Koenji Station; reviewers say the entrance "can be a little hard to find" ([FooTinder](https://en.footinder.app/places/6445e75589e21266cce10ad7)). Pho specialist with fresh rice noodles; serves northern Vietnamese flavours, with steamed chicken and tomato pho as the chef's pick ([Experience Suginami](https://experience-suginami.tokyo/?p=10283)). Other branches exist, including Kichijoji ([Gurunavi](https://r.gnavi.co.jp/nu05sh4z0000/)) and one reported in Mikan Shimokita, Shimokitazawa ([GLTJP](https://www.gltjp.com/en/directory/item/17128/)).
 
 - Hours: [FooTinder](https://en.footinder.app/places/6445e75589e21266cce10ad7), October 2026; Opens at 11:30; closing time not confirmed.
+- Pin: approximate, to the chōme (block group) of the address.

@@ -34,6 +34,12 @@ def geocode(query):
     return (float(hits[0]["lat"]), float(hits[0]["lon"])) if hits else None
 
 
+def japanese_chome(address):
+    """'2-14-3 Yoyogi, Shibuya City, Tokyo' -> 'Yoyogi 2-chome, Shibuya, Tokyo' (accurate to a few blocks)."""
+    m = re.match(r"(\d+)-\d+(?:-\d+)?\s+([^,]+),\s*([^,]+?)(?:\s+(?:City|Ward|Ku))?,\s*Tokyo\b", address)
+    return f"{m.group(2)} {m.group(1)}-chome, {m.group(3)}, Tokyo" if m else ""
+
+
 def main():
     filled = 0
     for path in sorted(ROOT.glob("places/*/*.md")):
@@ -51,6 +57,11 @@ def main():
                 plain = re.sub(r",\s*(local|suite|unit|unité|bureau|#)\s*[\w-]+", "", plain, flags=re.I)
                 hit = geocode(plain)
                 time.sleep(1.1)
+            if not hit:  # Japanese block addresses ("2-14-3 Yoyogi, Shibuya City, Tokyo"): fall back to the chome
+                chome = japanese_chome(address)
+                if chome:
+                    hit = geocode(chome)
+                    time.sleep(1.1)
         except Exception as err:  # network trouble: leave it for the next run
             print(f"{path.relative_to(ROOT)}: {err}")
             continue

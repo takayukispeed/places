@@ -24,3 +24,4 @@ checked: 2026-10-13
 Kabukicho branch of the udon chain, Amimoto Building B1F ([Foodle](https://foodle.pro/restaurants/tokyo/tsurutontan-shinjuku)). Other branches exist (e.g. Shibuya).
 
 - Hours: [Gurunavi](https://r.gnavi.co.jp/a345201/), October 2026; Sun hours also apply on holidays.
+- Pin: approximate, to the chōme (block group) of the address.

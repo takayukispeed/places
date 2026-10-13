@@ -24,3 +24,4 @@ checked: 2026-10-13
 Kyushu-style tonkotsu ramen chain; listed by [Time Out Tokyo](https://www.timeout.com/tokyo/restaurants/kyushu-jangara-ramen). Shanzel Harajuku 2 building, 1F ([TV Tokyo](https://www.tv-tokyo.co.jp/adomachi/backnumber/20211030/142233.html)). About 2 minutes from JR Harajuku Station. Other branches exist; see the [official site](https://kyushujangara.co.jp/).
 
 - Hours: [Time Out Tokyo](https://www.timeout.com/tokyo/restaurants/kyushu-jangara-ramen), October 2026; Sat/Sun hours also apply on holidays. Another source lists 10:00–22:00.
+- Pin: approximate, to the chōme (block group) of the address.

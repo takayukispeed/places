@@ -24,3 +24,4 @@ checked: 2026-10-13
 Akasaka branch of the Kyushu tonkotsu ramen chain. Other branches exist; see the [official site](https://kyushujangara.co.jp/).
 
 - Hours: [Tabelog](https://tabelog.com/tokyo/A1308/A130801/13002906/), October 2026; last order 21:45 on weekdays.
+- Pin: approximate, to the chōme (block group) of the address.

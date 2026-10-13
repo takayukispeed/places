@@ -23,3 +23,4 @@ checked: 2026-10-13
 TsuruTonTan Udon Noodle Brasserie on Tokyu Plaza Ginza 10F ([Time Out Tokyo](https://www.timeout.jp/tokyo/ja/レストラン/tsurutontan-udon-noodle-brasserie-ginza)). Other branches exist (e.g. Shibuya).
 
 - Hours: [Time Out Tokyo](https://www.timeout.jp/tokyo/ja/レストラン/tsurutontan-udon-noodle-brasserie-ginza), October 2026; last order 22:00. Another article says it stays open to 04:00 on weekdays and Saturdays.
+- Pin: approximate, to the chōme (block group) of the address.

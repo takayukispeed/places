@@ -24,3 +24,4 @@ checked: 2026-10-13
 Inside Tobu Department Store Ikebukuro ([Precious](https://precious.jp/articles/-/20914)). Other branches exist.
 
 - Hours: [Precious](https://precious.jp/articles/-/20914), October 2026; Closes 20:00 on public holidays; follows Tobu Department Store hours and closing days.
+- Pin: approximate, to the chōme (block group) of the address.

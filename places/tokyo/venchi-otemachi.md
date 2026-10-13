@@ -24,3 +24,4 @@ checked: 2026-10-13
 In Otemachi One, 1F unit 103; opened as Venchi's third store in Japan ([Precious](https://precious.jp/articles/-/19989)). Other branches exist.
 
 - Hours: [Precious](https://precious.jp/articles/-/19989), October 2026; Closed on public holidays.
+- Pin: approximate, to the chōme (block group) of the address.
