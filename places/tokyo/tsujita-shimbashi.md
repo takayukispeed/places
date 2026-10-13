@@ -7,8 +7,8 @@ address: 1-19-8 Nishi-Shimbashi, Minato City, Tokyo
 phone:
 website: https://tsukemen-tsujita.com/
 reserve:
-lat:
-lng:
+lat: 35.6679
+lng: 139.7536
 checked: 2026-10-13
 ---
 
