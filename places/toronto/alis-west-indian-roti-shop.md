@@ -7,8 +7,8 @@ address: 1446 Queen St W, Toronto, ON M6K 1M2
 phone: +1 416-532-7701
 website:
 reserve:
-lat:
-lng:
+lat: 43.64085
+lng: -79.435956
 checked: 2026-10-13
 ---
 

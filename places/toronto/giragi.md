@@ -7,8 +7,8 @@ address: 486 Front St W, Toronto, ON M5V 0V2
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 43.643088
+lng: -79.394951
 checked: 2026-10-13
 ---
 

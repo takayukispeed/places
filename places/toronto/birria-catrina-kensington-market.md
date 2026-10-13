@@ -7,8 +7,8 @@ address: 214 Augusta Ave, Toronto, ON
 phone: +1 647-532-7104
 website: https://www.birriacatrina.com/
 reserve:
-lat:
-lng:
+lat: 43.65473
+lng: -79.40235
 checked: 2026-10-13
 ---
 

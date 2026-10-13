@@ -7,8 +7,8 @@ address: 1028 Bloor St W, Toronto, ON M6H 1M4
 phone:
 website: https://gustacos.com/bloor/
 reserve:
-lat:
-lng:
+lat: 43.660863
+lng: -79.431395
 checked: 2026-10-13
 ---
 

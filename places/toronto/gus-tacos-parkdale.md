@@ -7,8 +7,8 @@ address: 1533 Queen St W, Toronto, ON M6R 1A7
 phone:
 website: https://gustacos.com/queen/
 reserve:
-lat:
-lng:
+lat: 43.639257
+lng: -79.442717
 checked: 2026-10-13
 ---
 

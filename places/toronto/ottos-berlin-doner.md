@@ -7,8 +7,8 @@ address: 256 Augusta Ave, Toronto, ON
 phone: +1 647-347-7713
 website:
 reserve:
-lat:
-lng:
+lat: 43.656183
+lng: -79.402876
 checked: 2026-10-13
 ---
 

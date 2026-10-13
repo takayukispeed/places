@@ -7,8 +7,8 @@ address: 131 Roncesvalles Ave, Toronto, ON
 phone:
 website: https://www.birriacatrina.com/
 reserve:
-lat:
-lng:
+lat: 43.643108
+lng: -79.447565
 checked: 2026-10-13
 ---
 

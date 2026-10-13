@@ -7,8 +7,8 @@ address: 1546 Dupont St, Toronto, ON M6P 3S6
 phone: +1 416-763-2525
 website: https://gustacos.com/dupont/
 reserve:
-lat:
-lng:
+lat: 43.665575
+lng: -79.452621
 checked: 2026-10-13
 ---
 

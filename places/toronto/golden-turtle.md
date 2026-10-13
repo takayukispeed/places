@@ -7,8 +7,8 @@ address: 125 Ossington Ave, Toronto, ON
 phone: +1 416-531-1601
 website:
 reserve:
-lat:
-lng:
+lat: 43.646811
+lng: -79.419623
 checked: 2026-10-13
 ---
 

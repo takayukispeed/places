@@ -7,8 +7,8 @@ address: 114 Atlantic Ave, Toronto, ON
 phone: +1 416-537-7082
 website:
 reserve:
-lat:
-lng:
+lat: 43.639456
+lng: -79.421286
 checked: 2026-10-13
 ---
 

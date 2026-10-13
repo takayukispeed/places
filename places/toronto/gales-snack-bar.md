@@ -7,8 +7,8 @@ address: 539 Eastern Ave, Toronto, ON
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 43.658218
+lng: -79.339129
 checked: 2026-10-13
 ---
 

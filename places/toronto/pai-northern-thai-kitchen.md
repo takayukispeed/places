@@ -7,8 +7,8 @@ address: 18 Duncan St, Toronto, ON
 phone: +1 416-901-4724
 website:
 reserve: https://opentable.com/restaurant/profile/231088
-lat:
-lng:
+lat: 43.647835
+lng: -79.388714
 checked: 2026-10-13
 ---
 

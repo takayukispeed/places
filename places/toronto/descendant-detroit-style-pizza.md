@@ -7,8 +7,8 @@ address: 1168 Queen St E, Toronto, ON
 phone: +1 647-347-1168
 website:
 reserve:
-lat:
-lng:
+lat: 43.662889
+lng: -79.332389
 checked: 2026-10-13
 ---
 

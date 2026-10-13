@@ -7,8 +7,8 @@ address: 195 Roncesvalles Ave, Toronto, ON M6R 2L5
 phone: +1 416-532-8432
 website:
 reserve:
-lat:
-lng:
+lat: 43.64516
+lng: -79.448213
 checked: 2026-10-13
 ---
 

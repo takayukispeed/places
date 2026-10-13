@@ -7,8 +7,8 @@ address: 9 Boustead Ave, Toronto, ON M6R 1Y7
 phone: +1 416-537-3588
 website:
 reserve:
-lat:
-lng:
+lat: 43.653355
+lng: -79.452135
 checked: 2026-10-13
 ---
 

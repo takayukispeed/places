@@ -7,8 +7,8 @@ address: 1365 Gerrard St E, Toronto, ON
 phone: +1 416-406-1668
 website:
 reserve:
-lat:
-lng:
+lat: 43.671494
+lng: -79.324811
 checked: 2026-10-13
 ---
 

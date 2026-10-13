@@ -7,8 +7,8 @@ address: 225 Augusta Ave, Toronto, ON M5T 2L4
 phone:
 website: https://gustacos.com/
 reserve:
-lat:
-lng:
+lat: 43.654363
+lng: -79.401782
 checked: 2026-10-13
 ---
 

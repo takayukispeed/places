@@ -7,8 +7,8 @@ address: 196 Borden St, Toronto, ON
 phone: +1 647-438-8287
 website: https://niceslice.pizza/
 reserve:
-lat:
-lng:
+lat: 43.661818
+lng: -79.407258
 checked: 2026-10-13
 ---
 
