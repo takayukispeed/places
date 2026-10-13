@@ -7,8 +7,8 @@ address: Knaackstraße 94, 10435 Berlin
 phone: +49 30 21941671
 website:
 reserve:
-lat:
-lng:
+lat: 52.539878
+lng: 13.414748
 checked: 2026-10-13
 ---
 
