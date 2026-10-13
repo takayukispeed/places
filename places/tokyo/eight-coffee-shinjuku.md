@@ -7,8 +7,8 @@ address: 1-15-5 Shinjuku, Shinjuku City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.689541
+lng: 139.713025
 checked: 2026-10-13
 ---
 
