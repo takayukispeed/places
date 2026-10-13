@@ -7,8 +7,8 @@ address: Gneisenaustraße 67, 10961 Berlin
 phone: +49 30 49924844
 website:
 reserve:
-lat:
-lng:
+lat: 52.490317
+lng: 13.402038
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: Waitzstraße 1, 10629 Berlin
 phone: +49 30 55594563
 website:
 reserve: https://www.opentable.co.uk/r/salhino-berlin
-lat:
-lng:
+lat: 52.503272
+lng: 13.305538
 checked: 2026-10-13
 ---
 

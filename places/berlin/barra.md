@@ -7,8 +7,8 @@ address: Okerstraße 2, 12049 Berlin
 phone: +49 30 81860757
 website:
 reserve:
-lat:
-lng:
+lat: 52.474337
+lng: 13.426975
 checked: 2026-10-13
 ---
 

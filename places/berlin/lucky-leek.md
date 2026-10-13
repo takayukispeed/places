@@ -7,8 +7,8 @@ address: Kollwitzstraße 54, 10405 Berlin
 phone: +49 30 66408710
 website:
 reserve:
-lat:
-lng:
+lat: 52.534901
+lng: 13.416841
 checked: 2026-10-13
 ---
 

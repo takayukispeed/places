@@ -7,8 +7,8 @@ address: Leibnizstraße 55, 10629 Berlin
 phone: +49 30 50178033
 website:
 reserve:
-lat:
-lng:
+lat: 52.501429
+lng: 13.312859
 checked: 2026-10-13
 ---
 

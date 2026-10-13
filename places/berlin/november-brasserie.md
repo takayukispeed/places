@@ -7,8 +7,8 @@ address: Husemannstraße 15, 10435 Berlin
 phone: +49 162 3332135
 website:
 reserve:
-lat:
-lng:
+lat: 52.538102
+lng: 13.417376
 checked: 2026-10-13
 ---
 

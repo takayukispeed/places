@@ -7,8 +7,8 @@ address: Torstraße 48, 10119 Berlin
 phone: +49 30 27593090
 website:
 reserve:
-lat:
-lng:
+lat: 52.528341
+lng: 13.410459
 checked: 2026-10-13
 ---
 

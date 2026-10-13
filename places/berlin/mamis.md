@@ -7,8 +7,8 @@ address: Oderberger Straße 13, 10435 Berlin
 phone: +49 176 70293503
 website:
 reserve:
-lat:
-lng:
+lat: 52.5391
+lng: 13.408802
 checked: 2026-10-13
 ---
 

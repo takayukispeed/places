@@ -7,8 +7,8 @@ address: Spichernstraße 24, 10777 Berlin
 phone: +49 30 56007395
 website:
 reserve:
-lat:
-lng:
+lat: 52.497793
+lng: 13.334105
 checked: 2026-10-13
 ---
 
