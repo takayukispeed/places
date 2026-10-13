@@ -7,8 +7,8 @@ address: 163 Keefer Street, Vancouver, BC V6A 1X3
 phone: +1 604-688-0876
 website: https://www.bao-bei.ca/
 reserve:
-lat:
-lng:
+lat: 49.27962
+lng: -123.10057
 checked: 2026-10-12
 ---
 

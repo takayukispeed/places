@@ -7,8 +7,8 @@ address: 162 Water St, Vancouver, BC
 phone: +1 604-568-7022
 website: https://www.pourhousevancouver.com/
 reserve: https://www.exploretock.com/pourhouse
-lat:
-lng:
+lat: 49.284131
+lng: -123.108383
 checked: 2026-10-12
 ---
 

@@ -7,8 +7,8 @@ address: 1622 Commercial Drive, Vancouver, BC V5L 3Y4
 phone: +1 604-559-8226
 website: https://www.lamezcaleria.ca/
 reserve: https://www.opentable.ca/r/la-mezcaleria-vancouver
-lat:
-lng:
+lat: 49.27013
+lng: -123.069429
 checked: 2026-10-12
 ---
 
