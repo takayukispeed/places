@@ -7,8 +7,8 @@ address: 6-3-27 Daita, Setagaya City, Tokyo
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 35.664418
+lng: 139.66309
 checked: 2026-10-13
 ---
 
