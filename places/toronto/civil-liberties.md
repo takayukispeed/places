@@ -7,8 +7,8 @@ address: 878 Bloor St W, Toronto, ON M6G 1M5
 phone: +1 416-546-5634
 website:
 reserve:
-lat:
-lng:
+lat: 43.662219
+lng: -79.425213
 checked: 2026-10-13
 ---
 

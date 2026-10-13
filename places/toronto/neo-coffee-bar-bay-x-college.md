@@ -7,8 +7,8 @@ address: 770 Bay St, Toronto, ON M5G 0A6
 phone: +1 647-345-0770
 website: https://www.neocoffeebar.com
 reserve:
-lat:
-lng:
+lat: 43.660154
+lng: -79.386032
 checked: 2026-10-13
 ---
 

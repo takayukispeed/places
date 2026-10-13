@@ -7,8 +7,8 @@ address: 155 University Ave, Toronto, ON M5H 3B7
 phone: +1 416-551-0433
 website: https://www.pizzerialibretto.com/
 reserve: https://www.opentable.ca/pizzeria-libretto-university
-lat:
-lng:
+lat: 43.648558
+lng: -79.384755
 checked: 2026-10-13
 ---
 

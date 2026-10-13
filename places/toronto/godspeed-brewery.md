@@ -7,8 +7,8 @@ address: 242 Coxwell Ave, Toronto, ON M4L 3B2
 phone: +1 416-551-2282
 website: https://www.godspeedbrewery.com/
 reserve:
-lat:
-lng:
+lat: 43.672494
+lng: -79.319344
 checked: 2026-10-13
 ---
 

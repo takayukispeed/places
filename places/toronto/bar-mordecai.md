@@ -7,8 +7,8 @@ address: 1272 Dundas St W, Toronto, ON M6J 1X7
 phone: +1 416-537-4343
 website: https://www.barmordecai.com/
 reserve:
-lat:
-lng:
+lat: 43.649578
+lng: -79.425045
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: 1084 Queen St W, Toronto, ON M6J 1H8
 phone: +1 416-533-7745
 website:
 reserve: https://www.opentable.ca/r/bar-piquette-toronto
-lat:
-lng:
+lat: 43.643728
+lng: -79.422
 checked: 2026-10-13
 ---
 

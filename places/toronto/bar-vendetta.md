@@ -7,8 +7,8 @@ address: 928 Dundas St W, Toronto, ON M6J 1W3
 phone: +1 416-551-8854
 website:
 reserve: https://www.opentable.ca/r/bar-vendetta-toronto
-lat:
-lng:
+lat: 43.650948
+lng: -79.413251
 checked: 2026-10-13
 ---
 

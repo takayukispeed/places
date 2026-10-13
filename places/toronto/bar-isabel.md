@@ -7,8 +7,8 @@ address: 797 College St, Toronto, ON M6G 1C7
 phone: +1 416-532-2222
 website:
 reserve: https://www.opentable.ca/r/bar-isabel-toronto
-lat:
-lng:
+lat: 43.65463
+lng: -79.42079
 checked: 2026-10-13
 ---
 

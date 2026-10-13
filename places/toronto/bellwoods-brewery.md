@@ -7,8 +7,8 @@ address: 124 Ossington Ave, Toronto, ON M6J 2Z5
 phone: +1 416-535-4586
 website: https://bellwoodsbrewery.com/
 reserve:
-lat:
-lng:
+lat: 43.647033
+lng: -79.420176
 checked: 2026-10-13
 ---
 

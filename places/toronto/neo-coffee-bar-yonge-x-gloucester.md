@@ -7,8 +7,8 @@ address: 12 Gloucester St, Toronto, ON M4Y 1L5
 phone: +1 416-920-5156
 website: https://www.neocoffeebar.com/location-yonge-x-gloucester
 reserve:
-lat:
-lng:
+lat: 43.66681
+lng: -79.38469
 checked: 2026-10-13
 ---
 

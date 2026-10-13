@@ -7,8 +7,8 @@ address: 221 Ossington Ave, Toronto, ON M6J 2Z8
 phone: +1 416-532-8000
 website: https://www.pizzerialibretto.com/
 reserve: https://www.opentable.ca/restaurant/profile/250039
-lat:
-lng:
+lat: 43.648962
+lng: -79.42028
 checked: 2026-10-13
 ---
 

@@ -7,8 +7,8 @@ address: 607 College St, Toronto, ON M6G 1B5
 phone: +1 416-516-1111
 website: https://www.pompette.ca/barpompette
 reserve:
-lat:
-lng:
+lat: 43.655004
+lng: -79.414352
 checked: 2026-10-13
 ---
 

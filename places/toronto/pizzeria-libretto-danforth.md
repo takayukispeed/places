@@ -7,8 +7,8 @@ address: 550 Danforth Ave, Toronto, ON M4K 1P7
 phone: +1 416-466-0400
 website: https://www.pizzerialibretto.com/
 reserve: https://www.opentable.ca/pizzeria-libretto-danforth
-lat:
-lng:
+lat: 43.67855
+lng: -79.34766
 checked: 2026-10-13
 ---
 

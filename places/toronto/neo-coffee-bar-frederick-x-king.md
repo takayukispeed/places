@@ -7,8 +7,8 @@ address: 161 Frederick St, Toronto, ON M5A 4P3
 phone: +1 647-348-8811
 website: https://www.neocoffeebar.com/location-frederick-x-king
 reserve:
-lat:
-lng:
+lat: 43.650678
+lng: -79.369151
 checked: 2026-10-13
 ---
 

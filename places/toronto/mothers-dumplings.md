@@ -7,8 +7,8 @@ address: 421 Spadina Ave, Toronto, ON M5T 2G6
 phone: +1 416-217-2008
 website:
 reserve:
-lat:
-lng:
+lat: 43.657121
+lng: -79.399435
 checked: 2026-10-13
 ---
 

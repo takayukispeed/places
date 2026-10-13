@@ -7,8 +7,8 @@ address: 408 Queen St W, Toronto, ON
 phone: +1 416-703-0811
 website: https://www.thecameron.com/
 reserve:
-lat:
-lng:
+lat: 43.648621
+lng: -79.397584
 checked: 2026-10-13
 ---
 

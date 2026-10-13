@@ -7,8 +7,8 @@ address: 874 Queen St W, Toronto, ON
 phone: +1 416-537-1928
 website: https://motherdrinks.co/
 reserve: https://www.opentable.com/r/mother-cocktail-bar-toronto
-lat:
-lng:
+lat: 43.645203
+lng: -79.414397
 checked: 2026-10-13
 ---
 

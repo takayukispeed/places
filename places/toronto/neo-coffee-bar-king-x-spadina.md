@@ -7,8 +7,8 @@ address: 61 Spadina Ave, Toronto, ON M5V 2J2
 phone: +1 437-915-9155
 website: https://www.neocoffeebar.com/location-king-x-spadina
 reserve:
-lat:
-lng:
+lat: 43.645046
+lng: -79.394524
 checked: 2026-10-13
 ---
 

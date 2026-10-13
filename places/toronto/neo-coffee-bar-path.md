@@ -7,8 +7,8 @@ address: 130 King St W, Toronto, ON M5X 2A2
 phone: +1 647-398-9460
 website: https://www.neocoffeebar.com/location-path
 reserve:
-lat:
-lng:
+lat: 43.648418
+lng: -79.383242
 checked: 2026-10-13
 ---
 

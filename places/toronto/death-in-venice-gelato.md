@@ -7,8 +7,8 @@ address: 1418 Dundas St W, Toronto, ON M6J 1Y5
 phone: +1 416-509-3044
 website: https://deathinvenice.ca
 reserve:
-lat:
-lng:
+lat: 43.64971
+lng: -79.429306
 checked: 2026-10-13
 ---
 
