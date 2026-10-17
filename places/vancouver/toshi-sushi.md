@@ -7,8 +7,8 @@ address: 181 E 16th Ave, Vancouver, BC V5T 4R2
 phone: +1 604-874-5173
 website:
 reserve:
-lat:
-lng:
+lat: 49.256744
+lng: -123.101895
 checked: 2026-10-17
 ---
 
