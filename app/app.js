@@ -104,7 +104,7 @@ async function sync({ quiet = false } = {}) {
     const tree = bundle
       ? { tree: Object.entries(bundle.files).map(([path, f]) => ({ path, type: "blob", sha: f.sha })) }
       : await (await gh(`/git/trees/${BRANCH}?recursive=1`)).json();
-    const wanted = tree.tree.filter((e) => e.type === "blob" && /^(places|suggestions)\/[^/]+\/[^/]+\.md$/.test(e.path));
+    const wanted = tree.tree.filter((e) => e.type === "blob" && /^((places|suggestions)\/[^/]+\/[^/]+\.md|inbox\/[^/]+\.json)$/.test(e.path));
     const next = {};
     const todo = [];
     for (const e of wanted) {
@@ -167,7 +167,20 @@ function rebuild() {
     .map(([path, f]) => ({ path, ...parsePlace(f.text) }))
     .sort((a, b) => a.name.localeCompare(b.name));
   state.places = read("places/");
-  state.suggestions = read("suggestions/");
+  // Friends' suggestions straight from the form (inbox/*.json), plus any drafts in suggestions/.
+  const inbox = Object.entries(state.files).filter(([p]) => p.startsWith("inbox/")).map(([path, f]) => inboxPlace(path, f.text));
+  state.suggestions = [...inbox.filter(Boolean), ...read("suggestions/")];
+}
+
+// A form submission ({name, city, by, note}) as a bare place, to fill in when adding it.
+function inboxPlace(path, text) {
+  let s;
+  try { s = JSON.parse(text); } catch { return null; }
+  if (!s || typeof s.name !== "string" || !s.name.trim()) return null;
+  const clean = (v) => (typeof v === "string" ? v.replace(/\s+/g, " ").trim() : "");
+  const by = clean(s.by), note = clean(s.note);
+  const notes = [`- Suggested${by ? ` by ${by}` : ""}.`, note ? `- Their note: "${note}"` : ""].filter(Boolean).join("\n");
+  return { ...parsePlace(serializePlace({ name: clean(s.name), city: clean(s.city), notes, hours: [] })), path, inbox: true };
 }
 
 function uniquePath(folder, title) {
@@ -1063,11 +1076,11 @@ function suggestionView(p) {
   app.insertAdjacentHTML("beforeend", `
     <div class="review-bar" role="group" aria-label="Review">
       <button id="reject" class="rv rv-reject">Reject</button>
-      <button id="edit-approve" class="rv">Edit</button>
-      <button id="approve" class="rv rv-approve">Approve</button>
+      <button id="edit-approve" class="rv${p.inbox ? " rv-approve" : ""}">${p.inbox ? "Add…" : "Edit"}</button>
+      ${p.inbox ? "" : '<button id="approve" class="rv rv-approve">Approve</button>'}
     </div>`);
   document.body.classList.add("reviewing");
-  $("#approve").onclick = () => withBusy($("#approve"), async () => {
+  if ($("#approve")) $("#approve").onclick = () => withBusy($("#approve"), async () => {
     const path = uniquePath(placePath(p), p.name);
     await saveFile(path, state.files[p.path].text, `Add place: ${p.name} (suggested)`);
     await deleteFile(p.path, `Approve suggestion: ${p.name}`);
@@ -1120,7 +1133,7 @@ function showRoute(route) {
   if (route === "/new/place") return placeEditor(null);
   if (route === "/suggest") return SUGGEST_URL ? suggestView() : notFound();
   if (route === "/suggestions") return suggestionsView();
-  if ((m = route.match(/^\/(suggestion|approve)\/(suggestions\/.+)$/))) {
+  if ((m = route.match(/^\/(suggestion|approve)\/((?:suggestions|inbox)\/.+)$/))) {
     const s = state.suggestions.find((p) => p.path === m[2]);
     if (!s) return state.lastSync ? suggestionsView() : (app.innerHTML = '<p class="empty">Loading…</p>');
     return m[1] === "suggestion" ? suggestionView(s) : placeEditor(s, s.path);

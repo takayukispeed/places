@@ -29,7 +29,8 @@ const server = http.createServer((req, res) => {
 
 // In-memory fake of the repo, seeded from places/.
 const repo = {};
-for (const city of fs.readdirSync(path.join(ROOT, "places"))) {
+// The three original cities: the checks below assume Montréal sorts first.
+for (const city of ["montreal", "toronto", "vancouver"]) {
   for (const f of fs.readdirSync(path.join(ROOT, "places", city)).filter((f) => f.endsWith(".md"))) {
     repo[`places/${city}/${f}`] = fs.readFileSync(path.join(ROOT, "places", city, f), "utf8");
   }
@@ -326,6 +327,24 @@ const KAZU = [{
   assert.ok(!repo["suggestions/toronto/sugg-two.md"] && !repo["places/toronto/sugg-two.md"]);
   assert.equal(await page.locator(".review-banner").count(), 0, "nothing left to review");
 
+  // A form submission (inbox/*.json) shows up for review straight away; adding it means filling it in
+  repo["inbox/2026-10-18T12-00-00-000Z-new-spot.json"] = JSON.stringify({ name: "New Spot", city: "Toronto", by: "Ana", note: "Great patio", at: "2026-10-18T12:00:00.000Z" });
+  await page.click("#sync");
+  await page.waitForSelector(".review-banner");
+  assert.equal((await page.textContent(".review-banner")).trim(), "1 suggested place to review");
+  await page.click(".review-banner");
+  await page.click("text=New Spot");
+  await page.waitForSelector("text=Great patio");
+  assert.equal(await page.locator("#approve").count(), 0, "a bare suggestion can't be approved as is");
+  await page.click("#edit-approve");
+  assert.equal(await page.inputValue("#name"), "New Spot");
+  await page.selectOption("#category", "bar");
+  await page.fill("#address", "2 Test St, Toronto, ON");
+  await page.click("#save");
+  await page.waitForURL(/#\/view\/places\/toronto\/new-spot\.md$/);
+  assert.match(repo["places/toronto/new-spot.md"], /category: bar\n[\s\S]*- Suggested by Ana\.\n- Their note: "Great patio"/);
+  assert.ok(!repo["inbox/2026-10-18T12-00-00-000Z-new-spot.json"], "the inbox file is removed");
+
   // Unknown pages
   await page.goto(base + "#/view/places/montreal/nope.md");
   await page.waitForSelector("text=That page isn't here");
@@ -341,6 +360,7 @@ const KAZU = [{
   assert.deepEqual(commits.map((c) => c.message), [
     "Add place: Kazu", "Update place: Kazu", "Update place: Kazu", "Move place: Kazu", "Delete place: Kazu",
     "Add place: Sugg One (suggested)", "Approve suggestion: Sugg One", "Reject suggestion: Sugg Two",
+    "Add place: New Spot", "Approve suggestion: New Spot",
   ]);
   assert.deepEqual(errors, []);
   await browser.close();

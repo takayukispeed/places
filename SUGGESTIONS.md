@@ -2,7 +2,7 @@
 
 Friends suggest places from the app's **Suggest a place** form. Each suggestion is a small JSON file in `inbox/` (name, city, and optionally who sent it and a note), saved there by the Cloudflare Worker in `worker/suggest.js`.
 
-A scheduled Claude session runs this once a day. It turns each inbox file into a researched draft in `suggestions/<city>/`. The owner reviews drafts in the app and approves, edits or rejects them. Nothing in `suggestions/` appears on the map until it is approved.
+The app shows inbox files for review as they arrive, so this is optional: run it (by hand, when asked) to turn inbox files into researched drafts in `suggestions/<city>/`. The owner reviews everything in the app and adds, edits or rejects it. Nothing in `inbox/` or `suggestions/` appears on the map until it is approved.
 
 ## Steps
 
