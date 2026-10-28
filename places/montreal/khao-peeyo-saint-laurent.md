@@ -3,7 +3,7 @@ name: Khao Peeyo (Saint-Laurent)
 city: Montréal
 category: sitdown
 area: Saint-Laurent
-address: 217 Boulevard de la Côte-Vertu Ouest, Montréal, QC H4N 0A4
+address: 217 Boulevard Côte-Vertu Ouest, Saint-Laurent, QC
 phone: +1 514-299-8551
 website: https://khao-peeyo.com/
 reserve:

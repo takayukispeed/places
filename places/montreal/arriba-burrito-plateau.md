@@ -3,7 +3,7 @@ name: Arriba Burrito (Plateau)
 city: Montréal
 category: cheap
 area: Plateau
-address: 322 Avenue du Mont-Royal E, Montréal, QC
+address: 322 Avenue du Mont-Royal Est, Montréal, QC
 phone:
 website:
 reserve:
