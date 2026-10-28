@@ -7,8 +7,8 @@ address: 322 Avenue du Mont-Royal Est, Montréal, QC
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.523153
+lng: -73.583425
 checked: 2026-10-28
 ---
 
