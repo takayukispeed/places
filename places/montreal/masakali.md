@@ -7,8 +7,8 @@ address: 1015 Rue Sherbrooke Ouest, Montréal, QC H3A 1G5
 phone: +1 514-228-6777
 website: https://masakalimontreal.ca/
 reserve:
-lat:
-lng:
+lat: 45.502177
+lng: -73.576595
 checked: 2026-10-28
 ---
 

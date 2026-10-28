@@ -7,8 +7,8 @@ address: 85 Avenue du Mont-Royal Ouest, Montréal, QC H2T 2S5
 phone: +1 514-357-8395
 website:
 reserve:
-lat:
-lng:
+lat: 45.519166
+lng: -73.587401
 checked: 2026-10-28
 ---
 

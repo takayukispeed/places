@@ -7,8 +7,8 @@ address: 4084 Rue Saint-Denis, Montréal, QC H2W 2M5
 phone: +1 438-341-5318
 website:
 reserve:
-lat:
-lng:
+lat: 45.520904
+lng: -73.576599
 checked: 2026-10-28
 ---
 

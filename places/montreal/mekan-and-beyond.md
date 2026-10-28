@@ -7,8 +7,8 @@ address: 5050 Chemin de la Côte-des-Neiges, Montréal, QC H3V 1G6
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.49466
+lng: -73.618689
 checked: 2026-10-28
 ---
 

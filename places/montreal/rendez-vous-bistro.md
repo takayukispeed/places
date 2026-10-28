@@ -7,8 +7,8 @@ address: 3443 Rue Saint-Denis, Montréal, QC
 phone:
 website:
 reserve: https://www.opentable.com/r/rendez-vous-indian-bistro-indian-cuisine-redefined-montreal
-lat:
-lng:
+lat: 45.517524
+lng: -73.568251
 checked: 2026-10-28
 ---
 

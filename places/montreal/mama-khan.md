@@ -7,8 +7,8 @@ address: 4135 Rue Saint-Denis, Montréal, QC H2W 2M7
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.521568
+lng: -73.577245
 checked: 2026-10-28
 ---
 

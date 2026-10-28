@@ -7,8 +7,8 @@ address: 4137 Rue Sainte-Catherine Est, Montréal, QC H1V 1X1
 phone: +1 514-712-6849
 website: https://khao-peeyo.com/location/st_catherine/
 reserve:
-lat:
-lng:
+lat: 45.549014
+lng: -73.535331
 checked: 2026-10-28
 ---
 

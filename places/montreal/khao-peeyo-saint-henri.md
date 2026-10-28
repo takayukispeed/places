@@ -7,8 +7,8 @@ address: 3704 Rue Notre-Dame Ouest, Montréal, QC H4C 1P7
 phone: +1 438-375-3575
 website: https://khao-peeyo.com/location/montreal/
 reserve:
-lat:
-lng:
+lat: 45.479191
+lng: -73.581468
 checked: 2026-10-28
 ---
 

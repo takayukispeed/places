@@ -7,8 +7,8 @@ address: 1211 Rue Bélanger, Montréal, QC
 phone: +1 514-398-0184
 website:
 reserve:
-lat:
-lng:
+lat: 45.542009
+lng: -73.607697
 checked: 2026-10-28
 ---
 

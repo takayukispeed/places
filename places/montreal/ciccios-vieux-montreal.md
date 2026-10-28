@@ -7,8 +7,8 @@ address: 411 Rue Saint-Nicolas, Montréal, QC H2Y 2P1
 phone: +1 514-419-0900
 website:
 reserve:
-lat:
-lng:
+lat: 45.502252
+lng: -73.555771
 checked: 2026-10-28
 ---
 

@@ -7,8 +7,8 @@ address: 1593 Rue Saint-Denis, Montréal, QC H2X 3K3
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.514813
+lng: -73.562531
 checked: 2026-10-28
 ---
 

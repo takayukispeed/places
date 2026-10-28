@@ -7,8 +7,8 @@ address: 17 Rue Prince-Arthur Est, Montréal, QC
 phone: +1 514-564-8666
 website:
 reserve: https://restoenligne.com/en/reservations/new/diablos-bbq
-lat:
-lng:
+lat: 45.514314
+lng: -73.572377
 checked: 2026-10-28
 ---
 

@@ -7,8 +7,8 @@ address: 19 Avenue du Mont-Royal Est, Montréal, QC H2T 1N4
 phone: +1 514-987-8660
 website:
 reserve:
-lat:
-lng:
+lat: 45.520389
+lng: -73.586274
 checked: 2026-10-28
 ---
 

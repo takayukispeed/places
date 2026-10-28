@@ -7,8 +7,8 @@ address: 1263 Rue Bélanger, Montréal, QC H2S 1J1
 phone: +1 514-273-2383
 website:
 reserve:
-lat:
-lng:
+lat: 45.542666
+lng: -73.60714
 checked: 2026-10-28
 ---
 

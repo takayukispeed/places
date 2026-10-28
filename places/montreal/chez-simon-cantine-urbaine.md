@@ -7,8 +7,8 @@ address: 8517 Rue Hochelaga, Montréal, QC H1L 2M1
 phone: +1 438-375-9281
 website:
 reserve:
-lat:
-lng:
+lat: 45.59933
+lng: -73.521369
 checked: 2026-10-28
 ---
 

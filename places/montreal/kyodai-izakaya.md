@@ -7,8 +7,8 @@ address: 2186 Rue Sainte-Catherine Ouest, Montréal, QC
 phone: +1 438-372-8348
 website:
 reserve:
-lat:
-lng:
+lat: 45.490295
+lng: -73.582858
 checked: 2026-10-28
 ---
 

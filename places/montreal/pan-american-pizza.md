@@ -7,8 +7,8 @@ address: 6631 Rue Jeanne-Mance, Montréal, QC H2V 4L1
 phone: +1 438-380-8082
 website:
 reserve:
-lat:
-lng:
+lat: 45.528766
+lng: -73.614243
 checked: 2026-10-28
 ---
 

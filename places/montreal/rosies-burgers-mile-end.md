@@ -7,8 +7,8 @@ address: 210 Rue Saint-Viateur Ouest, Montréal, QC H2T 2L5
 phone: +1 438-380-0776
 website:
 reserve:
-lat:
-lng:
+lat: 45.523068
+lng: -73.601263
 checked: 2026-10-28
 ---
 

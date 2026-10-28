@@ -7,8 +7,8 @@ address: 4495 Boulevard Saint-Laurent, Montréal, QC H2W 1Z8
 phone: +1 514-842-5518
 website:
 reserve:
-lat:
-lng:
+lat: 45.520133
+lng: -73.586165
 checked: 2026-10-28
 ---
 

@@ -7,8 +7,8 @@ address: 4090 Rue Sainte-Catherine Ouest, Montréal, QC H3Z 1P2
 phone: +1 514-933-1171
 website:
 reserve: https://restoenligne.com/en/reservations/new/bistro-moku
-lat:
-lng:
+lat: 45.487635
+lng: -73.586136
 checked: 2026-10-28
 ---
 

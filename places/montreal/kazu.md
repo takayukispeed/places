@@ -7,8 +7,8 @@ address: 1844 Rue Sainte-Catherine Ouest, Montréal, QC H3H 1M1
 phone: +1 514-937-2333
 website:
 reserve:
-lat:
-lng:
+lat: 45.493049
+lng: -73.57988
 checked: 2026-10-28
 ---
 

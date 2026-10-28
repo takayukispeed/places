@@ -7,8 +7,8 @@ address: 104 Rue Saint-Viateur Ouest, Montréal, QC H2T 2L1
 phone: +1 514-742-4232
 website:
 reserve:
-lat:
-lng:
+lat: 45.524397
+lng: -73.600036
 checked: 2026-10-28
 ---
 

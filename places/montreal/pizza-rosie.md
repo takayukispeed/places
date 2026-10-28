@@ -7,8 +7,8 @@ address: 2125 Rue Saint-Marc, Montréal, QC
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.494033
+lng: -73.582195
 checked: 2026-10-28
 ---
 

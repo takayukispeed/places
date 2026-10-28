@@ -7,8 +7,8 @@ address: 1212 Avenue McGill College, Montréal, QC H3B 4J8
 phone: +1 438-380-0995
 website:
 reserve:
-lat:
-lng:
+lat: 45.501513
+lng: -73.570751
 checked: 2026-10-28
 ---
 

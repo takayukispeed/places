@@ -7,8 +7,8 @@ address: 1249 Rue Bishop, Montréal, QC
 phone: +1 514-660-5678
 website:
 reserve:
-lat:
-lng:
+lat: 45.496252
+lng: -73.575188
 checked: 2026-10-28
 ---
 
