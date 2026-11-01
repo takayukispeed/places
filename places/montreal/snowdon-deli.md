@@ -7,8 +7,8 @@ address: 5265 Boulevard Décarie, Montréal, QC H3W 3C2
 phone: +1 514-488-9129
 website:
 reserve:
-lat:
-lng:
+lat: 45.485249
+lng: -73.631769
 checked: 2026-11-01
 ---
 

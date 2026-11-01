@@ -7,8 +7,8 @@ address: 2 Rue Sherbrooke Est, Montréal, QC H2X 1C2
 phone:
 website:
 reserve:
-lat:
-lng:
+lat: 45.512519
+lng: -73.569189
 checked: 2026-11-01
 ---
 

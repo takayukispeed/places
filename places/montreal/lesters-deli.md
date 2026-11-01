@@ -7,8 +7,8 @@ address: 1057 Avenue Bernard, Montréal, QC H2V 1V1
 phone: +1 514-213-1313
 website: https://lestersdeli.com/
 reserve:
-lat:
-lng:
+lat: 45.519892
+lng: -73.60891
 checked: 2026-11-01
 ---
 

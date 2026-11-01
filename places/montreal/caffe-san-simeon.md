@@ -7,8 +7,8 @@ address: 49 Rue Dante, Montréal, QC H2S 1J8
 phone: +1 514-272-7386
 website:
 reserve:
-lat:
-lng:
+lat: 45.533015
+lng: -73.613641
 checked: 2026-11-01
 ---
 

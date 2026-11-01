@@ -7,8 +7,8 @@ address: 1265 Rue Beaubien Est, Montréal, QC H2S 1V1
 phone: +1 438-380-7638
 website:
 reserve:
-lat:
-lng:
+lat: 45.539596
+lng: -73.60018
 checked: 2026-11-01
 ---
 

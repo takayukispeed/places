@@ -7,8 +7,8 @@ address: 6549 Rue Jarry Est, Montréal, QC H1P 1W2
 phone: +1 514-322-3220
 website:
 reserve:
-lat:
-lng:
+lat: 45.595654
+lng: -73.581225
 checked: 2026-11-01
 ---
 
