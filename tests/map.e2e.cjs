@@ -42,6 +42,18 @@ const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
   await page.touchscreen.tap(empty.px, empty.py); await page.waitForTimeout(500); await page.touchscreen.tap(empty.px, empty.py);
   await page.waitForTimeout(500);
   assert.equal(await zoom(), z0 + 1, "slow taps don't zoom");
+  // Switching category keeps the zoom you're at (zoom in further first, past where a refit would land)
+  for (let i = 0; i < 3; i++) {
+    const z = await zoom();
+    await page.touchscreen.tap(empty.px, empty.py); await page.waitForTimeout(60); await page.touchscreen.tap(empty.px, empty.py);
+    await page.waitForFunction((z) => Number(document.querySelector("#map").dataset.zoom) !== z, z);
+    await page.waitForTimeout(400);
+  }
+  const zIn = await zoom();
+  await page.click('[data-cat="bar"]');
+  await page.waitForTimeout(300);
+  assert.equal(await zoom(), zIn, "a category filter doesn't refit the map");
+  await page.click('[data-cat="bar"]');
   // back to the starting view for the rest of the test
   await page.reload(); await page.waitForSelector("path.leaflet-interactive");
   assert.equal(await page.getAttribute("#locate", "aria-pressed"), "false");

@@ -860,7 +860,7 @@ function placesView() {
       state[key] = !state[key];
       e.currentTarget.classList.toggle("on", state[key]);
       e.currentTarget.setAttribute("aria-pressed", String(state[key]));
-      show();
+      show({ refit: false }); // filters keep the map where you've zoomed to
     };
   };
   toggle("#open-now", "placeOpenNow");
@@ -872,7 +872,7 @@ function placesView() {
       if (!k) state.placeCats.clear();
       else if (state.placeCats.has(k)) state.placeCats.delete(k);
       else state.placeCats.add(k);
-      show();
+      show({ refit: false });
     };
   });
 }

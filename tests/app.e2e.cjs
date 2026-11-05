@@ -36,6 +36,8 @@ for (const city of ["montreal", "toronto", "vancouver"]) {
   }
 }
 repo["README.md"] = "# not a place\n";
+// The flow below adds a place called Kazu; drop the real one so the paths stay predictable.
+delete repo["places/montreal/kazu.md"];
 // One place with no hours saved, to check the app points to Google Maps instead.
 repo["places/montreal/test-no-hours.md"] = "---\nname: Test Spot\ncity: Montréal\ncategory: cheap\naddress: 1 Rue Test, Montréal\n---\n\n# Test Spot\n\n## Hours\n\n## Notes\n";
 const sha = (t) => crypto.createHash("sha1").update(t).digest("hex");
