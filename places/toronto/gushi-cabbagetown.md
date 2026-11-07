@@ -7,8 +7,8 @@ address: 296 Gerrard St E, Toronto, ON M5A 2G4
 phone: +1 437-241-1710
 website:
 reserve:
-lat:
-lng:
+lat: 43.66243
+lng: -79.367358
 checked: 2026-11-07
 ---
 

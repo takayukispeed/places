@@ -7,8 +7,8 @@ address: 707 Dundas St W, Toronto, ON M5T 2W6
 phone: +1 647-569-7072
 website:
 reserve:
-lat:
-lng:
+lat: 43.651599
+lng: -79.40409
 checked: 2026-11-07
 ---
 
