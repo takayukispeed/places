@@ -7,8 +7,8 @@ address: 101 Avenue des Pins Est, Montréal, QC H2W 1N8
 phone: +1 778-319-1397
 website: https://ohmiso.square.site/
 reserve:
-lat:
-lng:
+lat: 45.516084
+lng: -73.574393
 checked: 2026-11-15
 ---
 
