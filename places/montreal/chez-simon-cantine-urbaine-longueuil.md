@@ -7,8 +7,8 @@ address: 951 Rue Sainte-Hélène, Longueuil, QC J4K 3S1
 phone: +1 450-332-3633
 website:
 reserve: https://restoenligne.com/reservations/new/chez-simon-cantine-urbaine-longueuil
-lat:
-lng:
+lat: 45.520089
+lng: -73.505299
 checked: 2026-11-21
 ---
 
