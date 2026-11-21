@@ -1,5 +1,5 @@
 ---
-name: Chez Simon Cantine Urbaine
+name: Chez Simon Cantine Urbaine (Tétreaultville)
 city: Montréal
 category: cheap
 area: Tétreaultville
@@ -12,7 +12,7 @@ lng: -73.521369
 checked: 2026-10-28
 ---
 
-# Chez Simon Cantine Urbaine
+# Chez Simon Cantine Urbaine (Tétreaultville)
 
 ## Hours
 
