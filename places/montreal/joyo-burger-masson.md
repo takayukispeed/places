@@ -7,8 +7,8 @@ address: 3036 Rue Masson, Montréal, QC H1Y 1X6
 phone: +1 514-508-5696
 website: https://www.joyoburger.com/masson-location.html
 reserve:
-lat:
-lng:
+lat: 45.549008
+lng: -73.574176
 checked: 2026-11-21
 ---
 
